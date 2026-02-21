@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
+import CursorGlow from "@/components/CursorGlow/CursorGlow";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en" className={cn(isDark ? "dark" : "")}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <CursorGlow />
       </body>
     </html>
   );
