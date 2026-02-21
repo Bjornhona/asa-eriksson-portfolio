@@ -10,5 +10,4 @@
 }
 .logoText, .logoSubtext {
   text-transform: uppercase;
-  color: var(--foreground);
 }
