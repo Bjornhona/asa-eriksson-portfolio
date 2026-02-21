@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			brand: '#your-color',
+  			brand: 'hsl(var(--brand))',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -53,7 +53,7 @@ const config: Config = {
   			}
   		},
       fontFamily: {
-        sans: ["var(--font-inter)"],
+        sans: ["var(--font-sans)"],
       },
   		borderRadius: {
   			lg: 'var(--radius)',

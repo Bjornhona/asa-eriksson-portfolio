@@ -13,9 +13,12 @@
   "iconLibrary": "lucide",
   "rtl": false,
   "aliases": {
-    "components": "@/components",
+    "primitives": "packages/ui/primitives",
+    "motion": "packages/ui/motion",
+    "shared": "packages/ui/shared",
+    "components": "app/components",
     "utils": "@/lib/utils",
-    "ui": "@/components/ui",
+    "ui": "packages/ui",
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
