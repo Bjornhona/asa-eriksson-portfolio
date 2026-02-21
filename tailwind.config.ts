@@ -45,22 +45,62 @@ const config: Config = {
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			chart: {
-  				'1': 'hsl(var(--chart-1))',
-  				'2': 'hsl(var(--chart-2))',
-  				'3': 'hsl(var(--chart-3))',
-  				'4': 'hsl(var(--chart-4))',
-  				'5': 'hsl(var(--chart-5))'
+  				1: 'hsl(var(--chart-1))',
+  				2: 'hsl(var(--chart-2))',
+  				3: 'hsl(var(--chart-3))',
+  				4: 'hsl(var(--chart-4))',
+  				5: 'hsl(var(--chart-5))'
   			}
   		},
-      fontFamily: {
-        sans: ["var(--font-sans)"],
-      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-      darkMode: 'class'
+			spacing: {
+				1: 'var(--space-1)',
+				2: 'var(--space-2)',
+				3: 'var(--space-3)',
+				4: 'var(--space-4)',
+				5: 'var(--space-5)',
+				6: 'var(--space-6)',
+				8: 'var(--space-8)',
+				10: 'var(--space-10)',
+				12: 'var(--space-12)',
+				16: 'var(--space-16)',
+				20: 'var(--space-20)',
+			},
+			fontFamily: {
+        sans: ["var(--font-sans)"],
+      },
+			fontSize: {
+				xxs: 'var(--font-size-xxs)',
+				xs: 'var(--font-size-xs)',
+				sm: 'var(--font-size-sm)',
+				base: 'var(--font-size-base)',
+				lg: 'var(--font-size-lg)',
+				xl: 'var(--font-size-xl)',
+				'2xl': 'var(--font-size-2xl)',
+				'3xl': 'var(--font-size-3xl)',
+				'4xl': 'var(--font-size-4xl)',
+				'5xl': 'var(--font-size-5xl)',
+				'6xl': 'var(--font-size-6xl)',
+				hero: 'var(--font-size-hero)',
+			},
+			fontWeight: {
+				light: 'var(--font-weight-light)',
+				normal: 'var(--font-weight-normal)',
+				semibold: 'var(--font-weight-semibold)',
+				bold: 'var(--font-weight-bold)',
+				black: 'var(--font-weight-black)',
+			},
+			lineHeight: {
+				light: 'var(--line-height-light)',
+				normal: 'var(--line-height-normal)',
+				semibold: 'var(--line-height-semibold)',
+				bold: 'var(--line-height-bold)',
+				black: 'var(--line-height-black)',
+			},
   	}
   },
     plugins: [tailwindcssAnimate],
