@@ -58,6 +58,11 @@
   --color-pink-500-preview: hsl(336, 87%, 55%);
 
   /* Semantic colors */
+  --color-background: var(--color-white);
+  --color-background-preview: hsl(0, 0%, 100%);
+  --color-foreground: var(--color-gray-800);
+  --color-foreground-preview: hsl(0, 0%, 18%);
+
   --color-primary: var(--color-blue-500);
   --color-primary-preview: hsl(179, 50%, 55%);
   --color-primary-hover: var(--color-blue-600);
@@ -66,10 +71,7 @@
   --color-secondary-preview: hsl(43, 42%, 65%);
   --color-secondary-hover: var(--color-brown-800);
   --color-secondary-hover-preview: hsl(0, 0%, 42%);
-  --color-background: var(--color-gray-800);
-  --color-background-preview: hsl(0, 0%, 18%);
-  --color-foreground: var(--color-white);
-  --color-foreground-preview: hsl(0, 0%, 100%);
+
   --color-success: var(--color-aqua-500);
   --color-success-preview: hsl(163, 78%, 63%);
   --color-warning: var(--color-orange-500);
@@ -92,4 +94,9 @@
   --color-blue-700-preview: hsl(180, 75%, 14%);
   --color-blue-800: 179 70% 10%;
   --color-blue-800-preview: hsl(179, 70%, 10%);
+
+  --color-background: var(--color-gray-800);
+  --color-background-preview: hsl(0, 0%, 18%);
+  --color-foreground: var(--color-white);
+  --color-foreground-preview: hsl(0, 0%, 100%);
 }
