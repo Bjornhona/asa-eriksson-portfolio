@@ -10,47 +10,54 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			brand: 'hsl(var(--brand))',
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
-  			card: {
-  				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
-  			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
-  			},
-  			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
-  			},
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
-  			ring: 'hsl(var(--ring))',
-  			chart: {
-  				1: 'hsl(var(--chart-1))',
-  				2: 'hsl(var(--chart-2))',
-  				3: 'hsl(var(--chart-3))',
-  				4: 'hsl(var(--chart-4))',
-  				5: 'hsl(var(--chart-5))'
-  			}
+				blue: {
+					300: 'hsl(var(--color-blue-300) / <alpha-value>)',
+					500: 'hsl(var(--color-blue-500) / <alpha-value>)',
+					600: 'hsl(var(--color-blue-600) / <alpha-value>)',
+					700: 'hsl(var(--color-blue-700) / <alpha-value>)',
+					800: 'hsl(var(--color-blue-800) / <alpha-value>)',
+				},
+				brown: {
+					500: 'hsl(var(--color-brown-500) / <alpha-value>)',
+					800: 'hsl(var(--color-brown-800) / <alpha-value>)',
+				},
+				white: 'hsl(var(--color-white) / <alpha-value>)',
+				gray: {
+					200: 'hsl(var(--color-gray-200) / <alpha-value>)',
+					300: 'hsl(var(--color-gray-300) / <alpha-value>)',
+					400: 'hsl(var(--color-gray-400) / <alpha-value>)',
+					500: 'hsl(var(--color-gray-500) / <alpha-value>)',
+					600: 'hsl(var(--color-gray-600) / <alpha-value>)',
+					700: 'hsl(var(--color-gray-700) / <alpha-value>)',
+					800: 'hsl(var(--color-gray-800) / <alpha-value>)',
+					900: 'hsl(var(--color-gray-900) / <alpha-value>)',
+				},
+				aqua: {
+					400: 'hsl(var(--color-aqua-400) / <alpha-value>)',
+					500: 'hsl(var(--color-aqua-500) / <alpha-value>)',
+				},
+				orange: {
+					400: 'hsl(var(--color-orange-400) / <alpha-value>)',
+					500: 'hsl(var(--color-orange-500) / <alpha-value>)',
+				},
+				purple: {
+					400: 'hsl(var(--color-purple-400) / <alpha-value>)',
+					500: 'hsl(var(--color-purple-500) / <alpha-value>)',
+				},
+				pink: {
+					400: 'hsl(var(--color-pink-400) / <alpha-value>)',
+					500: 'hsl(var(--color-pink-500) / <alpha-value>)',
+				},
+				primary: 'hsl(var(--color-primary) / <alpha-value>)',
+				primaryHover: 'hsl(var(--color-primary-hover) / <alpha-value>)',
+				secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+				secondaryHover: 'hsl(var(--color-secondary-hover) / <alpha-value>)',
+				background: 'hsl(var(--color-background) / <alpha-value>)',
+				foreground: 'hsl(var(--color-foreground) / <alpha-value>)',
+				success: 'hsl(var(--color-success) / <alpha-value>)',
+				warning: 'hsl(var(--color-warning) / <alpha-value>)',
+				info: 'hsl(var(--color-info) / <alpha-value>)',
+				danger: 'hsl(var(--color-danger) / <alpha-value>)',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -101,7 +108,22 @@ const config: Config = {
 				bold: 'var(--line-height-bold)',
 				black: 'var(--line-height-black)',
 			},
-  	}
+			screens: {
+				xs: 'var(--breakpoint-xs)',
+				sm: 'var(--breakpoint-sm)',
+				md: 'var(--breakpoint-md)',
+				lg: 'var(--breakpoint-lg)',
+				xl: 'var(--breakpoint-xl)',
+				'2xl': 'var(--breakpoint-2xl)',
+			},
+			maxWidth: {
+				sm: 'var(--max-width-sm)',
+				md: 'var(--max-width-md)',
+				lg: 'var(--max-width-lg)',
+				xl: 'var(--max-width-xl)',
+				'2xl': 'var(--max-width-2xl)',
+			},
+  	},
   },
     plugins: [tailwindcssAnimate],
 }

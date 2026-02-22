@@ -1,60 +1,31 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Logo from "@/components/Logo/Logo";
+// import styles from "./page.module.css";
+// import Logo from "@/components/Logo/Logo";
+import MistBackground from "@/components/MistBackground/MistBackground";
+import LiquidBackground from "@/components/MistBackground/LiquidBackground";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Logo />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="relative min-h-screen bg-background overflow-hidden">
+      <MistBackground />
+      <LiquidBackground />
+
+      {/* <div className="flex items-center justify-center z-10">
+        <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-between px-16 py-[120px]">
+          <Logo />
+          <div className={styles.intro}>
+            <h1 className={styles.name}>Åsa Eriksson</h1>
+            <h5 className={styles.title}>Design-driven Frontend Engineer</h5>
+          </div>
+          <div className={styles.ctas}>
+            <a className={styles.primary} href="https://github.com/asaeriksson" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a className={styles.secondary} href="https://linkedin.com/in/asaeriksson" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </main>
+      </div> */}
     </div>
   );
 }

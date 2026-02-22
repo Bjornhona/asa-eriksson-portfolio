@@ -11,3 +11,15 @@
 .logoText, .logoSubtext {
   text-transform: uppercase;
 }
+.logoLight {
+  display: none;
+}
+.logoDark {
+  display: block;
+}
+:global(.dark) .logoLight {
+  display: block;
+}
+:global(.dark) .logoDark {
+  display: none;
+}
