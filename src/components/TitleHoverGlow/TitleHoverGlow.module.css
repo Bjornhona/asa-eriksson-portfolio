@@ -1,0 +1,39 @@
+.name {
+  font-family: var(--font-geist-sans);
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 48px;
+  letter-spacing: 2.4px;
+  color: hsl(var(--color-blue-800));
+  cursor: default;
+  white-space: pre;
+}
+
+.name span {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.hoverAdjacent {
+  color: hsl(var(--glow-char-adjacent));
+  font-weight: 400;
+}
+
+.hovered {
+  color: hsl(var(--glow-char));
+  font-weight: 700;
+  filter: drop-shadow(0 0 12px hsl(var(--glow-inner)))
+  drop-shadow(0 0 24px hsl(var(--glow-outer)));
+}
+
+
+.hovered::after {
+  content: attr(data-char);
+  position: absolute;
+  inset: 0;
+  color: hsl(var(--color-orange-500));
+  filter: blur(16px);
+  opacity: 0.7;
+  z-index: -1;
+}
