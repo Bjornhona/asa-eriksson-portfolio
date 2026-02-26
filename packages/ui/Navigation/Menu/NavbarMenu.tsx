@@ -1,31 +1,38 @@
 "use client";
 import { useState } from "react";
-import { Globe } from "lucide-react";
-import { NavMenuProps } from "@/components/Navigation/navMenu";
+import type { NavMenuProps } from "../../types";
 import ThemeToggle from "./ThemeToggle";
 import Menu from "./Menu";
 import BurgerMenu from "./BurgerMenu";
+import LanguageSelector from "./LanguageSelector";
 
-const NavbarMenu = ({ languages, modeSwitch, navLinks }: NavMenuProps) => {
+const NavbarMenu = ({
+  modeSwitch,
+  navLinks,
+  languages,
+  locale = "",
+  onLocaleChange,
+}: NavMenuProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const showLanguageSelector = languages.length > 1 && locale && onLocaleChange;
 
   return (
     <>
       <div className="flex items-center gap-4 text-foreground">
         {modeSwitch && <ThemeToggle />}
 
-        {/* Language Switch */}
-        {languages.length > 1 && (
-          <button className="p-2 rounded hover:bg-muted/20 transition">
-            <Globe className="w-5 h-5" />
-          </button>)}
+        {showLanguageSelector && (
+          <LanguageSelector
+            languages={languages}
+            currentLocale={locale}
+            onChange={onLocaleChange}
+          />
+        )}
 
-        {navLinks.length > 0 && (
-          <BurgerMenu onToggleMenu={toggleMenu} />)}
+        {navLinks.length > 0 && <BurgerMenu onToggleMenu={toggleMenu} />}
       </div>
-      <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} navLinks={navLinks} />
+      <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} navLinks={navLinks} locale={locale} />
     </>
   );
 };

@@ -1,0 +1,10 @@
+{
+  "common": {
+    "home": "Hem",
+    "about": "Om",
+    "contact": "Kontakt",
+    "services": "Tjänster",
+    "portfolio": "Portfölj",
+    "blog": "Blogg"
+  }
+}

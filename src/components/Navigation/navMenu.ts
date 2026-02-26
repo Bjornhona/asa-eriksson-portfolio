@@ -1,21 +1,19 @@
-export interface NavMenuProps {
-  languages: string[];
-  modeSwitch: boolean;
-  navLinks: {
-    label: string;
-    href: string;
-  }[];
-}
+import type { NavMenuProps } from "../../../packages/ui/types";
 
-export const navMenu: NavMenuProps = {
-  languages: ['en', 'sv', 'es'],
+/** Nav config with translation keys; AppNavbar resolves labels via useTranslations */
+export type NavMenuConfig = Omit<NavMenuProps, "locale" | "onLocaleChange" | "navLinks"> & {
+  navLinks: { labelKey: string; href: string }[];
+};
+
+export const navMenu: NavMenuConfig = {
+  languages: ["en", "sv", "es"],
   modeSwitch: true,
   navLinks: [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
-    { label: 'Portfolio', href: '/portfolio' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '/contact' },
+    { labelKey: "common.home", href: "/" },
+    { labelKey: "common.about", href: "/about" },
+    { labelKey: "common.services", href: "/services" },
+    { labelKey: "common.portfolio", href: "/portfolio" },
+    { labelKey: "common.blog", href: "/blog" },
+    { labelKey: "common.contact", href: "/contact" },
   ],
-}
+};

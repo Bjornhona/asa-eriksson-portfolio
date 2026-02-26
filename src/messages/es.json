@@ -1,0 +1,10 @@
+{
+  "common": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "blog": "Blog"
+  }
+}

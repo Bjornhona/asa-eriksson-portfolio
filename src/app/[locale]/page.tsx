@@ -5,7 +5,7 @@ import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 
 export default function Home() {
   const name = 'Åsa Eriksson';
-
+  
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-hidden">
       <MistBackground />
