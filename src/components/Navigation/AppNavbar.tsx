@@ -39,8 +39,8 @@ const AppNavbar = () => {
 
   return (
     <Navbar
-      logoSrc="logo-dark.svg"
-      logoDarkModeSrc="logo-light.svg"
+      logoSrc="/logo-dark.svg"
+      logoDarkModeSrc="/logo-light.svg"
       logoAlt="Åsa Eriksson logo"
       logoLink={locale ? `/${locale}` : "/"}
       navMenu={{
