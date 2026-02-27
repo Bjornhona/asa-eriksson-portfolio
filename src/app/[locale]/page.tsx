@@ -13,13 +13,13 @@ export default function Home() {
         <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-between px-16 py-[120px]">
           <div className={styles.intro}>
             <TitleHoverGlow title={name} />
-            <h5 className={styles.title}>Design-driven Frontend Engineer</h5>
+            <h5 className={styles.title}>Frontend Developer & Product Designer</h5>
           </div>
           <div className={styles.ctas}>
-            <a className={styles.primary} href="https://github.com/asaeriksson" target="_blank" rel="noopener noreferrer">
+            <a className={styles.primary} href="https://github.com/bjornhona" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
-            <a className={styles.secondary} href="https://linkedin.com/in/asaeriksson" target="_blank" rel="noopener noreferrer">
+            <a className={styles.secondary} href="https://linkedin.com/in/asaeri3" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
