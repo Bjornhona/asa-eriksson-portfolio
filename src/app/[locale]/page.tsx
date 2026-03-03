@@ -1,8 +1,27 @@
 "use client";
+import { motion } from "framer-motion";
 import styles from "./page.module.css";
 import MistBackground from "@/components/Backgrounds/MistBackground";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 import { useTranslations } from "next-intl";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
+
+const container = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
 
 export default function Home() {
   const t = useTranslations();
@@ -13,24 +32,38 @@ export default function Home() {
       <MistBackground />
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-between px-16 py-[120px]">
-          <div className={styles.intro}>
-            <p>{t("home.title")}</p>
-            <h1 className={styles.title}>
-              <TitleHoverGlow title={title} />.</h1>
-            {/* <h5 className={styles.title}>
-              Frontend Developer & Product Designer
-            </h5> */}
-            <h2>{t("home.subtitle")}</h2>
-            <h5>{t.rich("home.description", {
-              strong: (chunks) => <strong>{chunks}</strong>
-            })}</h5>
-            <h5>{t.rich("home.techbeachmama", {
-              a: (chunks) => <a href="https://techbeachmama.com" target="_blank" rel="noopener noreferrer">{chunks}</a>
-            })}</h5>
-          </div>
+          <motion.div
+            className={styles.intro}
+            variants={container}
+            initial="initial"
+            animate="animate"
+          >
+            <motion.p variants={fadeInUp}>{t("home.title")}</motion.p>
+            <motion.h1 className={styles.title} variants={fadeInUp}>
+              <TitleHoverGlow title={title} />.
+            </motion.h1>
+            <motion.h2 variants={fadeInUp}>{t("home.subtitle")}</motion.h2>
+            <motion.h5 variants={fadeInUp}>
+              {t.rich("home.description", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
+            </motion.h5>
+            <motion.h5 variants={fadeInUp}>
+              {t.rich("home.techbeachmama", {
+                a: (chunks) => (
+                  <a
+                    href="https://techbeachmama.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {chunks}
+                  </a>
+                ),
+              })}
+            </motion.h5>
+          </motion.div>
         </main>
       </div>
-      
     </div>
   );
 }
