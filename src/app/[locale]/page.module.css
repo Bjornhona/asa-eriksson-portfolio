@@ -11,35 +11,11 @@
   font-size: 18px;
   line-height: 32px;
   text-wrap: balance;
-  color: var(--secondary);
-}
-
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+  /* color: var(--secondary); */
 }
 
 a.primary {
-  background: var(--primary);
-  color: var(--background);
+  /* color: var(--color-primary); */
   gap: 8px;
 }
 
@@ -50,29 +26,23 @@ a.secondary {
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background: var(--primary);
-    border-color: transparent;
+    /* background: var(--primary);
+    border-color: transparent; */
   }
 
   a.secondary:hover {
-    background: var(--secondary);
-    border-color: transparent;
+    /* background: var(--secondary);
+    border-color: transparent; */
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint-sm)) {
   .main {
     padding: 48px 24px;
   }
 
   .intro {
     gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
   }
 }
 

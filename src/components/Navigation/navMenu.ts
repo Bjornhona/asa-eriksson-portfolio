@@ -7,7 +7,11 @@ export type NavMenuConfig = Omit<NavMenuProps, "locale" | "onLocaleChange" | "na
 
 export const navMenu: NavMenuConfig = {
   languages: ["en", "sv", "es"],
-  modeSwitch: true,
+  socialMediaLinks: [
+    { type: "github", href: "https://github.com/bjornhona" },
+    { type: "linkedin", href: "https://www.linkedin.com/in/asaeri3/" },
+  ],
+  modeSwitch: false,
   navLinks: [
     { labelKey: "common.home", href: "/" },
     { labelKey: "common.about", href: "/about" },

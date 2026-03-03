@@ -1,5 +1,12 @@
 "use client";
-// import { Globe } from "lucide-react";
+import { Globe } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "../../../../packages/ui/components/dropdown-menu";
+import { cn } from "@/lib/utils";
 
 type LanguageSelectorProps = {
   languages: string[];
@@ -7,39 +14,39 @@ type LanguageSelectorProps = {
   onChange: (locale: string) => void;
 };
 
-const LanguageSelector = ({ languages, currentLocale, onChange }: LanguageSelectorProps) => {
+const LanguageSelector = ({
+  languages,
+  currentLocale,
+  onChange,
+}: LanguageSelectorProps) => {
   return (
-    <div className="flex gap-2">
-      {languages.map((lang) => (
-        <button
-          key={lang}
-          onClick={() => onChange(lang)}
-          className={`px-2 py-1 rounded ${
-            currentLocale === lang
-              ? "bg-primary text-primary-foreground"
-              : "hover:bg-muted"
-          }`}
-        >
-          {lang.toUpperCase()}
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button className={cn(
+            "flex items-center gap-2 px-4 py-2 rounded-xl",
+            "transition-all duration-300")}>
+          <Globe className="w-4 h-4" />
         </button>
-      ))}
-    </div>
-    // <div className="relative">
-    //   <select
-    //     value={currentLocale}
-    //     onChange={(e) => changeLanguage(e.target.value)}
-    //     className="bg-transparent border rounded px-2 py-1"
-    //   >
-    //     {languages.map((lang) => (
-    //       <option key={lang} value={lang}>
-    //         {lang.toUpperCase()}
-    //         {/* <button className="p-2 rounded hover:bg-muted/20 transition" onClick={() => changeLanguage(lang)}>
-    //           <Globe className="w-5 h-5" />
-    //         </button> */}
-    //       </option>
-    //     ))}
-    //   </select>
-    // </div>
+      </DropdownMenuTrigger>
+
+      <DropdownMenuContent
+        align="end"
+        className="bg-white/10 text-foreground backdrop-blur-xl
+          border border-white/20 shadow-xl rounded-xl">
+        {languages.map((lang) => (
+          <DropdownMenuItem
+            onClick={() => onChange(lang)}
+            className={`px-2 py-1 rounded ${
+              currentLocale === lang
+                ? "bg-white/20"
+                : "hover:bg-white/10 transition-colors"
+            }`}
+            key={lang}>
+              {lang.toUpperCase()}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 

@@ -26,7 +26,7 @@ const Menu = ({ menuOpen, toggleMenu, navLinks, locale = "" }: MenuProps) => {
             onClick={toggleMenu}
             className="absolute top-6 right-6 p-2 rounded hover:bg-muted/20"
           >
-            Close
+            X
           </button>
 
           <ul className="flex flex-col items-center gap-6 text-xl font-semibold">

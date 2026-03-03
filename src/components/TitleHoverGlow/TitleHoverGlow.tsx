@@ -27,7 +27,7 @@ const TitleHoverGlow = ({ title = 'Title' }: TitleHoverGlowProps) => {
   });
 
   return (
-    <h1 className={styles.name}>{titleChars}</h1>
+    <span className={styles.title}>{titleChars}</span>
   )
 };
 

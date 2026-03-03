@@ -1,30 +1,33 @@
-'use client';
+"use client";
 import styles from "./page.module.css";
 import MistBackground from "@/components/Backgrounds/MistBackground";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 
 export default function Home() {
-  const name = 'Åsa Eriksson';
-  
+  const title = "Åsa Eriksson";
+
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-hidden">
       <MistBackground />
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-between px-16 py-[120px]">
           <div className={styles.intro}>
-            <TitleHoverGlow title={name} />
-            <h5 className={styles.title}>Frontend Developer & Product Designer</h5>
-          </div>
-          <div className={styles.ctas}>
-            <a className={styles.primary} href="https://github.com/bjornhona" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-            <a className={styles.secondary} href="https://linkedin.com/in/asaeri3" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
+            <p>Hi, I’m</p>
+            <h1 className={styles.title}>
+              <TitleHoverGlow title={title} />.</h1>
+            {/* <h5 className={styles.title}>
+              Frontend Developer & Product Designer
+            </h5> */}
+            <h2>Engineer by profession. Designer by instinct.</h2>
+            <h5>
+              I build scalable web applications with <strong>React & Next.js</strong> —
+              crafted with clean architecture and thoughtful <strong>user experience</strong>.
+            </h5>
+            <h5>Founder of <a href="https://techbeachmama.com" target="_blank" rel="noopener noreferrer">Tech Beach Mama</a> - Building resources to help women launch tech careers.</h5>
           </div>
         </main>
       </div>
+      
     </div>
   );
 }

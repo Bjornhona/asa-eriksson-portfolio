@@ -5,9 +5,11 @@ import ThemeToggle from "./ThemeToggle";
 import Menu from "./Menu";
 import BurgerMenu from "./BurgerMenu";
 import LanguageSelector from "./LanguageSelector";
+import SocialMediaLinks from "./SocialMediaLinks";
 
 const NavbarMenu = ({
   modeSwitch,
+  socialMediaLinks,
   navLinks,
   languages,
   locale = "",
@@ -21,6 +23,8 @@ const NavbarMenu = ({
     <>
       <div className="flex items-center gap-4 text-foreground">
         {modeSwitch && <ThemeToggle />}
+
+        {socialMediaLinks.length > 0 && <SocialMediaLinks socialMediaLinks={socialMediaLinks} />}
 
         {showLanguageSelector && (
           <LanguageSelector

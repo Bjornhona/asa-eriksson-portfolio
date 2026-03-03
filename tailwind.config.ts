@@ -57,6 +57,7 @@ const config: Config = {
         secondaryHover: "hsl(var(--color-secondary-hover) / <alpha-value>)",
         background: "hsl(var(--color-background) / <alpha-value>)",
         foreground: "hsl(var(--color-foreground) / <alpha-value>)",
+        title: "hsl(var(--color-title) / <alpha-value>)",
         success: "hsl(var(--color-success) / <alpha-value>)",
         warning: "hsl(var(--color-warning) / <alpha-value>)",
         info: "hsl(var(--color-info) / <alpha-value>)",
@@ -85,7 +86,8 @@ const config: Config = {
         20: "var(--space-20)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        prompt: ['var(--font-prompt)'],
+        inter: ['var(--font-inter)'],
       },
       fontSize: {
         xxs: "var(--font-size-xxs)",

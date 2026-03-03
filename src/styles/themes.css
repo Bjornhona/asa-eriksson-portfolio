@@ -45,9 +45,9 @@
 
   /* Other colors */
   --color-aqua-400: 162 100% 80%;
-  --color-aqua-400-preview: hsl(162, 100%, 80%);
+  --color-aqua-400-preview: hsl(166, 100%, 80%);
   --color-aqua-500: 163 100% 70%;
-  --color-aqua-500-preview: hsl(163, 100%, 70%);
+  --color-aqua-500-preview: hsl(166, 100%, 60%);
   --color-orange-400: 46 100% 80%;
   --color-orange-400-preview: hsl(46, 100%, 80%);
   --color-orange-500: 34 100% 70%;
@@ -64,8 +64,18 @@
   /* Semantic colors */
   --color-background: var(--color-blue-200);
   --color-background-preview: hsl(178 59% 76%);
-  --color-foreground: var(--color-blue-800);
-  --color-foreground-preview: hsl(0, 0%, 18%);
+  --color-foreground: var(--color-gray-700);
+  --color-foreground-preview: hsl(0, 0%, 33%);
+  --color-title: var(--color-gray-800);
+  --color-title-preview: hsl(0, 0%, 18%);
+
+  /* Text colors */
+  /* --color-text-primary: var(--color-purple-200);
+  --color-text-primary-preview:hsl(226, 70%, 88%);
+  --color-text-secondary: var(--color-purple-400);
+  --color-text-secondary-preview:hsl(225, 20%, 61%);
+  --color-text-tertiary: var(--color-aqua-500);
+  --color-text-tertiary-preview:hsl(166, 100%, 60%); */
 
   --color-primary: var(--color-blue-500);
   --color-primary-preview: hsl(180, 25%, 55%);
@@ -77,7 +87,7 @@
   --color-secondary-hover-preview: hsl(0, 0%, 42%);
 
   --color-success: var(--color-aqua-500);
-  --color-success-preview: hsl(163, 78%, 63%);
+  --color-success-preview: hsl(166, 100%, 60%);
   --color-warning: var(--color-orange-500);
   --color-warning-preview: hsl(34, 100%, 70%);
   --color-info: var(--color-purple-500);
@@ -85,10 +95,14 @@
   --color-danger: var(--color-pink-500);
   --color-danger-preview: hsl(336, 100%, 68%);
 
-  --glow-char: var(--color-blue-700);
+  /* --glow-char: var(--color-blue-700);
   --glow-char-adjacent: var(--color-blue-800);
   --glow-inner: var(--color-blue-500);
-  --glow-outer: var(--color-blue-500);
+  --glow-outer: var(--color-blue-500); */
+  --glow-char: var(--color-pink-500);
+  --glow-char-adjacent: var(--color-pink-400);
+  --glow-inner: var(--color-pink-400);
+  --glow-outer: var(--color-pink-500);
 }
 
 .dark {
@@ -105,16 +119,28 @@
   --color-blue-800-preview: hsl(178, 70%, 65%);
 
   /* Semantic colors */
-  --color-background: var(--color-blue-300);
-  --color-background-preview: hsl(179, 70%, 10%);
-  --color-foreground: var(--color-white);
-  --color-foreground-preview: hsl(0, 0%, 100%);
+  /* --color-background: var(--color-gray-800);
+  --color-background-preview: hsl(0, 0%, 18%);
+  --color-foreground: var(--color-gray-400);
+  --color-foreground-preview: hsl(0, 0%, 93%); */
+
+  /* Text colors */
+  --color-background: hsl(216, 64.90%, 11.20%);
+  --color-foreground: hsl(225, 20%, 61%);
+  --color-title: hsl(226, 70%, 88%);
+  /* --color-text-primary: var(--color-purple-200);
+  --color-text-primary-preview:hsl(226, 70%, 88%);
+  --color-text-secondary: var(--color-purple-400);
+  --color-text-secondary-preview:hsl(225, 20%, 61%);
+  --color-text-tertiary: var(--color-aqua-500);
+  --color-text-tertiary-preview:hsl(166, 100%, 60%);
+  --color-bg: hsl(216, 64.90%, 11.20%) */
 
   /* Other colors */
-  --color-aqua-400: 162 100% 80%;
-  --color-aqua-400-preview: hsl(163, 100%, 80%);
-  --color-aqua-500: 163 100% 50%;
-  --color-aqua-500-preview: hsl(163, 100%, 50%);
+  --color-aqua-400: 166 100% 80%;
+  --color-aqua-400-preview: hsl(166, 100%, 80%);
+  --color-aqua-500: 166 100% 50%;
+  --color-aqua-500-preview: hsl(166, 100%, 50%);
   --color-orange-400: 58 100% 80%;
   --color-orange-400-preview: hsl(46, 100%, 80%);
   --color-orange-500: 34 100% 50%;

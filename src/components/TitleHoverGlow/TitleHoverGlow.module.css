@@ -1,15 +1,10 @@
-.name {
-  font-family: var(--font-geist-sans);
-  font-size: 40px;
-  font-weight: 100;
-  line-height: 48px;
-  letter-spacing: 2.4px;
+.title {
   color: hsl(var(--color-blue-800));
   cursor: default;
   white-space: pre;
 }
 
-.name span {
+.title span {
   position: relative;
   display: inline-block;
   transition: all 0.3s ease;

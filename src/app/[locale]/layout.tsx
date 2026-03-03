@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { locales } from "@/i18n/config";
 import CursorGlow from "@/components/CursorGlow/CursorGlow";
 import AppNavbar from "@/components/Navigation/AppNavbar";
+import AppFooter from "@/components/Navigation/AppFooter";
 
 type Props = {
   children: React.ReactNode;
@@ -26,6 +27,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <AppNavbar />
       {children}
       <CursorGlow />
+      <AppFooter />
     </NextIntlClientProvider>
   );
 }

@@ -16,8 +16,8 @@ const Logo = ({ logoSrc, logoLink = "/", logoDarkModeSrc, logoAlt }: LogoProps) 
         className="hidden dark:block"
         src={logoDarkModeSrc}
         alt={logoAlt || "Logo"}
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         priority
       />}
       {/* Logo for light mode */}
@@ -25,8 +25,8 @@ const Logo = ({ logoSrc, logoLink = "/", logoDarkModeSrc, logoAlt }: LogoProps) 
         className="block dark:hidden"
         src={logoSrc}
         alt={logoAlt || "Logo"}
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         priority
       />
     </Link>
