@@ -11,14 +11,21 @@ interface GlassCardProps {
 
 export default function GlassCard({
   children,
-  width = 500,
-  height = 400,
+  width,
+  height,
   className = "",
 }: GlassCardProps) {
   return (
     <motion.div
-      className={`relative ${className}`}
-      style={{ width, height }}
+      className={`relative w-full max-w-[min(600px,calc(100vw-2rem))] min-h-[280px] sm:min-h-[360px] md:min-h-[420px] ${className}`}
+      style={
+        width || height
+          ? {
+              ...(width && { maxWidth: width }),
+              ...(height && { minHeight: height }),
+            }
+          : undefined
+      }
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -28,7 +35,7 @@ export default function GlassCard({
 
       {/* Glass Layer */}
       <div
-        className="relative h-full w-full backdrop-blur-xl bg-white/10 border border-white/20 shadow-[0_0_40px_rgba(34,211,238,0.15)] rounded-[10%] p-8"
+        className="relative h-full w-full backdrop-blur-xl bg-white/10 border border-white/20 shadow-[0_0_40px_rgba(34,211,238,0.15)] rounded-[10%] p-4 sm:p-8 md:p-16"
       >
         {children}
       </div>

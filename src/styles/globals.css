@@ -13,6 +13,7 @@ html, body {
   background-color: hsl(var(--color-background));
   color: hsl(var(--color-foreground));
   font-family: var(--font-inter);
+  line-height: 1.4;
 }
 
 * {
@@ -23,36 +24,31 @@ html, body {
 
 h1 {
   font-family: var(--font-prompt);
-  font-size: 40px;
+  font-size: var(--font-size-3xl);
   font-weight: 200;
-  line-height: 1;
   letter-spacing: 2px;
   color: var(--color-primary);
 }
 
 h2 {
   font-family: var(--font-prompt);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
   color: var(--color-title);
 }
 
 h3 {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   font-weight: 400;
-  line-height: 1;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   font-weight: 400;
-  line-height: 1.4;
 }
 
 p {
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: var(--font-size-xs);
 }
 
 a {
@@ -65,16 +61,28 @@ a:hover {
   color: hsl(var(--color-link-hover));
 }
 
-@media (max-width: 600px) {
+@media (min-width: 480px) {
   h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
+    font-size: var(--font-size-4xl);
+  }
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--font-size-6xl);
   }
 
-  h5 {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.96px;
+  h3, h5 {
+    font-size: var(--font-size-lg);
+  }
+
+  p {
+    font-size: var(--font-size-sm);
   }
 }

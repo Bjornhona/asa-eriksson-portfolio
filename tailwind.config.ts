@@ -92,6 +92,7 @@ const config: Config = {
         12: "var(--space-12)",
         16: "var(--space-16)",
         20: "var(--space-20)",
+        24: "var(--space-24)",
       },
       fontFamily: {
         prompt: ['var(--font-prompt)'],
@@ -126,12 +127,12 @@ const config: Config = {
         black: "var(--line-height-black)",
       },
       screens: {
-        xs: "var(--breakpoint-xs)",
-        sm: "var(--breakpoint-sm)",
-        md: "var(--breakpoint-md)",
-        lg: "var(--breakpoint-lg)",
-        xl: "var(--breakpoint-xl)",
-        "2xl": "var(--breakpoint-2xl)",
+        xs: "320px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
       maxWidth: {
         sm: "var(--max-width-sm)",

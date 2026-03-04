@@ -33,11 +33,11 @@ export default function Home() {
     <div className="relative min-h-screen bg-background text-foreground overflow-hidden">
       <MistBackground />
       <FloatingBlobs />
-      <div className="absolute inset-0 flex items-center justify-center z-10">
-        <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-between px-16 py-[120px]">
-          <GlassCard width={600} height={420}>
+      <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8">
+        <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-between py-16 sm:py-20 md:py-24 lg:py-[120px]">
+          <GlassCard>
           <motion.div
-            className={styles.intro}
+            className="flex flex-col items-start text-left gap-3 sm:gap-6"
             variants={container}
             initial="initial"
             animate="animate"
