@@ -17,7 +17,7 @@ export default function GlassCard({
 }: GlassCardProps) {
   return (
     <motion.div
-      className={`relative w-full max-w-[min(600px,calc(100vw-2rem))] min-h-[280px] sm:min-h-[360px] md:min-h-[420px] ${className}`}
+      className={`relative w-fit min-h-fit ${className}`}
       style={
         width || height
           ? {
@@ -31,11 +31,11 @@ export default function GlassCard({
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       {/* Outer Glow */}
-      <div className="absolute inset-0 blur-3xl opacity-40 bg-blue-500/20 rounded-[10%]" />
+      <div className="absolute inset-0 blur-3xl opacity-40 bg-blue-500/20 rounded-lg" />
 
       {/* Glass Layer */}
       <div
-        className="relative h-full w-full backdrop-blur-xl bg-white/10 border border-white/20 shadow-[0_0_40px_rgba(34,211,238,0.15)] rounded-[10%] p-4 sm:p-8 md:p-16"
+        className="relative w-fit backdrop-blur-xl bg-white/10 border border-white/20 shadow-[0_0_40px_rgba(34,211,238,0.15)] rounded-md sm:rounded-lg md:rounded-xl p-4 sm:p-8 md:p-16"
       >
         {children}
       </div>

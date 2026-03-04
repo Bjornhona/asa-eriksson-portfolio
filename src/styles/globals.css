@@ -27,14 +27,14 @@ h1 {
   font-size: var(--font-size-3xl);
   font-weight: 200;
   letter-spacing: 2px;
-  color: var(--color-primary);
+  color: hsl(var(--color-primary));
 }
 
 h2 {
   font-family: var(--font-prompt);
   font-size: var(--font-size-xl);
   font-weight: 500;
-  color: var(--color-title);
+  color: hsl(var(--color-title));
 }
 
 h3 {
