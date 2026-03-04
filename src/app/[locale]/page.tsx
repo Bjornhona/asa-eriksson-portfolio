@@ -4,6 +4,8 @@ import styles from "./page.module.css";
 import MistBackground from "@/components/Backgrounds/MistBackground";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 import { useTranslations } from "next-intl";
+import FloatingBlobs from "@/components/FloatingBlobs/FloatingBlobs";
+import GlassCard from "@/components/GlassCard/GlassCard";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -30,8 +32,10 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-hidden">
       <MistBackground />
+      <FloatingBlobs />
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-between px-16 py-[120px]">
+          <GlassCard width={600} height={420}>
           <motion.div
             className={styles.intro}
             variants={container}
@@ -62,6 +66,7 @@ export default function Home() {
               })}
             </motion.h5>
           </motion.div>
+          </GlassCard>
         </main>
       </div>
     </div>

@@ -10,8 +10,8 @@ html, body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-background);
-  color: var(--color-foreground);
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
   font-family: var(--font-inter);
 }
 
@@ -56,13 +56,13 @@ p {
 }
 
 a {
-  color: hsl(var(--color-blue-600));
+  color: hsl(var(--color-link));
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  color: hsl(var(--color-blue-700));
+  color: hsl(var(--color-link-hover));
 }
 
 @media (max-width: 600px) {

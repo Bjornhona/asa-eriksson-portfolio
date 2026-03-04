@@ -13,7 +13,7 @@ const config: Config = {
       colors: {
         blue: {
           200: "hsl(var(--color-blue-200) / <alpha-value>)",
-          300: "hsl(var(--color-blue-300) / <alpha-value>)",
+          400: "hsl(var(--color-blue-400) / <alpha-value>)",
           500: "hsl(var(--color-blue-500) / <alpha-value>)",
           600: "hsl(var(--color-blue-600) / <alpha-value>)",
           700: "hsl(var(--color-blue-700) / <alpha-value>)",
@@ -38,6 +38,9 @@ const config: Config = {
         aqua: {
           400: "hsl(var(--color-aqua-400) / <alpha-value>)",
           500: "hsl(var(--color-aqua-500) / <alpha-value>)",
+          600: "hsl(var(--color-aqua-600) / <alpha-value>)",
+          700: "hsl(var(--color-aqua-700) / <alpha-value>)",
+          800: "hsl(var(--color-aqua-800) / <alpha-value>)",
         },
         orange: {
           400: "hsl(var(--color-orange-400) / <alpha-value>)",
@@ -50,6 +53,9 @@ const config: Config = {
         pink: {
           400: "hsl(var(--color-pink-400) / <alpha-value>)",
           500: "hsl(var(--color-pink-500) / <alpha-value>)",
+          600: "hsl(var(--color-pink-600) / <alpha-value>)",
+          700: "hsl(var(--color-pink-700) / <alpha-value>)",
+          800: "hsl(var(--color-pink-800) / <alpha-value>)",
         },
         primary: "hsl(var(--color-primary) / <alpha-value>)",
         primaryHover: "hsl(var(--color-primary-hover) / <alpha-value>)",
@@ -58,6 +64,8 @@ const config: Config = {
         background: "hsl(var(--color-background) / <alpha-value>)",
         foreground: "hsl(var(--color-foreground) / <alpha-value>)",
         title: "hsl(var(--color-title) / <alpha-value>)",
+        link: "hsl(var(--color-link) / <alpha-value>)",
+        linkHover: "hsl(var(--color-link-hover) / <alpha-value>)",
         success: "hsl(var(--color-success) / <alpha-value>)",
         warning: "hsl(var(--color-warning) / <alpha-value>)",
         info: "hsl(var(--color-info) / <alpha-value>)",
