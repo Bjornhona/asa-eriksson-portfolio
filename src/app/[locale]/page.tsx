@@ -52,7 +52,7 @@ export default function Home() {
                   strong: (chunks) => <strong>{chunks}</strong>,
                 })}
               </motion.h5>
-              <motion.h5 variants={fadeInUp}>
+              <motion.p variants={fadeInUp}>
                 {t.rich("home.techbeachmama", {
                   a: (chunks) => (
                     <a
@@ -64,7 +64,7 @@ export default function Home() {
                     </a>
                   ),
                 })}
-              </motion.h5>
+              </motion.p>
             </motion.div>
           </GlassCard>
         </main>
