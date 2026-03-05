@@ -34,7 +34,7 @@ export default function Home() {
       <MistBackground />
       <FloatingBlobs />
       <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8">
-        <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-center mb-24">
+        <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-center mt-24 mb-24">
           <GlassCard>
             <motion.div
               className="flex flex-col items-start text-left gap-3 sm:gap-6"

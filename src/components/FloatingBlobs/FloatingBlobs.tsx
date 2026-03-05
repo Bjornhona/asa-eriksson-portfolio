@@ -73,7 +73,6 @@ export default function FloatingBlobs() {
         initial={{ x: 0, y: 0 }}
         animate={shouldReduceMotion ? {} : { x: [0, 80, -40], y: [0, -60, 40] }}
         duration={35}
-        zIndex="z-0"
         color="blue"
       />
 
@@ -83,17 +82,16 @@ export default function FloatingBlobs() {
         initial={{ x: 0, y: 0 }}
         animate={shouldReduceMotion ? {} : { x: [0, -60, 40], y: [0, 50, -50] }}
         duration={40}
-        zIndex="z-0"
         color="blue"
       />
 
       {/* Blob 3 */}
       <Blob
-        className="w-[350px] h-[350px] text-aqua-400/20 bottom-[-30px] left-[-100px] blur-xs"
+        className="w-[350px] h-[350px] text-aqua-400/20 bottom-[-30px] left-[-100px] blur-[1px] drop-shadow-[0_0_80px_rgba(34,11,138,0.45)] drop-shadow-[0_0_160px_rgba(10,24,146,0.55)]"
         initial={{ x: 0, y: 0 }}
         animate={shouldReduceMotion ? {} : { x: [0, 50, -30], y: [0, -40, 30] }}
         duration={30}
-        zIndex="z-20"
+        zIndex="z-10"
         color="aqua"
       />
     </div>

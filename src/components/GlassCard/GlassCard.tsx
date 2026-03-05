@@ -51,7 +51,7 @@ export default function GlassCard({
           className={cn(
             "relative w-fit backdrop-blur-2xl shadow-[0_0_40px_rgba(34,211,238,0.15)]",
             "bg-gradient-to-br from-white/20 via-white/10 to-white/5 border border-white/20",
-            "rounded-md sm:rounded-lg md:rounded-xl p-4 sm:p-8 md:p-16 z-10"
+            "rounded-md sm:rounded-lg md:rounded-xl p-4 sm:p-8 md:p-12 xl:p-16 z-10"
           )}
         >
           {children}
