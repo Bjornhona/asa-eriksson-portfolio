@@ -20,7 +20,7 @@ const Menu = ({ menuOpen, toggleMenu, navLinks, locale = "" }: MenuProps) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-40 bg-background/95 text-foreground backdrop-blur-md overflow-auto flex flex-col items-center justify-start py-24 px-6"
+          className="fixed inset-0 z-40 bg-background/75 text-foreground backdrop-blur-md overflow-auto flex flex-col items-center justify-start py-24 px-6"
         >
           <button
             onClick={toggleMenu}

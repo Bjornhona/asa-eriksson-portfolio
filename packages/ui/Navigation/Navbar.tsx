@@ -12,7 +12,7 @@ export interface NavbarProps {
 
 const Navbar = ({ logoSrc, logoDarkModeSrc, logoAlt, logoLink, navMenu }: NavbarProps) => {
   return (
-    <div className="absolute inset-0 flex items-center justify-between w-full h-16 z-50 px-6 text-foreground bg-gradient-to-b from-black/50 to-transparent">
+    <div className="absolute inset-0 flex items-center justify-between w-full h-16 z-50 px-6 text-foreground bg-gradient-to-b from-background/50 to-transparent">
       <Logo logoSrc={logoSrc} logoDarkModeSrc={logoDarkModeSrc} logoAlt={logoAlt} logoLink={logoLink} />
       <NavbarMenu {...navMenu} />
     </div>
