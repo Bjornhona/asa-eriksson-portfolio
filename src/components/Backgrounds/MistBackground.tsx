@@ -25,7 +25,7 @@ const MistBackground = () => {
       <motion.div
         className="absolute w-[1000px] h-[1000px] rounded-full blur-[60px]"
         style={{
-          background: `radial-gradient(circle, hsl(var(--color-aqua-700) / 0.20) 0%, hsl(var(--color-aqua-700) / 0) 70%)`,
+          background: `radial-gradient(circle, hsl(var(--color-aqua-600) / 0.20) 0%, hsl(var(--color-aqua-600) / 0) 70%)`,
         }}
         animate={{
           x: [150, -300, 200, 150],
@@ -43,7 +43,7 @@ const MistBackground = () => {
       <motion.div
         className="absolute w-[900px] h-[900px] rounded-full blur-[40px]"
         style={{
-          background: `radial-gradient(circle, hsl(var(--color-pink-600) / 0.35) 0%, hsl(var(--color-pink-600) / 0) 70%)`,
+          background: `radial-gradient(circle, hsl(var(--color-pink-600) / 0.18) 0%, hsl(var(--color-pink-600) / 0) 70%)`,
         }}
         animate={{
           x: [-200, 300, -150, -200],
