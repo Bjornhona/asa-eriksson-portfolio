@@ -52,7 +52,8 @@ function Blob({
             <stop offset="10%" stopColor={`${blobColor[1]}`} stopOpacity="1" />
             <stop offset="50%" stopColor={`${blobColor[2]}`} stopOpacity="1" />
             <stop offset="80%" stopColor={`${blobColor[3]}`} stopOpacity="1" />
-            <stop offset="100%" stopColor={`${blobColor[4]}`} stopOpacity="1" />
+            <stop offset="95%" stopColor={`${blobColor[4]}`} stopOpacity="0.8" />
+            <stop offset="100%" stopColor={`transparent`} stopOpacity="0.01" />
           </radialGradient>
         </defs>
         <path fill={`url(#${gradientId})`} d="M421.5,323Q393,396,321.5,431.5Q250,467,170,438Q90,409,79.5,329.5Q69,250,104,182Q139,114,214.5,79Q290,44,359.5,92Q429,140,435,195Q441,250,421.5,323Z" />
@@ -65,44 +66,34 @@ export default function FloatingBlobs() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <div className="absolute inset-0 z-10 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden">
       {/* Blob 1 */}
       <Blob
-        className="w-[500px] h-[500px] text-cyan-400/20 top-[-100px] left-[-100px]"
+        className="w-[500px] h-[500px] text-cyan-400/20 top-[-100px] left-[-100px] blur-sm"
         initial={{ x: 0, y: 0 }}
         animate={shouldReduceMotion ? {} : { x: [0, 80, -40], y: [0, -60, 40] }}
         duration={35}
         zIndex="z-0"
-        color="pink"
+        color="blue"
       />
 
       {/* Blob 2 */}
       <Blob
-        className="w-[400px] h-[400px] text-purple-500/20 bottom-[-120px] right-[-80px]"
+        className="w-[400px] h-[400px] text-purple-500/20 bottom-[-120px] right-[-80px] blur-sm"
         initial={{ x: 0, y: 0 }}
         animate={shouldReduceMotion ? {} : { x: [0, -60, 40], y: [0, 50, -50] }}
         duration={40}
-        zIndex="z-10"
+        zIndex="z-0"
         color="blue"
       />
 
       {/* Blob 3 */}
-      {/* <Blob
-        className="w-[350px] h-[350px] text-pink-400/20 top-[30%] left-[40%]"
+      <Blob
+        className="w-[350px] h-[350px] text-aqua-400/20 bottom-[-30px] left-[-100px] blur-xs"
         initial={{ x: 0, y: 0 }}
         animate={shouldReduceMotion ? {} : { x: [0, 50, -30], y: [0, -40, 30] }}
         duration={30}
         zIndex="z-20"
-        color="purple"
-      /> */}
-
-      {/* Blob 4 */}
-      <Blob
-        className="w-[350px] h-[350px] text-aqua-400/20 bottom-[-30px] left-[-100px]"
-        initial={{ x: 0, y: 0 }}
-        animate={shouldReduceMotion ? {} : { x: [0, 50, -30], y: [0, -40, 30] }}
-        duration={30}
-        zIndex="z-30"
         color="aqua"
       />
     </div>
