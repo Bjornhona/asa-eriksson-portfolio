@@ -7,11 +7,11 @@ const MistBackground = () => {
       <motion.div
         className="absolute w-[1200px] h-[1200px] rounded-full blur-[80px]"
         style={{
-          background: `radial-gradient(circle, hsl(var(--color-purple-500) / 0.35) 0%, hsl(var(--color-purple-500) / 0) 70%)`,
+          background: `radial-gradient(circle, hsl(var(--color-purple-500) / 0.25) 0%, hsl(var(--color-purple-500) / 0) 70%)`,
         }}
         animate={{
-          x: [0, 350, -250, 0],
-          y: [0, -300, 200, 0],
+          x: [0, 950, -250, 0],
+          y: [0, -300, 500, 0],
           scale: [1, 1.08, 0.96, 1],
           rotate: [0, 12, -8, 0],
         }}
@@ -23,13 +23,13 @@ const MistBackground = () => {
       />
 
       <motion.div
-        className="absolute w-[1000px] h-[1000px] rounded-full blur-[60px]"
+        className="absolute w-[900px] h-[900px] rounded-full blur-[60px]"
         style={{
           background: `radial-gradient(circle, hsl(var(--color-aqua-600) / 0.20) 0%, hsl(var(--color-aqua-600) / 0) 70%)`,
         }}
         animate={{
-          x: [150, -300, 200, 150],
-          y: [-100, 250, -150, -100],
+          x: [150, -300, 900, 150],
+          y: [-200, 350, -150, -500],
           scale: [1, 1.12, 0.92, 1],
           rotate: [0, -18, 10, 0],
         }}
@@ -41,13 +41,13 @@ const MistBackground = () => {
       />
 
       <motion.div
-        className="absolute w-[900px] h-[900px] rounded-full blur-[40px]"
+        className="absolute w-[800px] h-[800px] rounded-full blur-[40px]"
         style={{
-          background: `radial-gradient(circle, hsl(var(--color-pink-600) / 0.18) 0%, hsl(var(--color-pink-600) / 0) 70%)`,
+          background: `radial-gradient(circle, hsl(var(--color-pink-500) / 0.18) 0%, hsl(var(--color-pink-500) / 0) 70%)`,
         }}
         animate={{
-          x: [-200, 300, -150, -200],
-          y: [200, -250, 150, 200],
+          x: [-200, 900, -150, -200],
+          y: [500, -250, 150, 500],
           scale: [1, 1.15, 0.9, 1],
           rotate: [0, 25, -15, 0],
         }}
