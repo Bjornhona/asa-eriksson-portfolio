@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
-import MistBackground from "@/components/Backgrounds/MistBackground";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 import { useTranslations } from "next-intl";
 import FloatingBlobs from "@/components/FloatingBlobs/FloatingBlobs";
@@ -30,8 +29,7 @@ export default function Home() {
   const title = "Åsa Eriksson";
 
   return (
-    <div className="relative min-h-screen bg-background text-foreground overflow-hidden">
-      <MistBackground />
+    <div className="relative min-h-screen overflow-hidden">
       <FloatingBlobs />
       <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8">
         <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-center mt-24 mb-24">

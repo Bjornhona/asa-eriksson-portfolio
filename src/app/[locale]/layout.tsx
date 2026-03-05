@@ -5,6 +5,7 @@ import { locales } from "@/i18n/config";
 import CursorGlow from "@/components/CursorGlow/CursorGlow";
 import AppNavbar from "@/components/Navigation/AppNavbar";
 import AppFooter from "@/components/Navigation/AppFooter";
+import MistBackground from "@/components/Backgrounds/MistBackground";
 
 type Props = {
   children: React.ReactNode;
@@ -24,10 +25,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <AppNavbar />
-      {children}
-      <CursorGlow />
-      <AppFooter />
+      <div className="relative min-h-screen">
+        <AppNavbar />
+        <MistBackground />
+        {children}
+        <CursorGlow />
+        <AppFooter />
+      </div>
     </NextIntlClientProvider>
   );
 }

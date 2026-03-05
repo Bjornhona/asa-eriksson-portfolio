@@ -69,7 +69,6 @@ export default function GlassCard({
               ease: "linear"
             }}
           />
-
           {children}
         </div>
 
