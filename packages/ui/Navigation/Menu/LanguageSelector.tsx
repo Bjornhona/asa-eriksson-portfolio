@@ -23,7 +23,7 @@ const LanguageSelector = ({
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button className={cn(
-            "flex items-center gap-2 px-4 py-2 rounded-xl",
+            "flex items-center gap-2 px-4 py-2 rounded-sm",
             "transition-all duration-300")}>
           <Globe className="w-4 h-4" />
         </button>
@@ -32,7 +32,7 @@ const LanguageSelector = ({
       <DropdownMenuContent
         align="end"
         className="bg-white/10 text-foreground backdrop-blur-xl
-          border border-white/20 shadow-xl rounded-xl">
+          border border-white/20 shadow-xl rounded-sm">
         {languages.map((lang) => (
           <DropdownMenuItem
             onClick={() => onChange(lang)}

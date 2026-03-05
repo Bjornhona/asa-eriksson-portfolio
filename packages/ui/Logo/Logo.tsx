@@ -13,7 +13,7 @@ const Logo = ({ logoSrc, logoLink = "/", logoDarkModeSrc, logoAlt }: LogoProps) 
     <Link href={logoLink} className="flex">
       {/* Logo for dark mode */}
       {logoDarkModeSrc && <Image
-        className="hidden dark:block"
+        className="hidden dark:block p-2"
         src={logoDarkModeSrc}
         alt={logoAlt || "Logo"}
         width={40}
@@ -22,7 +22,7 @@ const Logo = ({ logoSrc, logoLink = "/", logoDarkModeSrc, logoAlt }: LogoProps) 
       />}
       {/* Logo for light mode */}
       <Image
-        className="block dark:hidden"
+        className="block dark:hidden p-2"
         src={logoSrc}
         alt={logoAlt || "Logo"}
         width={40}
