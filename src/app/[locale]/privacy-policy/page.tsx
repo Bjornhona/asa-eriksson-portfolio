@@ -1,35 +1,38 @@
+import { useTranslations } from "next-intl";
+
 const PrivacyPolicyPage = () => {
+  const t = useTranslations("privacyPolicy");
+
   return (
     <div className="min-h-screen pb-12">
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24">
-        <header className="mb-12">
-          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Privacy Policy
-          </h1>
-          <p className="mt-2 text-sm text-foreground/70">
-            Last updated: March 5, 2026
+        <header className="mb-12 space-y-6">
+          <h2>
+            {t("title")}
+          </h2>
+          <p>
+            {t("lastUpdated")}
           </p>
-          <p className="mt-6 text-base leading-7 text-foreground/90">
-            This Privacy Policy explains how information is collected, used, and
-            protected when you visit this website.
-          </p>
+          <h6>
+            {t("description")}
+          </h6>
         </header>
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            1. Website Owner
-          </h2>
+          <h3>
+            1. {t("websiteOwner")}
+          </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            This website is operated by:
-          </p>
+          <h6>
+            {t("operatedBy")}
+          </h6>
 
-          <p className="font-semibold text-foreground">Åsa Eriksson</p>
-          <p className="text-base leading-7 text-foreground/90">
-            Independent Frontend Developer & Product Designer
-          </p>
-          <p className="text-base leading-7 text-foreground/90">
-            Website:{" "}
+          <h6><strong>Åsa Eriksson</strong></h6>
+          <h6>
+            {t("developer")}
+          </h6>
+          <h6>
+            {t("website")}:{" "}
             <a
               href="https://asaeriksson.com"
               target="_blank"
@@ -38,92 +41,83 @@ const PrivacyPolicyPage = () => {
             >
               https://asaeriksson.com
             </a>
-          </p>
+          </h6>
 
-          <p className="text-base leading-7 text-foreground/90">
-            If you have questions about this policy, you can contact me through
-            the contact form available on this website.
-          </p>
+          <h6>
+            {t("questions")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            2. Information Collected
-          </h2>
-
-          <p className="text-base leading-7 text-foreground/90">
-            This website collects limited information in the following ways.
-          </p>
-
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.1 Contact Form
+          <h3>
+            2. {t("informationCollected")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            If you contact me through the website&apos;s contact form, you may be
-            asked to provide:
-          </p>
+          <h6>
+            {t("collected")}
+          </h6>
 
-          <ul className="list-inside list-disc space-y-2 pl-2 text-base leading-7 text-foreground/90">
-            <li>Your name</li>
-            <li>Your email address</li>
-            <li>Your message</li>
+          <h3>
+            2.1 {t("contactForm")}
+          </h3>
+
+          <h6>
+            {t("contactFormDescription")}
+          </h6>
+
+          <ul className="list-inside list-disc space-y-2 pl-2">
+            <h6><li>{t("name")}</li></h6>
+            <h6><li>{t("email")}</li></h6>
+            <h6><li>{t("message")}</li></h6>
           </ul>
 
-          <p className="text-base leading-7 text-foreground/90">
-            This information is used{" "}
-            <strong className="font-semibold text-foreground">
-              only to respond to your inquiry
-            </strong>{" "}
-            and discuss potential collaboration or services.
-          </p>
+          <h6>
+            {t.rich("used", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </h6>
 
-          <p className="text-base leading-7 text-foreground/90">
-            The information is{" "}
-            <strong className="font-semibold text-foreground">
-              not used for marketing purposes
-            </strong>
-            , newsletters, or shared with third parties.
-          </p>
+          <h6>
+            {t.rich("notUsed", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.2 Analytics Data
+          <h3>
+            2.2 {t("analyticsData")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            This website uses{" "}
-            <strong className="font-semibold text-foreground">
-              Google Analytics
-            </strong>{" "}
-            to understand how visitors interact with the website.
-          </p>
+          <h6>
+            {t.rich("analyticsDataDescription", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </h6>
 
-          <p className="text-base leading-7 text-foreground/90">
-            Google Analytics may collect information such as:
-          </p>
+          <h6>
+            {t("analyticsDataCollected")}
+          </h6>
 
           <ul className="list-inside list-disc space-y-2 pl-2 text-base leading-7 text-foreground/90">
-            <li>Pages visited</li>
-            <li>Time spent on pages</li>
-            <li>Device type</li>
-            <li>Browser type</li>
-            <li>Approximate geographic location</li>
-            <li>Referring websites</li>
+            <h6><li>{t("pagesVisited")}</li></h6>
+            <h6><li>{t("timeSpent")}</li></h6>
+            <h6><li>{t("deviceType")}</li></h6>
+            <h6><li>{t("browserType")}</li></h6>
+            <h6><li>{t("approximateGeographicLocation")}</li></h6>
+            <h6><li>{t("referringWebsites")}</li></h6>
           </ul>
 
-          <p className="text-base leading-7 text-foreground/90">
-            Google may store this data on servers located outside the European
-            Union.
-          </p>
+          <h6>
+            {t("googleStore")}
+          </h6>
 
-          <p className="text-base leading-7 text-foreground/90">
-            For more information, see Google&apos;s Privacy Policy:{" "}
+          <h6>
+            {t("googlePrivacyPolicy")}:{" "}
             <a
               href="https://policies.google.com/privacy"
               target="_blank"
@@ -132,167 +126,152 @@ const PrivacyPolicyPage = () => {
             >
               https://policies.google.com/privacy
             </a>
-          </p>
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.3 Cookies
+          <h3>
+            2.3 {t("cookies")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            Google Analytics may use{" "}
-            <strong className="font-semibold text-foreground">cookies</strong> to
-            analyze website traffic.
-          </p>
+          <h6>
+            {t.rich("cookiesDescription", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </h6>
 
-          <p className="text-base leading-7 text-foreground/90">
-            Cookies are small text files stored on your device.
-          </p>
+          <h6>
+            {t("cookiesStored")}
+          </h6>
 
-          <p className="text-base leading-7 text-foreground/90">
-            You can disable cookies through your browser settings if you prefer
-            not to allow them.
-          </p>
+          <h6>
+            {t("cookiesDisabled")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.4 Purpose of Data Processing
+          <h3>
+            2.4 {t("purposeOfDataProcessing")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            The limited data collected is used only for:
-          </p>
+          <h6>
+            {t("purposeOfDataProcessingDescription")}
+          </h6>
 
           <ul className="list-inside list-disc space-y-2 pl-2 text-base leading-7 text-foreground/90">
-            <li>Responding to contact inquiries</li>
-            <li>Understanding website traffic and usage</li>
-            <li>Improving the website</li>
+            <h6><li>{t("respondingToContactInquiries")}</li></h6>
+            <h6><li>{t("understandingWebsiteTraffic")}</li></h6>
+            <h6><li>{t("improvingTheWebsite")}</li></h6>
           </ul>
 
-          <p className="text-base leading-7 text-foreground/90">
-            No personal data is sold, rented, or used for advertising purposes.
-          </p>
+          <h6>
+            {t("noPersonalData")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.5 Data Retention
+          <h3>
+            2.5 {t("dataRetention")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            Messages sent through the contact form may be stored for a reasonable
-            period in order to maintain communication related to services or
-            collaboration.
-          </p>
-
-          <p className="text-base leading-7 text-foreground/90">
-            Analytics data retention is determined by Google Analytics settings.
-          </p>
+          <h6>
+            {t("messagesStored")}
+          </h6>
+          <h6>
+            {t("analyticsRetention")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.6 Your Rights
+          <h3>
+            2.6 {t("yourRights")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            If you are located in the European Union, you have the right to:
-          </p>
+          <h6>
+            {t("europeanUnion")}
+          </h6>
 
           <ul className="list-inside list-disc space-y-2 pl-2 text-base leading-7 text-foreground/90">
-            <li>Request access to your personal data</li>
-            <li>Request correction of inaccurate data</li>
-            <li>Request deletion of your data</li>
-            <li>Object to the processing of your data</li>
+            <h6><li>{t("requestAccess")}</li></h6>
+            <h6><li>{t("requestCorrection")}</li></h6>
+            <h6><li>{t("requestDeletion")}</li></h6>
+            <h6><li>{t("objectToProcessing")}</li></h6>
           </ul>
 
-          <p className="text-base leading-7 text-foreground/90">
-            If you wish to exercise any of these rights, please contact me
-            through the website.
-          </p>
+          <h6>
+            {t("ifYouWishToExerciseAnyOfTheseRights")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.7 Third-Party Services
+          <h3>
+            2.7 {t("thirdPartyServices")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            This website may use third-party services including:
-          </p>
+          <h6>
+            {t("thirdPartyServicesDescription")}
+          </h6>
 
           <p className="font-semibold text-foreground">
-            Google Analytics (website analytics)
+            {t("googleAnalytics")}
           </p>
-          <p className="text-base leading-7 text-foreground/90">
-            These services may collect and process data according to their own
-            privacy policies.
-          </p>
+          <h6>
+            {t("googleAnalyticsDescription")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.8 Data Security
+          <h3>
+            2.8 {t("dataSecurity")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            Reasonable technical and organizational measures are taken to
-            protect personal information from unauthorized access, disclosure,
-            or misuse.
-          </p>
-
-          <p className="text-base leading-7 text-foreground/90">
-            However, no method of transmission over the internet is completely
-            secure.
-          </p>
+          <h6>
+            {t("dataSecurityDescription")}
+          </h6>
+          <h6>
+            {t("noMethodOfTransmission")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.9 Changes to This Policy
+          <h3>
+            2.9 {t("changesToThisPolicy")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            This Privacy Policy may be updated from time to time.
-          </p>
+          <h6>
+            {t("changesToThisPolicyDescription")}
+          </h6>
 
-          <p className="text-base leading-7 text-foreground/90">
-            Any updates will be posted on this page with an updated revision
-            date.
-          </p>
+          <h6>
+            {t("anyUpdatesRevisionDate")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            2.10 Contact
+          <h3>
+            2.10 {t("contact")}
           </h3>
 
-          <p className="text-base leading-7 text-foreground/90">
-            If you have any questions about this Privacy Policy, you can contact:
-          </p>
-
+          <h6>
+            {t("contactDescription")} <a href="mailto:info@asaeriksson.com">info@asaeriksson.com</a>.
+          </h6>
           <p className="font-semibold text-foreground">Åsa Eriksson</p>
-          <p className="text-base leading-7 text-foreground/90">
-            via the contact form on this website or by email to <a href="mailto:info@asaeriksson.com">info@asaeriksson.com</a>.
-          </p>
         </section>
       </article>
     </div>

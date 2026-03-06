@@ -1,75 +1,72 @@
+import { useTranslations } from "next-intl";
+
 const CookiesPolicyPage = () => {
+  const t = useTranslations("cookiesPolicy");
+
   return (
     <div className="min-h-screen pb-12">
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24">
-        <header className="mb-12">
-          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Cookies Policy
-          </h1>
-          <p className="mt-2 text-sm text-foreground/70">
-            Last updated: March 5, 2026
+        <header className="mb-12 space-y-6">
+          <h2>
+            {t("title")}
+          </h2>
+          <p>
+            {t("lastUpdated")}
           </p>
-          <p className="mt-6 text-base leading-7 text-foreground/90">
-            This Cookies Policy explains how cookies are used on this website and
-            how you can control them.
-          </p>
+          <h6>
+            {t("description")}
+          </h6>
         </header>
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            1. What Are Cookies
-          </h2>
-          <p className="text-base leading-7 text-foreground/90">
-            Cookies are small text files stored on your device when you visit a
-            website. They help websites function properly and provide information
-            about how visitors interact with the site.
-          </p>
+          <h3>
+            1. {t("whatAreCookies")}
+          </h3>
+          <h6>
+            {t("whatAreCookiesDescription")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            2. How This Website Uses Cookies
-          </h2>
-          <p className="text-base leading-7 text-foreground/90">
-            This website uses cookies only for basic functionality and website
-            analytics.
-          </p>
+          <h3>
+            2. {t("howThisWebsiteUsesCookies")}
+          </h3>
+          <h6>
+            {t("howThisWebsiteUsesCookiesDescription")}
+          </h6>
 
           <h3 className="text-lg font-semibold text-foreground sm:text-xl">
-            Analytics Cookies
+            {t("analyticsCookies")}
           </h3>
-          <p className="text-base leading-7 text-foreground/90">
-            This website uses Google Analytics to understand how visitors use the
-            website. These cookies collect information such as:
-          </p>
+          <h6>
+            {t("analyticsCookiesDescription")}
+          </h6>
 
           <ul className="list-inside list-disc space-y-2 pl-2 text-base leading-7 text-foreground/90">
-            <li>Pages visited</li>
-            <li>Time spent on the website</li>
-            <li>Device and browser type</li>
-            <li>Approximate geographic location</li>
+            <h6><li>{t("pagesVisited")}</li></h6>
+            <h6><li>{t("timeSpent")}</li></h6>
+            <h6><li>{t("deviceType")}</li></h6>
+            <h6><li>{t("approximateGeographicLocation")}</li></h6>
           </ul>
 
-          <p className="text-base leading-7 text-foreground/90">
-            This data is collected in an aggregated and anonymous form and is
-            used only to improve the website and user experience.
-          </p>
+          <h6>
+            {t("dataCollected")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            3. Third-Party Cookies
-          </h2>
-          <p className="text-base leading-7 text-foreground/90">
-            Google Analytics may set cookies on your device. These cookies are
-            managed by Google and are subject to Google&apos;s privacy policies.
-          </p>
-          <p className="text-base leading-7 text-foreground/90">
-            You can learn more about how Google uses data here:{" "}
+          <h3>
+            3. {t("thirdPartyCookies")}
+          </h3>
+          <h6>
+            {t("thirdPartyCookiesDescription")}
+          </h6>
+          <h6>
+            {t("thirdPartyCookiesLearnMore")}:{" "}
             <a
               href="https://policies.google.com/privacy"
               target="_blank"
@@ -78,48 +75,43 @@ const CookiesPolicyPage = () => {
             >
               https://policies.google.com/privacy
             </a>
-          </p>
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            4. Managing Cookies
-          </h2>
-          <p className="text-base leading-7 text-foreground/90">
-            You can control or disable cookies through your browser settings.
-            Most browsers allow you to refuse cookies or delete cookies that have
-            already been stored.
-          </p>
-          <p className="text-base leading-7 text-foreground/90">
-            Please note that disabling cookies may affect how some websites
-            function.
-          </p>
+          <h3>
+            4. {t("managingCookies")}
+          </h3>
+          <h6>
+            {t("managingCookiesDescription")}
+          </h6>
+          <h6>
+            {t("disablingCookiesMayAffect")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            5. Changes to This Cookies Policy
-          </h2>
-          <p className="text-base leading-7 text-foreground/90">
-            This Cookies Policy may be updated from time to time. Any updates
-            will be posted on this page with a revised date.
-          </p>
+          <h3>
+            5. {t("changesToThisCookiesPolicy")}
+          </h3>
+          <h6>
+            {t("changesToThisCookiesPolicyDescription")}
+          </h6>
         </section>
 
-        <hr className="my-12 border-foreground/10" />
+        <hr className="my-12 border-gray-700" />
 
         <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">
-            6. Contact
-          </h2>
-          <p className="text-base leading-7 text-foreground/90">
-            If you have any questions about this Cookies Policy, you can contact
-            the website owner through the contact form available on this website.
-          </p>
+          <h3>
+            6. {t("contact")}
+          </h3>
+          <h6>
+            {t("contactDescription")}
+          </h6>
         </section>
       </article>
     </div>

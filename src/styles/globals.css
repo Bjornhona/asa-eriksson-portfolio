@@ -32,14 +32,24 @@ h1 {
 
 h2 {
   font-family: var(--font-prompt);
-  font-size: var(--font-size-xl);
-  font-weight: 500;
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
   color: hsl(var(--color-title));
+  /* margin-top: 2px; */
 }
 
 h3 {
-  font-size: var(--font-size-base);
-  font-weight: 400;
+  font-family: var(--font-prompt);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: hsl(var(--color-title));
+}
+
+h4 {
+  font-family: var(--font-prompt);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  color: hsl(var(--color-title));
 }
 
 h5 {
@@ -47,8 +57,14 @@ h5 {
   font-weight: 400;
 }
 
+h6 {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+}
+
 p {
   font-size: var(--font-size-xs);
+  /* margin-top: 6px; */
 }
 
 a {
@@ -65,11 +81,20 @@ a:hover {
   h1 {
     font-size: var(--font-size-4xl);
   }
+  h2 {
+    font-size: var(--font-size-4xl);
+  }
 }
 
 @media (min-width: 640px) {
   h1 {
     font-size: var(--font-size-5xl);
+  }
+  h3 {
+    font-size: var(--font-size-2xl);
+  }
+  h6 {
+    font-size: var(--font-size-base);
   }
 }
 
@@ -78,7 +103,7 @@ a:hover {
     font-size: var(--font-size-6xl);
   }
 
-  h3, h5 {
+  h5 {
     font-size: var(--font-size-lg);
   }
 

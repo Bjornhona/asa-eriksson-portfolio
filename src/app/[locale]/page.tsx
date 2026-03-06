@@ -68,7 +68,7 @@ export default function Home() {
               <motion.h1 className={styles.title} variants={fadeInUp}>
                 <TitleHoverGlow title={title} />.
               </motion.h1>
-              <motion.h2 variants={fadeInUp}>{t("home.subtitle")}</motion.h2>
+              <motion.h4 variants={fadeInUp}>{t("home.subtitle")}</motion.h4>
               <motion.h5 variants={fadeInUp}>
                 {t.rich("home.description", {
                   strong: (chunks) => <strong>{chunks}</strong>,

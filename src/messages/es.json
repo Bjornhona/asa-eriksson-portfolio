@@ -17,5 +17,153 @@
     "privacyPolicy": "Política de Privacidad",
     "cookiesPolicy": "Política de Cookies",
     "legalNotice": "Aviso Legal"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 5 de marzo de 2026",
+    "description": "Esta Política de Privacidad explica cómo se recopila, utiliza y protege la información cuando visitas este sitio web.",
+
+    "websiteOwner": "Propietario del Sitio Web",
+    "operatedBy": "Este sitio web es operado por:",
+    "developer": "Desarrolladora Frontend Independiente y Diseñadora de Producto",
+    "website": "Sitio web",
+    "questions": "Si tienes preguntas sobre esta política, puedes contactarme a través del formulario de contacto disponible en este sitio web.",
+
+    "informationCollected": "Información Recopilada",
+    "collected": "Este sitio web recopila información limitada de las siguientes maneras.",
+
+    "contactForm": "Formulario de Contacto",
+    "contactFormDescription": "Si me contactas a través del formulario de contacto del sitio web, es posible que se te pida proporcionar:",
+    "name": "Tu nombre",
+    "email": "Tu dirección de correo electrónico",
+    "message": "Tu mensaje",
+    "used": "Esta información se utiliza <strong>únicamente para responder a tu consulta</strong> y discutir una posible colaboración o servicios.",
+    "notUsed": "La información <strong>no se utiliza con fines de marketing</strong>, newsletters ni se comparte con terceros.",
+
+    "analyticsData": "Datos de Analítica",
+    "analyticsDataDescription": "Este sitio web utiliza <strong>Google Analytics</strong> para comprender cómo los visitantes interactúan con el sitio.",
+    "analyticsDataCollected": "Google Analytics puede recopilar información como:",
+    "pagesVisited": "Páginas visitadas",
+    "timeSpent": "Tiempo pasado en las páginas",
+    "deviceType": "Tipo de dispositivo",
+    "browserType": "Tipo de navegador",
+    "approximateGeographicLocation": "Ubicación geográfica aproximada",
+    "referringWebsites": "Sitios web de referencia",
+    "googleStore": "Google puede almacenar estos datos en servidores ubicados fuera de la Unión Europea.",
+    "googlePrivacyPolicy": "Para más información, consulta la Política de Privacidad de Google",
+
+    "cookies": "Cookies",
+    "cookiesDescription": "Google Analytics puede utilizar <strong>cookies</strong> para analizar el tráfico del sitio web.",
+    "cookiesStored": "Las cookies son pequeños archivos de texto almacenados en tu dispositivo.",
+    "cookiesDisabled": "Puedes desactivar las cookies a través de la configuración de tu navegador si prefieres no permitirlas.",
+
+    "purposeOfDataProcessing": "Finalidad del Tratamiento de Datos",
+    "purposeOfDataProcessingDescription": "Los datos limitados recopilados se utilizan únicamente para:",
+    "respondingToContactInquiries": "Responder a consultas enviadas a través del formulario de contacto",
+    "understandingWebsiteTraffic": "Comprender el tráfico y uso del sitio web",
+    "improvingTheWebsite": "Mejorar el sitio web",
+    "noPersonalData": "No se venden, alquilan ni utilizan datos personales con fines publicitarios.",
+
+    "dataRetention": "Conservación de Datos",
+    "messagesStored": "Los mensajes enviados a través del formulario de contacto pueden almacenarse durante un período razonable para mantener la comunicación relacionada con servicios o colaboración.",
+    "analyticsRetention": "La retención de los datos analíticos está determinada por la configuración de Google Analytics.",
+
+    "yourRights": "Tus Derechos",
+    "europeanUnion": "Si te encuentras en la Unión Europea, tienes derecho a:",
+    "requestAccess": "Solicitar acceso a tus datos personales",
+    "requestCorrection": "Solicitar la corrección de datos inexactos",
+    "requestDeletion": "Solicitar la eliminación de tus datos",
+    "objectToProcessing": "Oponerte al tratamiento de tus datos",
+    "ifYouWishToExerciseAnyOfTheseRights": "Si deseas ejercer cualquiera de estos derechos, por favor contáctame a través del sitio web.",
+
+    "thirdPartyServices": "Servicios de Terceros",
+    "thirdPartyServicesDescription": "Este sitio web puede utilizar servicios de terceros, incluyendo:",
+    "googleAnalytics": "Google Analytics (analítica web)",
+    "googleAnalyticsDescription": "Estos servicios pueden recopilar y procesar datos de acuerdo con sus propias políticas de privacidad.",
+
+    "dataSecurity": "Seguridad de los Datos",
+    "dataSecurityDescription": "Se adoptan medidas técnicas y organizativas razonables para proteger la información personal contra accesos no autorizados, divulgación o uso indebido.",
+    "noMethodOfTransmission": "Sin embargo, ningún método de transmisión a través de Internet es completamente seguro.",
+
+    "changesToThisPolicy": "Cambios en esta Política",
+    "changesToThisPolicyDescription": "Esta Política de Privacidad puede actualizarse ocasionalmente.",
+    "anyUpdatesRevisionDate": "Cualquier actualización se publicará en esta página con una fecha de revisión actualizada.",
+
+    "contact": "Contacto",
+    "contactDescription": "Si tienes preguntas sobre esta política, puedes contactarme a través del formulario de contacto disponible en este sitio web o por correo electrónico a"
+  },
+  "cookiesPolicy": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: 5 de marzo de 2026",
+    "description": "Esta Política de Cookies explica cómo se utilizan las cookies en este sitio web y cómo puedes controlarlas.",
+
+    "whatAreCookies": "Qué son las cookies",
+    "whatAreCookiesDescription": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Ayudan a que los sitios web funcionen correctamente y proporcionan información sobre cómo los visitantes interactúan con el sitio.",
+
+    "howThisWebsiteUsesCookies": "Cómo utiliza las cookies este sitio web",
+    "howThisWebsiteUsesCookiesDescription": "Este sitio web utiliza cookies únicamente para la funcionalidad básica y para analítica web.",
+
+    "analyticsCookies": "Cookies de analítica",
+    "analyticsCookiesDescription": "Este sitio web utiliza Google Analytics para entender cómo los visitantes utilizan el sitio web. Estas cookies recopilan información como",
+    "pagesVisited": "Páginas visitadas",
+    "timeSpent": "Tiempo pasado en el sitio web",
+    "deviceType": "Tipo de dispositivo y navegador",
+    "approximateGeographicLocation": "Ubicación geográfica aproximada",
+    "dataCollected": "Estos datos se recopilan de forma agregada y anónima y se utilizan únicamente para mejorar el sitio web y la experiencia del usuario.",
+
+    "thirdPartyCookies": "Cookies de terceros",
+    "thirdPartyCookiesDescription": "Google Analytics puede instalar cookies en tu dispositivo. Estas cookies son gestionadas por Google y están sujetas a sus propias políticas de privacidad.",
+    "thirdPartyCookiesLearnMore": "Puedes obtener más información sobre cómo Google utiliza los datos aquí",
+
+    "managingCookies": "Gestión de cookies",
+    "managingCookiesDescription": "Puedes controlar o desactivar las cookies a través de la configuración de tu navegador. La mayoría de los navegadores permiten rechazar cookies o eliminar las cookies que ya han sido almacenadas.",
+    "disablingCookiesMayAffect": "Ten en cuenta que desactivar las cookies puede afectar al funcionamiento de algunos sitios web.",
+
+    "changesToThisCookiesPolicy": "Cambios en esta Política de Cookies",
+    "changesToThisCookiesPolicyDescription": "Esta Política de Cookies puede actualizarse ocasionalmente. Cualquier actualización se publicará en esta página con una fecha revisada.",
+
+    "contact": "Contacto",
+    "contactDescription": "Si tienes alguna pregunta sobre esta Política de Cookies, puedes contactar con el propietario del sitio web a través del formulario de contacto disponible en este sitio web."
+  },
+  "legalNotice": {
+    "title": "Aviso Legal",
+    "lastUpdated": "Última actualización: 5 de marzo de 2026",
+
+    "websiteOwner": "Titular del sitio web",
+    "operatedByDescription": "De conformidad con lo dispuesto en la normativa aplicable, se informa a los usuarios de este sitio web de que el titular del mismo es:",
+    "name": "Nombre",
+    "website": "Sitio web",
+    "activity": "Actividad",
+    "frontendDevelopment": "Servicios freelance de desarrollo frontend y diseño web",
+    "contact": "Contacto",
+    "contactDescription": "A través del formulario de contacto disponible en este sitio web o por correo electrónico a",
+
+    "purposeOfTheWebsite": "Finalidad del sitio web",
+    "purposeOfTheWebsiteDescription": "La finalidad de este sitio web es presentar el portafolio profesional, los servicios y los proyectos del titular del sitio web relacionados con el desarrollo frontend, el desarrollo web y el diseño de interfaces de usuario.",
+    "websiteMayAlsoProvideInformation": "El sitio web también puede proporcionar información sobre servicios profesionales y permitir a los visitantes contactar con el titular del sitio web mediante un formulario de contacto.",
+
+    "termsOfUse": "Condiciones de uso",
+    "termsOfUseDescription": "Al acceder y utilizar este sitio web, el usuario acepta utilizarlo de conformidad con la legislación aplicable y con el presente Aviso Legal.",
+    "userAgreesNotToUseWebsite": "El usuario se compromete a no utilizar el sitio web con fines ilícitos ni de ninguna forma que pueda dañar, inutilizar o deteriorar el sitio web o interferir con el acceso de otros usuarios al mismo.",
+
+    "intellectualProperty": "Propiedad intelectual",
+    "intellectualPropertyDescription": "Todo el contenido de este sitio web, incluidos, entre otros, textos, código, gráficos, diseño, logotipos e imágenes, es propiedad del titular del sitio web salvo que se indique lo contrario.",
+    "unauthorizedReproduction": "Queda prohibida la reproducción, distribución, modificación o uso no autorizado de cualquier contenido de este sitio web sin el consentimiento previo y por escrito del titular.",
+
+    "externalLinks": "Enlaces externos",
+    "externalLinksDescription": "Este sitio web puede contener enlaces a sitios web externos gestionados por terceros. El titular del sitio web no tiene control sobre el contenido de dichos sitios y no asume responsabilidad alguna por su contenido, políticas o prácticas.",
+
+    "limitationOfLiability": "Limitación de responsabilidad",
+    "limitationOfLiabilityDescription": "El titular del sitio web realiza esfuerzos razonables para garantizar que la información publicada en este sitio sea precisa y esté actualizada. No obstante, no se ofrece ninguna garantía respecto a la integridad, exactitud o fiabilidad de la información.",
+    "websiteOwnerShallNotBeHeldLiable": "El titular del sitio web no será responsable de los daños derivados del uso de este sitio web ni de la confianza depositada en la información proporcionada.",
+
+    "dataProtection": "Protección de datos",
+    "dataProtectionDescription": "Los datos personales enviados a través del formulario de contacto se utilizarán únicamente para responder a las consultas y no se utilizarán con fines de marketing.",
+    "moreInformation": "Para más información sobre cómo se gestionan los datos personales, consulte la",
+    "privacyPolicy": "Política de Privacidad",
+
+    "applicableLaw": "Legislación aplicable",
+    "applicableLawDescription": "El presente Aviso Legal se regirá e interpretará de conformidad con la legislación española.",
+    "jurisdiction": "Cualquier disputa derivada del uso de este sitio web se someterá a la jurisdicción de los tribunales competentes en España."
   }
 }

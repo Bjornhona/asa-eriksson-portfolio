@@ -17,5 +17,153 @@
     "privacyPolicy": "Integritetspolicy",
     "cookiesPolicy": "Policy för cookies",
     "legalNotice": "Juridisk information"
+  },
+  "privacyPolicy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "Senast uppdaterad: 5 mars 2026",
+    "description": "Denna integritetspolicy förklarar hur information samlas in, används och skyddas när du besöker denna webbplats.",
+
+    "websiteOwner": "Webbplatsägare",
+    "operatedBy": "Denna webbplats drivs av:",
+    "developer": "Oberoende frontendutvecklare & produktdesigner",
+    "website": "Webbplats",
+    "questions": "Om du har frågor om denna policy kan du kontakta mig via kontaktformuläret som finns på denna webbplats.",
+
+    "informationCollected": "Insamlad information",
+    "collected": "Denna webbplats samlar in begränsad information på följande sätt.",
+
+    "contactForm": "Kontaktformulär",
+    "contactFormDescription": "Om du kontaktar mig via webbplatsens kontaktformulär kan du bli ombedd att ange:",
+    "name": "Ditt namn",
+    "email": "Din e-postadress",
+    "message": "Ditt meddelande",
+    "used": "Denna information används <strong>endast för att svara på din förfrågan</strong> och för att diskutera eventuell samverkan eller tjänster.",
+    "notUsed": "Informationen används <strong>inte för marknadsföringsändamål</strong>, nyhetsbrev eller delas med tredje part.",
+
+    "analyticsData": "Analysdata",
+    "analyticsDataDescription": "Denna webbplats använder <strong>Google Analytics</strong> för att förstå hur besökare interagerar med webbplatsen.",
+    "analyticsDataCollected": "Google Analytics kan samla in information såsom:",
+    "pagesVisited": "Besökta sidor",
+    "timeSpent": "Tid spenderad på sidor",
+    "deviceType": "Enhetstyp",
+    "browserType": "Webbläsartyp",
+    "approximateGeographicLocation": "Ungefärlig geografisk plats",
+    "referringWebsites": "Hänvisande webbplatser",
+    "googleStore": "Google kan lagra denna data på servrar som finns utanför Europeiska unionen.",
+    "googlePrivacyPolicy": "För mer information, se Googles integritetspolicy",
+
+    "cookies": "Cookies",
+    "cookiesDescription": "Google Analytics kan använda <strong>cookies</strong> för att analysera webbplatstrafik.",
+    "cookiesStored": "Cookies är små textfiler som lagras på din enhet.",
+    "cookiesDisabled": "Du kan inaktivera cookies via inställningarna i din webbläsare om du inte vill tillåta dem.",
+
+    "purposeOfDataProcessing": "Syfte med databehandlingen",
+    "purposeOfDataProcessingDescription": "Den begränsade data som samlas in används endast för:",
+    "respondingToContactInquiries": "Att svara på kontaktförfrågningar",
+    "understandingWebsiteTraffic": "Att förstå webbplatstrafik och användning",
+    "improvingTheWebsite": "Att förbättra webbplatsen",
+    "noPersonalData": "Ingen personlig data säljs, hyrs ut eller används för annonseringsändamål.",
+
+    "dataRetention": "Lagring av data",
+    "messagesStored": "Meddelanden som skickas via kontaktformuläret kan sparas under en rimlig tidsperiod för att upprätthålla kommunikation relaterad till tjänster eller samarbete.",
+    "analyticsRetention": "Lagringstiden för analysdata bestäms av inställningarna i Google Analytics.",
+
+    "yourRights": "Dina rättigheter",
+    "europeanUnion": "Om du befinner dig inom Europeiska unionen har du rätt att:",
+    "requestAccess": "Begära tillgång till dina personuppgifter",
+    "requestCorrection": "Begära rättelse av felaktiga uppgifter",
+    "requestDeletion": "Begära radering av dina uppgifter",
+    "objectToProcessing": "Invända mot behandlingen av dina uppgifter",
+    "ifYouWishToExerciseAnyOfTheseRights": "Om du vill utöva någon av dessa rättigheter, vänligen kontakta mig via webbplatsen.",
+
+    "thirdPartyServices": "Tjänster från tredje part",
+    "thirdPartyServicesDescription": "Denna webbplats kan använda tredjepartstjänster inklusive:",
+    "googleAnalytics": "Google Analytics (webbplatsanalys)",
+    "googleAnalyticsDescription": "Dessa tjänster kan samla in och behandla data enligt sina egna integritetspolicyer.",
+
+    "dataSecurity": "Datasäkerhet",
+    "dataSecurityDescription": "Rimliga tekniska och organisatoriska åtgärder vidtas för att skydda personuppgifter från obehörig åtkomst, utlämnande eller missbruk.",
+    "noMethodOfTransmission": "Ingen metod för överföring via internet är dock helt säker.",
+
+    "changesToThisPolicy": "Ändringar i denna policy",
+    "changesToThisPolicyDescription": "Denna integritetspolicy kan uppdateras från tid till annan.",
+    "anyUpdatesRevisionDate": "Eventuella uppdateringar publiceras på denna sida med ett uppdaterat revisionsdatum.",
+
+    "contact": "Kontakt",
+    "contactDescription": "Om du har frågor om denna policy kan du kontakta mig via kontaktformuläret på denna webbplats eller via e-post till"
+  },
+  "cookiesPolicy": {
+    "title": "Cookiepolicy",
+    "lastUpdated": "Senast uppdaterad: 5 mars 2026",
+    "description": "Denna cookiepolicy förklarar hur cookies används på denna webbplats och hur du kan kontrollera dem.",
+
+    "whatAreCookies": "Vad är cookies",
+    "whatAreCookiesDescription": "Cookies är små textfiler som lagras på din enhet när du besöker en webbplats. De hjälper webbplatser att fungera korrekt och ger information om hur besökare interagerar med webbplatsen.",
+
+    "howThisWebsiteUsesCookies": "Hur denna webbplats använder cookies",
+    "howThisWebsiteUsesCookiesDescription": "Denna webbplats använder cookies endast för grundläggande funktionalitet och webbanalys.",
+
+    "analyticsCookies": "Analyscookies",
+    "analyticsCookiesDescription": "Denna webbplats använder Google Analytics för att förstå hur besökare använder webbplatsen. Dessa cookies samlar in information såsom",
+    "pagesVisited": "Besökta sidor",
+    "timeSpent": "Tid spenderad på webbplatsen",
+    "deviceType": "Enhets- och webbläsartyp",
+    "approximateGeographicLocation": "Ungefärlig geografisk plats",
+    "dataCollected": "Dessa data samlas in i aggregerad och anonym form och används endast för att förbättra webbplatsen och användarupplevelsen.",
+
+    "thirdPartyCookies": "Tredjepartscookies",
+    "thirdPartyCookiesDescription": "Google Analytics kan placera cookies på din enhet. Dessa cookies hanteras av Google och omfattas av Googles integritetspolicy.",
+    "thirdPartyCookiesLearnMore": "Du kan läsa mer om hur Google använder data här",
+
+    "managingCookies": "Hantera cookies",
+    "managingCookiesDescription": "Du kan kontrollera eller inaktivera cookies via inställningarna i din webbläsare. De flesta webbläsare tillåter dig att neka cookies eller radera cookies som redan har lagrats.",
+    "disablingCookiesMayAffect": "Observera att om du inaktiverar cookies kan det påverka hur vissa webbplatser fungerar.",
+
+    "changesToThisCookiesPolicy": "Ändringar i denna cookiepolicy",
+    "changesToThisCookiesPolicyDescription": "Denna cookiepolicy kan uppdateras från tid till annan. Eventuella uppdateringar publiceras på denna sida tillsammans med ett uppdaterat datum.",
+
+    "contact": "Kontakt",
+    "contactDescription": "Om du har några frågor om denna cookiepolicy kan du kontakta webbplatsens ägare via kontaktformuläret på denna webbplats."
+  },
+  "legalNotice": {
+    "title": "Juridiskt meddelande",
+    "lastUpdated": "Senast uppdaterad: 5 mars 2026",
+
+    "websiteOwner": "Webbplatsägare",
+    "operatedByDescription": "I enlighet med gällande lagstiftning informeras användare av denna webbplats om att ägaren av denna webbplats är:",
+    "name": "Namn",
+    "website": "Webbplats",
+    "activity": "Verksamhet",
+    "frontendDevelopment": "Frilansande frontendutveckling och webbdesigntjänster",
+    "contact": "Kontakt",
+    "contactDescription": "Via kontaktformuläret som finns på denna webbplats eller via e-post till",
+
+    "purposeOfTheWebsite": "Webbplatsens syfte",
+    "purposeOfTheWebsiteDescription": "Syftet med denna webbplats är att presentera webbplatsägarens professionella portfolio, tjänster och projekt relaterade till frontendutveckling, webbutveckling och design av användargränssnitt.",
+    "websiteMayAlsoProvideInformation": "Webbplatsen kan även tillhandahålla information om professionella tjänster och låta besökare kontakta webbplatsägaren via ett kontaktformulär.",
+
+    "termsOfUse": "Användarvillkor",
+    "termsOfUseDescription": "Genom att få tillgång till och använda denna webbplats samtycker användaren till att använda webbplatsen i enlighet med tillämpliga lagar och detta juridiska meddelande.",
+    "userAgreesNotToUseWebsite": "Användaren samtycker till att inte använda webbplatsen för olagliga syften eller på något sätt som kan skada, inaktivera eller försämra webbplatsen eller störa andra användares tillgång till webbplatsen.",
+
+    "intellectualProperty": "Immateriella rättigheter",
+    "intellectualPropertyDescription": "Allt innehåll på denna webbplats, inklusive men inte begränsat till text, kod, grafik, design, logotyper och bilder, tillhör webbplatsägaren om inget annat anges.",
+    "unauthorizedReproduction": "Otillåten reproduktion, distribution, modifiering eller användning av något innehåll från denna webbplats utan föregående skriftligt tillstånd är förbjuden.",
+
+    "externalLinks": "Externa länkar",
+    "externalLinksDescription": "Denna webbplats kan innehålla länkar till externa webbplatser som drivs av tredje part. Webbplatsägaren har ingen kontroll över innehållet på dessa externa webbplatser och tar inget ansvar för deras innehåll, policyer eller praxis.",
+
+    "limitationOfLiability": "Ansvarsbegränsning",
+    "limitationOfLiabilityDescription": "Webbplatsägaren gör rimliga ansträngningar för att säkerställa att informationen på denna webbplats är korrekt och uppdaterad. Ingen garanti lämnas dock för informationens fullständighet, korrekthet eller tillförlitlighet.",
+    "websiteOwnerShallNotBeHeldLiable": "Webbplatsägaren kan inte hållas ansvarig för skador som uppstår genom användningen av denna webbplats eller genom förlitande på den information som tillhandahålls.",
+
+    "dataProtection": "Dataskydd",
+    "dataProtectionDescription": "Personuppgifter som lämnas via kontaktformuläret används endast för att besvara förfrågningar och används inte för marknadsföringsändamål.",
+    "moreInformation": "För mer information om hur personuppgifter hanteras, vänligen se",
+    "privacyPolicy": "Integritetspolicyn",
+
+    "applicableLaw": "Tillämplig lag",
+    "applicableLawDescription": "Detta juridiska meddelande ska regleras och tolkas i enlighet med Spaniens lagar.",
+    "jurisdiction": "Eventuella tvister som uppstår genom användningen av denna webbplats ska vara föremål för behöriga domstolar i Spanien."
   }
 }

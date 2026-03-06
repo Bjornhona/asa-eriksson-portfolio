@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import BurgerMenu from "./BurgerMenu";
 import LanguageSelector from "./LanguageSelector";
 import SocialMediaLinks from "./SocialMediaLinks";
+import SafeDropdown from "../../SafeDropdown/SafeDropdown";
 
 const NavbarMenu = ({
   modeSwitch,
@@ -27,11 +28,13 @@ const NavbarMenu = ({
         {socialMediaLinks.length > 0 && <SocialMediaLinks socialMediaLinks={socialMediaLinks} />}
 
         {showLanguageSelector && (
-          <LanguageSelector
-            languages={languages}
-            currentLocale={locale}
-            onChange={onLocaleChange}
-          />
+          <SafeDropdown>
+            <LanguageSelector
+              languages={languages}
+              currentLocale={locale}
+              onChange={onLocaleChange}
+            />
+          </SafeDropdown>
         )}
 
         {navLinks.length > 0 && <BurgerMenu onToggleMenu={toggleMenu} />}

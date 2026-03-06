@@ -17,5 +17,153 @@
     "privacyPolicy": "Privacy Policy",
     "cookiesPolicy": "Cookies Policy",
     "legalNotice": "Legal Notice"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 5, 2026",
+    "description": "This Privacy Policy explains how information is collected, used, and protected when you visit this website.",
+    
+    "websiteOwner": "Website Owner",
+    "operatedBy": "This website is operated by:",
+    "developer": "Independent Frontend Developer & Product Designer",
+    "website": "Website",
+    "questions": "If you have questions about this policy, you can contact me through the contact form available on this website.",
+    
+    "informationCollected": "Information Collected",
+    "collected": "This website collects limited information in the following ways.",
+    
+    "contactForm": "Contact Form",
+    "contactFormDescription": "If you contact me through the website's contact form, you may be asked to provide:",
+    "name": "Your name",
+    "email": "Your email address",
+    "message": "Your message",
+    "used": "This information is used <strong>only to respond to your inquiry</strong> and discuss potential collaboration or services.",
+    "notUsed": "The information is <strong>not used for marketing purposes</strong>, newsletters, or shared with third parties.",
+    
+    "analyticsData": "Analytics Data",
+    "analyticsDataDescription": "This website uses <strong>Google Analytics</strong> to understand how visitors interact with the website.",
+    "analyticsDataCollected": "Google Analytics may collect information such as:",
+    "pagesVisited": "Pages visited",
+    "timeSpent": "Time spent on pages",
+    "deviceType": "Device type",
+    "browserType": "Browser type",
+    "approximateGeographicLocation": "Approximate geographic location",
+    "referringWebsites": "Referring websites",
+    "googleStore": "Google may store this data on servers located outside the European Union.",
+    "googlePrivacyPolicy": "For more information, see Google's Privacy Policy",
+    
+    "cookies": "Cookies",
+    "cookiesDescription": "Google Analytics may use <strong>cookies</strong> to analyze website traffic.",
+    "cookiesStored": "Cookies are small text files stored on your device.",
+    "cookiesDisabled": "You can disable cookies through your browser settings if you prefer not to allow them.",
+    
+    "purposeOfDataProcessing": "Purpose of Data Processing",
+    "purposeOfDataProcessingDescription": "The limited data collected is used only for:",
+    "respondingToContactInquiries": "Responding to contact inquiries",
+    "understandingWebsiteTraffic": "Understanding website traffic and usage",
+    "improvingTheWebsite": "Improving the website",
+    "noPersonalData": "No personal data is sold, rented, or used for advertising purposes.",
+    
+    "dataRetention": "Data Retention",
+    "messagesStored": "Messages sent through the contact form may be stored for a reasonable period in order to maintain communication related to services or collaboration.",
+    "analyticsRetention": "Analytics data retention is determined by Google Analytics settings.",
+    
+    "yourRights": "Your Rights",
+    "europeanUnion": "If you are located in the European Union, you have the right to:",
+    "requestAccess": "Request access to your personal data",
+    "requestCorrection": "Request correction of inaccurate data",
+    "requestDeletion": "Request deletion of your data",
+    "objectToProcessing": "Object to the processing of your data",
+    "ifYouWishToExerciseAnyOfTheseRights": "If you wish to exercise any of these rights, please contact me through the website.",
+    
+    "thirdPartyServices": "Third-Party Services",
+    "thirdPartyServicesDescription": "This website may use third-party services including:",
+    "googleAnalytics": "Google Analytics (website analytics)",
+    "googleAnalyticsDescription": "These services may collect and process data according to their own privacy policies.",
+    
+    "dataSecurity": "Data Security",
+    "dataSecurityDescription": "Reasonable technical and organizational measures are taken to protect personal information from unauthorized access, disclosure, or misuse.",
+    "noMethodOfTransmission": "However, no method of transmission over the internet is completely secure.",
+
+    "changesToThisPolicy": "Changes to This Policy",
+    "changesToThisPolicyDescription": "This Privacy Policy may be updated from time to time.",
+    "anyUpdatesRevisionDate": "Any updates will be posted on this page with an updated revision date.",
+    
+    "contact": "Contact",
+    "contactDescription": "If you have questions about this policy, you can contact me through the contact form available on this website or by email to"
+  },
+  "cookiesPolicy": {
+    "title": "Cookies Policy",
+    "lastUpdated": "Last updated: March 5, 2026",
+    "description": "This Cookies Policy explains how cookies are used on this website and how you can control them.",
+    
+    "whatAreCookies": "What Are Cookies",
+    "whatAreCookiesDescription": "Cookies are small text files stored on your device when you visit a website. They help websites function properly and provide information about how visitors interact with the site.",
+
+    "howThisWebsiteUsesCookies": "How This Website Uses Cookies",
+    "howThisWebsiteUsesCookiesDescription": "This website uses cookies only for basic functionality and website analytics.",
+    
+    "analyticsCookies": "Analytics Cookies",
+    "analyticsCookiesDescription": "This website uses Google Analytics to understand how visitors use the website. These cookies collect information such as",
+    "pagesVisited": "Pages visited",
+    "timeSpent": "Time spent on the website",
+    "deviceType": "Device and browser type",
+    "approximateGeographicLocation": "Approximate geographic location",
+    "dataCollected": "This data is collected in an aggregated and anonymous form and is used only to improve the website and user experience.",
+    
+    "thirdPartyCookies": "Third-Party Cookies",
+    "thirdPartyCookiesDescription": "Google Analytics may set cookies on your device. These cookies are managed by Google and are subject to Google's privacy policies.",
+    "thirdPartyCookiesLearnMore": "You can learn more about how Google uses data here",
+    
+    "managingCookies": "Managing Cookies",
+    "managingCookiesDescription": "You can control or disable cookies through your browser settings. Most browsers allow you to refuse cookies or delete cookies that have already been stored.",
+    "disablingCookiesMayAffect": "Please note that disabling cookies may affect how some websites function.",
+    
+    "changesToThisCookiesPolicy": "Changes to This Cookies Policy",
+    "changesToThisCookiesPolicyDescription": "This Cookies Policy may be updated from time to time. Any updates will be posted on this page with a revised date.",
+    
+    "contact": "Contact",
+    "contactDescription": "If you have any questions about this Cookies Policy, you can contact the website owner through the contact form available on this website."
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "lastUpdated": "Last updated: March 5, 2026",
+    
+    "websiteOwner": "Website Owner",
+    "operatedByDescription": "In accordance with the provisions of the applicable regulations, users of this website are informed that the owner of this website is:",
+    "name": "Name",
+    "website": "Website",
+    "activity": "Activity",
+    "frontendDevelopment": "Freelance Frontend Development and Web Design Services",
+    "contact": "Contact",
+    "contactDescription": "Through the contact form available on this website or by email to",
+
+    "purposeOfTheWebsite": "Purpose of the Website",
+    "purposeOfTheWebsiteDescription": "The purpose of this website is to present the professional portfolio, services, and projects of the website owner related to frontend development, web development, and user interface design.",
+    "websiteMayAlsoProvideInformation": "The website may also provide information about professional services and allow visitors to contact the website owner through a contact form.",
+    
+    "termsOfUse": "Terms of Use",
+    "termsOfUseDescription": "By accessing and using this website, the user agrees to use the website in accordance with applicable laws and this Legal Notice.",
+    "userAgreesNotToUseWebsite": "The user agrees not to use the website for unlawful purposes or in any way that may damage, disable, or impair the website or interfere with other users' access to the website.",
+    
+    "intellectualProperty": "Intellectual Property",
+    "intellectualPropertyDescription": "All content on this website, including but not limited to text, code, graphics, design, logos, and images, is the property of the website owner unless otherwise stated.",
+    "unauthorizedReproduction": "Unauthorized reproduction, distribution, modification, or use of any content from this website without prior written permission is prohibited.",
+    
+    "externalLinks": "External Links",
+    "externalLinksDescription": "This website may contain links to external websites operated by third parties. The website owner has no control over the content of these external websites and assumes no responsibility for their content, policies, or practices.",
+    
+    "limitationOfLiability": "Limitation of Liability",
+    "limitationOfLiabilityDescription": "The website owner makes reasonable efforts to ensure that the information on this website is accurate and up to date. However, no guarantee is given regarding the completeness, accuracy, or reliability of the information.",
+    "websiteOwnerShallNotBeHeldLiable": "The website owner shall not be held liable for any damages arising from the use of this website or from reliance on the information provided.",
+    
+    "dataProtection": "Data Protection",
+    "dataProtectionDescription": "Personal data submitted through the contact form will only be used to respond to inquiries and will not be used for marketing purposes.",
+    "moreInformation": "For more information on how personal data is handled, please refer to the",
+    "privacyPolicy": "Privacy Policy",
+
+    "applicableLaw": "Applicable Law",
+    "applicableLawDescription": "This Legal Notice shall be governed by and interpreted in accordance with the laws of Spain.",
+    "jurisdiction": "Any disputes arising from the use of this website shall be subject to the jurisdiction of the competent courts in Spain."
   }
 }
