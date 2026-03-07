@@ -8,7 +8,7 @@
     "blog": "Blogg"
   },
   "home": {
-    "title": "Hej, jag är",
+    "title": "Jag är",
     "subtitle": "Ingenjör till yrket. Designer i själen.",
     "description": "Jag utvecklar skalbara webbapplikationer med <strong>React & Next.js</strong> — byggda med en ren arkitektur och en väl genomtänkt <strong>användarupplevelse</strong>.",
     "techbeachmama": "Grundare av <a>Tech Beach Mama</a> - En plattform som hjälper kvinnor att ta steget in i techbranschen"

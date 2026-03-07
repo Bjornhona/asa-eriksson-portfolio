@@ -2,6 +2,7 @@
   color: hsl(var(--color-blue-800));
   cursor: default;
   white-space: pre;
+  line-height: 1;
 }
 
 .title span {

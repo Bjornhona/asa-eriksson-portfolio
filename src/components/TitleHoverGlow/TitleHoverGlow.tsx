@@ -7,7 +7,8 @@ export interface TitleHoverGlowProps {
 }
 
 const TitleHoverGlow = ({ title = 'Title' }: TitleHoverGlowProps) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(10);
+  const glowNumber = title.length > 3 ? title.length - 3 : 1;
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(glowNumber);
 
   const titleChars = title.split('').map((char, index) => {
     const isHovered = hoveredIndex === index;

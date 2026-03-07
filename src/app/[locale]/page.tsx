@@ -1,11 +1,10 @@
 "use client";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import styles from "./page.module.css";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 import { useTranslations } from "next-intl";
 import FloatingBlobs from "@/components/FloatingBlobs/FloatingBlobs";
 import GlassCard from "@/components/GlassCard/GlassCard";
-import Link from "next/link";
+import { Button } from "@/ui";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -27,7 +26,7 @@ const container = {
 
 export default function Home() {
   const t = useTranslations();
-  const title = "Åsa Eriksson";
+  const title = `${t("home.title")} Åsa Eriksson.`;
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -35,7 +34,7 @@ export default function Home() {
   const springX = useSpring(mouseX, { stiffness: 80, damping: 20 });
   const springY = useSpring(mouseY, { stiffness: 80, damping: 20 });
 
-  const handleHover = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleHover = (e: React.MouseEvent<HTMLButtonElement>) => {
     const target = e.currentTarget;
 
     const rect = target.getBoundingClientRect();
@@ -55,25 +54,24 @@ export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <FloatingBlobs x={springX} y={springY} />
-      <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8">
-        <main className="flex flex-col min-h-screen w-full max-w-lg flex-start justify-center mt-24 mb-24">
+      <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 md:px-8 lg:px-12">
+        <main className="flex flex-col min-h-screen w-full max-w-md flex-start justify-center">
           <GlassCard>
             <motion.div
-              className="flex flex-col items-start text-left gap-3 sm:gap-6"
+              className="flex flex-col items-start text-left space-y-3"
               variants={container}
               initial="initial"
               animate="animate"
             >
-              <motion.p variants={fadeInUp}>{t("home.title")}</motion.p>
-              <motion.h1 className={styles.title} variants={fadeInUp}>
-                <TitleHoverGlow title={title} />.
+              <motion.h1 variants={fadeInUp}>
+                <TitleHoverGlow title={title} />
               </motion.h1>
               <motion.h4 variants={fadeInUp}>{t("home.subtitle")}</motion.h4>
-              <motion.h5 variants={fadeInUp}>
+              <motion.h6 variants={fadeInUp}>
                 {t.rich("home.description", {
                   strong: (chunks) => <strong>{chunks}</strong>,
                 })}
-              </motion.h5>
+              </motion.h6>
               <motion.p variants={fadeInUp}>
                 {t.rich("home.techbeachmama", {
                   a: (chunks) => (
@@ -87,23 +85,27 @@ export default function Home() {
                   ),
                 })}
               </motion.p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/portfolio"
-                  className="btn"
+              <div className="flex gap-4">
+                <Button 
+                  // href="/portfolio"
+                  // className="btn"
+                  // data-blob-target="portfolio"
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
+                  variant="glass"
                 >
                   View My Work
-                </Link>
-                <Link
-                  href="/services"
-                  className="btn"
+                </Button>
+                <Button
+                  // href="/services"
+                  // data-blob-target="services"
+                  // className="btn"
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
+                  variant="glass"
                 >
                   Hire Me
-                </Link>
+                </Button>
               </div>
             </motion.div>
           </GlassCard>
