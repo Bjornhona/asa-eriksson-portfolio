@@ -14,40 +14,34 @@
   --color-blue-700-preview: hsl(180, 70%, 18%);
   --color-blue-800: 179 63% 15%;
   --color-blue-800-preview: hsl(179, 63%, 15%);
-
-  /* Browns */
-  --color-brown-200: 43 42% 90%;
-  --color-brown-200-preview: hsl(43, 42%, 90%);
-  --color-brown-500: 43 42% 65%;
-  --color-brown-500-preview: hsl(43, 42%, 65%);
-  --color-brown-800: 0 0% 42%;
-  --color-brown-800-preview: hsl(0, 0%, 42%);
+  --color-blue-900: 216 65% 11%;
+  --color-blue-900-preview: hsl(216, 65%, 11%);
 
   /* Grays */
   --color-white: 0 0% 100%;
   --color-white-preview: hsl(0, 0%, 100%);
-  --color-gray-200: 0 0% 98%;
-  --color-gray-200-preview: hsl(0, 0%, 98%);
-  --color-gray-300: 0 0% 93%;
-  --color-gray-300-preview: hsl(0, 0%, 93%);
-  --color-gray-400: 0 0% 88%;
-  --color-gray-400-preview: hsl(0, 0%, 88%);
-  --color-gray-500: 0 0% 56%;
-  --color-gray-500-preview: hsl(0, 0%, 56%);
-  --color-gray-600: 0 0% 49%;
-  --color-gray-600-preview: hsl(0, 0%, 49%);
-  --color-gray-700: 0 0% 33%;
-  --color-gray-700-preview: hsl(0, 0%, 33%);
-  --color-gray-800: 0 0% 18%;
-  --color-gray-800-preview: hsl(0, 0%, 18%);
-  --color-gray-900: 0 0% 12%;
-  --color-gray-900-preview: hsl(0, 0%, 12%);
+  --color-gray-200: 225 70% 98%;
+  --color-gray-200-preview: hsl(226, 70%, 98%);
+  --color-gray-300: 225 70% 93%;
+  --color-gray-300-preview: hsl(226, 70%, 93%);
+  --color-gray-400: 225 70% 88%;
+  --color-gray-400-preview: hsl(226, 70%, 88%);
+  --color-gray-500: 225 20% 61%;
+  --color-gray-500-preview: hsl(225, 20%, 61%);
+  --color-gray-600: 225 20% 49%;
+  --color-gray-600-preview: hsl(225, 20%, 49%);
+  --color-gray-700: 225 20% 33%;
+  --color-gray-700-preview: hsl(225, 20%, 33%);
+  --color-gray-800: 225 20% 18%;
+  --color-gray-800-preview: hsl(255, 20%, 18%);
+  --color-gray-900: 225 20% 12%;
+  --color-gray-900-preview: hsl(255, 20%, 12%);
 
-  /* Other colors */
+  /* Aqua colors */
   --color-aqua-400: 162 100% 80%;
   --color-aqua-400-preview: hsl(166, 100%, 80%);
-  --color-aqua-500: 163 100% 70%;
-  --color-aqua-500-preview: hsl(166, 100%, 60%);
+  --color-aqua-500: 163 100% 50%;
+  --color-aqua-500-preview: hsl(166, 100%, 50%);
   --color-aqua-600: 166, 100%, 30%;
   --color-aqua-600-preview: hsl(166, 100%, 30%);
   --color-aqua-700: 166, 100%, 20%;
@@ -55,16 +49,19 @@
   --color-aqua-800: 166, 100%, 10%;
   --color-aqua-800-preview: hsl(166, 100%, 10%);
 
+  /* Orange colors */
   --color-orange-400: 46 100% 80%;
   --color-orange-400-preview: hsl(46, 100%, 80%);
   --color-orange-500: 34 100% 70%;
   --color-orange-500-preview: hsl(34, 100%, 70%);
 
+  /* Purple colors */
   --color-purple-400: 279 100% 80%;
   --color-purple-400-preview: hsl(279, 100%, 80%);
   --color-purple-500: 275 100% 70%;
   --color-purple-500-preview: hsl(275, 100%, 70%);
 
+  /* Pink colors */
   --color-pink-400: 325 100% 74%;
   --color-pink-400-preview: hsl(325, 100%, 74%);
   --color-pink-500: 325 100% 68%;
@@ -86,14 +83,7 @@
   --color-link: var(--color-blue-500);
   --color-link-hover: var(--color-blue-600);
 
-  /* Text colors */
-  /* --color-text-primary: var(--color-purple-200);
-  --color-text-primary-preview:hsl(226, 70%, 88%);
-  --color-text-secondary: var(--color-purple-400);
-  --color-text-secondary-preview:hsl(225, 20%, 61%);
-  --color-text-tertiary: var(--color-aqua-500);
-  --color-text-tertiary-preview:hsl(166, 100%, 60%); */
-
+  /* Primary colors */
   --color-primary: var(--color-blue-500);
   --color-primary-preview: hsl(180, 25%, 55%);
   --color-primary-hover: var(--color-blue-600);
@@ -103,6 +93,7 @@
   --color-secondary-hover: var(--color-brown-800);
   --color-secondary-hover-preview: hsl(0, 0%, 42%);
 
+  /* colors */
   --color-success: var(--color-aqua-500);
   --color-success-preview: hsl(166, 100%, 60%);
   --color-warning: var(--color-orange-500);
@@ -112,10 +103,7 @@
   --color-danger: var(--color-pink-500);
   --color-danger-preview: hsl(336, 100%, 68%);
 
-  /* --glow-char: var(--color-blue-700);
-  --glow-char-adjacent: var(--color-blue-800);
-  --glow-inner: var(--color-blue-500);
-  --glow-outer: var(--color-blue-500); */
+  /* Glow colors */
   --glow-char: var(--color-pink-500);
   --glow-char-adjacent: var(--color-pink-400);
   --glow-inner: var(--color-pink-400);
@@ -126,78 +114,48 @@
   /* Dark mode */
 
   /* Blues */
-  --color-blue-200: 216 65% 11%;
-  --color-blue-200-preview: hsl(216, 65%, 11%);
-  --color-blue-400: 179 70% 10%;
-  --color-blue-400-preview: hsl(179, 70%, 10%);
-  --color-blue-500: 180 75% 14%;
-  --color-blue-500-preview: hsl(180, 75%, 14%);
-  --color-blue-600: 180 40% 40%;
-  --color-blue-600-preview: hsl(180, 40%, 40%);
-  --color-blue-700: 179 65% 48%;
-  --color-blue-700-preview: hsl(179, 65%, 48%);
-  --color-blue-800: 178 70% 65%;
-  --color-blue-800-preview: hsl(178, 70%, 65%);
   --color-blue-900: 178 70% 85%;
   --color-blue-900-preview: hsl(178, 70%, 85%);
-
-    /* Grays */
-    --color-white: 0 0% 100%;
-    --color-white-preview: hsl(0, 0%, 100%);
-    --color-gray-200: 225 20% 98%;
-    --color-gray-200-preview: hsl(225, 20%, 98%);
-    --color-gray-300: 225 20% 93%;
-    --color-gray-300-preview: hsl(225, 20%, 93%);
-    --color-gray-400: 225 20% 88%;
-    --color-gray-400-preview: hsl(225, 20%, 88%);
-    --color-gray-500: 225 20% 61%;
-    --color-gray-500-preview: hsl(225, 20%, 61%);
-    --color-gray-600: 225 20% 49%;
-    --color-gray-600-preview: hsl(225, 20%, 49%);
-    --color-gray-700: 225 20% 33%;
-    --color-gray-700-preview: hsl(225, 20%, 33%);
-    --color-gray-800: 225 20% 18%;
-    --color-gray-800-preview: hsl(255, 20%, 18%);
-    --color-gray-900: 225 20% 12%;
-    --color-gray-900-preview: hsl(255, 20%, 12%);
+  --color-blue-800: 178 70% 65%;
+  --color-blue-800-preview: hsl(178, 70%, 65%);
+  --color-blue-700: 179 65% 48%;
+  --color-blue-700-preview: hsl(179, 65%, 48%);
+  --color-blue-600: 180 40% 40%;
+  --color-blue-600-preview: hsl(180, 40%, 40%);
+  --color-blue-500: 180 75% 14%;
+  --color-blue-500-preview: hsl(180, 75%, 14%);
+  --color-blue-400: 179 70% 10%;
+  --color-blue-400-preview: hsl(179, 70%, 10%);
+  --color-blue-200: 216 65% 11%;
+  --color-blue-200-preview: hsl(216, 65%, 11%);
 
   /* Semantic colors */
-  /* --color-background: var(--color-gray-800);
-  --color-background-preview: hsl(0, 0%, 18%);
-  --color-foreground: var(--color-gray-400);
-  --color-foreground-preview: hsl(0, 0%, 93%); */
-
-  /* Text colors */
   --color-background: var(--color-blue-200);
   --color-background-preview: hsl(216, 65%, 11%);
   --color-foreground: 226 70% 90%;
-  --color-foreground-preview: hsl(226, 70%, 90%);
+  --color-foreground-preview: hsl(226, 70%, 88%);
+
+  /* Text colors */
   --color-title: 226 70% 95%;
   --color-title-preview: hsl(226, 70%, 95%);
   --color-primary: var(--color-blue-600);
+  --color-primary-preview: hsl(180, 40%, 40%);
   --color-link: var(--color-blue-800);
   --color-link-preview: hsl(178, 70%, 65%);
   --color-link-hover: var(--color-blue-900);
   --color-link-hover-preview: hsl(178, 70%, 85%);
-  /* --color-text-primary: var(--color-purple-200);
-  --color-text-primary-preview:hsl(226, 70%, 88%);
-  --color-text-secondary: var(--color-purple-400);
-  --color-text-secondary-preview:hsl(225, 20%, 61%);
-  --color-text-tertiary: var(--color-aqua-500);
-  --color-text-tertiary-preview:hsl(166, 100%, 60%);
-  --color-bg: hsl(216, 64.90%, 11.20%) */
 
   /* Other colors */
-  --color-aqua-400: 166 100% 10%;
-  --color-aqua-400-preview: hsl(166, 100%, 10%);
-  --color-aqua-500: 166 100% 20%;
-  --color-aqua-500-preview: hsl(166, 100%, 20%);
-  --color-aqua-600: 166 100% 30%;
-  --color-aqua-600-preview: hsl(166, 100%, 30%);
-  --color-aqua-700: 166 100% 50%;
-  --color-aqua-700-preview: hsl(166, 100%, 50%);
   --color-aqua-800: 166 100% 80%;
   --color-aqua-800-preview: hsl(166, 100%, 80%);
+  --color-aqua-700: 166 100% 50%;
+  --color-aqua-700-preview: hsl(166, 100%, 50%);
+  --color-aqua-600: 166 100% 30%;
+  --color-aqua-600-preview: hsl(166, 100%, 30%);
+  --color-aqua-500: 166 100% 20%;
+  --color-aqua-500-preview: hsl(166, 100%, 20%);
+  --color-aqua-400: 166 100% 10%;
+  --color-aqua-400-preview: hsl(166, 100%, 10%);
 
   --color-orange-400: 46 100% 80%;
   --color-orange-400-preview: hsl(46, 100%, 80%);
@@ -207,16 +165,17 @@
   --color-purple-500: 275 100% 50%;
   --color-purple-500-preview: hsl(275, 100%, 50%);
 
-  --color-pink-400: 325 100% 10%;
-  --color-pink-400-preview: hsl(325, 100%, 10%);
-  --color-pink-500: 325 100% 20%;
-  --color-pink-500-preview: hsl(325, 100%, 20%);
-  --color-pink-600: 325 100% 30%;
-  --color-pink-600-preview: hsl(325, 100%, 30%);
-  --color-pink-700: 325 100% 50%;
-  --color-pink-700-preview: hsl(325, 100%, 50%);
   --color-pink-800: 325 100% 80%;
   --color-pink-800-preview: hsl(325, 100%, 80%);
+  --color-pink-700: 325 100% 50%;
+  --color-pink-700-preview: hsl(325, 100%, 50%);
+  --color-pink-600: 325 100% 30%;
+  --color-pink-600-preview: hsl(325, 100%, 30%);
+  --color-pink-500: 325 100% 20%;
+  --color-pink-500-preview: hsl(325, 100%, 20%);
+  --color-pink-400: 325 100% 10%;
+  --color-pink-400-preview: hsl(325, 100%, 10%);
+
 
   /* Glow colors */
   --glow-char: var(--color-aqua-800);

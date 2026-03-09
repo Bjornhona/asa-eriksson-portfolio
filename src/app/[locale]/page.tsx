@@ -86,10 +86,8 @@ export default function Home() {
                 })}
               </motion.p>
               <div className="flex gap-4">
-                <Button 
-                  // href="/portfolio"
-                  // className="btn"
-                  // data-blob-target="portfolio"
+                <Button
+                  href="/portfolio"
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
                   variant="glass"
@@ -97,9 +95,8 @@ export default function Home() {
                   View My Work
                 </Button>
                 <Button
-                  // href="/services"
-                  // data-blob-target="services"
-                  // className="btn"
+                  href="/services"
+                  className="hover:bg-aqua-700/20"
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
                   variant="glass"
