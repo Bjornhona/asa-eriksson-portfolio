@@ -1,5 +1,5 @@
 .title {
-  color: hsl(var(--color-blue-800));
+  color: hsl(var(--color-blue-400));
   cursor: default;
   white-space: pre;
   line-height: 1;

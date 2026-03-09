@@ -39,7 +39,7 @@ export default function FloatingBlobs({ x, y }: FloatingBlobsProps) {
 
       {/* Blob 3 */}
       <Blob
-        className="w-[350px] h-[350px] text-aqua-400/20 bottom-[-30px] left-[-100px] blur-[1px] drop-shadow-[0_0_80px_rgba(34,11,138,0.45)] drop-shadow-[0_0_160px_rgba(10,24,146,0.55)]"
+        className="w-[350px] h-[350px] text-aqua-800/20 bottom-[-30px] left-[-100px] blur-[1px] drop-shadow-[0_0_80px_rgba(34,11,138,0.45)] drop-shadow-[0_0_160px_rgba(10,24,146,0.55)]"
         initial={{ x: 0, y: 0 }}
         animate={shouldReduceMotion ? {} : { translateX: [0, 50, -30], translateY: [0, -40, 30] }}
         duration={30}

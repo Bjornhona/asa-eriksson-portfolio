@@ -24,13 +24,13 @@ const Blob = ({
   const blobColor = useMemo(() => {
     switch (color) {
       case "pink":
-        return ["hsl(var(--color-pink-800))", "hsl(var(--color-pink-700))", "hsl(var(--color-pink-600))", "hsl(var(--color-pink-500))", "hsl(var(--color-pink-400))"];
+        return ["hsl(var(--color-pink-400))", "hsl(var(--color-pink-500))", "hsl(var(--color-pink-600))", "hsl(var(--color-pink-700))", "hsl(var(--color-pink-800))"];
       case "blue":
-        return ["hsl(var(--color-blue-800))", "hsl(var(--color-blue-700))", "hsl(var(--color-blue-600))", "hsl(var(--color-blue-500))", "hsl(var(--color-blue-300))"];
+        return ["hsl(var(--color-blue-400))", "hsl(var(--color-blue-500))", "hsl(var(--color-blue-600))", "hsl(var(--color-blue-700))", "hsl(var(--color-blue-800))"];
       case "aqua":
-        return ["hsl(var(--color-aqua-800))", "hsl(var(--color-aqua-700))", "hsl(var(--color-aqua-600))", "hsl(var(--color-aqua-500))", "hsl(var(--color-aqua-400))"];
+        return ["hsl(var(--color-aqua-400))", "hsl(var(--color-aqua-500))", "hsl(var(--color-aqua-600))", "hsl(var(--color-aqua-700))", "hsl(var(--color-aqua-800))"];
       default:
-        return ["hsl(var(--color-gray-800))", "hsl(var(--color-gray-700))", "hsl(var(--color-gray-600))", "hsl(var(--color-gray-500))", "hsl(var(--color-gray-400))"];
+        return ["hsl(var(--color-gray-400))", "hsl(var(--color-gray-500))", "hsl(var(--color-gray-600))", "hsl(var(--color-gray-700))", "hsl(var(--color-gray-800))"];
     }
   }, [color]);
 

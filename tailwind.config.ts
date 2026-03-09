@@ -9,6 +9,23 @@ const config: Config = {
     "./src/app/**/*.{ts,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "var(--space-4)",
+        sm: "var(--space-6)",
+        md: "var(--space-8)",
+        lg: "var(--space-10)",
+        xl: "var(--space-12)",
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1200px",
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
         blue: {

@@ -5,24 +5,7 @@ import { useTranslations } from "next-intl";
 import FloatingBlobs from "@/components/FloatingBlobs/FloatingBlobs";
 import GlassCard from "@/components/GlassCard/GlassCard";
 import { Button } from "@/ui";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
-  },
-};
-
-const container = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
-    },
-  },
-};
+import { fadeInUp, container } from "@/lib/animations";
 
 export default function Home() {
   const t = useTranslations();
@@ -88,6 +71,7 @@ export default function Home() {
               <div className="flex gap-4">
                 <Button
                   href="/portfolio"
+                  className="hover:bg-aqua-500/20"
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
                   variant="glass"
@@ -96,7 +80,7 @@ export default function Home() {
                 </Button>
                 <Button
                   href="/services"
-                  className="hover:bg-aqua-700/20"
+                  className="hover:bg-aqua-500/20"
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
                   variant="glass"
