@@ -36,7 +36,7 @@ export const TimeLineWrapper = ({
     <motion.div
       className="relative max-w-md mx-auto pl-12"
       onViewportEnter={() => setActiveIndex(index)}
-      viewport={{ amount: 0.5, once: true }}
+      viewport={{ amount: 0.5, once: true, margin: "0px 0px -100px 0px" }}
       initial={{ scaleY: 0 }}
       whileInView={{ scaleY: 1 }}
       transition={{

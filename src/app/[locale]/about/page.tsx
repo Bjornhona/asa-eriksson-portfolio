@@ -5,7 +5,7 @@ import { container, fadeInUp } from "@/lib/animations";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 import BlendImageFilter from "@/components/BlendImageFilter/BlendImageFilter";
 import { Button } from "@/ui";
-import { MailIcon } from "lucide-react";
+import { FileDownIcon, HandshakeIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import { TimeLineWrapper } from "@/components/TimeLineWrapper/TimeLineWrapper";
 
 const AboutPage = () => {
@@ -58,6 +58,21 @@ const AboutPage = () => {
               I work with companies and startups around the world to transform
               ideas into <strong>high-quality web experiences</strong>.
             </motion.h6>
+
+            <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4">
+            <Button asChild variant="glass" href="/asa-eriksson-cv.pdf">
+              <FileDownIcon className="w-4 h-4" />
+              Download my CV
+            </Button>
+            <Button variant="glass" href="https://www.linkedin.com/in/asaeri3/">
+              <LinkedinIcon className="w-4 h-4" />
+              Connect on LinkedIn
+            </Button>
+            <Button variant="glass" href="/services">
+              <HandshakeIcon className="w-4 h-4" />
+              Hire Me
+            </Button>
+            </motion.div>
           </motion.div>
         </div>
       </div>

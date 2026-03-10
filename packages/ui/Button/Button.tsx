@@ -15,7 +15,7 @@ const Button = ({ href = "#", children, ...props }: ButtonProps) => {
       {href ? (
         <Link
         href={href}
-        target={href.startsWith("http") ? "_blank" : undefined}
+        target={href.startsWith("http") || href.endsWith("pdf") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}>
           {children}
         </Link>
