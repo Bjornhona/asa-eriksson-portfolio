@@ -17,7 +17,7 @@ export const navMenu: NavMenuConfig = {
     { labelKey: "common.about", href: "/about" },
     { labelKey: "common.services", href: "/services" },
     { labelKey: "common.portfolio", href: "/portfolio" },
-    { labelKey: "common.blog", href: "/blog" },
+    // { labelKey: "common.blog", href: "/blog" },
     { labelKey: "common.contact", href: "/contact" },
   ],
 };
