@@ -3,10 +3,11 @@ import { useState } from "react";
 import type { NavMenuProps } from "../../types";
 import ThemeToggle from "./ThemeToggle";
 import Menu from "./Menu";
-import BurgerMenu from "./BurgerMenu";
 import LanguageSelector from "./LanguageSelector";
 import SocialMediaLinks from "./SocialMediaLinks";
 import SafeDropdown from "../../SafeDropdown/SafeDropdown";
+// import BurgerMenu from "./BurgerMenu";
+import Variants from "../AnimatedMenu/Variants";
 
 const NavbarMenu = ({
   modeSwitch,
@@ -37,7 +38,8 @@ const NavbarMenu = ({
           </SafeDropdown>
         )}
 
-        {navLinks.length > 0 && <BurgerMenu onToggleMenu={toggleMenu} />}
+        {/* {navLinks.length > 0 && <BurgerMenu onToggleMenu={toggleMenu} />} */}
+        {navLinks.length > 0 && <Variants navLinks={navLinks} locale={locale} />}
       </div>
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} navLinks={navLinks} locale={locale} />
     </>
