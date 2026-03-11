@@ -5,7 +5,7 @@ const ScrollDownIndicator = ({ scrollToHref }: { scrollToHref: string }) => {
   return (
     <a
       href={scrollToHref}
-      className="absolute -bottom-10 left-1/2 -translate-x-1/2 cursor-pointer p-4 z-10"
+      className="absolute -bottom-10 left-1/2 -translate-x-1/2 cursor-pointer p-4"
     >
       <motion.div
         className="flex flex-col items-center text-blue-400 hover:text-blue-200 whitespace-nowrap"
