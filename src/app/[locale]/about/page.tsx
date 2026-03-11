@@ -19,7 +19,7 @@ const AboutPage = () => {
   const experience = new Date().getFullYear() - 2019;
 
   return (
-    <div className="relative container pt-[64px] pb-12">
+    <div className="relative container pt-[64px] pb-16">
       <motion.div
         className="absolute right-[var(--space-4)] sm:right-[var(--space-6)] md:right-[var(--space-8)] lg:right-[var(--space-10)] xl:right-[var(--space-12)] w-[40vw] h-[40vw] aspect-square overflow-hidden rounded-full"
         variants={fadeInUp}
@@ -36,7 +36,7 @@ const AboutPage = () => {
         />
       </motion.div>
       <div className="relative">
-        <div className="min-h-screen z-10 flex max-w-2xl flex-col justify-center pb-24 [text-shadow:0_2px_6px_rgba(0,0,0,0.5)]">
+        <div className="flex max-w-2xl flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12">
           <motion.div
             className="space-y-4 max-w-xs xs:sm:max-w-sm md:max-w-md lg:max-w-lg"
             variants={container}
@@ -67,7 +67,7 @@ const AboutPage = () => {
 
             <motion.div
               variants={fadeInUp}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 pt-4"
             >
               <Button asChild variant="glass" href="/asa-eriksson-cv.pdf">
                 <FileDownIcon className="w-4 h-4" />

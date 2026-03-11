@@ -17,8 +17,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Asa Eriksson Portfolio",
-  description: "Frontend Developer & Product Designer",
+  title: "Asa Eriksson | Frontend Developer & Product Designer | React & Next.js",
+  description: "Åsa Eriksson is a frontend engineer specializing in React and Next.js. Building scalable web applications with clean architecture and thoughtful UX. Founder of Tech Beach Mama.",
+  keywords: ["Frontend Developer", "Product Designer", "Web Developer", "Web Designer", "Web Development", "Web Design", "UX/UI Designer", "UX/UI Design", "UX/UI Development", "React Developer", "React Designer", "React Development", "React Design", "Next.js Developer", "Next.js Designer", "Next.js Development", "Next.js Design"],
+  authors: [{ name: "Åsa Eriksson", url: "https://asaeriksson.com" }],
+  creator: "Åsa Eriksson",
+  publisher: "Åsa Eriksson",
+  openGraph: {
+    title: "Asa Eriksson | Frontend Developer & Product Designer | React & Next.js",
+    description: "Åsa Eriksson is a frontend engineer specializing in React and Next.js. Building scalable web applications with clean architecture and thoughtful UX. Founder of Tech Beach Mama.",
+  },
 };
 
 interface RootLayoutProps {
