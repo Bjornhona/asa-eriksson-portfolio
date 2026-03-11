@@ -34,7 +34,7 @@ export const TimeLineWrapper = ({
 
   return (
     <motion.div
-      className="relative max-w-md mx-auto pl-12 my-16"
+      className="relative max-w-md mx-auto pl-8 sm:pl-12 md:pl-14 my-16"
       onViewportEnter={() => setActiveIndex(index)}
       viewport={{ amount: 0.5, once: true }}
       initial={{ scaleY: 0 }}
@@ -46,7 +46,7 @@ export const TimeLineWrapper = ({
     >
       {/* vertical line */}
       <div
-        className={`absolute left-4 translate-x-[5px] translate-y-12 top-0 ${last ? "bottom-16" : "bottom-0"} w-[2px] bg-blue-500`}
+        className={`absolute left-0 translate-x-[5px] translate-y-12 top-0 ${last ? "bottom-12" : "bottom-0"} w-[2px] bg-blue-500`}
         style={{
           background:
             "linear-gradient(to bottom, hsl(var(--glow-char)), hsl(var(--color-blue-700)), hsl(var(--glow-char)))",
@@ -56,7 +56,7 @@ export const TimeLineWrapper = ({
       />
 
       {/* animated dot */}
-      <motion.div className="absolute left-4 top-2 w-3 h-3 rounded-full bg-aqua-500">
+      <motion.div className="absolute left-0 top-2 w-3 h-3 rounded-full bg-aqua-500">
         <motion.div
           className="absolute inset-0 rounded-full bg-[hsl(var(--glow-char))]"
           animate={isActive ? activeDot : unactiveDot}

@@ -6,7 +6,7 @@ const AboutQuoteSection = () => {
   const t = useTranslations("about.quote");
 
   return (
-    <section>
+    <section id="quote-section">
       <motion.div
           className="relative space-y-4 max-w-md mx-auto"
           variants={container}

@@ -21,7 +21,7 @@ const AboutWhatIDoSection = () => {
   ];
 
   return (
-    <section>
+    <section id="what-i-do-section">
       <motion.div
           className="space-y-4"
           variants={container}

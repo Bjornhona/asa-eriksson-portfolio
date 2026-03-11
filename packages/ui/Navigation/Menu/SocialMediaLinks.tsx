@@ -46,7 +46,7 @@ const SocialMediaLinks = ({
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button className={cn(
-              "flex items-center gap-2 px-4 py-2 rounded-sm",
+              "flex items-center gap-2 p-2 xs:p-3 rounded-sm",
               "transition-all duration-300")}>
             <Link className="w-4 h-4" />
           </button>

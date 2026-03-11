@@ -8,7 +8,7 @@ const AboutContactSection = () => {
   const t = useTranslations("about.contact");
 
   return (
-    <section>
+    <section id="contact-section">
       <motion.div
           className="space-y-4 max-w-md mx-auto"
           variants={container}

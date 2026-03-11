@@ -14,7 +14,7 @@ const AboutHeroSection = () => {
   return (
     <section className="relative">
       <motion.div
-        className="absolute right-[var(--space-4)] sm:right-[var(--space-6)] md:right-[var(--space-8)] lg:right-[var(--space-10)] xl:right-[var(--space-12)] w-[40vw] h-[40vw] aspect-square overflow-hidden rounded-full"
+        className="absolute right-[var(--space-4)] sm:right-[var(--space-6)] md:right-[var(--space-8)] lg:right-[var(--space-10)] xl:right-[var(--space-12)] w-[50vw] h-[50vw] sm:w-[40vw] sm:h-[40vw] lg:w-[35vw] lg:h-[35vw] xl:w-[30vw] xl:h-[30vw] 2xl:w-[25vw] 2xl:h-[25vw] aspect-square overflow-hidden rounded-full"
         variants={fadeInUp}
         initial="initial"
         animate="animate"
@@ -29,9 +29,9 @@ const AboutHeroSection = () => {
         />
       </motion.div>
       <div className="relative">
-        <div className="flex max-w-2xl flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12">
+        <div className="flex max-w-sm xs:sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12">
           <motion.div
-            className="space-y-4 max-w-xs xs:sm:max-w-sm md:max-w-md lg:max-w-lg"
+            className="space-y-4"
             variants={container}
             initial="initial"
             animate="animate"
@@ -40,7 +40,7 @@ const AboutHeroSection = () => {
               <TitleHoverGlow title={t("title") + '.'} />
             </motion.h1>
 
-            <motion.h4 variants={fadeInUp}>
+            <motion.h4 variants={fadeInUp} className="max-w-xs xs:sm:max-w-sm lg:max-w-md xl:max-w-lg">
               {t.rich("subtitle", {
                 strong: (chunks) => <strong>{chunks}</strong>,
               })}
@@ -81,7 +81,7 @@ const AboutHeroSection = () => {
           </motion.div>
         </div>
       </div>
-      <ScrollDownIndicator />
+      <ScrollDownIndicator scrollToHref="/about#background-section" />
     </section>
   );
 };

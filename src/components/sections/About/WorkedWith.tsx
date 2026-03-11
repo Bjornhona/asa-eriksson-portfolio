@@ -13,7 +13,7 @@ const AboutWorkedWithSection = () => {
   ];
 
   return (
-    <section>
+    <section id="worked-with-section">
       <motion.div
         className="space-y-4 max-w-md mx-auto"
         variants={container}

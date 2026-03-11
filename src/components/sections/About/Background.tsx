@@ -13,7 +13,7 @@ const AboutBackgroundSection = () => {
   ];
 
   return (
-    <section>
+    <section id="background-section" className="scroll-mt-64">
       <motion.div
           className="space-y-4"
           variants={container}

@@ -8,7 +8,7 @@ const BurgerMenu = ({ onToggleMenu }: BurgerMenuProps) => {
   return (
     <button
       onClick={onToggleMenu}
-      className="p-2 rounded hover:bg-muted/20 transition"
+      className="p-1 xs:p-2 rounded hover:bg-muted/20 transition"
     >
       <MenuIcon className="w-6 h-6" />
     </button>

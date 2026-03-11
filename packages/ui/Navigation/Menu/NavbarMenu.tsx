@@ -22,7 +22,7 @@ const NavbarMenu = ({
 
   return (
     <>
-      <div className="flex items-center gap-4 text-foreground mr-[-10px]">
+      <div className="flex items-center sm:gap-2 lg:gap-4 text-foreground mr-[-10px]">
         {modeSwitch && <ThemeToggle />}
 
         {socialMediaLinks.length > 0 && <SocialMediaLinks socialMediaLinks={socialMediaLinks} />}

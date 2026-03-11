@@ -7,7 +7,7 @@ const AboutExperienceSection = () => {
   const experience = new Date().getFullYear() - 2019;
 
   return (
-    <section>
+    <section id="experience-section">
       <motion.div
           className="space-y-4 max-w-md mx-auto"
           variants={container}

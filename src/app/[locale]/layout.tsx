@@ -25,7 +25,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <div className="relative min-h-screen">
+      <div className="relative min-h-screen scroll-smooth">
         <AppNavbar />
         <MistBackground />
         {children}

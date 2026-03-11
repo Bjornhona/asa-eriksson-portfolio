@@ -23,7 +23,7 @@ const AboutApproachSection = () => {
   ];
 
   return (
-    <section>
+    <section id="approach-section">
       <motion.div
         className="space-y-4 max-w-md mx-auto"
         variants={container}

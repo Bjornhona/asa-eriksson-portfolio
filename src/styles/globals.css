@@ -10,6 +10,7 @@ html, body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   background-color: hsl(var(--color-background));
   color: hsl(var(--color-foreground));
   font-family: var(--font-inter);
