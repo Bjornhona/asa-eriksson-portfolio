@@ -165,5 +165,91 @@
     "applicableLaw": "Tillämplig lag",
     "applicableLawDescription": "Detta juridiska meddelande ska regleras och tolkas i enlighet med Spaniens lagar.",
     "jurisdiction": "Eventuella tvister som uppstår genom användningen av denna webbplats ska vara föremål för behöriga domstolar i Spanien."
+  },
+  "about": {
+    "hero": {
+      "title": "Om mig",
+      "subtitle": "Jag är en <strong>Frontendutvecklare och produktdesigner</strong> som bygger moderna webbapplikationer med starkt fokus på användbarhet, prestanda och ren arkitektur.",
+      "description": "Med en bakgrund inom både <strong>design och utveckling</strong> bygger jag broar mellan visuell kreativitet och teknisk implementation. Mitt mål är enkelt: att skapa digitala produkter som är <strong>vackra, intuitiva och skalbara</strong>.",
+      "works": "Jag samarbetar med företag och startups runt om i världen för att förvandla idéer till <strong>webbupplevelser av hög kvalitet</strong>.",
+      "downloadCV": "Ladda ner mitt CV",
+      "connectLinkedin": "Anslut på LinkedIn",
+      "hireMe": "Anlita mig"
+    },
+    "background": {
+      "title": "Min bakgrund",
+      "description": "Min väg in i tech började från designsidan.",
+      "description2": "Jag började min karriär med att arbeta inom <strong>grafisk design och användarupplevelse</strong>, där jag hjälpte varumärken att kommunicera visuellt och skapa bättre digitala produkter. Med tiden blev jag allt mer intresserad av den tekniska sidan bakom hur dessa upplevelser byggs.",
+      "description3": "Den nyfikenheten ledde mig till att övergå till <strong>frontendutveckling</strong>, där jag kunde kombinera designtänkande med ingenjörskap.",
+      "description4": "Idag specialiserar jag mig på att bygga <strong>moderna webbapplikationer med React och Next.js</strong>, med fokus på prestanda, skalbarhet och en förstklassig användarupplevelse.",
+      "description5": "Med erfarenhet av att arbeta i professionella utvecklingsteam och leverera produktionsklara applikationer förstår jag vad som krävs för att bygga mjukvara som är <strong>inte bara visuellt genomarbetad utan också underhållbar och pålitlig</strong>."
+    },
+    "whatIDo": {
+      "title": "Vad jag gör",
+      "description": "Jag hjälper företag att designa och bygga moderna digitala produkter.",
+      "workFocus": "Mitt arbete fokuserar på tre områden:",
+      "fontendDev": "Frontendutveckling",
+      "fastBuilding": "Bygger snabba, skalbara och underhållbara webbapplikationer med moderna teknologier.",
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "modernCssArchitectures": "Moderna CSS-arkitekturer",
+      "performanceOptimization": "Prestandaoptimering",
+      "productDesign": "Produkt- och UI-design",
+      "intuitiveDesign": "Design av gränssnitt som är intuitiva, eleganta och användarfokuserade.",
+      "uiDesignSystems": "UI-designsystem",
+      "uxFlows": "UX-flöden och produktstrategi",
+      "responsiveDesign": "Responsiv design",
+      "accessibilityUsability": "Tillgänglighet och användbarhet",
+      "designDrivenDevelopment": "Design-driven utveckling",
+      "designDrivenDevelopmentDescription": "Genom att kombinera design och utveckling skapar jag produkter där <strong>form och funktion samverkar sömlöst</strong>."
+    },
+    "approach": {
+      "title": "Mitt arbetssätt",
+      "description": "Jag tror att riktigt bra digitala produkter skapas när design och utveckling arbetar tillsammans redan från början.",
+      "workflow": "Mitt arbetssätt kombinerar",
+      "productThinking": "Genomtänkt produktstrategi",
+      "strongVisualDesign": "Stark visuell design",
+      "cleanAndScalableCode": "Ren och skalbar kod",
+      "iFocusOn": "Istället för att bara implementera design fokuserar jag på att lösa verkliga produktproblem och skapa upplevelser som användare faktiskt tycker om att använda.",
+      "myCoreStackIncludes": "Min huvudsakliga tekniska stack inkluderar",
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "modernCss": "HTML och modern CSS",
+      "componentBasedDesignSystems": "Komponentbaserade designsystem",
+      "restApis": "REST API:er",
+      "performanceOptimization": "Prestandaoptimering",
+      "alsoPassionateAbout": "Jag brinner också för att bygga återanvändbara UI-system och skalbara frontendarkitekturer."
+    },
+    "quote": {
+      "description": "Idéer blomstrar när tankarna får vandra, inte bara när skärmen glimmar."
+    },
+    "contact": {
+      "description": "Om du letar efter en utvecklare som förstår både <strong>produktdesign och frontendutveckling</strong>, så hör av dig och berätta mer om ditt projekt.",
+      "buildTogether": "Låt oss bygga något riktigt bra tillsammans.",
+      "buttonText": "Kontakta mig"
+    },
+    "workedWith": {
+      "title": "Jag har arbetat med",
+      "startups": "Startups",
+      "digitalProducts": "Digitala produkter",
+      "scalableWebApplications": "Skalbara webbapplikationer",
+      "designDrivenTeams": "Design-drivna team"
+    },
+    "experience": {
+      "title": "Min erfarenhet omfattar",
+      "graphicDesign": "års erfarenhet av grafisk design",
+      "frontendDevelopment": "års erfarenhet av frontendutveckling",
+      "productDesign": "års erfarenhet av produkt- och UI/UX-design",
+      "designDrivenDevelopment": "års erfarenhet av design-driven utveckling",
+      "scalableWebApplications": "års erfarenhet av att bygga skalbara webbapplikationer"
+    },
+    "ctaAndCV": {
+      "title": "Intresserad av att arbeta tillsammans?",
+      "viewPortfolio": "Se min portfölj",
+      "hireMe": "Anlita mig",
+      "downloadCV": "Ladda ner mitt CV"
+    }
   }
 }

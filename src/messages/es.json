@@ -165,5 +165,91 @@
     "applicableLaw": "Legislación aplicable",
     "applicableLawDescription": "El presente Aviso Legal se regirá e interpretará de conformidad con la legislación española.",
     "jurisdiction": "Cualquier disputa derivada del uso de este sitio web se someterá a la jurisdicción de los tribunales competentes en España."
+  },
+  "about": {
+    "hero": {
+      "title": "Sobre mí",
+      "subtitle": "Soy <strong>Desarrolladora Frontend y Diseñadora de Producto</strong> y creo aplicaciones web modernas con un fuerte enfoque en la usabilidad, el rendimiento y una arquitectura limpia.",
+      "description": "Con experiencia tanto en <strong>diseño como en ingeniería</strong>, conecto la creatividad visual con la ejecución técnica. Mi objetivo es simple: crear productos digitales que sean <strong>bonitos, intuitivos y escalables</strong>.",
+      "works": "Trabajo con empresas y startups de todo el mundo para transformar ideas en <strong>experiencias web de alta calidad</strong>.",
+      "downloadCV": "Descargar mi CV",
+      "connectLinkedin": "Conectar en LinkedIn",
+      "hireMe": "Contratar"
+    },
+    "background": {
+      "title": "Mi trayectoria",
+      "description": "Mi camino hacia el mundo tecnológico comenzó desde el lado del diseño.",
+      "description2": "Comencé mi carrera trabajando en <strong>diseño gráfico y experiencia de usuario</strong>, ayudando a las marcas a comunicarse visualmente y a crear mejores productos digitales. Con el tiempo, empecé a interesarme cada vez más por la parte técnica de cómo se construyen esas experiencias.",
+      "description3": "Esa curiosidad me llevó a dar el salto al <strong>desarrollo frontend</strong>, donde pude combinar el pensamiento de diseño con la ingeniería.",
+      "description4": "Hoy me especializo en crear <strong>aplicaciones web modernas con React y Next.js</strong>, con un fuerte enfoque en el rendimiento, la escalabilidad y una experiencia de usuario excepcional.",
+      "description5": "Con experiencia trabajando en equipos profesionales de desarrollo y entregando aplicaciones listas para producción, entiendo lo que se necesita para construir software que sea <strong>no solo visualmente cuidado, sino también mantenible y fiable</strong>."
+    },
+    "whatIDo": {
+      "title": "Qué hago",
+      "description": "Ayudo a empresas a diseñar y construir productos digitales modernos.",
+      "workFocus": "Mi trabajo se centra en tres áreas:",
+      "fontendDev": "Desarrollo Frontend",
+      "fastBuilding": "Construcción de aplicaciones web rápidas, escalables y mantenibles utilizando tecnologías modernas.",
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "modernCssArchitectures": "Arquitecturas CSS modernas",
+      "performanceOptimization": "Optimización del rendimiento",
+      "productDesign": "Diseño de Producto y UI",
+      "intuitiveDesign": "Diseño de interfaces intuitivas, elegantes y centradas en el usuario.",
+      "uiDesignSystems": "Sistemas de diseño UI",
+      "uxFlows": "Flujos UX y pensamiento de producto",
+      "responsiveDesign": "Diseño responsive",
+      "accessibilityUsability": "Accesibilidad y usabilidad",
+      "designDrivenDevelopment": "Desarrollo guiado por el diseño",
+      "designDrivenDevelopmentDescription": "Combinando diseño y desarrollo para crear productos donde <strong>forma y función trabajan juntas de manera natural</strong>."
+    },
+    "approach": {
+      "title": "Mi enfoque",
+      "description": "Creo que los grandes productos digitales se crean cuando el diseño y la ingeniería trabajan juntos desde el principio.",
+      "workflow": "Mi forma de trabajar combina",
+      "productThinking": "Pensamiento estratégico de producto",
+      "strongVisualDesign": "Diseño visual sólido",
+      "cleanAndScalableCode": "Código limpio y escalable",
+      "iFocusOn": "En lugar de limitarme a implementar diseños, me centro en resolver problemas reales de producto y en crear experiencias que los usuarios realmente disfruten utilizando.",
+      "myCoreStackIncludes": "Mi stack principal incluye",
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "modernCss": "HTML y CSS moderno",
+      "componentBasedDesignSystems": "Sistemas de diseño basados en componentes",
+      "restApis": "APIs REST",
+      "performanceOptimization": "Optimización del rendimiento",
+      "alsoPassionateAbout": "También me apasiona construir sistemas de UI reutilizables y arquitecturas frontend escalables."
+    },
+    "quote": {
+      "description": "Las ideas florecen cuando la mente se deja llevar, no solo cuando brilla la pantalla."
+    },
+    "contact": {
+      "description": "Si estás buscando una desarrolladora que entienda tanto de <strong>diseño de producto como de ingeniería frontend</strong>, me encantaría conocer tu proyecto.",
+      "buildTogether": "Construyamos algo increíble juntos.",
+      "buttonText": "Contáctame"
+    },
+    "workedWith": {
+      "title": "He trabajado con",
+      "startups": "Startups",
+      "digitalProducts": "Productos digitales",
+      "scalableWebApplications": "Aplicaciones web escalables",
+      "designDrivenTeams": "Equipos orientados al diseño"
+    },
+    "experience": {
+      "title": "Mi experiencia incluye",
+      "graphicDesign": "años de diseño gráfico",
+      "frontendDevelopment": "años de desarrollo frontend",
+      "productDesign": "años de diseño de producto y UI/UX",
+      "designDrivenDevelopment": "años de desarrollo guiado por el diseño",
+      "scalableWebApplications": "años construyendo aplicaciones web escalables"
+    },
+    "ctaAndCV": {
+      "title": "¿Te interesa trabajar conmigo?",
+      "viewPortfolio": "Ver mi portfolio",
+      "hireMe": "Contrátame",
+      "downloadCV": "Descargar mi CV"
+    }
   }
 }

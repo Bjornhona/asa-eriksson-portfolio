@@ -34,19 +34,19 @@ export const TimeLineWrapper = ({
 
   return (
     <motion.div
-      className="relative max-w-md mx-auto pl-12"
+      className="relative max-w-md mx-auto pl-12 my-16"
       onViewportEnter={() => setActiveIndex(index)}
-      viewport={{ amount: 0.5, once: true, margin: "0px 0px -100px 0px" }}
+      viewport={{ amount: 0.5, once: true }}
       initial={{ scaleY: 0 }}
       whileInView={{ scaleY: 1 }}
       transition={{
-        duration: 0.8,
+        duration: 0.7,
         ease: [0.22, 1, 0.36, 1],
       }}
     >
       {/* vertical line */}
       <div
-        className={`absolute left-4 translate-x-[5px] translate-y-16 top-0 ${last ? "bottom-16" : "bottom-0"} w-[2px] bg-blue-500`}
+        className={`absolute left-4 translate-x-[5px] translate-y-12 top-0 ${last ? "bottom-16" : "bottom-0"} w-[2px] bg-blue-500`}
         style={{
           background:
             "linear-gradient(to bottom, hsl(var(--glow-char)), hsl(var(--color-blue-700)), hsl(var(--glow-char)))",
