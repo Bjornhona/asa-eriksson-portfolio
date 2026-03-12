@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import type { NavMenuProps } from "../../types";
 import ThemeToggle from "./ThemeToggle";
-import Menu from "./Menu";
+// import Menu from "./Menu";
 import LanguageSelector from "./LanguageSelector";
 import SocialMediaLinks from "./SocialMediaLinks";
 import SafeDropdown from "../../SafeDropdown/SafeDropdown";
@@ -17,8 +17,8 @@ const NavbarMenu = ({
   locale = "",
   onLocaleChange,
 }: NavMenuProps) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  // const [menuOpen, setMenuOpen] = useState(false);
+  // const toggleMenu = () => setMenuOpen((prev) => !prev);
   const showLanguageSelector = languages.length > 1 && locale && onLocaleChange;
 
   return (
@@ -41,7 +41,7 @@ const NavbarMenu = ({
         {/* {navLinks.length > 0 && <BurgerMenu onToggleMenu={toggleMenu} />} */}
         {navLinks.length > 0 && <Variants navLinks={navLinks} locale={locale} />}
       </div>
-      <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} navLinks={navLinks} locale={locale} />
+      {/* <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} navLinks={navLinks} locale={locale} /> */}
     </>
   );
 };
