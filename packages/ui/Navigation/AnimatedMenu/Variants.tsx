@@ -23,7 +23,7 @@ export default function Variants({ navLinks, locale = "" }: VariantsProps) {
       <motion.nav
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className={styles.nav}
+        className={`${styles.nav} ${isOpen ? styles.open : styles.closed}`}
       >
         <motion.div className={styles.background} variants={sidebarVariants} />
         <Navigation

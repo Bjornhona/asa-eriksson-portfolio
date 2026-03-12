@@ -13,6 +13,12 @@
   height: 50px;
 }
 
+/* When closed, overlay elements must not capture clicks - only the toggle should */
+.closed .background,
+.closed .list {
+  pointer-events: none;
+}
+
 .background {
   background-color: hsl(var(--color-background)/0.75);
   backdrop-filter: blur(8px);
