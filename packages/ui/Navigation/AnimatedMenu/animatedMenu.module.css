@@ -20,8 +20,8 @@
 }
 
 .background {
-  background-color: hsl(var(--color-background)/0.75);
-  backdrop-filter: blur(8px);
+  background-color: hsl(var(--color-background) / 0.8);
+  backdrop-filter: blur(8px); 
   position: fixed;
   top: 0;
   left: 0;
@@ -33,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: backdrop-filter 0.2s ease-out;
 }
 
 .toggleContainer {
