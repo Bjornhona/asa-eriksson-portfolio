@@ -3,14 +3,14 @@
   display: flex;
   align-items: center;
   flex: 0;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 /* When closed, overlay elements must not capture clicks - only the toggle should */
@@ -20,8 +20,8 @@
 }
 
 .background {
-  background-color: hsl(var(--color-background) / 0.8);
-  backdrop-filter: blur(8px); 
+  background-color: hsl(var(--color-background) / 0.7);
+  backdrop-filter: blur(8px);
   position: fixed;
   top: 0;
   left: 0;
@@ -46,15 +46,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: transparent;
   z-index: 61;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: hsl(var(--foreground));
+  padding: var(--space-3);
 }
 
 .list {
@@ -82,15 +80,6 @@
 }
 
 .link {
-  color: hsl(var(--foreground));
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 500;
-  padding: 0.5rem 0;
   display: block;
   width: 100%;
-}
-
-.link:hover {
-  color: hsl(var(--color-accent));
 }
