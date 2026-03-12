@@ -28,7 +28,7 @@ const AboutHeroSection = () => {
           loading="eager"
         />
       </motion.div>
-      <div className="relative flex flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12">
+      <div className="flex flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12">
         <motion.div
           className="space-y-4"
           variants={container}
@@ -48,13 +48,19 @@ const AboutHeroSection = () => {
             })}
           </motion.h4>
 
-          <motion.h6 variants={fadeInUp} className="max-w-sm xs:sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+          <motion.h6
+            variants={fadeInUp}
+            className="max-w-sm xs:sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+          >
             {t.rich("description", {
               strong: (chunks) => <strong>{chunks}</strong>,
             })}
           </motion.h6>
 
-          <motion.h6 variants={fadeInUp} className="max-w-sm xs:sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+          <motion.h6
+            variants={fadeInUp}
+            className="max-w-sm xs:sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+          >
             {t.rich("works", {
               strong: (chunks) => <strong>{chunks}</strong>,
             })}
@@ -62,7 +68,7 @@ const AboutHeroSection = () => {
 
           <motion.div
             variants={fadeInUp}
-            className="flex flex-col sm:flex-row gap-4 pt-4"
+            className="flex flex-col sm:flex-row gap-4 pt-4 relative"
           >
             <Button asChild variant="glass" href="/asa-eriksson-cv.pdf">
               <FileDownIcon className="w-4 h-4" />
@@ -76,9 +82,9 @@ const AboutHeroSection = () => {
               <HandshakeIcon className="w-4 h-4" />
               {t("hireMe")}
             </Button>
+            <ScrollDownIndicator scrollToHref="/about#background-section" />
           </motion.div>
         </motion.div>
-        <ScrollDownIndicator scrollToHref="/about#background-section" />
       </div>
     </>
   );
