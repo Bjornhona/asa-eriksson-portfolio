@@ -28,14 +28,14 @@ const AboutHeroSection = () => {
           loading="eager"
         />
       </motion.div>
-      <div className="flex flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12">
+      <div className="relative flex flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12 pointer-events-none">
         <motion.div
           className="space-y-4"
           variants={container}
           initial="initial"
           animate="animate"
         >
-          <motion.h1 variants={fadeInUp}>
+          <motion.h1 variants={fadeInUp} className="pointer-events-auto">
             <TitleHoverGlow title={t("title") + "."} />
           </motion.h1>
 
@@ -68,7 +68,7 @@ const AboutHeroSection = () => {
 
           <motion.div
             variants={fadeInUp}
-            className="flex flex-col sm:flex-row gap-4 pt-4 relative"
+            className="relative flex flex-col sm:flex-row gap-4 pt-4 pointer-events-auto"
           >
             <Button asChild variant="glass" href="/asa-eriksson-cv.pdf">
               <FileDownIcon className="w-4 h-4" />
