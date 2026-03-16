@@ -21,12 +21,10 @@ export const container: Variants = {
 export const navVariants: Variants = {
   open: {
     opacity: 1,
-    // transition: { delayChildren: stagger(0.07, { startDelay: 0.2 }) },
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
   },
   closed: {
     opacity: 0,
-    // transition: { delayChildren: stagger(0.05, { from: "last" }) },
     transition: { staggerChildren: 0.05, staggerDirection: -1 }
   },
 };
@@ -46,12 +44,9 @@ export const itemVariants: Variants = {
       y: { stiffness: 1000 },
     },
   },
-  rest: {
-    scale: 1,
+  hover: {
+    scale: 1.05,
   },
-  // hover: {
-  //   scale: 1.05,
-  // },
 };
 
 export const sidebarVariants: Variants = {
@@ -71,16 +66,5 @@ export const sidebarVariants: Variants = {
       stiffness: 400,
       damping: 40,
     },
-  },
-};
-
-export const dotVariants: Variants = {
-  rest: {
-    scale: 1,
-    boxShadow: "0 0 0px rgba(96,165,250,0)",
-  },
-  hover: {
-    scale: 1.6,
-    boxShadow: "0 0 10px rgba(96,165,250,0.9)",
   },
 };
