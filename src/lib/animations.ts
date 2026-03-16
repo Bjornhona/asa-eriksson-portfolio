@@ -1,4 +1,4 @@
-import { stagger, Variants } from "framer-motion";
+import { Variants } from "framer-motion";
 
 export const fadeInUp: Variants = {
   initial: { opacity: 0, y: 20 },
@@ -18,49 +18,69 @@ export const container: Variants = {
   },
 };
 
-
 export const navVariants: Variants = {
-    open: {
-        transition: { delayChildren: stagger(0.07, { startDelay: 0.2 }) },
-    },
-    closed: {
-        transition: { delayChildren: stagger(0.05, { from: "last" }) },
-    },
-}
+  open: {
+    opacity: 1,
+    // transition: { delayChildren: stagger(0.07, { startDelay: 0.2 }) },
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+  },
+  closed: {
+    opacity: 0,
+    // transition: { delayChildren: stagger(0.05, { from: "last" }) },
+    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  },
+};
 
 export const itemVariants: Variants = {
-    open: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            y: { stiffness: 1000, velocity: -100 },
-        },
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
     },
-    closed: {
-        y: 50,
-        opacity: 0,
-        transition: {
-            y: { stiffness: 1000 },
-        },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
     },
-}
+  },
+  rest: {
+    scale: 1,
+  },
+  // hover: {
+  //   scale: 1.05,
+  // },
+};
 
 export const sidebarVariants: Variants = {
   open: {
-      clipPath: "circle(2500px at calc(100vw - 25px) 32px)",
-      transition: {
-          type: "spring",
-          stiffness: 20,
-          restDelta: 2,
-      },
+    clipPath: "circle(2500px at calc(100vw - 25px) 32px)",
+    transition: {
+      type: "spring",
+      stiffness: 15,
+      restDelta: 2,
+    },
   },
   closed: {
-      clipPath: "circle(0 at calc(100vw - 25px) 32px)",
-      transition: {
-          delay: 0.3,
-          type: "spring",
-          stiffness: 400,
-          damping: 40,
-      },
+    clipPath: "circle(0 at calc(100vw - 25px) 32px)",
+    transition: {
+      delay: 0.4,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
   },
-}
+};
+
+export const dotVariants: Variants = {
+  rest: {
+    scale: 1,
+    boxShadow: "0 0 0px rgba(96,165,250,0)",
+  },
+  hover: {
+    scale: 1.6,
+    boxShadow: "0 0 10px rgba(96,165,250,0.9)",
+  },
+};

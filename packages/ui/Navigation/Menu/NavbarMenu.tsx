@@ -10,6 +10,7 @@ import SafeDropdown from "../../SafeDropdown/SafeDropdown";
 import Variants from "../AnimatedMenu/Variants";
 
 const NavbarMenu = ({
+  children,
   modeSwitch,
   socialMediaLinks,
   navLinks,
@@ -26,7 +27,9 @@ const NavbarMenu = ({
       <div className="flex items-center sm:gap-2 lg:gap-4 text-foreground mr-[-10px]">
         {modeSwitch && <ThemeToggle />}
 
-        {socialMediaLinks.length > 0 && <SocialMediaLinks socialMediaLinks={socialMediaLinks} />}
+        {socialMediaLinks.length > 0 && (
+          <SocialMediaLinks socialMediaLinks={socialMediaLinks} />
+        )}
 
         {showLanguageSelector && (
           <SafeDropdown>
@@ -39,7 +42,11 @@ const NavbarMenu = ({
         )}
 
         {/* {navLinks.length > 0 && <BurgerMenu onToggleMenu={toggleMenu} />} */}
-        {navLinks.length > 0 && <Variants navLinks={navLinks} locale={locale} />}
+        {navLinks.length > 0 && (
+          <Variants navLinks={navLinks} locale={locale}>
+            {children}
+          </Variants>
+        )}
       </div>
       {/* <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} navLinks={navLinks} locale={locale} /> */}
     </>

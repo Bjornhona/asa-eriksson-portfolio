@@ -1,11 +1,13 @@
-import type { NavMenuProps } from "../../../packages/ui/types";
+import type { NavMenuProps } from "@/ui/types";
+import { Home, User, Briefcase, Folder, Book, Mail, LucideIcon } from "lucide-react";
 
-/** Nav config with translation keys; AppNavbar resolves labels via useTranslations */
-export type NavMenuConfig = Omit<NavMenuProps, "locale" | "onLocaleChange" | "navLinks"> & {
-  navLinks: { labelKey: string; href: string }[];
-};
+export interface NavLink {
+  labelKey: string;
+  href: string;
+  icon: LucideIcon;
+}
 
-export const navMenu: NavMenuConfig = {
+export const navMenu: Omit<NavMenuProps, "navLinks"> & { navLinks: NavLink[] } = {
   languages: ["en", "sv", "es"],
   socialMediaLinks: [
     { type: "github", href: "https://github.com/bjornhona" },
@@ -13,11 +15,11 @@ export const navMenu: NavMenuConfig = {
   ],
   modeSwitch: false,
   navLinks: [
-    { labelKey: "common.home", href: "/" },
-    { labelKey: "common.about", href: "/about" },
-    { labelKey: "common.services", href: "/services" },
-    { labelKey: "common.portfolio", href: "/portfolio" },
-    // { labelKey: "common.blog", href: "/blog" },
-    { labelKey: "common.contact", href: "/contact" },
+    { labelKey: "common.home", href: "/", icon: Home },
+    { labelKey: "common.about", href: "/about", icon: User },
+    { labelKey: "common.services", href: "/services", icon: Briefcase },
+    { labelKey: "common.portfolio", href: "/portfolio", icon: Folder },
+    { labelKey: "common.blog", href: "/blog", icon: Book },
+    { labelKey: "common.contact", href: "/contact", icon: Mail },
   ],
 };

@@ -54,32 +54,3 @@
   color: hsl(var(--foreground));
   padding: var(--space-3);
 }
-
-.list {
-  list-style: none;
-  padding: 80px 25px 25px;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-25%);
-  width: 280px;
-  max-width: 85vw;
-  z-index: 61;
-}
-
-.listItem {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.link {
-  display: block;
-  width: 100%;
-}

@@ -4,9 +4,11 @@ import { sidebarVariants } from "@/lib/animations";
 import Navigation from "@/ui/Navigation/AnimatedMenu/Navigation";
 import MenuToggle from "@/ui/Navigation/AnimatedMenu/MenuToggle";
 import styles from "./animatedMenu.module.css";
+import { NavLinkProps } from "@/ui/types";
 
 interface VariantsProps {
-  navLinks: { label: string; href: string }[];
+  children: React.ReactNode;
+  navLinks: NavLinkProps[];
   locale?: string;
 }
 
@@ -15,7 +17,11 @@ function buildHref(href: string, locale: string): string {
   return href === "/" ? `/${locale}` : `/${locale}${href}`;
 }
 
-export default function Variants({ navLinks, locale = "" }: VariantsProps) {
+export default function Variants({
+  children,
+  navLinks,
+  locale = "",
+}: VariantsProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -29,12 +35,17 @@ export default function Variants({ navLinks, locale = "" }: VariantsProps) {
           className={`${styles.background}`}
           variants={sidebarVariants}
         />
-        <Navigation
-          navLinks={navLinks}
-          locale={locale}
-          onLinkClick={() => setIsOpen(false)}
-          buildHref={buildHref}
-        />
+        <motion.div className={`h-16 fixed inset-0 flex items-center px-4 sm:px-6 md:px-8 z-[61]`} variants={sidebarVariants}>
+          {children}
+
+          <Navigation
+            navLinks={navLinks}
+            locale={locale}
+            isOpen={isOpen}
+            onLinkClick={() => setIsOpen(false)}
+            buildHref={buildHref}
+          />
+        </motion.div>
         <MenuToggle toggle={() => setIsOpen(!isOpen)} />
       </motion.nav>
     </div>

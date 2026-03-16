@@ -8,7 +8,7 @@ export interface LogoProps {
   logoAlt?: string;
 }
 
-const Logo = ({ logoSrc, logoLink = "/", logoDarkModeSrc, logoAlt }: LogoProps) => {
+const Logo = ({ logoSrc, logoLink = "#", logoDarkModeSrc, logoAlt }: LogoProps) => {
   return (
     <Link href={logoLink} className="flex ml-[-10px]">
       {/* Logo for dark mode */}

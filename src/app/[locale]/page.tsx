@@ -2,10 +2,15 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 import { useTranslations } from "next-intl";
-import FloatingBlobs from "@/components/FloatingBlobs/FloatingBlobs";
 import GlassCard from "@/components/GlassCard/GlassCard";
 import { Button } from "@/ui";
 import { fadeInUp, container } from "@/lib/animations";
+import dynamic from "next/dynamic";
+
+const FloatingBlobs = dynamic(
+  () => import("@/components/FloatingBlobs/FloatingBlobs"),
+  { ssr: false }
+);
 
 export default function Home() {
   const t = useTranslations();

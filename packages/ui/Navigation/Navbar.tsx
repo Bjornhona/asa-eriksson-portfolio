@@ -1,8 +1,9 @@
-import type { NavMenuProps } from "../types";
+import { useMounted } from "@/lib/hooks/useMounted";
 import Logo from "../Logo/Logo";
 import NavbarMenu from "./Menu/NavbarMenu";
-
+import { NavMenuProps } from "@/ui/types";
 export interface NavbarProps {
+  children?: React.ReactNode;
   logoSrc: string;
   logoDarkModeSrc: string;
   logoAlt: string;
@@ -10,13 +11,31 @@ export interface NavbarProps {
   navMenu: NavMenuProps;
 }
 
-const Navbar = ({ logoSrc, logoDarkModeSrc, logoAlt, logoLink, navMenu }: NavbarProps) => {
+const Navbar = ({
+  children,
+  logoSrc,
+  logoDarkModeSrc,
+  logoAlt,
+  logoLink,
+  navMenu,
+}: NavbarProps) => {
+  const mounted = useMounted();
+
+  if (!mounted) return null;
+  
   return (
     <div className="absolute inset-0 flex items-center justify-between w-full h-16 z-50 px-4 sm:px-6 md:px-8 text-foreground bg-gradient-to-b from-background/50 to-transparent">
-      <Logo logoSrc={logoSrc} logoDarkModeSrc={logoDarkModeSrc} logoAlt={logoAlt} logoLink={logoLink} />
-      <NavbarMenu {...navMenu} />
+      <Logo
+        logoSrc={logoSrc}
+        logoDarkModeSrc={logoDarkModeSrc}
+        logoAlt={logoAlt}
+        logoLink={logoLink}
+      />
+      <NavbarMenu {...navMenu}>
+        {children}
+      </NavbarMenu>
     </div>
   );
-}
+};
 
 export default Navbar;
