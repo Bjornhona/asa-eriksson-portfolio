@@ -1,14 +1,14 @@
 import { useTranslations } from "next-intl";
 import Quote from "@/components/Quote/Quote";
 
-const AboutQuoteSection = () => {
-  const t = useTranslations("about.quote");
+const ServicesQuoteSection = () => {
+  const t = useTranslations("services.quote");
 
   return (
-    <section id="quote-section">
+    <section id="quote-section ">
       <Quote quote={t("description")} />
     </section>
   );
 };
 
-export default AboutQuoteSection;
+export default ServicesQuoteSection;

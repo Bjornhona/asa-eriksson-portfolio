@@ -56,7 +56,7 @@ const AboutApproachSection = () => {
         </motion.h5>
         <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
           {coreStack.map((item) => (
-            <Button variant="glass" className="pointer-events-none" key={item}>
+            <Button variant="tag" size="sm" key={item}>
               {item}
             </Button>
           ))}

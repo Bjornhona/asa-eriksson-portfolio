@@ -286,6 +286,39 @@
         "item2": "Fast builds",
         "item3": "Mobile-first design"
       }
+    },
+    "process": {
+      "title": "My process",
+      "description": "My process is simple and straightforward. I follow a step-by-step approach to build your project.",
+      "steps": {
+        "discovery": "Discovery",
+        "discoveryDescription": "Understanding your goals, audience, and vision to define the right direction.",
+        "design": "Design",
+        "designDescription": "Creating intuitive layouts and a visual identity that reflects your brand.",
+        "development": "Development",
+        "developmentDescription": "Building a fast, scalable, and reliable product using modern technologies.",
+        "launch": "Launch & Optimize",
+        "launchDescription": "Testing, refining, and launching your project with performance in mind."
+      }
+    },
+    "quote": {
+      "description": "I combine engineering precision with design intuition — so your product not only works, but feels right."
+    },
+    "work": {
+      "title": "Selected Work",
+      "description": "Selected Work",
+      "seeFullPortfolio": "See full portfolio"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "description": "Starting from…",
+      "landingPages": "Landing pages → from €800",
+      "websites": "Websites → from €1500",
+      "customApps": "Custom apps → custom quote"
+    },
+    "cta": {
+      "title": "Let’s build something great together",
+      "buttonText": "Contact Me"
     }
   }
 }
