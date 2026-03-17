@@ -3,8 +3,8 @@ import Image, { ImageProps } from "next/image";
 interface BlendImageFilterProps extends ImageProps {
   src: string;
   alt: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
   className?: string;
 }
 

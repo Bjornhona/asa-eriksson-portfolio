@@ -251,5 +251,14 @@
       "hireMe": "Hire Me",
       "downloadCV": "Download my CV"
     }
+  },
+  "services": {
+    "hero": {
+      "title": "My services",
+      "subtitle": "<strong>Frontend Development & UI Design</strong>. I help businesses build fast, scalable, and beautifully designed web experiences.",
+      "description": "I help you bring your ideas to life with a clean design and reliable frontend development — <strong>creating websites and applications</strong> that are both beautiful and built to perform.",
+      "contactMe": "Contact Me",
+      "viewMyWork": "View my work"
+    }
   }
 }

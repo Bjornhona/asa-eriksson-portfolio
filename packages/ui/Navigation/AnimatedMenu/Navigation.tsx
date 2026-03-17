@@ -18,11 +18,10 @@ const Navigation = ({
   buildHref,
 }: NavigationProps) => (
   <motion.ul
-    className="fixed top-0 left-[50%] transform -translate-x-1/2 px-4 sm:px-6 md:px-8 pt-24 pb-6 w-[500px] max-w-[85vw]"
+    className="fixed top-0 left-[50%] transform -translate-x-1/2 px-4 sm:px-6 md:px-8 pt-20 pb-6 w-[500px] max-w-[85vw]"
     variants={navVariants}
     initial="closed"
     animate={isOpen ? "open" : "closed"}
-    // animate="open"
   >
     {navLinks.map((link) => (
       <MenuItem

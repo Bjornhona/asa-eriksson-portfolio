@@ -20,11 +20,8 @@ const MenuItem = ({ link, href, onLinkClick }: MenuItemProps) => {
       <Link
         href={href}
         onClick={onLinkClick}
-        className="flex items-center gap-2"
+        className="flex items-center justify-center gap-2"
       >
-        <span
-          className="relative w-1 h-1 rounded-full bg-blue-400 shrink-0"
-        />
         {link.label}
       </Link>
     </motion.li>

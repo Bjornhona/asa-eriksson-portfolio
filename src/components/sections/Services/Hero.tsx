@@ -1,0 +1,80 @@
+"use client";
+import { motion } from "framer-motion";
+import { container, fadeInUp } from "@/lib/animations";
+import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
+import BlendImageFilter from "@/components/BlendImageFilter/BlendImageFilter";
+import { Button } from "@/ui";
+import { MailIcon, FolderIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
+// import ScrollDownIndicator from "@/components/ScrollDownIndicator/ScrollDownIndicator";
+
+const ServicesHeroSection = () => {
+  const t = useTranslations("services.hero");
+
+  return (
+    <>
+      <motion.div
+        className="absolute right-[var(--space-4)] sm:right-[var(--space-6)] md:right-[var(--space-8)] lg:right-[var(--space-10)] xl:right-[var(--space-12)] w-[50vw] h-[50vw] sm:w-[40vw] sm:h-[40vw] lg:w-[35vw] lg:h-[35vw] xl:w-[30vw] xl:h-[30vw] 2xl:w-[25vw] 2xl:h-[25vw] aspect-square overflow-hidden rounded-full"
+        variants={fadeInUp}
+        initial="initial"
+        animate="animate"
+      >
+        <BlendImageFilter
+          src="/me-working1.jpeg"
+          alt="My services"
+          width={400}
+          height={400}
+          className="object-cover"
+          loading="eager"
+        />
+      </motion.div>
+      <div className="relative flex flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12 pointer-events-none">
+        <motion.div
+          className="space-y-4"
+          variants={container}
+          initial="initial"
+          animate="animate"
+        >
+          <motion.h1 variants={fadeInUp} className="pointer-events-auto">
+            <TitleHoverGlow title={t("title") + "."} />
+          </motion.h1>
+
+          <motion.h4
+            variants={fadeInUp}
+            className="max-w-xs xs:sm:max-w-sm lg:max-w-md xl:max-w-lg"
+          >
+            {t.rich("subtitle", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </motion.h4>
+
+          <motion.h6
+            variants={fadeInUp}
+            className="max-w-sm xs:sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+          >
+            {t.rich("description", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </motion.h6>
+
+          <motion.div
+            variants={fadeInUp}
+            className="relative flex flex-col sm:flex-row gap-4 pt-4 pointer-events-auto"
+          >
+            <Button variant="glass" href="mailto:info@asaeriksson.com">
+              <MailIcon className="w-4 h-4" />
+              {t("contactMe")}
+            </Button>
+            <Button variant="glass" href="/portfolio">
+              <FolderIcon className="w-4 h-4" />
+              {t("viewMyWork")}
+            </Button>
+            {/* <ScrollDownIndicator scrollToHref="/services#services-section" /> */}
+          </motion.div>
+        </motion.div>
+      </div>
+    </>
+  );
+};
+
+export default ServicesHeroSection;

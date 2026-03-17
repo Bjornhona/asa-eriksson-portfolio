@@ -25,11 +25,11 @@ export default function Variants({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={styles.container}>
+    <div className="relative flex items-center flex:0 w-[40px] h-[40px]">
       <motion.nav
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className={`${styles.nav} ${isOpen ? styles.open : styles.closed}`}
+        className={`relative w-[40px] h-[40px] ${isOpen ? styles.open : styles.closed}`}
       >
         <motion.div
           className={`${styles.background}`}
