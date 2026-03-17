@@ -286,6 +286,38 @@
         "item2": "Snabb utveckling",
         "item3": "Mobile-first design"
       }
+    },
+    "process": {
+      "title": "Min process",
+      "description": "Min process är enkel och tydlig. Jag följer en steg-för-steg-metod för att bygga ditt projekt.",
+      "steps": {
+        "discovery": "Upptäckt",
+        "discoveryDescription": "Förstå dina mål, din målgrupp och din vision för att sätta rätt riktning.",
+        "design": "Design",
+        "designDescription": "Skapa intuitiva layouter och en visuell identitet som speglar ditt varumärke.",
+        "development": "Utveckling",
+        "developmentDescription": "Bygga en snabb, skalbar och pålitlig produkt med moderna teknologier.",
+        "launch": "Lansering & Optimering",
+        "launchDescription": "Testa, förbättra och lansera ditt projekt med fokus på prestanda."
+      }
+    },
+    "quote": {
+      "description": "Jag kombinerar ingenjörsmässig precision med designkänsla — så att din produkt inte bara fungerar, utan känns rätt."
+    },
+    "work": {
+      "title": "Utvalda projekt",
+      "seeFullPortfolio": "Se hela portföljen"
+    },
+    "pricing": {
+      "title": "Priser",
+      "description": "Från…",
+      "landingPages": "Landningssidor → från 800 €",
+      "websites": "Webbplatser → från 1500 €",
+      "customApps": "Skräddarsydda appar → offert"
+    },
+    "cta": {
+      "title": "Låt oss bygga något fantastiskt tillsammans",
+      "buttonText": "Kontakta mig"
     }
   }
 }

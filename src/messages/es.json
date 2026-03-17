@@ -286,6 +286,38 @@
         "item2": "Desarrollo rápido",
         "item3": "Diseño mobile-first"
       }
+    },
+    "process": {
+      "title": "Mi proceso",
+      "description": "Mi proceso es simple y claro. Sigo un enfoque paso a paso para construir tu proyecto.",
+      "steps": {
+        "discovery": "Descubrimiento",
+        "discoveryDescription": "Entender tus objetivos, tu audiencia y tu visión para definir la dirección correcta.",
+        "design": "Diseño",
+        "designDescription": "Crear interfaces intuitivas y una identidad visual que refleje tu marca.",
+        "development": "Desarrollo",
+        "developmentDescription": "Construir un producto rápido, escalable y fiable con tecnologías modernas.",
+        "launch": "Lanzamiento y optimización",
+        "launchDescription": "Probar, mejorar y lanzar tu proyecto con un enfoque en el rendimiento."
+      }
+    },
+    "quote": {
+      "description": "Combino precisión de ingeniería con intuición de diseño — para que tu producto no solo funcione, sino que también se sienta bien."
+    },
+    "work": {
+      "title": "Proyectos seleccionados",
+      "seeFullPortfolio": "Ver portafolio completo"
+    },
+    "pricing": {
+      "title": "Precios",
+      "description": "Desde…",
+      "landingPages": "Landing pages → desde 800 €",
+      "websites": "Sitios web → desde 1500 €",
+      "customApps": "Aplicaciones a medida → presupuesto personalizado"
+    },
+    "cta": {
+      "title": "Construyamos algo increíble juntos",
+      "buttonText": "Contáctame"
     }
   }
 }
