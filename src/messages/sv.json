@@ -251,5 +251,40 @@
       "hireMe": "Anlita mig",
       "downloadCV": "Ladda ner mitt CV"
     }
+  },
+  "services": {
+    "hero": {
+      "title": "Mina tjänster",
+      "subtitle": "<strong>Frontendutveckling & UI-design</strong>. Jag hjälper företag att bygga snabba, skalbara och vackert designade webbupplevelser.",
+      "description": "Jag hjälper dig att förverkliga dina idéer med en ren design och pålitlig frontendutveckling — <strong>webbplatser och applikationer</strong> som är både vackra och byggda för att prestera.",
+      "contactMe": "Kontakta mig",
+      "viewMyWork": "Se mitt arbete"
+    },
+    "cards": {
+      "frontend": {
+        "title": "Frontendutveckling",
+        "item1": "React / Next.js-appar",
+        "item2": "Prestandaoptimering",
+        "item3": "Skalbar arkitektur"
+      },
+      "uiux": {
+        "title": "UI / UX-design för webb",
+        "item1": "Rena, moderna gränssnitt",
+        "item2": "Designsystem",
+        "item3": "Konverteringsfokuserade layouter"
+      },
+      "performance": {
+        "title": "Webbprestanda & optimering",
+        "item1": "Hastighetsrevisioner",
+        "item2": "Lighthouse-förbättringar",
+        "item3": "Core Web Vitals-åtgärder"
+      },
+      "landing": {
+        "title": "Landningssidor som konverterar",
+        "item1": "Marknadsföringsfokuserade sidor",
+        "item2": "Snabb utveckling",
+        "item3": "Mobil först"
+      }
+    }
   }
 }

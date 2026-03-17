@@ -251,5 +251,40 @@
       "hireMe": "Contrátame",
       "downloadCV": "Descargar mi CV"
     }
+  },
+  "services": {
+    "hero": {
+      "title": "Mis servicios",
+      "subtitle": "<strong>Desarrollo Frontend y Diseño UI</strong>. Ayudo a empresas a crear experiencias web rápidas, escalables y con un diseño atractivo.",
+      "description": "Ayudo a dar vida a tus ideas con un diseño limpio y un desarrollo frontend fiable — <strong>creando webs y aplicaciones</strong> que son bellas y están construidas para rendir.",
+      "contactMe": "Contactar",
+      "viewMyWork": "Ver mi trabajo"
+    },
+    "cards": {
+      "frontend": {
+        "title": "Desarrollo Frontend",
+        "item1": "Apps React / Next.js",
+        "item2": "Optimización de rendimiento",
+        "item3": "Arquitectura escalable"
+      },
+      "uiux": {
+        "title": "Diseño UI / UX para Web",
+        "item1": "Interfaces limpias y modernas",
+        "item2": "Sistemas de diseño",
+        "item3": "Maquetas enfocadas a conversión"
+      },
+      "performance": {
+        "title": "Rendimiento y Optimización Web",
+        "item1": "Auditorías de velocidad",
+        "item2": "Mejoras Lighthouse",
+        "item3": "Correcciones Core Web Vitals"
+      },
+      "landing": {
+        "title": "Landing Pages que Convierten",
+        "item1": "Páginas enfocadas en marketing",
+        "item2": "Desarrollo rápido",
+        "item3": "Mobile-first"
+      }
+    }
   }
 }

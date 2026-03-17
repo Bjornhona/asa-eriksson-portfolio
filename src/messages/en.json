@@ -259,6 +259,32 @@
       "description": "I help you bring your ideas to life with a clean design and reliable frontend development — <strong>creating websites and applications</strong> that are both beautiful and built to perform.",
       "contactMe": "Contact Me",
       "viewMyWork": "View my work"
+    },
+    "cards": {
+      "frontend": {
+        "title": "Frontend Development",
+        "item1": "React / Next.js apps",
+        "item2": "Performance optimization",
+        "item3": "Scalable architecture"
+      },
+      "uiux": {
+        "title": "UI / UX Design for Web",
+        "item1": "Clean, modern interfaces",
+        "item2": "Design systems",
+        "item3": "Conversion-focused layouts"
+      },
+      "performance": {
+        "title": "Website Performance & Optimization",
+        "item1": "Speed audits",
+        "item2": "Lighthouse improvements",
+        "item3": "Core Web Vitals fixes"
+      },
+      "landing": {
+        "title": "Landing Pages that Convert",
+        "item1": "Marketing-focused pages",
+        "item2": "Fast builds",
+        "item3": "Mobile-first"
+      }
     }
   }
 }
