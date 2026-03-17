@@ -255,35 +255,36 @@
   "services": {
     "hero": {
       "title": "Mina tjänster",
-      "subtitle": "<strong>Frontendutveckling & UI-design</strong>. Jag hjälper företag att bygga snabba, skalbara och vackert designade webbupplevelser.",
-      "description": "Jag hjälper dig att förverkliga dina idéer med en ren design och pålitlig frontendutveckling — <strong>webbplatser och applikationer</strong> som är både vackra och byggda för att prestera.",
+      "subtitle": "<strong>Frontendutveckling & UI-design</strong>. Jag hjälper företag att skapa snabba, skalbara och visuellt genomtänkta webbupplevelser.",
+      "description": "Jag hjälper dig att förverkliga dina idéer med ren design och pålitlig frontendutveckling — <strong>och skapar webbplatser och applikationer</strong> som är både visuellt tilltalande och byggda för hög prestanda.",
       "contactMe": "Kontakta mig",
-      "viewMyWork": "Se mitt arbete"
+      "viewMyWork": "Se mina projekt"
     },
     "cards": {
+      "title": "Detta kan jag hjälpa dig med",
       "frontend": {
         "title": "Frontendutveckling",
-        "item1": "React / Next.js-appar",
+        "item1": "Applikationer i React / Next.js",
         "item2": "Prestandaoptimering",
         "item3": "Skalbar arkitektur"
       },
       "uiux": {
         "title": "UI / UX-design för webb",
-        "item1": "Rena, moderna gränssnitt",
+        "item1": "Rena och moderna gränssnitt",
         "item2": "Designsystem",
-        "item3": "Konverteringsfokuserade layouter"
+        "item3": "Konverteringsfokuserad design"
       },
       "performance": {
-        "title": "Webbprestanda & optimering",
-        "item1": "Hastighetsrevisioner",
-        "item2": "Lighthouse-förbättringar",
-        "item3": "Core Web Vitals-åtgärder"
+        "title": "Prestanda & optimering",
+        "item1": "Hastighetsanalyser",
+        "item2": "Förbättringar av Lighthouse",
+        "item3": "Optimering av Core Web Vitals"
       },
       "landing": {
-        "title": "Landningssidor som konverterar",
+        "title": "Högkonverterande landningssidor",
         "item1": "Marknadsföringsfokuserade sidor",
         "item2": "Snabb utveckling",
-        "item3": "Mobil först"
+        "item3": "Mobile-first design"
       }
     }
   }

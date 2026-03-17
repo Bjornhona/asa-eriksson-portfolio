@@ -255,35 +255,36 @@
   "services": {
     "hero": {
       "title": "Mis servicios",
-      "subtitle": "<strong>Desarrollo Frontend y Diseño UI</strong>. Ayudo a empresas a crear experiencias web rápidas, escalables y con un diseño atractivo.",
-      "description": "Ayudo a dar vida a tus ideas con un diseño limpio y un desarrollo frontend fiable — <strong>creando webs y aplicaciones</strong> que son bellas y están construidas para rendir.",
-      "contactMe": "Contactar",
+      "subtitle": "<strong>Desarrollo Frontend y Diseño UI</strong>. Ayudo a las empresas a crear experiencias web rápidas, escalables y con un diseño atractivo.",
+      "description": "Te ayudo a dar vida a tus ideas con un diseño limpio y un desarrollo frontend fiable — <strong>creando sitios web y aplicaciones</strong> que no solo son visualmente atractivos, sino también eficientes y optimizados.",
+      "contactMe": "Contáctame",
       "viewMyWork": "Ver mi trabajo"
     },
     "cards": {
+      "title": "En qué puedo ayudarte",
       "frontend": {
         "title": "Desarrollo Frontend",
-        "item1": "Apps React / Next.js",
-        "item2": "Optimización de rendimiento",
+        "item1": "Aplicaciones con React / Next.js",
+        "item2": "Optimización del rendimiento",
         "item3": "Arquitectura escalable"
       },
       "uiux": {
         "title": "Diseño UI / UX para Web",
         "item1": "Interfaces limpias y modernas",
         "item2": "Sistemas de diseño",
-        "item3": "Maquetas enfocadas a conversión"
+        "item3": "Diseños orientados a la conversión"
       },
       "performance": {
-        "title": "Rendimiento y Optimización Web",
+        "title": "Rendimiento y Optimización",
         "item1": "Auditorías de velocidad",
-        "item2": "Mejoras Lighthouse",
-        "item3": "Correcciones Core Web Vitals"
+        "item2": "Mejoras en Lighthouse",
+        "item3": "Optimización de Core Web Vitals"
       },
       "landing": {
-        "title": "Landing Pages que Convierten",
+        "title": "Landing Pages que convierten",
         "item1": "Páginas enfocadas en marketing",
         "item2": "Desarrollo rápido",
-        "item3": "Mobile-first"
+        "item3": "Diseño mobile-first"
       }
     }
   }
