@@ -2,7 +2,7 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
 import { useTranslations } from "next-intl";
-import GlassCard from "@/components/GlassCard/GlassCard";
+import GlassCard from "@/components/GlassCards/GlassCard";
 import { Button } from "@/ui";
 import { fadeInUp, container } from "@/lib/animations";
 import dynamic from "next/dynamic";

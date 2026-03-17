@@ -261,6 +261,7 @@
       "viewMyWork": "View my work"
     },
     "cards": {
+      "title": "What I can help you with",
       "frontend": {
         "title": "Frontend Development",
         "item1": "React / Next.js apps",
@@ -274,7 +275,7 @@
         "item3": "Conversion-focused layouts"
       },
       "performance": {
-        "title": "Website Performance & Optimization",
+        "title": "Performance & Optimization",
         "item1": "Speed audits",
         "item2": "Lighthouse improvements",
         "item3": "Core Web Vitals fixes"
