@@ -19,7 +19,7 @@ export const navMenu: Omit<NavMenuProps, "navLinks"> & { navLinks: NavLink[] } =
     { labelKey: "common.about", href: "/about", icon: User },
     { labelKey: "common.services", href: "/services", icon: Briefcase },
     { labelKey: "common.portfolio", href: "/portfolio", icon: Folder },
-    { labelKey: "common.blog", href: "/blog", icon: Book },
+    // { labelKey: "common.blog", href: "/blog", icon: Book },
     { labelKey: "common.contact", href: "/contact", icon: Mail },
   ],
 };
