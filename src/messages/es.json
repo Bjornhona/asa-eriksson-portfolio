@@ -4,7 +4,7 @@
     "about": "Sobre",
     "contact": "Contacto",
     "services": "Servicios",
-    "portfolio": "Portafolio",
+    "portfolio": "Portfolio",
     "blog": "Blog"
   },
   "home": {
@@ -139,7 +139,7 @@
     "contactDescription": "A través del formulario de contacto disponible en este sitio web o por correo electrónico a",
 
     "purposeOfTheWebsite": "Finalidad del sitio web",
-    "purposeOfTheWebsiteDescription": "La finalidad de este sitio web es presentar el portafolio profesional, los servicios y los proyectos del titular del sitio web relacionados con el desarrollo frontend, el desarrollo web y el diseño de interfaces de usuario.",
+    "purposeOfTheWebsiteDescription": "La finalidad de este sitio web es presentar el portfolio profesional, los servicios y los proyectos del titular del sitio web relacionados con el desarrollo frontend, el desarrollo web y el diseño de interfaces de usuario.",
     "websiteMayAlsoProvideInformation": "El sitio web también puede proporcionar información sobre servicios profesionales y permitir a los visitantes contactar con el titular del sitio web mediante un formulario de contacto.",
 
     "termsOfUse": "Condiciones de uso",
@@ -306,7 +306,7 @@
     },
     "work": {
       "title": "Proyectos seleccionados",
-      "seeFullPortfolio": "Ver portafolio completo"
+      "seeFullPortfolio": "Ver portfolio completo"
     },
     "pricing": {
       "title": "Precios",

@@ -310,10 +310,27 @@
     },
     "pricing": {
       "title": "Pricing",
-      "description": "Starting from…",
-      "landingPages": "Landing pages → from €800",
-      "websites": "Websites → from €1500",
-      "customApps": "Custom apps → custom quote"
+      "subtitle": "Invest in a fast, scalable, and beautifully designed web experience.",
+      "description": "Every project is tailored to your goals — these are starting points to give you an idea.",
+      "from": "from",
+      "customQuote": "custom quote",
+      "offers": {
+        "landingPages": "Landing pages",
+        "landingPagesDescription": "Perfect for campaigns, products, or personal brands that need to convert visitors into customers.",
+        "websites": "Websites",
+        "websitesDescription": "Modern, responsive websites built with performance, scalability, and user experience in mind.",
+        "customApps": "Custom web applications",
+        "customAppsDescription": "Tailored solutions for more complex needs — built to scale with your business."
+      },
+      "whatsIncluded": "What’s included:",
+      "includes": {
+        "cleanModernDesign": "Clean, modern design",
+        "mobileFirstResponsive": "Mobile-first & responsive",
+        "highPerformance": "High performance (Core Web Vitals optimized)",
+        "scalableArchitecture": "Scalable architecture",
+        "smoothUserExperience": "Smooth user experience"
+      },
+      "designAndDevelopment": "Design + development in one place — no need to hire multiple people."
     },
     "cta": {
       "title": "Let’s build something great together",

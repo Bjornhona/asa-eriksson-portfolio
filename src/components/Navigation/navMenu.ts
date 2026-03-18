@@ -1,5 +1,5 @@
 import type { NavMenuProps } from "@/ui/types";
-import { Home, User, Briefcase, Folder, Book, Mail, LucideIcon } from "lucide-react";
+import { Home, User, Briefcase, Folder, Mail, LucideIcon } from "lucide-react";
 
 export interface NavLink {
   labelKey: string;

@@ -16,7 +16,8 @@ const ServicesWorkSection = () => {
         viewport={{ once: true }}
       >
         <motion.h3 variants={fadeInUp}>{t("title")}</motion.h3>
-        {/* <motion.h6 variants={fadeInUp}>{t("description")}</motion.h6> */}
+        {/* <motion.h5 variants={fadeInUp}>{t("subtitle")}</motion.h5>
+        <motion.h6 variants={fadeInUp}>{t("description")}</motion.h6> */}
         <Button variant="glass" href="/portfolio">
           {t("seeFullPortfolio")}
         </Button>
