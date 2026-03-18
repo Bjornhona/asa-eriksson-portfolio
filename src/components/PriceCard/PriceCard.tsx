@@ -1,4 +1,4 @@
-import { fadeInUp } from "@/lib/animations";
+import { cardItem, fadeInUp } from "@/lib/animations";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
@@ -13,7 +13,7 @@ const PriceCard = ({ title, description, price, custom }: PriceCardProps) => {
   const t = useTranslations("services.pricing");
 
   return (
-    <div className="px-6 space-y-2 py-4 max-w-sm mx-auto">
+    <motion.div variants={cardItem} className="px-6 space-y-2 py-4 max-w-sm mx-auto">
       <motion.h4 variants={fadeInUp}>{title}</motion.h4>
       <motion.p variants={fadeInUp}>{description}</motion.p>
       <div className="flex gap-4">
@@ -24,7 +24,7 @@ const PriceCard = ({ title, description, price, custom }: PriceCardProps) => {
           {price || custom}
         </motion.h3>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

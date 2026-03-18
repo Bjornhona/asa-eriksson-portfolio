@@ -5,7 +5,7 @@ import { container, fadeInUp } from "@/lib/animations";
 const Quote = ({ quote }: { quote: string }) => {
   return (
     <motion.div
-      className="relative space-y-4 max-w-md mx-auto"
+      className="relative space-y-4 max-w-md mx-auto mb-12 md:mb-16"
       variants={container}
       initial="initial"
       whileInView="animate"

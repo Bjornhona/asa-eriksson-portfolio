@@ -171,7 +171,7 @@
       "title": "About Me",
       "subtitle": "I’m a <strong>Frontend Developer and Product Designer</strong> who builds modern web applications with a strong focus on usability, performance, and clean architecture.",
       "description": "With a background in both <strong>design and engineering</strong>, I bridge the gap between visual creativity and technical execution. My goal is simple: create digital products that are <strong>beautiful, intuitive, and scalable</strong>.",
-      "works": "I work with companies and startups around the world to transform ideas into <strong>high-quality web experiences</strong>.",
+      "works": "I work with companies and startups around the world to transform ideas into <strong>high-quality web experiences</strong> — also helping women launch tech careers through <strong>Tech Beach Mama</strong>.",
       "downloadCV": "Download my CV",
       "connectLinkedin": "See on LinkedIn",
       "hireMe": "Hire Me"
@@ -244,6 +244,12 @@
       "productDesign": "years of Product & UI/UX design",
       "designDrivenDevelopment": "years of Design-driven development",
       "scalableWebApplications": "years of Building scalable web applications"
+    },
+    "techBeachMama": {
+      "title": "Beyond client work",
+      "description": "I’m also building <strong>Tech Beach Mama</strong> — a platform where I help women, especially single mothers, transition into tech and build independent, flexible careers.",
+      "description2": "It’s where I share my journey, resources, and practical guidance for creating a life with more freedom.",
+      "linkText": "<a>→ Learn more about Tech Beach Mama</a>"
     },
     "ctaAndCV": {
       "title": "Interested in working together?",

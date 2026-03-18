@@ -3,7 +3,7 @@ import ServicesSection from "@/components/sections/Services/Services";
 import ProcessSection from "@/components/sections/Services/Process";
 import ServicesQuoteSection from "@/components/sections/Services/Quote";
 import ServicesCtaSection from "@/components/sections/Services/Cta";
-import ServicesWorkSection from "@/components/sections/Services/Work";
+// import ServicesWorkSection from "@/components/sections/Services/Work";
 import ServicesPricingSection from "@/components/sections/Services/Pricing";
 
 const ServicesPage = () => {
@@ -13,7 +13,7 @@ const ServicesPage = () => {
       <ServicesSection />
       <ProcessSection />
       <ServicesQuoteSection />
-      <ServicesWorkSection />
+      {/* <ServicesWorkSection /> */}
       <ServicesPricingSection />
       <ServicesCtaSection />
     </div>

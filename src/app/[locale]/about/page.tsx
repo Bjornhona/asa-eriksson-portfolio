@@ -10,6 +10,7 @@ import AboutContactSection from "@/components/sections/About/Contact";
 import AboutWorkedWithSection from "@/components/sections/About/WorkedWith";
 import AboutExperienceSection from "@/components/sections/About/Experience";
 import AboutCtaAndCVSection from "@/components/sections/About/CtaAndCV";
+import AboutTechBeachMamaSection from "@/components/sections/About/TechBeachMama";
 
 const AboutPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -35,6 +36,9 @@ const AboutPage = () => {
     },
     {
       component: <AboutExperienceSection />,
+    },
+    {
+      component: <AboutTechBeachMamaSection />,
       last: true,
     },
   ];
