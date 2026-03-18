@@ -171,7 +171,7 @@
       "title": "Sobre mí",
       "subtitle": "Soy <strong>Desarrolladora Frontend y Diseñadora de Producto</strong> y creo aplicaciones web modernas con un fuerte enfoque en la usabilidad, el rendimiento y una arquitectura limpia.",
       "description": "Con experiencia tanto en <strong>diseño como en ingeniería</strong>, conecto la creatividad visual con la ejecución técnica. Mi objetivo es simple: crear productos digitales que sean <strong>bonitos, intuitivos y escalables</strong>.",
-      "works": "Trabajo con empresas y startups de todo el mundo para transformar ideas en <strong>experiencias web de alta calidad</strong>.",
+      "works": "Trabajo con empresas y startups de todo el mundo para transformar ideas en <strong>experiencias web de alta calidad</strong> — y también ayudo a mujeres a lanzar sus carreras en tecnología a través de <strong>Tech Beach Mama</strong>.",
       "downloadCV": "Descargar mi CV",
       "connectLinkedin": "Conectar en LinkedIn",
       "hireMe": "Contratar"
@@ -245,6 +245,12 @@
       "designDrivenDevelopment": "años de desarrollo guiado por el diseño",
       "scalableWebApplications": "años construyendo aplicaciones web escalables"
     },
+    "techBeachMama": {
+      "title": "Más allá del trabajo con clientes",
+      "description": "También estoy construyendo <strong>Tech Beach Mama</strong> — una plataforma donde ayudo a mujeres, especialmente madres solteras, a dar el salto al mundo tech y crear carreras independientes y flexibles.",
+      "description2": "Es donde comparto mi experiencia, recursos y guía práctica para crear una vida con más libertad.",
+      "linkText": "<a>→ Descubre más sobre Tech Beach Mama</a>"
+    },
     "ctaAndCV": {
       "title": "¿Te interesa trabajar conmigo?",
       "viewPortfolio": "Ver mi portfolio",
@@ -310,10 +316,27 @@
     },
     "pricing": {
       "title": "Precios",
-      "description": "Desde…",
-      "landingPages": "Landing pages → desde 800 €",
-      "websites": "Sitios web → desde 1500 €",
-      "customApps": "Aplicaciones a medida → presupuesto personalizado"
+      "subtitle": "Invierte en una experiencia web rápida, escalable y con un diseño cuidado.",
+      "description": "Cada proyecto se adapta a tus objetivos — estos son precios orientativos para que tengas una idea.",
+      "from": "desde",
+      "customQuote": "presupuesto personalizado",
+      "offers": {
+        "landingPages": "Landing pages",
+        "landingPagesDescription": "Perfectas para campañas, productos o marcas personales que necesitan convertir visitantes en clientes.",
+        "websites": "Sitios web",
+        "websitesDescription": "Sitios web modernos y responsive, creados con foco en rendimiento, escalabilidad y experiencia de usuario.",
+        "customApps": "Aplicaciones web a medida",
+        "customAppsDescription": "Soluciones personalizadas para necesidades más complejas — diseñadas para crecer con tu negocio."
+      },
+      "whatsIncluded": "Qué incluye:",
+      "includes": {
+        "cleanModernDesign": "Diseño limpio y moderno",
+        "mobileFirstResponsive": "Mobile-first y responsive",
+        "highPerformance": "Alto rendimiento (optimizado para Core Web Vitals)",
+        "scalableArchitecture": "Arquitectura escalable",
+        "smoothUserExperience": "Experiencia de usuario fluida"
+      },
+      "designAndDevelopment": "Diseño y desarrollo en un solo lugar — sin necesidad de contratar a varias personas."
     },
     "cta": {
       "title": "Construyamos algo increíble juntos",

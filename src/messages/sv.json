@@ -171,7 +171,7 @@
       "title": "Om mig",
       "subtitle": "Jag är en <strong>Frontendutvecklare och produktdesigner</strong> som bygger moderna webbapplikationer med starkt fokus på användbarhet, prestanda och ren arkitektur.",
       "description": "Med en bakgrund inom både <strong>design och utveckling</strong> bygger jag broar mellan visuell kreativitet och teknisk implementation. Mitt mål är enkelt: att skapa digitala produkter som är <strong>vackra, intuitiva och skalbara</strong>.",
-      "works": "Jag samarbetar med företag och startups runt om i världen för att förvandla idéer till <strong>webbupplevelser av hög kvalitet</strong>.",
+      "works": "Jag arbetar med företag och startups världen över för att omvandla idéer till <strong>webbupplevelser av hög kvalitet</strong> — samtidigt som jag hjälper kvinnor att starta karriärer inom tech genom <strong>Tech Beach Mama</strong>.",
       "downloadCV": "Ladda ner mitt CV",
       "connectLinkedin": "Anslut på LinkedIn",
       "hireMe": "Anlita mig"
@@ -245,6 +245,12 @@
       "designDrivenDevelopment": "års erfarenhet av design-driven utveckling",
       "scalableWebApplications": "års erfarenhet av att bygga skalbara webbapplikationer"
     },
+    "techBeachMama": {
+      "title": "Utöver kunduppdrag",
+      "description": "Jag bygger också <strong>Tech Beach Mama</strong> — en plattform där jag hjälper kvinnor, särskilt ensamstående mammor, att ta steget in i tech och skapa självständiga och flexibla karriärer.",
+      "description2": "Det är där jag delar min resa, resurser och praktisk vägledning för att skapa ett liv med mer frihet.",
+      "linkText": "<a>→ Läs mer om Tech Beach Mama</a>"
+    },
     "ctaAndCV": {
       "title": "Intresserad av att arbeta tillsammans?",
       "viewPortfolio": "Se min portfölj",
@@ -310,10 +316,27 @@
     },
     "pricing": {
       "title": "Priser",
-      "description": "Från…",
-      "landingPages": "Landningssidor → från 800 €",
-      "websites": "Webbplatser → från 1500 €",
-      "customApps": "Skräddarsydda appar → offert"
+      "subtitle": "Investera i en snabb, skalbar och visuellt tilltalande webbupplevelse.",
+      "description": "Varje projekt anpassas efter dina mål — detta är startpriser för att ge en uppfattning.",
+      "from": "från",
+      "customQuote": "offert",
+      "offers": {
+        "landingPages": "Landningssidor",
+        "landingPagesDescription": "Perfekt för kampanjer, produkter eller personliga varumärken som vill omvandla besökare till kunder.",
+        "websites": "Webbplatser",
+        "websitesDescription": "Moderna och responsiva webbplatser byggda med fokus på prestanda, skalbarhet och användarupplevelse.",
+        "customApps": "Skräddarsydda webbapplikationer",
+        "customAppsDescription": "Anpassade lösningar för mer komplexa behov — byggda för att växa med ditt företag."
+      },
+      "whatsIncluded": "Detta ingår:",
+      "includes": {
+        "cleanModernDesign": "Ren och modern design",
+        "mobileFirstResponsive": "Mobile-first och responsiv design",
+        "highPerformance": "Hög prestanda (optimerad för Core Web Vitals)",
+        "scalableArchitecture": "Skalbar arkitektur",
+        "smoothUserExperience": "Smidig användarupplevelse"
+      },
+      "designAndDevelopment": "Design och utveckling på ett ställe — du behöver inte anlita flera personer."
     },
     "cta": {
       "title": "Låt oss bygga något fantastiskt tillsammans",
