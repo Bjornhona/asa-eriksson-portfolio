@@ -27,7 +27,7 @@ const ServicesCtaSection = () => {
               variants={fadeInUp}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button variant="glass" href="mailto:info@asaeriksson.com">
+              <Button variant="glass" href="/contact">
                 <MailIcon className="w-4 h-4" />
                 {t("buttonText")}
               </Button>

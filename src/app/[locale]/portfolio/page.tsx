@@ -31,16 +31,18 @@ const PortfolioPage = () => {
       alt: t("cgConsulting.alt"),
       caseStudyUrl: "/portfolio/cg-consulting",
       visitSiteUrl: "https://cg-consulting.es",
-      tags: ["Next.js", "Tailwind CSS", "Shadcn UI", "Sanity CMS"],
+      tags: ["Next.js", "TypeScript", "Sanity CMS", "Tailwind CSS", "Framer Motion"],
     },
   ];
 
   return (
     <div className="relative container max-w-full pt-[64px] pb-16">
       <PortfolioHeroSection />
-      {portfolioItems.map((item) => (
-        <PortfolioCard key={item.title} item={item} />
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">
+        {portfolioItems.map((item) => (
+          <PortfolioCard key={item.title} item={item} />
+        ))}
+      </div>
     </div>
   );
 };

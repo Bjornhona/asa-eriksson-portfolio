@@ -19,7 +19,7 @@ const ServicesHeroSection = () => {
 
   const buttons: ButtonsProps[] = [
     {
-      href: "mailto:info@asaeriksson.com",
+      href: "/contact",
       icon: <MailIcon className="w-4 h-4" />,
       label: t("contactMe"),
     },
