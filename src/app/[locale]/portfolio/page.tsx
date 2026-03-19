@@ -13,7 +13,7 @@ const PortfolioPage = () => {
       alt: t("techBeachMama.alt"),
       caseStudyUrl: "/portfolio/tech-beach-mama",
       visitSiteUrl: "https://techbeachmama.com",
-      tags: ["Next.js", "Tailwind CSS", "Shadcn UI"],
+      tags: ["Next.js", "HTML", "Tailwind CSS", "Shadcn UI", "Figma", "Lemon Squeezy"],
     },
     {
       title: t("sculptedGoddess.title"),
@@ -22,7 +22,7 @@ const PortfolioPage = () => {
       alt: t("sculptedGoddess.alt"),
       caseStudyUrl: "/portfolio/sculpted-goddess",
       visitSiteUrl: "https://sculpted-goddess.vercel.app",
-      tags: ["Next.js", "Tailwind CSS", "Shadcn UI"],
+      tags: ["Next.js", "TypeScript", "SCSS", "libSQL", "API integration"],
     },
     {
       title: t("cgConsulting.title"),
