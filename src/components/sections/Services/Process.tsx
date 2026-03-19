@@ -51,7 +51,7 @@ const ProcessSection = () => {
       className="scroll-mt-64 pt-8 md:pt-12 pb-12 md:pb-16"
     >
       <motion.div
-        className="space-y-6 max-w-5xl mx-auto"
+        className="space-y-6 max-w-5xl mx-auto sm:text-center"
         variants={container}
         initial="initial"
         whileInView="animate"

@@ -268,6 +268,7 @@
     },
     "cards": {
       "title": "What I can help you with",
+      "description": "I combine frontend development, UI design, and product thinking to create digital experiences that are both beautiful and built to perform.",
       "frontend": {
         "title": "Frontend Development",
         "item1": "React / Next.js apps",
@@ -341,6 +342,29 @@
     "cta": {
       "title": "Let’s build something great together",
       "buttonText": "Contact Me"
+    }
+  },
+  "portfolio": {
+    "title": "Selected Work",
+    "subtitle": "A selection of projects where I’ve combined frontend development, UI design, and product thinking to build modern, high-performing web experiences.",
+    "description": "Each project reflects my approach to creating digital products that are not only visually refined, but also scalable, intuitive, and built with performance in mind.",
+    "contactMe": "Contact me",
+    "work": {
+      "techBeachMama": {
+        "title": "Tech Beach Mama",
+        "description": "Tech Beach Mama is a high-converting website built with Next.js, Tailwind CSS, and Shadcn UI. It combines modern web design with strategic marketing to inspire single mothers to build profitable tech careers by the beach.",
+        "alt": "Tech Beach Mama thumbnail"
+      },
+      "sculptedGoddess": {
+        "title": "Sculpted Goddess",
+        "description": "Rebuilding and modernising a data-heavy SSR web application from Python/Flask to Next.js for performance, maintainability, and scalability.",
+        "alt": "Sculpted Goddess thumbnail"
+      },
+      "cgConsulting": {
+        "title": "CG Consulting",
+        "description": "A clean, modern website designed and built for cg-consulting to establish a professional digital presence. The project focuses on clarity, trust, and performance, combining thoughtful UX design with a fast, maintainable frontend architecture.",
+        "alt": "CG Consulting thumbnail"
+      }
     }
   }
 }

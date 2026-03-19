@@ -27,19 +27,6 @@ const AboutTechBeachMamaSection = () => {
           ),
         })}</motion.h6>
       </motion.div>
-      {/* <motion.p variants={fadeInUp}>
-        {t.rich("home.techbeachmama", {
-          a: (chunks) => (
-            <a
-              href="https://techbeachmama.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {chunks}
-            </a>
-          ),
-        })}
-      </motion.p> */}
     </section>
   );
 };

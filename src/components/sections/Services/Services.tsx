@@ -28,7 +28,8 @@ const ServicesSection = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.h3 variants={fadeInUp}>{t("title")}</motion.h3>
+        <motion.h3 variants={fadeInUp} className="sm:text-center">{t("title")}</motion.h3>
+        <motion.h6 variants={fadeInUp} className="sm:text-center">{t("description")}</motion.h6>
 
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8"

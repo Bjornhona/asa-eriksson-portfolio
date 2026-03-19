@@ -1,0 +1,38 @@
+import HeroSection, { ButtonsProps } from "@/components/HeroSection/HeroSection";
+import { MailIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+const PortfolioHeroSection = () => {
+  const t = useTranslations("portfolio");
+
+  const subtitle = t.rich("subtitle", {
+    strong: (chunks) => <strong>{chunks}</strong>,
+  }) as string;
+
+  const texts = [
+    t.rich("description", {
+      strong: (chunks) => <strong>{chunks}</strong>,
+    }),
+  ] as string[];
+
+  const buttons: ButtonsProps[] = [
+    {
+      href: "/contact",
+      icon: <MailIcon className="w-4 h-4" />,
+      label: t("contactMe"),
+    },
+  ];
+
+  return (
+    <HeroSection
+      imageSrc="/portfolio/tech-beach-mama/1.png"
+      imageAlt="Portfolio Hero"
+      title={t("title")}
+      subtitle={subtitle}
+      texts={texts}
+      buttons={buttons}
+    />
+  );
+};
+
+export default PortfolioHeroSection;
