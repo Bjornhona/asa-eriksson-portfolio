@@ -23,6 +23,8 @@ const PortfolioHeroSection = () => {
     },
   ];
 
+  const scrollTo = { href: "#portfolio/works-section", text: t("seeWorks") };
+
   return (
     <HeroSection
       imageSrc="/portfolio/tech-beach-mama/1.png"
@@ -31,6 +33,7 @@ const PortfolioHeroSection = () => {
       subtitle={subtitle}
       texts={texts}
       buttons={buttons}
+      scrollTo={scrollTo}
     />
   );
 };

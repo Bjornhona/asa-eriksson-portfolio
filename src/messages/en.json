@@ -174,7 +174,8 @@
       "works": "I work with companies and startups around the world to transform ideas into <strong>high-quality web experiences</strong> — also helping women launch tech careers through <strong>Tech Beach Mama</strong>.",
       "downloadCV": "Download my CV",
       "connectLinkedin": "See on LinkedIn",
-      "hireMe": "Hire Me"
+      "hireMe": "Hire Me",
+      "readMore": "Read more"
     },
     "background": {
       "title": "My Background",
@@ -349,6 +350,7 @@
     "subtitle": "A selection of projects where I’ve combined frontend development, UI design, and product thinking to build modern, high-performing web experiences.",
     "description": "Each project reflects my approach to creating digital products that are not only visually refined, but also scalable, intuitive, and built with performance in mind.",
     "contactMe": "Contact me",
+    "seeWorks": "See works",
     "work": {
       "techBeachMama": {
         "title": "Tech Beach Mama",
@@ -366,5 +368,94 @@
         "alt": "CG Consulting thumbnail"
       }
     }
+  },
+  "portfolioDetails": {
+    "overview": "Project overview",
+    "myRole": "My role",
+    "techStack": "Tech stack",
+    "cg-consulting": {
+      "hero": {
+        "title": "CG Consulting — Modern Website Rebuild",
+        "subtitle": "From WordPress to a scalable, high-performance web architecture",
+        "description": "A complete redesign and rebuild of a consulting website, focused on performance, maintainability, and a clean, professional user experience.",
+        "viewLive": "View Live Site",
+        "github": "View on GitHub",
+        "contactMe": "Contact Me"
+      },
+      "overview": "CG Consulting needed a modern and reliable website that reflects a professional consulting brand while remaining simple to manage and scale. The previous site was built in WordPress and worked initially, but over time it became harder to maintain and less reliable due to plugin updates and growing complexity.",
+      "myRole": {
+        "title": "I handled the project end-to-end — from design and structure to development and deployment.",
+        "uiux": "UI / UX Design",
+        "frontend": "Frontend Development",
+        "architecture": "Architecture decisions",
+        "cms": "CMS setup (Sanity)"
+      },
+      "whyTechStack": "Chosen for performance, flexibility, and long-term maintainability.",
+      "challenge": {
+        "title": "The main challenge was not the platform itself, but the long-term sustainability of the existing setup.",
+        "frequentIssues": "Frequent issues caused by plugin updates",
+        "increasingMaintenance": "Increasing maintenance overhead",
+        "performanceLimitations": "Performance limitations",
+        "difficultContentManagement": "Difficult content management for the client"
+      },
+      "solution": {
+        "title": "I rebuilt the website using a modern, lightweight architecture focused on simplicity and control.", 
+        "removedDependency": "Removed dependency on plugins",
+        "introducedStructuredContent": "Introduced structured content via Sanity CMS",
+        "builtCustomFrontend": "Built a custom frontend for full control over performance and design",
+        "implementedResponsiveLayout": "Implemented a responsive, mobile-first layout",
+        "addedSubtleAnimations": "Added subtle animations to enhance the user experience"
+      },
+      "results": {
+        "title": "The new setup resulted in:",
+        "fasterLoadTimes": "Faster load times",
+        "improvedCoreWebVitals": "Improved Core Web Vitals",
+        "cleanerMaintainableCodebase": "Cleaner, more maintainable codebase",
+        "easierContentManagement": "Easier content management",
+        "reducedLongTermMaintenance": "Reduced long-term maintenance needs"
+      },
+      "performanceAndSeo": {
+        "description": "Performance and SEO improvements are not tied to a specific framework, but to how the application is built. In this project, the improvements came from simplifying the architecture, reducing dependencies, and optimizing the implementation."
+      },
+      "beforeVsAfter": {
+        "before": {
+          "title": "Before",
+          "pluginHeavyWordPressSetup": "Plugin-heavy WordPress setup",
+          "recurringMaintenanceIssues": "Recurring maintenance issues",
+          "slowerPerformance": "Slower performance",
+          "limitedFlexibility": "Limited flexibility"
+        },
+        "after": {
+          "title": "After",
+          "lightweightCustomArchitecture": "Lightweight custom architecture",
+          "stablePredictableSetup": "Stable and predictable setup",
+          "optimizedPerformance": "Optimized performance",
+          "fullControlOverFrontendAndContent": "Full control over frontend and content"
+        }
+      },
+      "lessonsLearned": {
+        "title": "This project reinforced several key principles:",
+        "performanceDependsMoreOnImplementation": "Performance depends more on implementation than on tools",
+        "simplerArchitecturesReduceLongTermRisk": "Simpler architectures reduce long-term risk",
+        "clientsValueReliabilityAndEaseOfUse": "Clients value reliability and ease of use over technical choices",
+        "wellStructuredCmsCanDramaticallyImproveContentWorkflows": "A well-structured CMS can dramatically improve content workflows"
+      },
+      "ongoingImprovements": {
+        "title": "This project is continuously evolving. Current improvements include:",
+        "refiningSeoStructure": "Refining SEO structure (meta tags, headings, sitemap)",
+        "improvingSemanticHtmlAndAccessibility": "Improving semantic HTML and accessibility",
+        "enhancingInternationalizationSetup": "Enhancing internationalization setup",
+        "monitoringRealWorldPerformanceData": "Monitoring real-world performance data"
+      },
+      "whyNotWordPress": {
+        "title": "WordPress can absolutely deliver excellent performance and SEO when built with a clean architecture and minimal dependencies. In this case, the chosen approach prioritized long-term stability, performance control, and a simplified maintenance experience for the client."
+      },
+      "finalCta": {
+        "title": "Looking to modernize your website or improve performance?",
+        "cta": "👉 <a>Contact Me</a>"
+      }
+    },
+    "tech-beach-mama": {},
+    "sculpted-goddess": {}
   }
 }

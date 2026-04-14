@@ -36,9 +36,9 @@ const PortfolioPage = () => {
   ];
 
   return (
-    <div className="relative container max-w-full pt-[64px] pb-16">
+    <div id="portfolio" className="relative container max-w-full pt-[64px] pb-16">
       <PortfolioHeroSection />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">
+      <div id="works-section" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">
         {portfolioItems.map((item) => (
           <PortfolioCard key={item.title} item={item} />
         ))}

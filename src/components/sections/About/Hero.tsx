@@ -38,6 +38,8 @@ const AboutHeroSection = () => {
     }),
   ] as string[];
 
+  const scrollTo = { href: "/about#background-section", text: t("readMore") };
+
   return (
     <HeroSection
       imageSrc="/Me.jpg"
@@ -46,7 +48,7 @@ const AboutHeroSection = () => {
       subtitle={subtitle}
       texts={texts}
       buttons={buttons}
-      scrollToHref="/about#background-section"
+      scrollTo={scrollTo}
     />
   );
 };

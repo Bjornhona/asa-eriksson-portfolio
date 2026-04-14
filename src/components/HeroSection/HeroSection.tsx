@@ -19,10 +19,13 @@ export interface HeroSectionProps {
   subtitle: string;
   texts: string[];
   buttons?: ButtonsProps[];
-  scrollToHref?: string;
+  scrollTo?: {
+    href: string;
+    text?: string;
+  };
 }
 
-const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scrollToHref }: HeroSectionProps) => {
+const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scrollTo }: HeroSectionProps) => {
   return (
     <>
       <motion.div
@@ -78,7 +81,7 @@ const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scro
                 {button.label}
               </Button>
             ))}
-            {scrollToHref && <ScrollDownIndicator scrollToHref="/about#background-section" />}
+            {scrollTo && <ScrollDownIndicator scrollToHref={scrollTo.href} indicatorText={scrollTo.text} />}
           </motion.div>
         </motion.div>
       </div>

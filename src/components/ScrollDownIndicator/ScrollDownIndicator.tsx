@@ -2,7 +2,12 @@
 import { motion } from "framer-motion";
 import { ChevronDownIcon } from "lucide-react";
 
-const ScrollDownIndicator = ({ scrollToHref }: { scrollToHref: string }) => {
+export interface ScrollDownIndicatorProps {
+  scrollToHref: string;
+  indicatorText?: string;
+}
+
+const ScrollDownIndicator = ({ scrollToHref, indicatorText = "Read more" }: ScrollDownIndicatorProps) => {
   return (
     <a
       href={scrollToHref}
@@ -17,7 +22,7 @@ const ScrollDownIndicator = ({ scrollToHref }: { scrollToHref: string }) => {
           ease: "easeInOut",
         }}
       >
-          Read more <br />
+          {indicatorText} <br />
           <ChevronDownIcon className="w-4 h-4" />
       </motion.div>
     </a>
