@@ -3,7 +3,7 @@ import { MailIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const PortfolioHeroSection = () => {
-  const t = useTranslations("portfolio");
+  const t = useTranslations("portfolio.hero");
 
   const subtitle = t.rich("subtitle", {
     strong: (chunks) => <strong>{chunks}</strong>,

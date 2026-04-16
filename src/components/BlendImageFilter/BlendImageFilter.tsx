@@ -10,13 +10,13 @@ interface BlendImageFilterProps extends ImageProps {
 
 const BlendImageFilter = ({ src, alt, width, height, className = "", ...props }: BlendImageFilterProps) => {
   return (
-    <div className="relative group overflow-hidden">
+    <div className="relative w-full h-full group overflow-hidden">
       <Image
         src={src}
         alt={alt}
         width={width}
         height={height}
-        className={`${className} object-cover w-full h-full grayscale transition duration-500 group-hover:grayscale-0`}
+        className={`object-cover w-full h-full grayscale transition duration-500 group-hover:grayscale-0 ${className}`}
         {...props}
       />
       <div className="absolute inset-0 bg-blue-500 mix-blend-multiply opacity-60 transition-opacity duration-500 group-hover:opacity-0" />

@@ -39,12 +39,10 @@ const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scro
           alt={imageAlt}
           width={400}
           height={400}
-          // className="-translate-y-4 xs:-translate-y-6 sm:-translate-y-10 md:-translate-y-16"
-          className="object-cover"
           loading="eager"
         />
       </motion.div>
-      <div className="relative flex flex-col justify-center [text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12 pointer-events-none">
+      <div className="relative flex flex-col justify-center dark:[text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12 pointer-events-none">
         <motion.div
           className="space-y-4"
           variants={container}

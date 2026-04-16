@@ -1,21 +1,14 @@
 "use client";
-
 import { Button } from "@/ui";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-
-export interface PortfolioItem {
-  title: string;
-  description: string;
-  image: string;
-  alt: string;
-  caseStudyUrl: string;
-  visitSiteUrl: string;
-  tags: string[];
-}
+import { useTranslations } from "next-intl";
+import { PortfolioItem } from "@/app/[locale]/portfolio/portfolioProjects";
+import BlendImageFilter from "@/components/BlendImageFilter/BlendImageFilter";
 
 const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
+  const t = useTranslations("portfolio.work");
+
   return (
     <article className="group relative overflow-hidden rounded-2xl bg-white/5 dark:bg-white/[0.07] backdrop-blur-md border border-white/10 dark:border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
       {/* Gradient glow on hover */}
@@ -26,15 +19,18 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
 
       <div className="relative z-10 flex flex-col">
         {/* Image */}
-        <Link href={item.caseStudyUrl} className="block overflow-hidden rounded-t-2xl">
-          <div className="relative aspect-[16/10] w-full">
-            <Image
+        <Link
+          href={item.caseStudyUrl}
+          className="block overflow-hidden rounded-t-2xl"
+        >
+          <div className="relative w-full aspect-[16/10]">
+            <BlendImageFilter
               src={item.image}
-              alt={item.alt}
+              alt={t(item.text + ".alt")}
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              priority={false}
+              // loading="eager"
+              className="transition-transform duration-500 group-hover:scale-105"
             />
           </div>
         </Link>
@@ -43,10 +39,10 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
         <div className="flex flex-col gap-4 p-4 sm:p-5 md:p-6">
           <div>
             <h4 className="font-prompt font-semibold text-lg sm:text-xl text-title mb-2">
-              {item.title}
+              {t(item.text + ".title")}
             </h4>
             <p className="text-sm sm:text-base text-foreground/90 line-clamp-2">
-              {item.description}
+              {t(item.text + ".description")}
             </p>
           </div>
 
@@ -70,7 +66,7 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
               className="w-full xs:w-auto"
               href={item.caseStudyUrl}
             >
-              View case study
+              {t("readMore")}
               <ArrowUpRight className="w-4 h-4" />
             </Button>
             <Button
@@ -79,7 +75,7 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
               className="w-full xs:w-auto"
               href={item.visitSiteUrl}
             >
-              Visit site
+              {t("visitSite")}
             </Button>
           </div>
         </div>

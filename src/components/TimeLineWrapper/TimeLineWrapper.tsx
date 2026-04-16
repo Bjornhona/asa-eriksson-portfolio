@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-interface TimeLineWrapperProps {
+export interface TimeLineWrapperProps {
   children: React.ReactNode;
   last?: boolean;
   index: number;

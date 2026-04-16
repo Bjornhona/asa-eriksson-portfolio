@@ -1,81 +1,81 @@
+// "use client";
+// import { useState } from "react";
 // import { useTranslations } from "next-intl";
+// "use server";
 import HeroSection, {
   ButtonsProps,
 } from "@/components/HeroSection/HeroSection";
 import { Github, Globe, MailIcon } from "lucide-react";
 import { notFound } from "next/navigation";
+import { portfolioItems } from "../portfolioProjects";
+import { PortfolioItem } from "../portfolioProjects";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+import ProjectDataSection from "@/components/sections/Portfolio/ProjectData";
+import PortfolioTimeline from "@/components/sections/Portfolio/Timeline";
+
+export const metadata: Metadata = {
+  title: "Portfolio Detail | Asa Eriksson",
+  description: "Portfolio Detail | Asa Eriksson",
+  keywords: ["Portfolio Detail", "Asa Eriksson"],
+  authors: [{ name: "Asa Eriksson", url: "https://asaeriksson.com" }],
+  creator: "Asa Eriksson",
+  publisher: "Asa Eriksson",
+  openGraph: {
+    title: "Portfolio Detail | Asa Eriksson",
+    description: "Portfolio Detail | Asa Eriksson",
+  },
+};
 
 const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => {
-  // const t = useTranslations(`portfolioDetails.${slug}`);
+  // const [activeIndex, setActiveIndex] = useState(0);
+
   const { slug } = await params;
-  console.log(slug);
   if (!slug) {
     notFound()
   }
 
-  const projectUrl = () => {
-    switch (slug) {
-      case "cg-consulting":
-        return "https://cg-consulting.es";
-      case "tech-beach-mama":
-        return "https://techbeachmama.com";
-      case "sculpted-goddess":
-        return "https://sculptedgoddess.vercel.app";
-      default:
-        return "/";
-    }
-  };
+  const project: PortfolioItem | undefined = portfolioItems.find((project) => project.slug === slug);
+  if (!project) {
+    notFound();
+  }
 
-  const githubRepoName = () => {
-    switch (slug) {
-      case "cg-consulting":
-        return "cg-consulting";
-      case "sculpted-goddess":
-        return "Sculpted-goddess";
-      default:
-        return null;
-    }
-  };
+  const t = await getTranslations(`portfolio.work`);
 
   const baseButtons: ButtonsProps[] = [
     {
-      href: projectUrl(),
+      href: project.visitSiteUrl,
       icon: <Globe className="w-4 h-4" />,
-      // label: t("hero.viewLive"),
-      label: "View Live Site",
+      label: t("hero.viewLive"),
     },
     {
       href: "/contact",
       icon: <MailIcon className="w-4 h-4" />,
-      // label: t("hero.contactMe"),
-      label: "Contact Me",
+      label: t("hero.contactMe"),
     },
   ];
 
-  const buttons: ButtonsProps[] = githubRepoName() ? [
+  const buttons: ButtonsProps[] = project.githubRepoName ? [
     ...baseButtons,
     {
-      href: `https://github.com/bjornhona/${githubRepoName()}`,
+      href: `https://github.com/bjornhona/${project.githubRepoName}`,
       icon: <Github className="w-4 h-4" />,
-      // label: t("hero.github"),
-      label: "View on GitHub",
+      label: t("hero.github"),
     },
   ] : baseButtons;
 
   return (
-    <div id="portfolio-details" className="relative container max-w-full pt-[64px] pb-16">
+    <div id="portfolio-details" className="relative container max-w-full pt-[64px] pb-32">
       <HeroSection
-        imageSrc={`/portfolio/${slug}/1.[jpg,png,webp]`}
-        // imageAlt={t("hero.title")}
-        // title={t("hero.title")}
-        // subtitle={t("hero.subtitle")}
-        // texts={[t("hero.description")]}
-        imageAlt={"Hello"}
-        title={"Hero title"}
-        subtitle={"Hero subtitle"}
-        texts={["Hero description"]}
+        imageSrc={project.image}
+        imageAlt={t(project.text + ".alt")}
+        title={t(project.text + ".title")}
+        subtitle={t(project.text + ".hero.subtitle")}
+        texts={[t(project.text + ".hero.description")]}
         buttons={buttons}
       />
+      <ProjectDataSection project={project} />
+      <PortfolioTimeline project={project} />
     </div>
   );
 };

@@ -12,10 +12,15 @@ import AboutExperienceSection from "@/components/sections/About/Experience";
 import AboutCtaAndCVSection from "@/components/sections/About/CtaAndCV";
 import AboutTechBeachMamaSection from "@/components/sections/About/TechBeachMama";
 
+export interface TimelineItemType {
+  component: React.ReactNode;
+  last?: boolean;
+}
+
 const AboutPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const timelineItems = [
+  const timelineItems: TimelineItemType[] = [
     {
       component: <AboutBackgroundSection />,
     },

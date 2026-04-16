@@ -37,7 +37,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const locale = await getLocale();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning data-scroll-behavior="smooth">
       <body className={`${prompt.variable} ${inter.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
