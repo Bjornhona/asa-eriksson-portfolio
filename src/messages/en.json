@@ -397,84 +397,100 @@
           "subtitle": "From WordPress to a scalable, high-performance web architecture",
           "description": "A complete redesign and rebuild of a consulting website, focused on performance, maintainability, and a clean, professional user experience. Many small businesses rely on WordPress setups that become fragile over time. This project shows how migrating to a modern stack can reduce long-term risk while improving performance and flexibility."
         },
-        "overview": {
-          "title": "Project Overview",
-          "description": "CG Consulting is a boutique HR services firm helping international companies find talent in Spain. The existing WordPress website had served the business for years but had become increasingly fragile due to plugin dependencies and lack of ongoing maintenance. The goal of this project was not only to redesign the website, but to rebuild it on a modern, scalable architecture that removes technical risk and supports future growth.",
-          "subTitle": "CG Consulting needed a modern and reliable website that reflects a professional consulting brand while remaining simple to manage and scale. The previous site was built in WordPress and worked initially, but over time it became harder to maintain and less reliable due to plugin updates and growing complexity.",
-          "subTitle2": "CG Consulting had been running on WordPress for years. The site worked — until it didn't. Plugin conflicts were a recurring threat to the client's content, and with no budget for ongoing maintenance, every update felt like a risk. She needed a solution that was stable, easy to manage, and built to grow with her business." 
+        "step1": {
+          "label": "The Problem",
+          "title": "A WordPress site held together by fragile plugins",
+          "textItem1": "CG Consulting is a boutique HR services firm helping international companies find talent in Spain.",
+          "textItem2": "<strong>The existing WordPress website</strong> had served the business for years but had become increasingly fragile due to plugin dependencies and lack of ongoing maintenance. They needed a stable, professional digital presence that could be managed without relying on a developer for day-to-day updates — in both Spanish and English.",
+          "textItem3": "The goal of this project was not only to redesign the website, but to rebuild it on a modern, scalable architecture that removes technical risk and supports future growth.",
+          "challenges": {
+            "title": "The main challenge was not the platform itself, but the long-term sustainability of the existing setup.",
+            "frequentIssues": "Frequent issues caused by plugin updates",
+            "increasingMaintenance": "Increasing maintenance overhead",
+            "performanceLimitations": "Performance limitations",
+            "difficultContentManagement": "Difficult content management for the client"
+          }
         },
-        "design": {
-          "title": "Design Phase",
-          "subTitle": "Redesign concept — Figma",
+        "step2": {
+          "label": "Design Concept",
+          "title": "Starting with design, not code",
+          "textItem1": "The redesign centered on clarity and credibility — the two things an independent HR consultant needs to communicate immediately. I focused on a clean visual hierarchy, structured content presentation, and a layout that feels professional without being cold. Subtle animations and transitions, built with Framer Motion, add movement and polish to the experience without pulling attention away from the content. The site is fully responsive, designed to feel equally trustworthy on mobile and desktop.",
           "alt": "CG Consulting redesign concept — Figma",
-          "description": "The redesign centered on clarity and credibility — the two things an independent HR consultant needs to communicate immediately. I focused on a clean visual hierarchy, structured content presentation, and a layout that feels professional without being cold. Subtle animations and transitions, built with Framer Motion, add movement and polish to the experience without pulling attention away from the content. The site is fully responsive, designed to feel equally trustworthy on mobile and desktop."
+          "caption": "Redesign concept — Figma"
         },
-       "myRole": {
+        "step3": {
+          "label": "Migration & Architecture",
+          "title": "Moving from WordPress to a modern stack",
+          "textItem1": "I proposed a full platform migration from WordPress to a modern Next.js + Sanity CMS stack. The goal wasn't just a technical upgrade — it was to give the client genuine ownership of their content and confidence that their site wouldn't break without a developer on call.",
+          "textItem2": "Since CG Consulting works with international companies to source talent in Spain, the site needed to speak to two audiences. Full bilingual support in Spanish and English was built in from the start.",
+          "solution": {
+            "title": "I rebuilt the website using a modern, lightweight architecture focused on simplicity and control.",
+            "removedDependency": "Removed dependency on plugins",
+            "introducedStructuredContent": "Introduced structured content via Sanity CMS",
+            "builtCustomFrontend": "Built a custom frontend for full control over performance and design",
+            "implementedResponsiveLayout": "Implemented a responsive, mobile-first layout",
+            "addedSubtleAnimations": "Added subtle animations to enhance the user experience"
+          },
+          "whyTechStack": "Chosen for performance, flexibility, and long-term maintainability."
+        },
+        "step4": {
+          "label": "The Live Site",
+          "title": "Design in the browser — desktop & mobile",
+          "textItem1": "The redesigned site live — clean layout, professional credibility, and a fully responsive experience across all devices.",
+          "alt": "CG Consulting redesigned site live",
+          "caption": "The redesigned site live — clean layout, professional credibility, and a fully responsive experience across all devices."
+        },
+        "step5": {
+          "label": "Performance",
+          "title": "From slow to fast — measurable results",
+          "textItem1": "Performance and SEO improvements are not tied to a specific framework, but to how the application is built. In this project, the improvements came from simplifying the architecture, reducing dependencies, and optimizing the implementation.",
+          "textItem2": "<strong>Note:</strong> WordPress can absolutely deliver excellent performance and SEO when built with a clean architecture and minimal dependencies. In this case, the chosen approach prioritized long-term stability, performance control, and a simplified maintenance experience for the client.",
+          "beforeVsAfter": {
+            "before": {
+              "title": "Before",
+              "pluginHeavyWordPressSetup": "Plugin-heavy WordPress setup",
+              "recurringMaintenanceIssues": "Recurring maintenance issues",
+              "slowerPerformance": "Slower performance",
+              "limitedFlexibility": "Limited flexibility"
+            },
+            "after": {
+              "title": "After",
+              "lightweightCustomArchitecture": "Lightweight custom architecture",
+              "stablePredictableSetup": "Stable and predictable setup",
+              "optimizedPerformance": "Optimized performance",
+              "fullControlOverFrontendAndContent": "Full control over frontend and content"
+            }
+          },
+          "alt": "Lighthouse performance scores — WordPress before vs Next.js after",
+          "caption": "Performance · WordPress vs Next.js (Lighthouse)"
+        },
+        "step6": {
+          "label": "Client Handoff",
+          "title": "CG Consulting can manage their own content — no developer needed",
+          "textItem1": "Sanity CMS was configured to give the client a clean, simple editing interface. They can update their services, copy, and contact info without touching code — no developer required after launch.",
+          "alt": "Sanity Studio content management interface for CG Consulting",
+          "caption": "Content management · Sanity Studio"
+        },
+        "step7": {
+          "label": "The Outcome",
+          "title": "A stable, bilingual web app built to last",
+          "textItem1": "The client went from worrying about plugin conflicts to having full control over her content through a clean CMS interface. The new site is significantly faster, far more stable, and built on a foundation that can scale as her business does — without depending on a developer for day-to-day updates.",
+          "textItem2": "This project reflects how I approach client work: solving a real business problem, not just building a website.",
+          "results": {
+            "title": "The new setup resulted in:",
+            "fasterLoadTimes": "Faster load times",
+            "improvedCoreWebVitals": "Improved Core Web Vitals",
+            "cleanerMaintainableCodebase": "Cleaner, more maintainable codebase",
+            "easierContentManagement": "Easier content management",
+            "reducedLongTermMaintenance": "Reduced long-term maintenance needs"
+          }
+        },
+        "myRole": {
           "title": "I handled the project end-to-end — from design and structure to development and deployment.",
           "uiux": "UI / UX Design",
           "frontend": "Frontend Development",
           "architecture": "Architecture decisions",
           "cms": "CMS setup (Sanity)"
-        },
-        "whyTechStack": "Chosen for performance, flexibility, and long-term maintainability.",
-        "challenge": {
-          "title": "The main challenge was not the platform itself, but the long-term sustainability of the existing setup.",
-          "frequentIssues": "Frequent issues caused by plugin updates",
-          "increasingMaintenance": "Increasing maintenance overhead",
-          "performanceLimitations": "Performance limitations",
-          "difficultContentManagement": "Difficult content management for the client"
-        },
-        "solution": {
-          "title": "I rebuilt the website using a modern, lightweight architecture focused on simplicity and control.",
-          "removedDependency": "Removed dependency on plugins",
-          "introducedStructuredContent": "Introduced structured content via Sanity CMS",
-          "builtCustomFrontend": "Built a custom frontend for full control over performance and design",
-          "implementedResponsiveLayout": "Implemented a responsive, mobile-first layout",
-          "addedSubtleAnimations": "Added subtle animations to enhance the user experience"
-        },
-        "results": {
-          "title": "The new setup resulted in:",
-          "fasterLoadTimes": "Faster load times",
-          "improvedCoreWebVitals": "Improved Core Web Vitals",
-          "cleanerMaintainableCodebase": "Cleaner, more maintainable codebase",
-          "easierContentManagement": "Easier content management",
-          "reducedLongTermMaintenance": "Reduced long-term maintenance needs"
-        },
-        "performanceAndSeo": {
-          "description": "Performance and SEO improvements are not tied to a specific framework, but to how the application is built. In this project, the improvements came from simplifying the architecture, reducing dependencies, and optimizing the implementation."
-        },
-        "beforeVsAfter": {
-          "before": {
-            "title": "Before",
-            "pluginHeavyWordPressSetup": "Plugin-heavy WordPress setup",
-            "recurringMaintenanceIssues": "Recurring maintenance issues",
-            "slowerPerformance": "Slower performance",
-            "limitedFlexibility": "Limited flexibility"
-          },
-          "after": {
-            "title": "After",
-            "lightweightCustomArchitecture": "Lightweight custom architecture",
-            "stablePredictableSetup": "Stable and predictable setup",
-            "optimizedPerformance": "Optimized performance",
-            "fullControlOverFrontendAndContent": "Full control over frontend and content"
-          }
-        },
-        "lessonsLearned": {
-          "title": "This project reinforced several key principles:",
-          "performanceDependsMoreOnImplementation": "Performance depends more on implementation than on tools",
-          "simplerArchitecturesReduceLongTermRisk": "Simpler architectures reduce long-term risk",
-          "clientsValueReliabilityAndEaseOfUse": "Clients value reliability and ease of use over technical choices",
-          "wellStructuredCmsCanDramaticallyImproveContentWorkflows": "A well-structured CMS can dramatically improve content workflows"
-        },
-        "ongoingImprovements": {
-          "title": "This project is continuously evolving. Current improvements include:",
-          "refiningSeoStructure": "Refining SEO structure (meta tags, headings, sitemap)",
-          "improvingSemanticHtmlAndAccessibility": "Improving semantic HTML and accessibility",
-          "enhancingInternationalizationSetup": "Enhancing internationalization setup",
-          "monitoringRealWorldPerformanceData": "Monitoring real-world performance data"
-        },
-        "whyNotWordPress": {
-          "title": "WordPress can absolutely deliver excellent performance and SEO when built with a clean architecture and minimal dependencies. In this case, the chosen approach prioritized long-term stability, performance control, and a simplified maintenance experience for the client."
         },
         "finalCta": {
           "title": "Looking to modernize your website or improve performance?",

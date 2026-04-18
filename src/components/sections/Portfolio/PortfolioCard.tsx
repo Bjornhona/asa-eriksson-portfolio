@@ -25,11 +25,10 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
         >
           <div className="relative w-full aspect-[16/10]">
             <BlendImageFilter
-              src={item.image}
+              src={item.images[0]}
               alt={t(item.text + ".alt")}
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              // loading="eager"
               className="transition-transform duration-500 group-hover:scale-105"
             />
           </div>

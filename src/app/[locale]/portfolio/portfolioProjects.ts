@@ -4,7 +4,7 @@ export interface PortfolioItem {
   date: string;
   appType: "webApp" | "mobileApp" | "desktopApp" | "other";
   myRole: "designerAndDeveloper" | "developer" | "designer";
-  image: string;
+  images: string[];
   designImage?: string;
   caseStudyUrl: string;
   visitSiteUrl: string;
@@ -19,7 +19,7 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     date: "2025-07-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
-    image: "/portfolio/tech-beach-mama/1.png",
+    images: ["/portfolio/tech-beach-mama/1.png"],
     caseStudyUrl: "/portfolio/tech-beach-mama",
     visitSiteUrl: "https://techbeachmama.com",
     tags: [
@@ -37,7 +37,7 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     date: "2025-11-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
-    image: "/portfolio/sculpted-goddess/1.png",
+    images: ["/portfolio/sculpted-goddess/1.png"],
     caseStudyUrl: "/portfolio/sculpted-goddess",
     visitSiteUrl: "https://sculpted-goddess.vercel.app",
     githubRepoName: "Sculpted-goddess",
@@ -49,8 +49,13 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     date: "2026-02-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
-    image: "/portfolio/cg-consulting/laptop.png",
-    designImage: "/portfolio/cg-consulting/figma-design.jpg",
+    images: [
+      "/portfolio/cg-consulting/laptop.png",
+      "/portfolio/cg-consulting/figma-design.jpg",
+      "/portfolio/cg-consulting/mobile.png",
+      "/portfolio/cg-consulting/lighthouse-before-after.jpg",
+      "/portfolio/cg-consulting/sanity-studio.png"
+    ],
     caseStudyUrl: "/portfolio/cg-consulting",
     visitSiteUrl: "https://cg-consulting.es",
     githubRepoName: "cg-consulting",
@@ -60,6 +65,8 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       "Sanity CMS",
       "Tailwind CSS",
       "Framer Motion",
+      "i18n",
+      "Figma",
     ],
   },
 ];

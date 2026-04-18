@@ -67,7 +67,7 @@ const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => 
   return (
     <div id="portfolio-details" className="relative container max-w-full pt-[64px] pb-32">
       <HeroSection
-        imageSrc={project.image}
+        imageSrc={project.images[0]}
         imageAlt={t(project.text + ".alt")}
         title={t(project.text + ".title")}
         subtitle={t(project.text + ".hero.subtitle")}
