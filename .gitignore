@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+# AI tools
+.cursor/
+.claude/
+
 # production
 /build
 
