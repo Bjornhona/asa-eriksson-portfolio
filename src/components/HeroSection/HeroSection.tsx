@@ -1,4 +1,5 @@
 "use client";
+import { ViewTransition } from "react";
 import { motion } from "framer-motion";
 import { container, fadeInUp } from "@/lib/animations";
 import TitleHoverGlow from "@/components/TitleHoverGlow/TitleHoverGlow";
@@ -23,25 +24,34 @@ export interface HeroSectionProps {
     href: string;
     text?: string;
   };
+  imageTransitionName?: string;
 }
 
-const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scrollTo }: HeroSectionProps) => {
+const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scrollTo, imageTransitionName }: HeroSectionProps) => {
+  const heroImage = (
+    <motion.div
+      className="absolute right-[var(--space-4)] sm:right-[var(--space-6)] md:right-[var(--space-8)] lg:right-[var(--space-10)] xl:right-[var(--space-12)] w-[50vw] h-[50vw] sm:w-[40vw] sm:h-[40vw] lg:w-[35vw] lg:h-[35vw] xl:w-[30vw] xl:h-[30vw] 2xl:w-[25vw] 2xl:h-[25vw] aspect-square overflow-hidden rounded-full"
+      variants={fadeInUp}
+      initial={imageTransitionName ? false : "initial"}
+      animate="animate"
+    >
+      <BlendImageFilter
+        src={imageSrc}
+        alt={imageAlt}
+        width={400}
+        height={400}
+        loading="eager"
+      />
+    </motion.div>
+  );
+
   return (
     <>
-      <motion.div
-        className="absolute right-[var(--space-4)] sm:right-[var(--space-6)] md:right-[var(--space-8)] lg:right-[var(--space-10)] xl:right-[var(--space-12)] w-[50vw] h-[50vw] sm:w-[40vw] sm:h-[40vw] lg:w-[35vw] lg:h-[35vw] xl:w-[30vw] xl:h-[30vw] 2xl:w-[25vw] 2xl:h-[25vw] aspect-square overflow-hidden rounded-full"
-        variants={fadeInUp}
-        initial="initial"
-        animate="animate"
-      >
-        <BlendImageFilter
-          src={imageSrc}
-          alt={imageAlt}
-          width={400}
-          height={400}
-          loading="eager"
-        />
-      </motion.div>
+      {imageTransitionName ? (
+        <ViewTransition name={imageTransitionName}>{heroImage}</ViewTransition>
+      ) : (
+        heroImage
+      )}
       <div className="relative flex flex-col justify-center dark:[text-shadow:0_2px_6px_rgba(0,0,0,0.5)] z-10 py-12 pointer-events-none">
         <motion.div
           className="space-y-4"

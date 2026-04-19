@@ -68,6 +68,7 @@ const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => 
         subtitle={t(project.text + ".hero.subtitle")}
         texts={[t(project.text + ".hero.description")]}
         buttons={buttons}
+        imageTransitionName={`project-image-${project.slug}`}
       />
       <ProjectDataSection project={project} />
       <PortfolioTimeline project={project} />

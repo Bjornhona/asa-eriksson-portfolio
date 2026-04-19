@@ -1,4 +1,5 @@
 "use client";
+import { ViewTransition } from "react";
 import { Button } from "@/ui";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -23,15 +24,17 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
           href={item.caseStudyUrl}
           className="block overflow-hidden rounded-t-2xl"
         >
-          <div className="relative w-full aspect-[16/10]">
-            <BlendImageFilter
-              src={item.images[0]}
-              alt={t(item.text + ".alt")}
-              fill
-              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              className="transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
+          <ViewTransition name={`project-image-${item.slug}`}>
+            <div className="relative w-full aspect-[16/10]">
+              <BlendImageFilter
+                src={item.images[0]}
+                alt={t(item.text + ".alt")}
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                className="transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          </ViewTransition>
         </Link>
 
         {/* Content */}
