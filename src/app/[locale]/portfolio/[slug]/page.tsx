@@ -1,7 +1,3 @@
-// "use client";
-// import { useState } from "react";
-// import { useTranslations } from "next-intl";
-// "use server";
 import HeroSection, {
   ButtonsProps,
 } from "@/components/HeroSection/HeroSection";
@@ -13,6 +9,7 @@ import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import ProjectDataSection from "@/components/sections/Portfolio/ProjectData";
 import PortfolioTimeline from "@/components/sections/Portfolio/Timeline";
+import CtaSection from "@/components/sections/CtaSection";
 
 export const metadata: Metadata = {
   title: "Portfolio Detail | Asa Eriksson",
@@ -28,8 +25,8 @@ export const metadata: Metadata = {
 };
 
 const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => {
-  // const [activeIndex, setActiveIndex] = useState(0);
-
+  const t = await getTranslations(`portfolio.work`);
+  
   const { slug } = await params;
   if (!slug) {
     notFound()
@@ -39,8 +36,6 @@ const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => 
   if (!project) {
     notFound();
   }
-
-  const t = await getTranslations(`portfolio.work`);
 
   const baseButtons: ButtonsProps[] = [
     {
@@ -76,6 +71,12 @@ const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => 
       />
       <ProjectDataSection project={project} />
       <PortfolioTimeline project={project} />
+      <CtaSection
+        id="portfolio-cta-section"
+        title={t(project.text + ".finalCta.title")}
+        buttonText={t(project.text + ".finalCta.cta")}
+        buttonHref="/contact"
+      />
     </div>
   );
 };

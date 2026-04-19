@@ -27,8 +27,9 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       "HTML",
       "Tailwind CSS",
       "Shadcn UI",
-      "Figma",
       "Lemon Squeezy",
+      "ConvertKit",
+      "Figma",
     ],
   },
   {
@@ -41,7 +42,7 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     caseStudyUrl: "/portfolio/sculpted-goddess",
     visitSiteUrl: "https://sculpted-goddess.vercel.app",
     githubRepoName: "Sculpted-goddess",
-    tags: ["Next.js", "TypeScript", "SCSS", "libSQL", "API integration"],
+    tags: ["Next.js", "TypeScript", "SCSS", "libSQL", "API integration", "AdobeXD"],
   },
   {
     slug: "cg-consulting",
@@ -54,7 +55,7 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       "/portfolio/cg-consulting/figma-design.jpg",
       "/portfolio/cg-consulting/mobile.png",
       "/portfolio/cg-consulting/lighthouse-before-after.jpg",
-      "/portfolio/cg-consulting/sanity-studio.png"
+      "/portfolio/cg-consulting/sanity-studio.png",
     ],
     caseStudyUrl: "/portfolio/cg-consulting",
     visitSiteUrl: "https://cg-consulting.es",

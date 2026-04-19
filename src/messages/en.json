@@ -485,16 +485,9 @@
             "reducedLongTermMaintenance": "Reduced long-term maintenance needs"
           }
         },
-        "myRole": {
-          "title": "I handled the project end-to-end — from design and structure to development and deployment.",
-          "uiux": "UI / UX Design",
-          "frontend": "Frontend Development",
-          "architecture": "Architecture decisions",
-          "cms": "CMS setup (Sanity)"
-        },
         "finalCta": {
           "title": "Looking to modernize your website or improve performance?",
-          "cta": "👉 <a>Contact Me</a>"
+          "cta": "Contact Me"
         }
       }
     }

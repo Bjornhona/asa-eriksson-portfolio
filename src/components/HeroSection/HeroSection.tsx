@@ -64,7 +64,7 @@ const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scro
             <motion.h6
               key={text}
             variants={fadeInUp}
-            className="max-w-sm xs:sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+            className="max-w-sm xs:sm:max-w-sm lg:max-w-md xl:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl"
           >
             {text}
           </motion.h6>))}
