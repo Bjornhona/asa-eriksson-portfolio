@@ -139,7 +139,7 @@
     "contactDescription": "Via kontaktformuläret som finns på denna webbplats eller via e-post till",
 
     "purposeOfTheWebsite": "Webbplatsens syfte",
-    "purposeOfTheWebsiteDescription": "Syftet med denna webbplats är att presentera webbplatsägarens professionella portfolio, tjänster och projekt relaterade till frontendutveckling, webbutveckling och design av användargränssnitt.",
+    "purposeOfTheWebsiteDescription": "Syftet med denna webbplats är att presentera webbplatsägarens professionella portfölj, tjänster och projekt relaterade till frontendutveckling, webbutveckling och design av användargränssnitt.",
     "websiteMayAlsoProvideInformation": "Webbplatsen kan även tillhandahålla information om professionella tjänster och låta besökare kontakta webbplatsägaren via ett kontaktformulär.",
 
     "termsOfUse": "Användarvillkor",
@@ -343,6 +343,153 @@
     "cta": {
       "title": "Låt oss bygga något fantastiskt tillsammans",
       "buttonText": "Kontakta mig"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Utvalda projekt",
+      "subtitle": "Ett urval av projekt där jag kombinerat frontendutveckling, UI-design och produkttänk för att skapa moderna och högpresterande webbupplevelser.",
+      "description": "Varje projekt speglar mitt sätt att bygga digitala produkter som inte bara är visuellt genomarbetade, utan också skalbara, intuitiva och optimerade för prestanda.",
+      "contactMe": "Kontakta mig",
+      "seeWorks": "Se projekt"
+    },
+    "work": {
+      "readMore": "Läs mer",
+      "visitSite": "Besök webbplats",
+      "backToPortfolio": "Tillbaka till portföljen",
+      "details": {
+        "overview": "Projektöversikt",
+        "myRole": "Min roll",
+        "techStack": "Teknikstack"
+      },
+      "hero": {
+        "viewLive": "Se live-sida",
+        "github": "Visa på GitHub",
+        "contactMe": "Kontakta mig"
+      },
+      "projectData": {
+        "year": "År",
+        "type": "Typ",
+        "webApp": "Webbapplikation",
+        "mobileApp": "Mobilapplikation",
+        "desktopApp": "Skrivbordsapplikation",
+        "other": "Annat",
+        "stack": "Teknik",
+        "role": "Roll",
+        "designerAndDeveloper": "Designer och utvecklare",
+        "developer": "Utvecklare",
+        "designer": "Designer"
+      },
+      "techBeachMama": {
+        "title": "Tech Beach Mama",
+        "description": "Tech Beach Mama är en högkonverterande webbplats byggd med Next.js, Tailwind CSS och Shadcn UI. Den kombinerar modern webbdesign med strategisk marknadsföring för att inspirera ensamstående mammor att bygga lönsamma techkarriärer vid havet.",
+        "alt": "Miniatyrbild för Tech Beach Mama"
+      },
+      "sculptedGoddess": {
+        "title": "Sculpted Goddess",
+        "description": "Ombyggnad och modernisering av en datatung SSR-webbapplikation från Python/Flask till Next.js för bättre prestanda, underhållbarhet och skalbarhet.",
+        "alt": "Miniatyrbild för Sculpted Goddess"
+      },
+      "cgConsulting": {
+        "title": "CG Consulting",
+        "description": "En komplett redesign och plattformsflytt för en HR-konsult i Spanien — från en sårbar WordPress-lösning till en snabb, tvåspråkig webbapp byggd med Next.js och Sanity CMS, skapad för långsiktig hållbarhet utan löpande underhållskostnader.",
+        "alt": "Miniatyrbild för CG Consulting",
+        "hero": {
+          "subtitle": "Från WordPress till en skalbar och högpresterande webbarkitektur",
+          "description": "En komplett redesign och ombyggnad av en konsultwebbplats med fokus på prestanda, underhållbarhet och en ren, professionell användarupplevelse. Många små företag förlitar sig på WordPress-lösningar som blir instabila över tid. Detta projekt visar hur en modern stack kan minska långsiktiga risker samtidigt som prestanda och flexibilitet förbättras."
+        },
+        "step1": {
+          "label": "Problemet",
+          "title": "En WordPress-sida beroende av instabila plugins",
+          "textItem1": "CG Consulting är en boutique HR-konsult som hjälper internationella företag att hitta talang i Spanien.",
+          "textItem2": "<strong>Den befintliga WordPress-sidan</strong> hade fungerat i flera år men blev allt mer instabil på grund av plugin-beroenden och brist på löpande underhåll. De behövde en stabil och professionell digital närvaro som kunde hanteras utan att vara beroende av en utvecklare för dagliga uppdateringar — på både spanska och engelska.",
+          "textItem3": "Målet var inte bara att designa om webbplatsen, utan att bygga om den på en modern, skalbar arkitektur som minskar teknisk risk och möjliggör framtida tillväxt.",
+          "challenges": {
+            "title": "Den största utmaningen var inte plattformen i sig, utan den långsiktiga hållbarheten i den befintliga lösningen.",
+            "frequentIssues": "Återkommande problem vid plugin-uppdateringar",
+            "increasingMaintenance": "Ökande underhållsbehov",
+            "performanceLimitations": "Prestandabegränsningar",
+            "difficultContentManagement": "Svårhanterligt innehåll för kunden"
+          }
+        },
+        "step2": {
+          "label": "Designkoncept",
+          "title": "Börja med design, inte kod",
+          "textItem1": "Redesignen fokuserade på tydlighet och trovärdighet — två avgörande faktorer för en oberoende HR-konsult. Jag arbetade med en ren visuell hierarki, strukturerad innehållspresentation och en layout som känns professionell utan att vara kall. Subtila animationer med Framer Motion ger liv åt upplevelsen utan att ta fokus från innehållet. Webbplatsen är fullt responsiv och designad för att kännas lika pålitlig på mobil som på desktop.",
+          "alt": "Designkoncept för CG Consulting — Figma",
+          "caption": "Designkoncept — Figma"
+        },
+        "step3": {
+          "label": "Migrering och arkitektur",
+          "title": "Från WordPress till en modern stack",
+          "textItem1": "Jag föreslog en fullständig migrering från WordPress till en modern stack med Next.js och Sanity CMS. Målet var inte bara en teknisk uppgradering, utan att ge kunden full kontroll över sitt innehåll och tryggheten i att webbplatsen inte bryts utan en utvecklare tillgänglig.",
+          "textItem2": "Eftersom CG Consulting arbetar med internationella företag behövde webbplatsen nå två målgrupper. Fullt tvåspråkigt stöd på spanska och engelska byggdes in från början.",
+          "solution": {
+            "title": "Jag byggde om webbplatsen med en modern och lättviktig arkitektur med fokus på enkelhet och kontroll.",
+            "removedDependency": "Tog bort beroendet av plugins",
+            "introducedStructuredContent": "Införde strukturerat innehåll via Sanity CMS",
+            "builtCustomFrontend": "Byggde ett skräddarsytt frontend för full kontroll över prestanda och design",
+            "implementedResponsiveLayout": "Implementerade en responsiv, mobile-first layout",
+            "addedSubtleAnimations": "Lade till subtila animationer för att förbättra användarupplevelsen"
+          }
+        },
+        "step4": {
+          "label": "Den live-satta webbplatsen",
+          "title": "Design i webbläsaren — desktop och mobil",
+          "textItem1": "Den redesignade webbplatsen i drift — ren layout, professionell känsla och en fullt responsiv upplevelse på alla enheter.",
+          "alt": "CG Consulting redesignad webbplats live",
+          "caption": "Den redesignade webbplatsen — ren layout och fullt responsiv upplevelse."
+        },
+        "step5": {
+          "label": "Prestanda",
+          "title": "Från långsam till snabb — mätbara resultat",
+          "textItem1": "Förbättringar inom prestanda och SEO handlar inte om ett specifikt ramverk, utan om hur applikationen byggs. I detta projekt uppnåddes förbättringarna genom att förenkla arkitekturen, minska beroenden och optimera implementationen.",
+          "textItem2": "<strong>Obs:</strong> WordPress kan absolut leverera hög prestanda och bra SEO om det byggs med en ren arkitektur och minimala beroenden. I detta fall prioriterades långsiktig stabilitet, kontroll över prestanda och en enklare underhållsupplevelse för kunden.",
+          "beforeVsAfter": {
+            "before": {
+              "title": "Före",
+              "pluginHeavyWordPressSetup": "Plugin-tung WordPress-lösning",
+              "recurringMaintenanceIssues": "Återkommande underhållsproblem",
+              "slowerPerformance": "Lägre prestanda",
+              "limitedFlexibility": "Begränsad flexibilitet"
+            },
+            "after": {
+              "title": "Efter",
+              "lightweightCustomArchitecture": "Lättviktig skräddarsydd arkitektur",
+              "stablePredictableSetup": "Stabil och förutsägbar lösning",
+              "optimizedPerformance": "Optimerad prestanda",
+              "fullControlOverFrontendAndContent": "Full kontroll över frontend och innehåll"
+            }
+          },
+          "alt": "Lighthouse prestandapoäng — WordPress vs Next.js",
+          "caption": "Prestanda · WordPress vs Next.js (Lighthouse)"
+        },
+        "step6": {
+          "label": "Överlämning till kund",
+          "title": "CG Consulting kan hantera sitt innehåll själva — ingen utvecklare behövs",
+          "textItem1": "Sanity CMS konfigurerades för att ge kunden ett rent och enkelt redigeringsgränssnitt. De kan uppdatera tjänster, texter och kontaktinformation utan att röra kod — ingen utvecklare krävs efter lansering.",
+          "alt": "Sanity Studio gränssnitt för innehållshantering",
+          "caption": "Innehållshantering · Sanity Studio"
+        },
+        "step7": {
+          "label": "Resultatet",
+          "title": "En stabil, tvåspråkig webbapp byggd för framtiden",
+          "textItem1": "Kunden gick från att oroa sig för plugin-konflikter till att ha full kontroll över sitt innehåll via ett tydligt CMS-gränssnitt. Den nya webbplatsen är betydligt snabbare, mer stabil och byggd på en grund som kan växa med verksamheten — utan beroende av en utvecklare för dagliga uppdateringar.",
+          "textItem2": "Detta projekt speglar hur jag arbetar: att lösa verkliga affärsproblem, inte bara bygga en webbplats.",
+          "results": {
+            "title": "Den nya lösningen resulterade i:",
+            "fasterLoadTimes": "Snabbare laddningstider",
+            "improvedCoreWebVitals": "Förbättrade Core Web Vitals",
+            "cleanerMaintainableCodebase": "Renare och mer underhållbar kodbas",
+            "easierContentManagement": "Enklare innehållshantering",
+            "reducedLongTermMaintenance": "Minskat behov av långsiktigt underhåll"
+          }
+        },
+        "finalCta": {
+          "title": "Vill du modernisera din webbplats eller förbättra prestandan?",
+          "cta": "Kontakta mig"
+        }
+      }
     }
   }
 }

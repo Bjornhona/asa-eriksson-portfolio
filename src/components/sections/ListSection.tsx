@@ -10,7 +10,7 @@ export interface ListSectionProps {
 
 const ListSection = ({title, subTitle, listItems, listIcon}: ListSectionProps) => {
   return (
-    <motion.div variants={container} initial="initial" whileInView="animate" viewport={{ once: true }} className="space-y-4">
+    <motion.div variants={container} initial="initial" whileInView="animate" viewport={{ once: true }} className="space-y-2">
       {title && <motion.h4 variants={fadeInUp}>{title}</motion.h4>}
       {subTitle && <motion.h6 variants={fadeInUp}>{subTitle}</motion.h6>}
       <motion.ul variants={fadeInUp} className="list-disc list-inside">

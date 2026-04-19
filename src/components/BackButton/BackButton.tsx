@@ -9,7 +9,7 @@ export interface BackButtonProps {
   label: string;
 }
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 const BackButton = ({ href, label }: BackButtonProps) => {
   return (

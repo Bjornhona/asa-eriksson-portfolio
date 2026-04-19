@@ -2,15 +2,14 @@ import { motion } from "framer-motion";
 import { container, fadeInUp } from "@/lib/animations";
 import ListSection from "../sections/ListSection";
 import Image from "next/image";
+import { ListSectionProps } from "../sections/ListSection";
 
 export interface TimeLineStepProps {
   id?: string;
   title?: string;
   label?: string;
   textItems?: React.ReactNode[];
-  listSubTitle?: string;
-  listItems?: string[];
-  listIcon?: React.ReactNode;
+  lists?: ListSectionProps[];
   imageSrc?: string;
   alt?: string;
   caption?: string;
@@ -21,9 +20,7 @@ const TimeLineStep = ({
   title,
   label,
   textItems,
-  listSubTitle,
-  listItems,
-  listIcon,
+  lists,
   imageSrc,
   alt,
   caption,
@@ -48,13 +45,15 @@ const TimeLineStep = ({
             {item}
           </motion.h6>
         ))}
-        {listItems && (
+        {lists && lists.map((list, index) => (
           <ListSection
-            subTitle={listSubTitle}
-            listItems={listItems}
-            listIcon={listIcon}
+            key={index}
+            title={list.title}
+            subTitle={list.subTitle}
+            listItems={list.listItems}
+            listIcon={list.listIcon}
           />
-        )}
+        ))}
         {imageSrc && alt && (
           <>
             <motion.div

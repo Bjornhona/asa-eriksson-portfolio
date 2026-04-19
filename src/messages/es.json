@@ -344,5 +344,152 @@
       "title": "Construyamos algo increíble juntos",
       "buttonText": "Contáctame"
     }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Proyectos seleccionados",
+      "subtitle": "Una selección de proyectos donde he combinado desarrollo frontend, diseño UI y pensamiento de producto para crear experiencias web modernas y de alto rendimiento.",
+      "description": "Cada proyecto refleja mi enfoque en la creación de productos digitales que no solo son visualmente cuidados, sino también escalables, intuitivos y optimizados para el rendimiento.",
+      "contactMe": "Contáctame",
+      "seeWorks": "Ver proyectos"
+    },
+    "work": {
+      "readMore": "Ver más",
+      "visitSite": "Visitar sitio",
+      "backToPortfolio": "Volver al portfolio",
+      "details": {
+        "overview": "Resumen del proyecto",
+        "myRole": "Mi rol",
+        "techStack": "Tecnologías"
+      },
+      "hero": {
+        "viewLive": "Ver sitio en vivo",
+        "github": "Ver en GitHub",
+        "contactMe": "Contáctame"
+      },
+      "projectData": {
+        "year": "Año",
+        "type": "Tipo",
+        "webApp": "Aplicación web",
+        "mobileApp": "Aplicación móvil",
+        "desktopApp": "Aplicación de escritorio",
+        "other": "Otro",
+        "stack": "Tecnologías",
+        "role": "Rol",
+        "designerAndDeveloper": "Diseñador y desarrollador",
+        "developer": "Desarrollador",
+        "designer": "Diseñador"
+      },
+      "techBeachMama": {
+        "title": "Tech Beach Mama",
+        "description": "Tech Beach Mama es un sitio web de alta conversión construido con Next.js, Tailwind CSS y Shadcn UI. Combina diseño web moderno con marketing estratégico para inspirar a madres solteras a construir carreras tecnológicas rentables junto al mar.",
+        "alt": "Miniatura de Tech Beach Mama"
+      },
+      "sculptedGoddess": {
+        "title": "Sculpted Goddess",
+        "description": "Reconstrucción y modernización de una aplicación web SSR con gran carga de datos, migrando de Python/Flask a Next.js para mejorar el rendimiento, la mantenibilidad y la escalabilidad.",
+        "alt": "Miniatura de Sculpted Goddess"
+      },
+      "cgConsulting": {
+        "title": "CG Consulting",
+        "description": "Rediseño completo y migración de plataforma para una consultora de RRHH en España — de un WordPress frágil a una aplicación web rápida, bilingüe y construida con Next.js y Sanity CMS, pensada para durar sin costes de mantenimiento continuos.",
+        "alt": "Miniatura de CG Consulting",
+        "hero": {
+          "subtitle": "De WordPress a una arquitectura web escalable y de alto rendimiento",
+          "description": "Rediseño completo y reconstrucción de un sitio web de consultoría, enfocado en rendimiento, mantenibilidad y una experiencia de usuario limpia y profesional. Muchas pequeñas empresas dependen de configuraciones de WordPress que se vuelven frágiles con el tiempo. Este proyecto demuestra cómo migrar a un stack moderno puede reducir el riesgo a largo plazo mientras mejora el rendimiento y la flexibilidad."
+        },
+        "step1": {
+          "label": "El problema",
+          "title": "Un sitio WordPress sostenido por plugins frágiles",
+          "textItem1": "CG Consulting es una consultora boutique de RRHH que ayuda a empresas internacionales a encontrar talento en España.",
+          "textItem2": "<strong>El sitio web existente en WordPress</strong> había servido al negocio durante años, pero se había vuelto cada vez más frágil debido a la dependencia de plugins y la falta de mantenimiento continuo. Necesitaban una presencia digital estable y profesional que pudiera gestionarse sin depender de un desarrollador para actualizaciones diarias — tanto en español como en inglés.",
+          "textItem3": "El objetivo de este proyecto no era solo rediseñar el sitio, sino reconstruirlo sobre una arquitectura moderna y escalable que elimine riesgos técnicos y permita el crecimiento futuro.",
+          "challenges": {
+            "title": "El principal desafío no era la plataforma en sí, sino la sostenibilidad a largo plazo del sistema existente.",
+            "frequentIssues": "Problemas frecuentes causados por actualizaciones de plugins",
+            "increasingMaintenance": "Aumento del esfuerzo de mantenimiento",
+            "performanceLimitations": "Limitaciones de rendimiento",
+            "difficultContentManagement": "Gestión de contenido complicada para el cliente"
+          }
+        },
+        "step2": {
+          "label": "Concepto de diseño",
+          "title": "Empezar por el diseño, no por el código",
+          "textItem1": "El rediseño se centró en la claridad y la credibilidad — dos aspectos clave que un consultor independiente de RRHH debe transmitir de inmediato. Me enfoqué en una jerarquía visual limpia, una presentación de contenido estructurada y un diseño profesional sin resultar frío. Animaciones y transiciones sutiles, construidas con Framer Motion, aportan dinamismo sin distraer del contenido. El sitio es completamente responsive, diseñado para generar confianza tanto en móvil como en escritorio.",
+          "alt": "Concepto de rediseño de CG Consulting — Figma",
+          "caption": "Concepto de rediseño — Figma"
+        },
+        "step3": {
+          "label": "Migración y arquitectura",
+          "title": "De WordPress a un stack moderno",
+          "textItem1": "Propuse una migración completa desde WordPress a un stack moderno con Next.js y Sanity CMS. El objetivo no era solo una mejora técnica, sino dar al cliente control total sobre su contenido y la tranquilidad de que su web no fallará sin un desarrollador disponible.",
+          "textItem2": "Dado que CG Consulting trabaja con empresas internacionales, el sitio debía dirigirse a dos audiencias. El soporte bilingüe completo en español e inglés se implementó desde el inicio.",
+          "solution": {
+            "title": "Reconstruí el sitio utilizando una arquitectura moderna y ligera centrada en la simplicidad y el control.",
+            "removedDependency": "Eliminación de dependencia de plugins",
+            "introducedStructuredContent": "Introducción de contenido estructurado mediante Sanity CMS",
+            "builtCustomFrontend": "Desarrollo de un frontend personalizado para control total del rendimiento y diseño",
+            "implementedResponsiveLayout": "Implementación de un diseño responsive con enfoque mobile-first",
+            "addedSubtleAnimations": "Añadido de animaciones sutiles para mejorar la experiencia de usuario"
+          }
+        },
+        "step4": {
+          "label": "El sitio en vivo",
+          "title": "Diseño en el navegador — escritorio y móvil",
+          "textItem1": "El sitio rediseñado en producción — diseño limpio, credibilidad profesional y experiencia completamente responsive en todos los dispositivos.",
+          "alt": "Sitio rediseñado de CG Consulting en vivo",
+          "caption": "El sitio rediseñado en vivo — diseño limpio, credibilidad profesional y experiencia totalmente responsive."
+        },
+        "step5": {
+          "label": "Rendimiento",
+          "title": "De lento a rápido — resultados medibles",
+          "textItem1": "Las mejoras en rendimiento y SEO no dependen de un framework concreto, sino de cómo se construye la aplicación. En este proyecto, las mejoras se lograron simplificando la arquitectura, reduciendo dependencias y optimizando la implementación.",
+          "textItem2": "<strong>Nota:</strong> WordPress puede ofrecer un excelente rendimiento y SEO si se construye con una arquitectura limpia y pocas dependencias. En este caso, el enfoque priorizó la estabilidad a largo plazo, el control del rendimiento y una experiencia de mantenimiento simplificada para el cliente.",
+          "beforeVsAfter": {
+            "before": {
+              "title": "Antes",
+              "pluginHeavyWordPressSetup": "Configuración de WordPress dependiente de plugins",
+              "recurringMaintenanceIssues": "Problemas de mantenimiento recurrentes",
+              "slowerPerformance": "Rendimiento más lento",
+              "limitedFlexibility": "Flexibilidad limitada"
+            },
+            "after": {
+              "title": "Después",
+              "lightweightCustomArchitecture": "Arquitectura personalizada y ligera",
+              "stablePredictableSetup": "Sistema estable y predecible",
+              "optimizedPerformance": "Rendimiento optimizado",
+              "fullControlOverFrontendAndContent": "Control total sobre frontend y contenido"
+            }
+          },
+          "alt": "Puntuaciones de rendimiento Lighthouse — WordPress vs Next.js",
+          "caption": "Rendimiento · WordPress vs Next.js (Lighthouse)"
+        },
+        "step6": {
+          "label": "Entrega al cliente",
+          "title": "CG Consulting puede gestionar su contenido sin desarrollador",
+          "textItem1": "Sanity CMS se configuró para ofrecer al cliente una interfaz de edición limpia y sencilla. Puede actualizar servicios, textos y datos de contacto sin tocar código — no se requiere desarrollador tras el lanzamiento.",
+          "alt": "Interfaz de gestión de contenido en Sanity Studio",
+          "caption": "Gestión de contenido · Sanity Studio"
+        },
+        "step7": {
+          "label": "Resultado",
+          "title": "Una aplicación web estable, bilingüe y preparada para el futuro",
+          "textItem1": "La clienta pasó de preocuparse por conflictos entre plugins a tener control total de su contenido mediante una interfaz CMS clara. El nuevo sitio es significativamente más rápido, más estable y construido sobre una base que puede escalar con su negocio — sin depender de un desarrollador para el mantenimiento diario.",
+          "textItem2": "Este proyecto refleja cómo abordo el trabajo con clientes: resolviendo un problema real de negocio, no solo creando una web.",
+          "results": {
+            "title": "El nuevo sistema permitió:",
+            "fasterLoadTimes": "Tiempos de carga más rápidos",
+            "improvedCoreWebVitals": "Mejora en Core Web Vitals",
+            "cleanerMaintainableCodebase": "Código más limpio y mantenible",
+            "easierContentManagement": "Gestión de contenido más sencilla",
+            "reducedLongTermMaintenance": "Menor necesidad de mantenimiento a largo plazo"
+          }
+        },
+        "finalCta": {
+          "title": "¿Quieres modernizar tu web o mejorar su rendimiento?",
+          "cta": "Contáctame"
+        }
+      }
+    }
   }
 }

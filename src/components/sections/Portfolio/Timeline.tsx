@@ -4,7 +4,7 @@ import { TimeLineWrapper } from "@/components/TimeLineWrapper/TimeLineWrapper";
 import { PortfolioItem } from "@/app/[locale]/portfolio/portfolioProjects";
 import { TimelineItemType } from "@/app/[locale]/about/page";
 import { useTranslations } from "next-intl";
-import { CheckIcon } from "lucide-react";
+import { CheckIcon, XIcon } from "lucide-react";
 import TimeLineStep from "@/components/TimeLineWrapper/TimeLineStep";
 
 export default function  PortfolioTimeline({
@@ -29,12 +29,16 @@ export default function  PortfolioTimeline({
             }),
             t(project.text + ".step1.textItem3")
           ]}
-          listSubTitle={t(project.text + ".step1.challenges.title")}
-          listItems={[
-            t(project.text + ".step1.challenges.frequentIssues"),
-            t(project.text + ".step1.challenges.increasingMaintenance"),
-            t(project.text + ".step1.challenges.performanceLimitations"),
-            t(project.text + ".step1.challenges.difficultContentManagement")
+          lists={[
+            {
+              subTitle: t(project.text + ".step1.challenges.title"),
+              listItems: [
+                t(project.text + ".step1.challenges.frequentIssues"),
+                t(project.text + ".step1.challenges.increasingMaintenance"),
+                t(project.text + ".step1.challenges.performanceLimitations"),
+                t(project.text + ".step1.challenges.difficultContentManagement"),
+              ],
+            },
           ]}
         />
       ),
@@ -62,13 +66,17 @@ export default function  PortfolioTimeline({
             t(project.text + ".step3.textItem1"),
             t(project.text + ".step3.textItem2")
           ]}
-          listSubTitle={t(project.text + ".step3.solution.title")}
-          listItems={[
-            t(project.text + ".step3.solution.removedDependency"),
-            t(project.text + ".step3.solution.introducedStructuredContent"),
-            t(project.text + ".step3.solution.builtCustomFrontend"),
-            t(project.text + ".step3.solution.implementedResponsiveLayout"),
-            t(project.text + ".step3.solution.addedSubtleAnimations"),
+          lists={[
+            {
+              subTitle: t(project.text + ".step3.solution.title"),
+              listItems: [
+                t(project.text + ".step3.solution.removedDependency"),
+                t(project.text + ".step3.solution.introducedStructuredContent"),
+                t(project.text + ".step3.solution.builtCustomFrontend"),
+                t(project.text + ".step3.solution.implementedResponsiveLayout"),
+                t(project.text + ".step3.solution.addedSubtleAnimations"),
+              ],
+            },
           ]}
         />
       ),
@@ -97,6 +105,28 @@ export default function  PortfolioTimeline({
             t.rich(project.text + ".step5.textItem2", {
               strong: (chunks) => <strong>{chunks}</strong>,
             }),
+          ]}
+          lists={[
+            {
+              title: t(project.text + ".step5.beforeVsAfter.before.title"),
+              listItems: [
+                t(project.text + ".step5.beforeVsAfter.before.pluginHeavyWordPressSetup"),
+                t(project.text + ".step5.beforeVsAfter.before.recurringMaintenanceIssues"),
+                t(project.text + ".step5.beforeVsAfter.before.slowerPerformance"),
+                t(project.text + ".step5.beforeVsAfter.before.limitedFlexibility"),
+              ],
+              listIcon: <XIcon className="w-4 h-4 text-danger" />,
+            },
+            {
+              title: t(project.text + ".step5.beforeVsAfter.after.title"),
+              listItems: [
+                t(project.text + ".step5.beforeVsAfter.after.lightweightCustomArchitecture"),
+                t(project.text + ".step5.beforeVsAfter.after.stablePredictableSetup"),
+                t(project.text + ".step5.beforeVsAfter.after.optimizedPerformance"),
+                t(project.text + ".step5.beforeVsAfter.after.fullControlOverFrontendAndContent"),
+              ],
+              listIcon: <CheckIcon className="w-4 h-4 text-aqua-400" />,
+            },
           ]}
           imageSrc={project.images[3]}
           alt={t(project.text + ".step5.alt")}
@@ -127,15 +157,19 @@ export default function  PortfolioTimeline({
             t(project.text + ".step7.textItem1"),
             t(project.text + ".step7.textItem2")
           ]}
-          listSubTitle={t(project.text + ".step7.results.title")}
-          listItems={[
-            t(project.text + ".step7.results.fasterLoadTimes"),
-            t(project.text + ".step7.results.improvedCoreWebVitals"),
-            t(project.text + ".step7.results.cleanerMaintainableCodebase"),
-            t(project.text + ".step7.results.easierContentManagement"),
-            t(project.text + ".step7.results.reducedLongTermMaintenance"),
+          lists={[
+            {
+              subTitle: t(project.text + ".step7.results.title"),
+              listItems: [
+                t(project.text + ".step7.results.fasterLoadTimes"),
+                t(project.text + ".step7.results.improvedCoreWebVitals"),
+                t(project.text + ".step7.results.cleanerMaintainableCodebase"),
+                t(project.text + ".step7.results.easierContentManagement"),
+                t(project.text + ".step7.results.reducedLongTermMaintenance"),
+              ],
+              listIcon: <CheckIcon className="w-4 h-4 text-aqua-400" />,
+            },
           ]}
-          listIcon={<CheckIcon className="w-4 h-4 text-aqua-400" />}
         />
       ),
       last: true,
