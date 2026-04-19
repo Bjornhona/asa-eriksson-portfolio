@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import ProjectDataSection from "@/components/sections/Portfolio/ProjectData";
 import PortfolioTimeline from "@/components/sections/Portfolio/Timeline";
 import CtaSection from "@/components/sections/CtaSection";
+import BackButton from "@/components/BackButton/BackButton";
 
 export const metadata: Metadata = {
   title: "Portfolio Detail | Asa Eriksson",
@@ -24,18 +25,28 @@ export const metadata: Metadata = {
   },
 };
 
-const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => {
+const PortfolioDetailPage = async ({
+  params,
+}: {
+  params: { slug: string };
+}) => {
   const t = await getTranslations(`portfolio.work`);
-  
+
   const { slug } = await params;
   if (!slug) {
-    notFound()
+    notFound();
   }
 
-  const project: PortfolioItem | undefined = portfolioItems.find((project) => project.slug === slug);
+  const project: PortfolioItem | undefined = portfolioItems.find(
+    (project) => project.slug === slug,
+  );
   if (!project) {
     notFound();
   }
+
+  const backButton: React.ReactNode = (
+    <BackButton href="/portfolio" label={t("backToPortfolio")} />
+  );
 
   const baseButtons: ButtonsProps[] = [
     {
@@ -50,17 +61,22 @@ const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => 
     },
   ];
 
-  const buttons: ButtonsProps[] = project.githubRepoName ? [
-    ...baseButtons,
-    {
-      href: `https://github.com/bjornhona/${project.githubRepoName}`,
-      icon: <Github className="w-4 h-4" />,
-      label: t("hero.github"),
-    },
-  ] : baseButtons;
+  const buttons: ButtonsProps[] = project.githubRepoName
+    ? [
+        ...baseButtons,
+        {
+          href: `https://github.com/bjornhona/${project.githubRepoName}`,
+          icon: <Github className="w-4 h-4" />,
+          label: t("hero.github"),
+        },
+      ]
+    : baseButtons;
 
   return (
-    <div id="portfolio-details" className="relative container max-w-full pt-[64px] pb-32">
+    <div
+      id="portfolio-details"
+      className="relative container max-w-full pt-[64px] pb-32"
+    >
       <HeroSection
         imageSrc={project.images[0]}
         imageAlt={t(project.text + ".alt")}
@@ -70,6 +86,7 @@ const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => 
         buttons={buttons}
         imageTransitionName={`project-image-${project.slug}`}
       />
+      {backButton}
       <ProjectDataSection project={project} />
       <PortfolioTimeline project={project} />
       <CtaSection
@@ -78,6 +95,7 @@ const PortfolioDetailPage = async ({ params }: { params: { slug: string } }) => 
         buttonText={t(project.text + ".finalCta.cta")}
         buttonHref="/contact"
       />
+      {backButton}
     </div>
   );
 };

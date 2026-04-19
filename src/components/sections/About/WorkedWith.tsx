@@ -1,6 +1,7 @@
 import { container, fadeInUp } from "@/lib/animations";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import ListSection from "../ListSection";
 
 const AboutWorkedWithSection = () => {
   const t = useTranslations("about.workedWith");
@@ -22,11 +23,7 @@ const AboutWorkedWithSection = () => {
         viewport={{ once: true }}
       >
         <motion.h3 variants={fadeInUp}>{t("title")}</motion.h3>
-        <motion.ul variants={fadeInUp} className="list-disc list-inside">
-          {items.map((item) => (
-            <motion.li variants={fadeInUp} key={item}>{item}</motion.li>
-          ))}
-        </motion.ul>
+        <ListSection listItems={items} />
       </motion.div>
     </section>
   );

@@ -356,6 +356,7 @@
     "work": {
       "readMore": "Read more",
       "visitSite": "Visit site",
+      "backToPortfolio": "Back to portfolio",
       "details": {
         "overview": "Project overview",
         "myRole": "My role",
@@ -430,8 +431,7 @@
             "builtCustomFrontend": "Built a custom frontend for full control over performance and design",
             "implementedResponsiveLayout": "Implemented a responsive, mobile-first layout",
             "addedSubtleAnimations": "Added subtle animations to enhance the user experience"
-          },
-          "whyTechStack": "Chosen for performance, flexibility, and long-term maintainability."
+          }
         },
         "step4": {
           "label": "The Live Site",

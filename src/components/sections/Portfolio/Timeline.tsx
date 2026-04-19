@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import { TimeLineWrapper } from "@/components/TimeLineWrapper/TimeLineWrapper";
-import TimeLineImageSection from "@/components/TimeLineWrapper/TimeLineImageSection";
 import { PortfolioItem } from "@/app/[locale]/portfolio/portfolioProjects";
 import { TimelineItemType } from "@/app/[locale]/about/page";
-import TimeLineTextSection from "@/components/TimeLineWrapper/TimeLineTextSection";
 import { useTranslations } from "next-intl";
+import { CheckIcon } from "lucide-react";
+import TimeLineStep from "@/components/TimeLineWrapper/TimeLineStep";
 
 export default function  PortfolioTimeline({
   project,
@@ -18,7 +18,7 @@ export default function  PortfolioTimeline({
   const timelineItems: TimelineItemType[] = [
     {
       component: (
-        <TimeLineTextSection
+        <TimeLineStep
           id="project-overview"
           title={t(project.text + ".step1.title")}
           label={t(project.text + ".step1.label")}
@@ -29,12 +29,19 @@ export default function  PortfolioTimeline({
             }),
             t(project.text + ".step1.textItem3")
           ]}
+          listSubTitle={t(project.text + ".step1.challenges.title")}
+          listItems={[
+            t(project.text + ".step1.challenges.frequentIssues"),
+            t(project.text + ".step1.challenges.increasingMaintenance"),
+            t(project.text + ".step1.challenges.performanceLimitations"),
+            t(project.text + ".step1.challenges.difficultContentManagement")
+          ]}
         />
       ),
     },
     {
       component: (
-        <TimeLineImageSection
+        <TimeLineStep
           id={"project-design"}
           title={t(project.text + ".step2.title")}
           label={t(project.text + ".step2.label")}
@@ -47,7 +54,7 @@ export default function  PortfolioTimeline({
     },
     {
       component: (
-        <TimeLineTextSection
+        <TimeLineStep
           id="migration-and-architecture"
           title={t(project.text + ".step3.title")}
           label={t(project.text + ".step3.label")}
@@ -55,12 +62,20 @@ export default function  PortfolioTimeline({
             t(project.text + ".step3.textItem1"),
             t(project.text + ".step3.textItem2")
           ]}
+          listSubTitle={t(project.text + ".step3.solution.title")}
+          listItems={[
+            t(project.text + ".step3.solution.removedDependency"),
+            t(project.text + ".step3.solution.introducedStructuredContent"),
+            t(project.text + ".step3.solution.builtCustomFrontend"),
+            t(project.text + ".step3.solution.implementedResponsiveLayout"),
+            t(project.text + ".step3.solution.addedSubtleAnimations"),
+          ]}
         />
       ),
     },
     {
       component: (
-        <TimeLineImageSection
+        <TimeLineStep
           id="the-solution-live"
           title={t(project.text + ".step4.title")}
           label={t(project.text + ".step4.label")}
@@ -73,7 +88,7 @@ export default function  PortfolioTimeline({
     },
     {
       component: (
-        <TimeLineImageSection
+        <TimeLineStep
           id="performance-and-seo"
           title={t(project.text + ".step5.title")}
           label={t(project.text + ".step5.label")}
@@ -91,7 +106,7 @@ export default function  PortfolioTimeline({
     },
     {
       component: (
-        <TimeLineImageSection
+        <TimeLineStep
           id="content-management-system"
           title={t(project.text + ".step6.title")}
           label={t(project.text + ".step6.label")}
@@ -104,7 +119,7 @@ export default function  PortfolioTimeline({
     },
     {
       component: (
-        <TimeLineTextSection
+        <TimeLineStep
           id="the-outcome"
           title={t(project.text + ".step7.title")}
           label={t(project.text + ".step7.label")}
@@ -112,6 +127,15 @@ export default function  PortfolioTimeline({
             t(project.text + ".step7.textItem1"),
             t(project.text + ".step7.textItem2")
           ]}
+          listSubTitle={t(project.text + ".step7.results.title")}
+          listItems={[
+            t(project.text + ".step7.results.fasterLoadTimes"),
+            t(project.text + ".step7.results.improvedCoreWebVitals"),
+            t(project.text + ".step7.results.cleanerMaintainableCodebase"),
+            t(project.text + ".step7.results.easierContentManagement"),
+            t(project.text + ".step7.results.reducedLongTermMaintenance"),
+          ]}
+          listIcon={<CheckIcon className="w-4 h-4 text-aqua-400" />}
         />
       ),
       last: true,
