@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image, { ImageProps } from "next/image";
+import BlendImageFilter from "@/components/BlendImageFilter/BlendImageFilter";
 
 export type PortfolioImageProps = Omit<ImageProps, "src" | "alt"> & {
   previewSrc: string;
@@ -19,8 +20,11 @@ const PortfolioImage = ({
   return (
     <>
       {/* Preview */}
-      <div onClick={() => setOpen(true)} style={{ cursor: "zoom-in" }}>
-        <Image src={previewSrc} alt={alt} {...imageProps} />
+      <div
+        onClick={() => setOpen(true)}
+        className="relative w-full h-full cursor-zoom-in"
+      >
+        <BlendImageFilter src={previewSrc} alt={alt} {...imageProps} />
       </div>
 
       {/* Fullscreen modal */}
