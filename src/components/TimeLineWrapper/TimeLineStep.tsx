@@ -10,7 +10,8 @@ export interface TimeLineStepProps {
   label?: string;
   textItems?: React.ReactNode[];
   lists?: ListSectionProps[];
-  imageSrc?: string;
+  previewSrc?: string;
+  fullSrc?: string;
   alt?: string;
   caption?: string;
 }
@@ -21,7 +22,8 @@ const TimeLineStep = ({
   label,
   textItems,
   lists,
-  imageSrc,
+  previewSrc,
+  fullSrc,
   alt,
   caption,
 }: TimeLineStepProps) => {
@@ -54,15 +56,15 @@ const TimeLineStep = ({
             listIcon={list.listIcon}
           />
         ))}
-        {imageSrc && alt && (
+        {previewSrc && fullSrc && alt && (
           <>
             <motion.div
               variants={fadeInUp}
               className="relative aspect-[16/10] w-full"
             >
               <PortfolioImage
-                previewSrc={imageSrc}
-                fullSrc={imageSrc}
+                previewSrc={previewSrc}
+                fullSrc={fullSrc}
                 alt={alt}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
