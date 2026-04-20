@@ -68,13 +68,6 @@ const TimeLineStep = ({
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              {/* <Image
-                src={imageSrc}
-                alt={alt}
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              /> */}
             </motion.div>
             {caption && (
               <motion.p variants={fadeInUp}>

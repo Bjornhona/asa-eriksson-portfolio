@@ -2,27 +2,25 @@
 import { useState } from "react";
 import Image, { ImageProps } from "next/image";
 
-export interface PortfolioImageProps {
+export type PortfolioImageProps = Omit<ImageProps, "src" | "alt"> & {
   previewSrc: string;
   fullSrc: string;
   alt: string;
-  props?: ImageProps;
 };
 
-const PortfolioImage = ({ previewSrc, fullSrc, alt, ...props }: PortfolioImageProps) => {
+const PortfolioImage = ({
+  previewSrc,
+  fullSrc,
+  alt,
+  ...imageProps
+}: PortfolioImageProps) => {
   const [open, setOpen] = useState(false);
 
   return (
     <>
       {/* Preview */}
       <div onClick={() => setOpen(true)} style={{ cursor: "zoom-in" }}>
-        <Image
-          src={previewSrc}
-          alt={alt}
-          width={1400}
-          height={900}
-          {...props}
-        />
+        <Image src={previewSrc} alt={alt} {...imageProps} />
       </div>
 
       {/* Fullscreen modal */}
@@ -37,7 +35,7 @@ const PortfolioImage = ({ previewSrc, fullSrc, alt, ...props }: PortfolioImagePr
             alignItems: "center",
             justifyContent: "center",
             zIndex: 1000,
-            cursor: "zoom-out"
+            cursor: "zoom-out",
           }}
         >
           <Image
@@ -45,12 +43,18 @@ const PortfolioImage = ({ previewSrc, fullSrc, alt, ...props }: PortfolioImagePr
             alt={alt}
             width={3000}
             height={2000}
-            {...props}
+            style={{
+              width: "auto",
+              height: "auto",
+              maxWidth: "95vw",
+              maxHeight: "95vh",
+              objectFit: "contain",
+            }}
           />
         </div>
       )}
     </>
   );
-}
+};
 
 export default PortfolioImage;
