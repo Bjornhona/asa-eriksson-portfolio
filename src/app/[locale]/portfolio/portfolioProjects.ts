@@ -1,10 +1,28 @@
+export interface PortfolioImagesStep {
+  preview: string;
+  full: string;
+}
+
+export interface PortfolioImages {
+  hero: string;
+  steps: {
+    step1?: PortfolioImagesStep;
+    step2?: PortfolioImagesStep;
+    step3?: PortfolioImagesStep;
+    step4?: PortfolioImagesStep;
+    step5?: PortfolioImagesStep;
+    step6?: PortfolioImagesStep;
+    step7?: PortfolioImagesStep;
+  };
+}
+
 export interface PortfolioItem {
   slug: string;
   text: string;
   date: string;
   appType: "webApp" | "mobileApp" | "desktopApp" | "other";
   myRole: "designerAndDeveloper" | "developer" | "designer";
-  images: string[];
+  images: PortfolioImages;
   designImage?: string;
   caseStudyUrl: string;
   visitSiteUrl: string;
@@ -19,7 +37,10 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     date: "2025-07-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
-    images: ["/portfolio/tech-beach-mama/1.png"],
+    images: {
+      "hero": "/portfolio/tech-beach-mama/1.png",
+      "steps": {}
+    },
     caseStudyUrl: "/portfolio/tech-beach-mama",
     visitSiteUrl: "https://techbeachmama.com",
     tags: [
@@ -38,11 +59,21 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     date: "2025-11-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
-    images: ["/portfolio/sculpted-goddess/1.png"],
+    images: {
+      "hero": "/portfolio/sculpted-goddess/1.png",
+      "steps": {}
+    },
     caseStudyUrl: "/portfolio/sculpted-goddess",
     visitSiteUrl: "https://sculpted-goddess.vercel.app",
     githubRepoName: "Sculpted-goddess",
-    tags: ["Next.js", "TypeScript", "SCSS", "libSQL", "API integration", "AdobeXD"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "SCSS",
+      "libSQL",
+      "API integration",
+      "AdobeXD",
+    ],
   },
   {
     slug: "cg-consulting",
@@ -50,13 +81,31 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     date: "2026-02-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
-    images: [
-      "/portfolio/cg-consulting/laptop.png",
-      "/portfolio/cg-consulting/figma-design.jpg",
-      "/portfolio/cg-consulting/mobile.png",
-      "/portfolio/cg-consulting/lighthouse-before-after.jpg",
-      "/portfolio/cg-consulting/sanity-studio.png",
-    ],
+    // images: [
+    //   "/portfolio/cg-consulting/lighthouse-before-after.jpg",
+    //   "/portfolio/cg-consulting/sanity-studio.png",
+    // ],
+    images: {
+      hero: "/portfolio/cg-consulting/hero.webp",
+      steps: {
+        step2: {
+          preview: "/portfolio/cg-consulting/design-preview.webp",
+          full: "/portfolio/cg-consulting/design-full.webp",
+        },
+        step4: {
+          preview: "/portfolio/cg-consulting/responsive-preview.webp",
+          full: "/portfolio/cg-consulting/responsive-full.webp",
+        },
+        step5: {
+          preview: "/portfolio/cg-consulting/performance-preview.webp",
+          full: "/portfolio/cg-consulting/performance-full.webp",
+        },
+        step6: {
+          preview: "/portfolio/cg-consulting/sanity-preview.webp",
+          full: "/portfolio/cg-consulting/sanity-full.webp",
+        }
+      }
+    },
     caseStudyUrl: "/portfolio/cg-consulting",
     visitSiteUrl: "https://cg-consulting.es",
     githubRepoName: "cg-consulting",

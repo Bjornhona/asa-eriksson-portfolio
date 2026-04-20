@@ -78,7 +78,7 @@ const PortfolioDetailPage = async ({
       className="relative container max-w-full pt-[64px] pb-32"
     >
       <HeroSection
-        imageSrc={project.images[0]}
+        imageSrc={project.images.hero}
         imageAlt={t(project.text + ".alt")}
         title={t(project.text + ".title")}
         subtitle={t(project.text + ".hero.subtitle")}

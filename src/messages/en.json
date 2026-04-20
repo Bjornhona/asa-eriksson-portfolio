@@ -406,10 +406,10 @@
           "textItem3": "The goal of this project was not only to redesign the website, but to rebuild it on a modern, scalable architecture that removes technical risk and supports future growth.",
           "challenges": {
             "title": "The main challenge was not the platform itself, but the long-term sustainability of the existing setup.",
-            "frequentIssues": "Frequent issues caused by plugin updates",
-            "increasingMaintenance": "Increasing maintenance overhead",
-            "performanceLimitations": "Performance limitations",
-            "difficultContentManagement": "Difficult content management for the client"
+            "frequentIssues": "Plugin conflicts risking content loss",
+            "increasingMaintenance": "No budget for ongoing maintenance",
+            "performanceLimitations": "Slow page loads, no performance control",
+            "difficultContentManagement": "Client dependent on developer for updates"
           }
         },
         "step2": {

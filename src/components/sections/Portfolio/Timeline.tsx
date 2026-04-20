@@ -50,7 +50,7 @@ export default function  PortfolioTimeline({
           title={t(project.text + ".step2.title")}
           label={t(project.text + ".step2.label")}
           textItems={[t(project.text + ".step2.textItem1")]}
-          imageSrc={project.images[1]}
+          imageSrc={project.images.steps.step2?.preview}
           alt={t(project.text + ".step2.alt")}
           caption={t(project.text + ".step2.caption")}
         />
@@ -88,7 +88,7 @@ export default function  PortfolioTimeline({
           title={t(project.text + ".step4.title")}
           label={t(project.text + ".step4.label")}
           textItems={[t(project.text + ".step4.textItem1")]}
-          imageSrc={project.images[2]}
+          imageSrc={project.images.steps.step4?.preview}
           alt={t(project.text + ".step4.alt")}
           caption={t(project.text + ".step4.caption")}
         />
@@ -128,7 +128,7 @@ export default function  PortfolioTimeline({
               listIcon: <CheckIcon className="w-4 h-4 text-aqua-400" />,
             },
           ]}
-          imageSrc={project.images[3]}
+          imageSrc={project.images.steps.step5?.preview}
           alt={t(project.text + ".step5.alt")}
           caption={t(project.text + ".step5.caption")}
         />
@@ -141,7 +141,7 @@ export default function  PortfolioTimeline({
           title={t(project.text + ".step6.title")}
           label={t(project.text + ".step6.label")}
           textItems={[t(project.text + ".step6.textItem1")]}
-          imageSrc={project.images[4]}
+          imageSrc={project.images.steps.step6?.preview}
           alt={t(project.text + ".step6.alt")}
           caption={t(project.text + ".step6.caption")}
         />

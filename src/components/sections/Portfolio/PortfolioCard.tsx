@@ -27,7 +27,7 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
           <ViewTransition name={`project-image-${item.slug}`}>
             <div className="relative w-full aspect-[16/10]">
               <BlendImageFilter
-                src={item.images[0]}
+                src={item.images.hero}
                 alt={t(item.text + ".alt")}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"

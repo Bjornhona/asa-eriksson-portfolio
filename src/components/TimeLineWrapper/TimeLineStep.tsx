@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { container, fadeInUp } from "@/lib/animations";
 import ListSection from "../sections/ListSection";
-import Image from "next/image";
+import PortfolioImage from "../PortfolioImage/PortfolioImage";
 import { ListSectionProps } from "../sections/ListSection";
 
 export interface TimeLineStepProps {
@@ -60,13 +60,21 @@ const TimeLineStep = ({
               variants={fadeInUp}
               className="relative aspect-[16/10] w-full"
             >
-              <Image
-                src={imageSrc}
+              <PortfolioImage
+                previewSrc={imageSrc}
+                fullSrc={imageSrc}
                 alt={alt}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
+              {/* <Image
+                src={imageSrc}
+                alt={alt}
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              /> */}
             </motion.div>
             {caption && (
               <motion.p variants={fadeInUp}>
