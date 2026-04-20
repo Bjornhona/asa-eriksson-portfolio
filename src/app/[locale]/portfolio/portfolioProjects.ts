@@ -81,10 +81,6 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     date: "2026-02-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
-    // images: [
-    //   "/portfolio/cg-consulting/lighthouse-before-after.jpg",
-    //   "/portfolio/cg-consulting/sanity-studio.png",
-    // ],
     images: {
       hero: "/portfolio/cg-consulting/hero.webp",
       steps: {
