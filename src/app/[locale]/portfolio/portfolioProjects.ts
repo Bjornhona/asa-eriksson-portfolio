@@ -60,8 +60,25 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     appType: "webApp",
     myRole: "designerAndDeveloper",
     images: {
-      "hero": "/portfolio/sculpted-goddess/1.png",
-      "steps": {}
+      hero: "/portfolio/sculpted-goddess/sculpted-goddess-preview.webp",
+      steps: {
+        step2: {
+          preview: "/portfolio/sculpted-goddess/adobexd-design-preview.webp",
+          full: "/portfolio/sculpted-goddess/adobexd-design-full.webp",
+        },
+        step4: {
+          preview: "/portfolio/sculpted-goddess/core-features-preview.webp",
+          full: "/portfolio/sculpted-goddess/core-features-full.webp",
+        },
+        step5: {
+          preview: "/portfolio/sculpted-goddess/performance-preview.webp",
+          full: "/portfolio/sculpted-goddess/performance-full.webp",
+        },
+        step6: {
+          preview: "/portfolio/sculpted-goddess/design-system-preview.webp",
+          full: "/portfolio/sculpted-goddess/design-system-full.webp",
+        },
+      }
     },
     caseStudyUrl: "/portfolio/sculpted-goddess",
     visitSiteUrl: "https://sculpted-goddess.vercel.app",
@@ -72,6 +89,7 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       "SCSS",
       "libSQL",
       "API integration",
+      "Authentication",
       "AdobeXD",
     ],
   },
