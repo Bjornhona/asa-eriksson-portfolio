@@ -27,7 +27,7 @@ const PortfolioHeroSection = () => {
 
   return (
     <HeroSection
-      imageSrc="/portfolio/tech-beach-mama/1.png"
+      imageSrc="/portfolio/tech-beach-mama/hero.webp"
       imageAlt="Portfolio Hero"
       title={t("title")}
       subtitle={subtitle}

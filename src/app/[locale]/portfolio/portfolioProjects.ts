@@ -38,8 +38,25 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     appType: "webApp",
     myRole: "designerAndDeveloper",
     images: {
-      "hero": "/portfolio/tech-beach-mama/1.png",
-      "steps": {}
+      "hero": "/portfolio/tech-beach-mama/hero.webp",
+      "steps": {
+        step2: {
+          preview: "/portfolio/tech-beach-mama/design-system-preview.webp",
+          full: "/portfolio/tech-beach-mama/design-system-full.webp",
+        },
+        step4: {
+          preview: "/portfolio/tech-beach-mama/freebie-preview.webp",
+          full: "/portfolio/tech-beach-mama/freebie-full.webp",
+        },
+        step5: {
+          preview: "/portfolio/tech-beach-mama/digital-products-preview.webp",
+          full: "/portfolio/tech-beach-mama/digital-products-full.webp",
+        },
+        step6: {
+          preview: "/portfolio/tech-beach-mama/performance-preview.webp",
+          full: "/portfolio/tech-beach-mama/performance-full.webp",
+        }
+      }
     },
     caseStudyUrl: "/portfolio/tech-beach-mama",
     visitSiteUrl: "https://techbeachmama.com",
