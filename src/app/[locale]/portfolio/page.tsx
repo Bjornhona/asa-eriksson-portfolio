@@ -4,8 +4,11 @@ import PortfolioCard from "@/components/sections/Portfolio/PortfolioCard";
 import { portfolioItems } from "./portfolioProjects";
 import { motion } from "framer-motion";
 import { container, fadeInUp } from "@/lib/animations";
+import CtaSection from "@/components/sections/CtaSection";
+import { useTranslations } from "next-intl";
 
 const PortfolioPage = () => {
+  const t = useTranslations("portfolio.cta");
   return (
     <div
       id="portfolio"
@@ -33,6 +36,12 @@ const PortfolioPage = () => {
           </motion.div>
         </motion.div>
       </section>
+      <CtaSection
+        title={t("title")}
+        description={t("description")}
+        buttonText={t("buttonText")}
+        buttonHref="/contact"
+      />
     </div>
   );
 };

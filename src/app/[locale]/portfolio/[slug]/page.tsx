@@ -91,7 +91,7 @@ const PortfolioDetailPage = async ({
       <PortfolioTimeline project={project} />
       <CtaSection
         id="portfolio-cta-section"
-        title={t(project.text + ".finalCta.title")}
+        description={t(project.text + ".finalCta.title")}
         buttonText={t(project.text + ".finalCta.cta")}
         buttonHref="/contact"
       />

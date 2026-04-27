@@ -371,6 +371,11 @@
       "contactMe": "Contact me",
       "seeWorks": "See works"
     },
+    "cta": {
+      "title": "Work with me",
+      "description": "If you're looking for a developer who understands both design and business, I can help you build a fast, scalable, and conversion-focused product. Whether you need a complete website, a redesign, or support improving an existing platform, I bring a structured approach from concept to launch.",
+      "buttonText": "Get in touch"
+    },
     "work": {
       "readMore": "Read more",
       "visitSite": "Visit site",

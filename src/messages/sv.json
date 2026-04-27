@@ -316,6 +316,24 @@
       "title": "Utvalda projekt",
       "seeFullPortfolio": "Se hela portföljen"
     },
+    "testimonials": {
+      "title": "Vad mina kunder säger om mig",
+      "subtitle": "Jag har arbetat med en rad olika kunder, från startups till stora företag. Här är vad de tycker om mitt arbete.",
+      "list": [
+        {
+          "name": "Fernando Rueda Oliva",
+          "company": "Hexad Barcelona",
+          "position": "CTO, kvantingenjör och lösningsarkitekt",
+          "testimonial": "Jag har haft nöjet att arbeta tillsammans med Asa på Hexad under flera år, och jag kan med säkerhet säga att hon är en av de mest anpassningsbara, positiva och inspirerande kollegor jag någonsin mött. Asas inställning är verkligen exceptionell – oavsett hur komplex eller okänd utmaningen är möter hon den alltid med ett leende och ett öppet sinne. Hennes resa från en skicklig UI-designer till en kompetent frontendutvecklare är ett tydligt bevis på hennes mod och vilja att utvecklas. Hon har inte bara lärt sig nya tekniska färdigheter, utan även tagit på sig rollen som projektledare och anpassat sig till varje ny roll med engagemang och professionalism. Det som verkligen särskiljer Asa är hennes flexibilitet och hennes mod att möta förändring. Hon tvekar aldrig att lämna sin komfortzon, och hennes positiva energi lyfter alla omkring henne. Hennes förmåga att hantera flera roller, lära sig snabbt och behålla en lösningsorienterad inställning har varit ovärderlig för vårt team. Tack, Asa, för ditt engagemang, din positivitet och alla år du har bidragit till Hexad. Det har varit ett privilegium att arbeta med dig, och jag ser fram emot att följa allt du kommer att åstadkomma i framtiden."
+        },
+        {
+          "name": "Catalina Golia",
+          "company": "CG Consulting",
+          "position": "Grundare och VD",
+          "testimonial": "Det var ett nöje att arbeta med henne i utvecklingen av min webbplats. Hon förstod exakt vad jag behövde från början, arbetade snabbt och engagerat och gav mycket värdefulla råd som förbättrade slutresultatet avsevärt. Jag vill särskilt lyfta fram både hennes starka tekniska kompetens och hennes personliga och professionella arbetssätt, vilket gjorde hela processen smidig och effektiv. Jag rekommenderar henne varmt som webbutvecklare. Tack, Asa!"
+        }
+      ]
+    },
     "pricing": {
       "title": "Priser",
       "subtitle": "Investera i en snabb, skalbar och visuellt tilltalande webbupplevelse.",
@@ -352,6 +370,11 @@
       "description": "Varje projekt speglar mitt sätt att bygga digitala produkter som inte bara är visuellt genomarbetade, utan också skalbara, intuitiva och optimerade för prestanda.",
       "contactMe": "Kontakta mig",
       "seeWorks": "Se projekt"
+    },
+    "cta": {
+      "title": "Arbeta med mig",
+      "description": "Om du söker en utvecklare som förstår både design och affärsperspektiv kan jag hjälpa dig att bygga en snabb, skalbar och konverteringsfokuserad produkt. Oavsett om du behöver en komplett webbplats, en redesign eller förbättring av en befintlig plattform arbetar jag strukturerat från idé till lansering.",
+      "buttonText": "Kontakta mig"
     },
     "work": {
       "readMore": "Läs mer",

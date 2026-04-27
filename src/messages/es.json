@@ -315,6 +315,24 @@
       "title": "Proyectos seleccionados",
       "seeFullPortfolio": "Ver portfolio completo"
     },
+    "testimonials": {
+      "title": "Lo que dicen mis clientes sobre mí",
+      "subtitle": "He trabajado con una variedad de clientes, desde startups hasta grandes corporaciones. Esto es lo que opinan sobre mi trabajo.",
+      "list": [
+        {
+          "name": "Fernando Rueda Oliva",
+          "company": "Hexad Barcelona",
+          "position": "CTO, ingeniero cuántico y arquitecto de soluciones",
+          "testimonial": "He tenido el placer de trabajar junto a Asa en Hexad durante varios años, y puedo decir con total confianza que es una de las colegas más adaptables, positivas e inspiradoras que he conocido. Su actitud es realmente excepcional: sin importar lo complejo o desconocido que sea el reto, siempre lo afronta con una sonrisa y una mente abierta. Su evolución de diseñadora UI a desarrolladora frontend es una clara muestra de su valentía y determinación por crecer. No solo adquirió nuevas habilidades técnicas, sino que también asumió responsabilidades como Project Manager, adaptándose a cada nuevo rol con entusiasmo y profesionalidad. Lo que distingue a Asa es su flexibilidad y su forma valiente de afrontar el cambio. Nunca evita salir de su zona de confort, y su energía positiva eleva a todo el equipo. Su capacidad para desempeñar múltiples roles, aprender rápidamente y mantener una actitud resolutiva ha sido invaluable para nosotros. Gracias, Asa, por tu dedicación, tu actitud positiva y por todos los años que has contribuido a Hexad. Ha sido un privilegio trabajar contigo y estoy seguro de que lograrás grandes cosas en el futuro."
+        },
+        {
+          "name": "Catalina Golia",
+          "company": "CG Consulting",
+          "position": "Fundadora y CEO",
+          "testimonial": "Fue un placer trabajar con ella en el desarrollo de mi página web. Entendió exactamente lo que necesitaba desde el principio, trabajó con gran rapidez y dedicación, y aportó consejos muy valiosos que mejoraron significativamente el resultado final. Destacaría tanto su alto nivel técnico como su trato cercano y profesional, lo que hizo que todo el proceso fuera fluido y eficiente. La recomiendo totalmente como desarrolladora web experta. ¡Gracias, Asa!"
+        }
+      ]
+    },
     "pricing": {
       "title": "Precios",
       "subtitle": "Invierte en una experiencia web rápida, escalable y con un diseño cuidado.",
@@ -351,6 +369,11 @@
       "description": "Cada proyecto refleja mi enfoque en la creación de productos digitales que no solo son visualmente cuidados, sino también escalables, intuitivos y optimizados para el rendimiento.",
       "contactMe": "Contáctame",
       "seeWorks": "Ver proyectos"
+    },
+    "cta": {
+      "title": "Trabaja conmigo",
+      "description": "Si buscas una desarrolladora que entienda tanto el diseño como el negocio, puedo ayudarte a crear un producto rápido, escalable y enfocado en la conversión. Ya sea que necesites una web completa, un rediseño o mejorar una plataforma existente, trabajo con un enfoque estructurado desde la idea hasta el lanzamiento.",
+      "buttonText": "Contáctame"
     },
     "work": {
       "readMore": "Ver más",

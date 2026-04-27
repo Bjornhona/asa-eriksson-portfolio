@@ -8,11 +8,12 @@ import { Card } from "@/ui";
 export interface CtaSectionProps {
   id?: string;
   title?: string;
+  description?: string;
   buttonText: string;
   buttonHref: string;
 }
 
-const CtaSection = ({ id, title, buttonText, buttonHref }: CtaSectionProps) => {
+const CtaSection = ({ id, title, description, buttonText, buttonHref }: CtaSectionProps) => {
   return (
     <section id={id ? id : "cta-section"} className="container max-w-lg mx-auto px-0 pt-6 md:pt-8 pb-16 md:pb-24">
       <motion.div
@@ -26,10 +27,11 @@ const CtaSection = ({ id, title, buttonText, buttonHref }: CtaSectionProps) => {
             variants={fadeInUp}
             className="flex flex-col items-center justify-center gap-4 text-center"
           >
-            <motion.h5 variants={fadeInUp}>{title}</motion.h5>
+            <motion.h3 variants={fadeInUp}>{title}</motion.h3>
+            {description && <motion.h5 variants={fadeInUp}>{description}</motion.h5>}
             <motion.div
               variants={fadeInUp}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 pt-2"
             >
               <Button variant="glass" href={buttonHref}>
                 <MailIcon className="w-4 h-4" />
