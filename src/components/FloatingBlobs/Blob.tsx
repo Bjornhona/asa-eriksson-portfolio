@@ -9,7 +9,10 @@ const Blob = ({
   duration = 30,
   zIndex = "z-0",
   color = "pink",
-  style
+  style,
+  shape = "blob",
+  letter = "A",
+  fontWeight = 700,
 }: {
   className: string;
   initial: TargetAndTransition;
@@ -18,6 +21,9 @@ const Blob = ({
   zIndex?: string;
   color?: string;
   style: MotionStyle;
+  shape?: "blob" | "letter";
+  letter?: string;
+  fontWeight?: number;
 }) => {
   const gradientId = useId();
 
@@ -59,7 +65,25 @@ const Blob = ({
             <stop offset="100%" stopColor={`transparent`} stopOpacity="0.01" />
           </radialGradient>
         </defs>
-        <path fill={`url(#${gradientId})`} d="M421.5,323Q393,396,321.5,431.5Q250,467,170,438Q90,409,79.5,329.5Q69,250,104,182Q139,114,214.5,79Q290,44,359.5,92Q429,140,435,195Q441,250,421.5,323Z" />
+        {shape === "letter" ? (
+          <text
+            x="50%"
+            y="65%"
+            textAnchor="middle"
+            dominantBaseline="central"
+            fontFamily="var(--font-prompt), sans-serif"
+            fontWeight={fontWeight}
+            fontSize={640}
+            fill={`url(#${gradientId})`}
+          >
+            {letter}
+          </text>
+        ) : (
+          <path
+            fill={`url(#${gradientId})`}
+            d="M421.5,323Q393,396,321.5,431.5Q250,467,170,438Q90,409,79.5,329.5Q69,250,104,182Q139,114,214.5,79Q290,44,359.5,92Q429,140,435,195Q441,250,421.5,323Z"
+          />
+        )}
       </svg>
     </motion.div>
   );

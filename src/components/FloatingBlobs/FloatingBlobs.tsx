@@ -25,6 +25,8 @@ export default function FloatingBlobs({ x, y }: FloatingBlobsProps) {
         duration={35}
         color="blue"
         style={{ x, y }}
+        shape="letter"
+        letter="Å"
       />
 
       {/* Blob 2 */}
@@ -35,6 +37,8 @@ export default function FloatingBlobs({ x, y }: FloatingBlobsProps) {
         duration={40}
         color="blue"
         style={{ x: slowX, y: slowY }}
+        shape="letter"
+        letter="a"
       />
 
       {/* Blob 3 */}
@@ -46,6 +50,9 @@ export default function FloatingBlobs({ x, y }: FloatingBlobsProps) {
         zIndex="z-10"
         color="aqua"
         style={{ x: slowestX, y: slowestY }}
+        shape="letter"
+        letter="s"
+        fontWeight={700}
       />
     </div>
   );
