@@ -128,7 +128,6 @@
   "legalNotice": {
     "title": "Aviso Legal",
     "lastUpdated": "Última actualización: 5 de marzo de 2026",
-
     "websiteOwner": "Titular del sitio web",
     "operatedByDescription": "De conformidad con lo dispuesto en la normativa aplicable, se informa a los usuarios de este sitio web de que el titular del mismo es:",
     "name": "Nombre",
@@ -382,13 +381,249 @@
       },
       "techBeachMama": {
         "title": "Tech Beach Mama",
-        "description": "Tech Beach Mama es un sitio web de alta conversión construido con Next.js, Tailwind CSS y Shadcn UI. Combina diseño web moderno con marketing estratégico para inspirar a madres solteras a construir carreras tecnológicas rentables junto al mar.",
-        "alt": "Miniatura de Tech Beach Mama"
+        "description": "Un sitio web de marca personal de alta conversión y un negocio digital en crecimiento — diseñado y desarrollado con Next.js, Tailwind CSS y Shadcn UI para inspirar a las mujeres a iniciar carreras en frontend y alcanzar la libertad financiera a través de la tecnología junto al mar.",
+        "alt": "Miniatura de Tech Beach Mama",
+        "hero": {
+          "subtitle": "Construyendo una marca personal, un embudo de newsletter y un negocio de productos digitales desde cero",
+          "description": "Tech Beach Mama no es solo una web — es una plataforma en crecimiento y una misión personal. Lanzada tras dejar mi empleo para independizarme, está diseñada para inspirar a las mujeres a entrar en el desarrollo frontend y construir carreras que se adapten a sus vidas. El sitio actúa como el hogar digital de una marca creada en Instagram, un embudo de email y una creciente colección de productos digitales — todo creado y gestionado por mí, y en constante evolución."
+        },
+        "step1": {
+          "label": "La Visión",
+          "title": "Una plataforma nacida de una decisión profesional",
+          "textItems": [
+            "Tech Beach Mama comenzó después de dejar mi trabajo para ser completamente independiente. La motivación era clara: había pasado años desarrollando habilidades en frontend y diseño de producto, y quería ayudar a otras mujeres — especialmente madres — a hacer lo mismo sin tener que empezar desde cero.",
+            "<strong>La plataforma se basa en un embudo simple:</strong> atraer mujeres desde Instagram interesadas en carreras tech, llevarlas a la web para ofrecer valor real mediante recursos gratuitos y de pago, y crear una comunidad de mujeres que construyen independencia financiera a través del desarrollo web, diseño UI/UX y gestión de proyectos.",
+            "Es un proyecto a largo plazo. A diferencia del trabajo con clientes, que tiene un final definido, Tech Beach Mama está diseñado para crecer durante años."
+          ],
+          "challenges": {
+            "title": "Crear una plataforma de marca personal desde cero implica ciertos retos.",
+            "rows": [
+              "Diseñada, desarrollada y mantenida en solitario junto con trabajo freelance",
+              "Debe funcionar como un embudo real de conversión, no solo como portfolio",
+              "La arquitectura debe escalar con el crecimiento del negocio",
+              "La identidad visual debía ser personal y diferenciada"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Concepto de Diseño",
+          "title": "Limpio, moderno y orientado a la conversión",
+          "textItems": [
+            "El diseño se creó en Figma priorizando la conversión junto con la estética. El lenguaje visual debía ser cálido, aspiracional y creíble. Cada sección guía al usuario hacia la suscripción o los productos digitales."
+          ],
+          "alt": "Concepto de diseño Tech Beach Mama — Figma",
+          "caption": "Concepto de diseño — Figma"
+        },
+        "step3": {
+          "label": "Stack y Arquitectura",
+          "title": "Diseñado para rendimiento, flexibilidad y crecimiento",
+          "textItems": [
+            "La tecnología se eligió pensando en el largo plazo: rendimiento rápido, facilidad de actualización y flexibilidad para crecer sin reconstruir todo.",
+            "Next.js gestiona SSR y routing, Tailwind permite control total del diseño y Shadcn UI aporta componentes accesibles y reutilizables."
+          ],
+          "solution": {
+            "title": "El stack técnico apoya un negocio digital en crecimiento.",
+            "rows": [
+              "Next.js para rendimiento y SEO",
+              "Tailwind CSS para control y velocidad",
+              "Shadcn UI para arquitectura de componentes",
+              "Diseño en Figma antes de desarrollo",
+              "Integración de embudo de newsletter",
+              "Arquitectura preparada para crecer"
+            ]
+          }
+        },
+        "step4": {
+          "label": "El embudo",
+          "title": "De Instagram a la lista de correo a los productos digitales",
+          "textItems": [
+            "La plataforma está construida en torno a un recorrido de conversión cuidadosamente diseñado. Los visitantes llegan principalmente desde Instagram, donde la marca publica contenido sobre carreras en frontend, freelancing y el estilo de vida que lo acompaña. El sitio web captura ese interés con un recurso gratuito — un eBook sobre cómo empezar en frontend — que alimenta una secuencia automatizada de emails.",
+            "La oferta actual incluye el eBook gratuito como lead magnet y un eBook de pago sobre freelancing. La hoja de ruta contempla nuevos productos digitales, cursos y recursos a medida que crece la audiencia. Cada página del sitio está diseñada teniendo en cuenta este embudo — no como algo secundario, sino como la lógica estructural sobre la que se construye toda la plataforma."
+          ],
+          "alt": "Sitio en vivo de Tech Beach Mama — página principal y embudo de newsletter",
+          "caption": "La plataforma en vivo — diseño orientado a la conversión, embudo de newsletter y productos digitales"
+        },
+        "step5": {
+          "label": "Contenido y Productos",
+          "title": "Recursos reales para mujeres que entran en tecnología",
+          "textItems": [
+            "El contenido se basa en mi experiencia real: aprender diseño antes que código, reconstruir mi carrera y crecer profesionalmente. Esta narrativa está presente en todo.",
+            "<strong>Oferta actual:</strong> un eBook gratuito y uno de pago sobre freelancing. La plataforma está diseñada para expandirse."
+          ],
+          "offerings": {
+            "title": "Lo que ofrece actualmente:",
+            "rows": [
+              "eBook gratuito — roadmap frontend para madres modernas",
+              "eBook de pago sobre freelancing",
+              "Secuencia automatizada de emails",
+              "Canal activo de Instagram",
+              "Planes para cursos y comunidad"
+            ]
+          },
+          "alt": "Sección de productos digitales de Tech Beach Mama con eBook de frontend y guía de freelancing",
+          "caption": "Ecosistema de productos digitales — recursos gratuitos y de pago para entrar en tecnología"
+        },
+        "step6": {
+          "label": "Rendimiento y SEO",
+          "title": "Diseñado para ser encontrado y cargar rápido",
+          "textItems": [
+            "El rendimiento y el SEO se integraron desde el inicio, no se añadieron posteriormente. El renderizado del lado del servidor con Next.js garantiza que las páginas sean indexables y rápidas, Tailwind mantiene un CSS ligero, y la arquitectura basada en componentes evita la acumulación de código innecesario que suele ralentizar los sitios con mucho contenido con el tiempo.",
+            "Para una plataforma que depende del descubrimiento orgánico y de convertir el tráfico de redes sociales en suscriptores de newsletter, la velocidad de carga y los Core Web Vitals afectan directamente a las tasas de conversión — no solo al posicionamiento en buscadores. Esta conexión entre la calidad técnica y los resultados de negocio influyó en cada decisión de implementación."
+          ],
+          "alt": "Resultados de rendimiento Lighthouse de Tech Beach Mama",
+          "caption": "Rendimiento · puntuaciones Lighthouse"
+        },
+        "step7": {
+          "label": "El resultado",
+          "title": "Una plataforma en vivo, una audiencia en crecimiento y un proyecto a largo plazo",
+          "textItems": [
+            "Tech Beach Mama es el proyecto en el que estoy más personalmente involucrada. Es al mismo tiempo una demostración de lo que puedo construir técnicamente, un negocio real con productos reales y una audiencia en crecimiento, y una salida creativa que existe más allá del trabajo con clientes.",
+            "También es el proyecto que llevó a un entrevistador a describirlo como un gran proyecto personal — algo que, siendo desarrollado en solitario junto con todo lo demás, se sintió como el tipo de validación adecuado."
+          ],
+          "results": {
+            "title": "Lo que demuestra este proyecto:",
+            "rows": [
+              "Responsabilidad total de principio a fin — diseño, desarrollo, contenido y estrategia de negocio",
+              "Diseño orientado a la conversión aplicado a un embudo real con productos reales",
+              "Arquitectura Next.js de nivel producción diseñada para escalar a largo plazo",
+              "Construcción activa de audiencia a través de Instagram y un embudo automatizado de email",
+              "Una plataforma que sigue creciendo — este caso de estudio continuará evolucionando"
+            ]
+          }
+        },
+        "finalCta": {
+          "title": "¿Quieres una web que trabaje tan duro como tú?",
+          "cta": "Contáctame"
+        }
       },
       "sculptedGoddess": {
         "title": "Sculpted Goddess",
-        "description": "Reconstrucción y modernización de una aplicación web SSR con gran carga de datos, migrando de Python/Flask a Next.js para mejorar el rendimiento, la mantenibilidad y la escalabilidad.",
-        "alt": "Miniatura de Sculpted Goddess"
+        "description": "Una aplicación web de nutrición y fitness — creada originalmente como proyecto final de CS50 en Python y Flask, posteriormente reconstruida completamente en Next.js y TypeScript para demostrar arquitectura frontend moderna, rendimiento y mantenibilidad a largo plazo.",
+        "alt": "Miniatura de Sculpted Goddess",
+        "hero": {
+          "subtitle": "De un proyecto final de CS50 a una plataforma moderna de fitness full-stack",
+          "description": "Sculpted Goddess comenzó como una aplicación basada en datos para nutrición y fitness, desarrollada como proyecto final de Harvard CS50x. Años después, evolucionó hacia una reconstrucción completa en Next.js y TypeScript, demostrando cómo modernizar aplicaciones sin perder su propósito original."
+        },
+        "step1": {
+          "label": "Origen",
+          "title": "Proyecto final de CS50 en Python y Flask",
+          "textItems": [
+            "Sculpted Goddess fue creado como proyecto final del curso CS50x — una herramienta para ayudar a mujeres a planificar su nutrición.",
+            "<strong>La versión original</strong> utilizaba Python, Flask, SQL y JavaScript, integrando el API de Edamam.",
+            "Con el tiempo, el mantenimiento se volvió complejo y la arquitectura limitaba el crecimiento."
+          ],
+          "challenges": {
+            "title": "La solución original tenía limitaciones claras.",
+            "rows": [
+              "Stack Python/Flask sin mantenimiento activo",
+              "API de Edamam obsoleta",
+              "Arquitectura no escalable",
+              "Diseño original perdido"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Concepto de diseño",
+          "title": "Empezando por el diseño — antes y ahora",
+          "textItems": [
+            "El Sculpted Goddess original fue diseñado en Adobe XD antes de escribir una sola línea de código — un enfoque deliberado centrado en el diseño que también se mantuvo en la versión reconstruida. El lenguaje visual debía transmitir fuerza e intención: una plataforma para mujeres que se toman en serio la nutrición y el fitness, no una aplicación genérica de bienestar. Estructura limpia, jerarquía clara y una estética segura que comunica confianza y precisión."
+          ],
+          "alt": "Concepto de diseño original de Sculpted Goddess en Adobe XD",
+          "caption": "Concepto de diseño original — Adobe XD"
+        },
+        "step3": {
+          "label": "Rebuild & Arquitectura",
+          "title": "Reconstrucción sobre una base moderna",
+          "textItems": [
+            "La reconstrucción fue completa, no superficial.",
+            "La nueva stack incluye Next.js, TypeScript, SCSS y libSQL."
+          ],
+          "solution": {
+            "title": "Enfoque en calidad arquitectónica.",
+            "rows": [
+              "Migración de Flask a Next.js",
+              "Cambio de API a MealDB",
+              "Nueva base de datos",
+              "Funciones preservadas",
+              "TypeScript completo",
+              "Mejor experiencia de usuario"
+            ]
+          }
+        },
+        "step4": {
+          "label": "Funcionalidades principales",
+          "title": "Qué hace la plataforma",
+          "textItems": [
+            "Sculpted Goddess se construye en torno a cuatro funcionalidades principales: un buscador de recetas impulsado por la API de MealDB con datos nutricionales individuales por receta, una biblioteca personal donde los usuarios registrados pueden guardar y revisitar sus favoritas, un calculador de macronutrientes e IMC que utiliza datos personales y objetivos de fitness como entrada, y un formulario de contacto para consultas directas.",
+            "La plataforma es accesible para navegar sin registro, pero al crear una cuenta e iniciar sesión se desbloquea el conjunto completo de funcionalidades — guardado de recetas, datos personales y seguimiento de macros. Esta estructura mantiene una barrera de entrada baja al mismo tiempo que ofrece un motivo claro para registrarse."
+          ],
+          "alt": "Sculpted Goddess en vivo — búsqueda de recetas y funcionalidades de nutrición",
+          "caption": "La plataforma reconstruida en vivo — búsqueda de recetas, datos nutricionales y seguimiento personal de macros"
+        },
+        "step5": {
+          "label": "Evolución técnica",
+          "title": "De Flask a Next.js — qué cambió y por qué",
+          "textItems": [
+            "Las mejoras técnicas de la reconstrucción no se limitan a cambiar de framework. Reflejan un enfoque completamente diferente en cómo se estructura, tipa y mantiene la aplicación a lo largo del tiempo.",
+            "<strong>Nota:</strong> Python y Flask son herramientas excelentes para muchos casos de uso. La decisión de reconstruir en Next.js estuvo impulsada por los objetivos específicos de este proyecto: demostrar arquitectura frontend moderna, mejorar la mantenibilidad a largo plazo y alinear el código con el stack que utilizo en proyectos de clientes."
+          ],
+          "beforeVsAfter": {
+            "before": {
+              "title": "Original (Python / Flask)",
+              "rows": [
+                "Renderizado en servidor con Flask",
+                "Base de datos SQL sin tipado",
+                "API de recetas Edamam (ahora reemplazada)",
+                "JavaScript sin TypeScript",
+                "Escalabilidad limitada en la arquitectura"
+              ]
+            },
+            "after": {
+              "title": "Reconstruido (Next.js / TypeScript)",
+              "rows": [
+                "Next.js con renderizado en servidor",
+                "Base de datos libSQL con TypeScript en todo el proyecto",
+                "API MealDB — gratuita, mantenida y flexible",
+                "Cobertura completa de TypeScript",
+                "Arquitectura frontend limpia y escalable"
+              ]
+            }
+          },
+          "alt": "Resultados de rendimiento Lighthouse — Python/Flask vs Next.js",
+          "caption": "Rendimiento · Python/Flask vs Next.js (Lighthouse)"
+        },
+        "step6": {
+          "label": "Sistema de diseño",
+          "title": "Un sistema de diseño SCSS estructurado para garantizar consistencia en toda la aplicación",
+          "textItems": [
+            "Sculpted Goddess utiliza una arquitectura SCSS estructurada: <code>colors.scss</code>, <code>fontSizes.scss</code> y <code>breakPoints.scss</code> se importan en un archivo central <code>constants.module.scss</code> que expone todos los tokens de diseño directamente a los componentes en JavaScript. Espaciado, tipografía, breakpoints y colores se definen una sola vez y se reutilizan en toda la aplicación — sin valores mágicos ni códigos hex repetidos.",
+            "El sistema tipográfico utiliza dos fuentes claramente diferenciadas: Cinzel (serif) para encabezados h1 — en mayúsculas, con alto impacto y alineada con la identidad de marca — y Open Sans para el texto de cuerpo, etiquetas y navegación. Los tamaños de fuente se definen en tres breakpoints explícitos (móvil, tablet y escritorio) mediante propiedades personalizadas de CSS en <code>globals.scss</code>, garantizando una escala consistente y predecible en todos los dispositivos."
+          ],
+          "alt": "Sistema de diseño de Sculpted Goddess — paleta de colores y tipografía responsiva",
+          "caption": "Sistema de diseño · tokens SCSS y escala tipográfica responsiva"
+        },
+        "step7": {
+          "label": "Resultado",
+          "title": "De proyecto personal a caso de estudio profesional",
+          "textItems": [
+            "Sculpted Goddess evolucionó hasta convertirse en un ejemplo real de modernización.",
+            "Refleja cómo abordo proyectos complejos en clientes."
+          ],
+          "results": {
+            "title": "Resultados:",
+            "rows": [
+              "Stack moderno",
+              "Mejor rendimiento",
+              "Código limpio y escalable",
+              "API activa",
+              "Ejemplo de arquitectura moderna"
+            ]
+          }
+        },
+        "finalCta": {
+          "title": "¿Trabajando con código legacy?",
+          "cta": "Contáctame"
+        }
       },
       "cgConsulting": {
         "title": "CG Consulting",
@@ -401,64 +636,82 @@
         "step1": {
           "label": "El problema",
           "title": "Un sitio WordPress sostenido por plugins frágiles",
-          "textItem1": "CG Consulting es una consultora boutique de RRHH que ayuda a empresas internacionales a encontrar talento en España.",
-          "textItem2": "<strong>El sitio web existente en WordPress</strong> había servido al negocio durante años, pero se había vuelto cada vez más frágil debido a la dependencia de plugins y la falta de mantenimiento continuo. Necesitaban una presencia digital estable y profesional que pudiera gestionarse sin depender de un desarrollador para actualizaciones diarias — tanto en español como en inglés.",
-          "textItem3": "El objetivo de este proyecto no era solo rediseñar el sitio, sino reconstruirlo sobre una arquitectura moderna y escalable que elimine riesgos técnicos y permita el crecimiento futuro.",
+          "textItems": [
+            "CG Consulting es una consultora boutique de RRHH que ayuda a empresas internacionales a encontrar talento en España.",
+            "<strong>El sitio web existente en WordPress</strong> había servido al negocio durante años, pero se había vuelto cada vez más frágil debido a la dependencia de plugins y la falta de mantenimiento continuo. Necesitaban una presencia digital estable y profesional que pudiera gestionarse sin depender de un desarrollador para actualizaciones diarias — tanto en español como en inglés.",
+            "El objetivo de este proyecto no era solo rediseñar el sitio, sino reconstruirlo sobre una arquitectura moderna y escalable que elimine riesgos técnicos y permita el crecimiento futuro."
+          ],
           "challenges": {
             "title": "El principal desafío no era la plataforma en sí, sino la sostenibilidad a largo plazo del sistema existente.",
-            "frequentIssues": "Problemas frecuentes causados por actualizaciones de plugins",
-            "increasingMaintenance": "Aumento del esfuerzo de mantenimiento",
-            "performanceLimitations": "Limitaciones de rendimiento",
-            "difficultContentManagement": "Gestión de contenido complicada para el cliente"
+            "rows": [
+              "Problemas frecuentes causados por actualizaciones de plugins",
+              "Aumento del esfuerzo de mantenimiento",
+              "Limitaciones de rendimiento",
+              "Gestión de contenido complicada para el cliente"
+            ]
           }
         },
         "step2": {
           "label": "Concepto de diseño",
           "title": "Empezar por el diseño, no por el código",
-          "textItem1": "El rediseño se centró en la claridad y la credibilidad — dos aspectos clave que un consultor independiente de RRHH debe transmitir de inmediato. Me enfoqué en una jerarquía visual limpia, una presentación de contenido estructurada y un diseño profesional sin resultar frío. Animaciones y transiciones sutiles, construidas con Framer Motion, aportan dinamismo sin distraer del contenido. El sitio es completamente responsive, diseñado para generar confianza tanto en móvil como en escritorio.",
+          "textItems": [
+            "El rediseño se centró en la claridad y la credibilidad — dos aspectos clave que un consultor independiente de RRHH debe transmitir de inmediato. Me enfoqué en una jerarquía visual limpia, una presentación de contenido estructurada y un diseño profesional sin resultar frío. Animaciones y transiciones sutiles, construidas con Framer Motion, aportan dinamismo sin distraer del contenido. El sitio es completamente responsive, diseñado para generar confianza tanto en móvil como en escritorio."
+          ],
           "alt": "Concepto de rediseño de CG Consulting — Figma",
           "caption": "Concepto de rediseño — Figma"
         },
         "step3": {
           "label": "Migración y arquitectura",
           "title": "De WordPress a un stack moderno",
-          "textItem1": "Propuse una migración completa desde WordPress a un stack moderno con Next.js y Sanity CMS. El objetivo no era solo una mejora técnica, sino dar al cliente control total sobre su contenido y la tranquilidad de que su web no fallará sin un desarrollador disponible.",
-          "textItem2": "Dado que CG Consulting trabaja con empresas internacionales, el sitio debía dirigirse a dos audiencias. El soporte bilingüe completo en español e inglés se implementó desde el inicio.",
+          "textItems": [
+            "Propuse una migración completa desde WordPress a un stack moderno con Next.js y Sanity CMS. El objetivo no era solo una mejora técnica, sino dar al cliente control total sobre su contenido y la tranquilidad de que su web no fallará sin un desarrollador disponible.",
+            "Dado que CG Consulting trabaja con empresas internacionales, el sitio debía dirigirse a dos audiencias. El soporte bilingüe completo en español e inglés se implementó desde el inicio."
+          ],
           "solution": {
             "title": "Reconstruí el sitio utilizando una arquitectura moderna y ligera centrada en la simplicidad y el control.",
-            "removedDependency": "Eliminación de dependencia de plugins",
-            "introducedStructuredContent": "Introducción de contenido estructurado mediante Sanity CMS",
-            "builtCustomFrontend": "Desarrollo de un frontend personalizado para control total del rendimiento y diseño",
-            "implementedResponsiveLayout": "Implementación de un diseño responsive con enfoque mobile-first",
-            "addedSubtleAnimations": "Añadido de animaciones sutiles para mejorar la experiencia de usuario"
+            "rows": [
+              "Eliminación de dependencia de plugins",
+              "Introducción de contenido estructurado mediante Sanity CMS",
+              "Desarrollo de un frontend personalizado para control total del rendimiento y diseño",
+              "Implementación de un diseño responsive con enfoque mobile-first",
+              "Añadido de animaciones sutiles para mejorar la experiencia de usuario"
+            ]
           }
         },
         "step4": {
           "label": "El sitio en vivo",
           "title": "Diseño en el navegador — escritorio y móvil",
-          "textItem1": "El sitio rediseñado en producción — diseño limpio, credibilidad profesional y experiencia completamente responsive en todos los dispositivos.",
+          "textItems": [
+            "El sitio rediseñado en producción — diseño limpio, credibilidad profesional y experiencia completamente responsive en todos los dispositivos."
+          ],
           "alt": "Sitio rediseñado de CG Consulting en vivo",
           "caption": "El sitio rediseñado en vivo — diseño limpio, credibilidad profesional y experiencia totalmente responsive."
         },
         "step5": {
           "label": "Rendimiento",
           "title": "De lento a rápido — resultados medibles",
-          "textItem1": "Las mejoras en rendimiento y SEO no dependen de un framework concreto, sino de cómo se construye la aplicación. En este proyecto, las mejoras se lograron simplificando la arquitectura, reduciendo dependencias y optimizando la implementación.",
-          "textItem2": "<strong>Nota:</strong> WordPress puede ofrecer un excelente rendimiento y SEO si se construye con una arquitectura limpia y pocas dependencias. En este caso, el enfoque priorizó la estabilidad a largo plazo, el control del rendimiento y una experiencia de mantenimiento simplificada para el cliente.",
+          "textItems": [
+            "Las mejoras en rendimiento y SEO no dependen de un framework concreto, sino de cómo se construye la aplicación. En este proyecto, las mejoras se lograron simplificando la arquitectura, reduciendo dependencias y optimizando la implementación.",
+            "<strong>Nota:</strong> WordPress puede ofrecer un excelente rendimiento y SEO si se construye con una arquitectura limpia y pocas dependencias. En este caso, el enfoque priorizó la estabilidad a largo plazo, el control del rendimiento y una experiencia de mantenimiento simplificada para el cliente."
+          ],
           "beforeVsAfter": {
             "before": {
               "title": "Antes",
-              "pluginHeavyWordPressSetup": "Configuración de WordPress dependiente de plugins",
-              "recurringMaintenanceIssues": "Problemas de mantenimiento recurrentes",
-              "slowerPerformance": "Rendimiento más lento",
-              "limitedFlexibility": "Flexibilidad limitada"
+              "rows": [
+                "Configuración de WordPress dependiente de plugins",
+                "Problemas de mantenimiento recurrentes",
+                "Rendimiento más lento",
+                "Flexibilidad limitada"
+              ]
             },
             "after": {
               "title": "Después",
-              "lightweightCustomArchitecture": "Arquitectura personalizada y ligera",
-              "stablePredictableSetup": "Sistema estable y predecible",
-              "optimizedPerformance": "Rendimiento optimizado",
-              "fullControlOverFrontendAndContent": "Control total sobre frontend y contenido"
+              "rows": [
+                "Arquitectura personalizada y ligera",
+                "Sistema estable y predecible",
+                "Rendimiento optimizado",
+                "Control total sobre frontend y contenido"
+              ]
             }
           },
           "alt": "Puntuaciones de rendimiento Lighthouse — WordPress vs Next.js",
@@ -467,22 +720,28 @@
         "step6": {
           "label": "Entrega al cliente",
           "title": "CG Consulting puede gestionar su contenido sin desarrollador",
-          "textItem1": "Sanity CMS se configuró para ofrecer al cliente una interfaz de edición limpia y sencilla. Puede actualizar servicios, textos y datos de contacto sin tocar código — no se requiere desarrollador tras el lanzamiento.",
+          "textItems": [
+            "Sanity CMS se configuró para ofrecer al cliente una interfaz de edición limpia y sencilla. Puede actualizar servicios, textos y datos de contacto sin tocar código — no se requiere desarrollador tras el lanzamiento."
+          ],
           "alt": "Interfaz de gestión de contenido en Sanity Studio",
           "caption": "Gestión de contenido · Sanity Studio"
         },
         "step7": {
           "label": "Resultado",
           "title": "Una aplicación web estable, bilingüe y preparada para el futuro",
-          "textItem1": "La clienta pasó de preocuparse por conflictos entre plugins a tener control total de su contenido mediante una interfaz CMS clara. El nuevo sitio es significativamente más rápido, más estable y construido sobre una base que puede escalar con su negocio — sin depender de un desarrollador para el mantenimiento diario.",
-          "textItem2": "Este proyecto refleja cómo abordo el trabajo con clientes: resolviendo un problema real de negocio, no solo creando una web.",
+          "textItems": [
+            "La clienta pasó de preocuparse por conflictos entre plugins a tener control total de su contenido mediante una interfaz CMS clara. El nuevo sitio es significativamente más rápido, más estable y construido sobre una base que puede escalar con su negocio — sin depender de un desarrollador para el mantenimiento diario.",
+            "Este proyecto refleja cómo abordo el trabajo con clientes: resolviendo un problema real de negocio, no solo creando una web."
+          ],
           "results": {
             "title": "El nuevo sistema permitió:",
-            "fasterLoadTimes": "Tiempos de carga más rápidos",
-            "improvedCoreWebVitals": "Mejora en Core Web Vitals",
-            "cleanerMaintainableCodebase": "Código más limpio y mantenible",
-            "easierContentManagement": "Gestión de contenido más sencilla",
-            "reducedLongTermMaintenance": "Menor necesidad de mantenimiento a largo plazo"
+            "rows": [
+              "Tiempos de carga más rápidos",
+              "Mejora en Core Web Vitals",
+              "Código más limpio y mantenible",
+              "Gestión de contenido más sencilla",
+              "Menor necesidad de mantenimiento a largo plazo"
+            ]
           }
         },
         "finalCta": {
