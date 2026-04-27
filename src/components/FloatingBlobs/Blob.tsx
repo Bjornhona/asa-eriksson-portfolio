@@ -68,7 +68,7 @@ const Blob = ({
         {shape === "letter" ? (
           <text
             x="50%"
-            y="65%"
+            y="63%"
             textAnchor="middle"
             dominantBaseline="central"
             fontFamily="var(--font-prompt), sans-serif"
