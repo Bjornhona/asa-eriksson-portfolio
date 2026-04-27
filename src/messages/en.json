@@ -316,6 +316,24 @@
       "title": "Selected Work",
       "seeFullPortfolio": "See full portfolio"
     },
+    "testimonials": {
+      "title": "What my clients say about me",
+      "subtitle": "I have worked with a variety of clients, from startups to large corporations. Here is what they have to say about me.",
+      "list": [
+        {
+          "name": "Fernando Rueda Oliva",
+          "company": "Hexad Barcelona",
+          "position": "CTO Quantum engineer and Solutions Architect",
+          "testimonial": "I’ve had the pleasure of working alongside Asa at Hexad for several years, and I can confidently say she is one of the most adaptable, positive, and inspiring colleagues I’ve ever met. Asa’s attitude is truly exceptional—no matter how complex or unfamiliar the challenge, she always greets it with a smile and an open mind. Her journey from a talented UI designer to a skilled frontend developer is a testament to her courage and determination to grow. Not only did she master new technical skills, but she also stepped up to take on the responsibilities of a Project Manager, seamlessly adapting to each new role with enthusiasm and professionalism. What sets Asa apart is her flexibility and her fearless approach to change. She never shies away from stepping outside her comfort zone, and her positive energy uplifts everyone around her. Asa’s ability to wear multiple hats, learn quickly, and maintain a can-do attitude has been invaluable to our team. Thank you, Asa, for your dedication, your positivity, and for all the years you’ve contributed to Hexad. It’s been a privilege to work with you, and I look forward to seeing all the great things you’ll accomplish in the future!"
+        },
+        {
+          "name": "Catalina Golia",
+          "company": "CG Consulting",
+          "position": "Founder and CEO",
+          "testimonial": "It was a pleasure working with her on the development of my website. She understood exactly what I needed from the very beginning, worked with great speed and dedication, and provided very valuable advice that significantly improved the final result. I would highlight both her strong technical expertise and her close, professional approach, which made the entire process smooth and efficient. I highly recommend her as an expert web developer. Thank you Asa!"
+        }
+      ]
+    },
     "pricing": {
       "title": "Pricing",
       "subtitle": "Invest in a fast, scalable, and beautifully designed web experience.",

@@ -7,7 +7,7 @@ import { fadeInUp, container } from "@/lib/animations";
 const ContactPage = () => {
   const links = [
     { label: "Email", href: "mailto:info@asaeriksson.com", primary: true },
-    { label: "LinkedIn", href: "https://www.linkedin.com/company/graphics-by-asa/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/asaeri3/" },
     { label: "GitHub", href: "https://github.com/bjornhona" },
   ];
 

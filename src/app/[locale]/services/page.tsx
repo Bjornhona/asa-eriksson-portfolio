@@ -5,6 +5,7 @@ import ServicesQuoteSection from "@/components/sections/Services/Quote";
 import ServicesCtaSection from "@/components/sections/Services/Cta";
 // import ServicesWorkSection from "@/components/sections/Services/Work";
 import ServicesPricingSection from "@/components/sections/Services/Pricing";
+import TestimonialsSection from "@/components/sections/Testimonials/TestimonialsSection";
 
 const ServicesPage = () => {
   return (
@@ -14,6 +15,7 @@ const ServicesPage = () => {
       <ProcessSection />
       <ServicesQuoteSection />
       {/* <ServicesWorkSection /> */}
+      <TestimonialsSection />
       <ServicesPricingSection />
       <ServicesCtaSection />
     </div>
