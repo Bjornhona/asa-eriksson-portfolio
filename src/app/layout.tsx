@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Asa Eriksson | Frontend Developer & Product Designer | React & Next.js",
     description: "Åsa Eriksson is a frontend engineer specializing in React and Next.js. Building scalable web applications with clean architecture and thoughtful UX. Founder of Tech Beach Mama.",
+    images: [{ url: "https://asaeriksson.com/portfolio-home.webp", width: 1200, height: 630, alt: "Åsa Eriksson Portfolio" }],
   },
 };
 

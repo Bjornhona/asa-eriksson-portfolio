@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Logo from "../../../packages/ui/Logo/Logo";
+import Link from "next/link";
 
 const AppFooter = () => {
   const t = useTranslations();
@@ -11,13 +12,13 @@ const AppFooter = () => {
         <p className="pb-1">© 2026 Åsa Eriksson</p>
       </div>
       <p className="flex items-end gap-1 pb-1">
-        <a href="/privacy-policy">
+        <Link href="/privacy-policy">
           {t("footer.privacyPolicy")}
-        </a> | <a href="/cookies-policy">
+        </Link> | <Link href="/cookies-policy">
           {t("footer.cookiesPolicy")}
-        </a> | <a href="/legal-notice">
+        </Link> | <Link href="/legal-notice">
           {t("footer.legalNotice")}
-        </a>
+        </Link>
       </p>
     </footer>
   );
