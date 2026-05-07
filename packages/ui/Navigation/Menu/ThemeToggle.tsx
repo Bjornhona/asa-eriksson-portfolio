@@ -20,6 +20,7 @@ const ThemeToggle = () => {
         setTheme(theme === "dark" ? "light" : "dark")
       }
       className="p-2 xs:p-3 rounded-md hover:bg-muted/20 transition"
+      aria-label="Theme Toggle"
     >
       {theme === "dark" ? (
         <Sun className="w-4 h-4" />

@@ -80,6 +80,7 @@ export default function Home() {
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
                   variant="glass"
+                  aria-label="Got to Portfolio"
                 >
                   View My Work
                 </Button>
@@ -89,6 +90,7 @@ export default function Home() {
                   onMouseEnter={handleHover}
                   onMouseLeave={handleLeave}
                   variant="glass"
+                  aria-label="Go to Services"
                 >
                   Hire Me
                 </Button>

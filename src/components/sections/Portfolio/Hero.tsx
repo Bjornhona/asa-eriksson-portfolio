@@ -23,7 +23,7 @@ const PortfolioHeroSection = () => {
     },
   ];
 
-  const scrollTo = { href: "#portfolio/works-section", text: t("seeWorks") };
+  const scrollTo = { href: "#works-section", text: t("seeWorks") };
 
   return (
     <HeroSection

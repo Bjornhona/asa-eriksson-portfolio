@@ -47,7 +47,7 @@ const SocialMediaLinks = ({
         <DropdownMenuTrigger asChild>
           <button className={cn(
               "flex items-center gap-2 p-2 xs:p-3 rounded-sm",
-              "transition-all duration-300")}>
+              "transition-all duration-300")} aria-label="Social Media Links">
             <Link className="w-4 h-4" />
           </button>
         </DropdownMenuTrigger>
