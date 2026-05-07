@@ -1,45 +1,43 @@
 "use client";
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./CursorGlow.module.css";
 
 const CursorGlow = () => {
-  const [position, setPosition] = useState({ x: -100, y: -100 });
-  const [scale, setScale] = useState(1);
+  const glowRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let animationFrameId: number;
-  
+    let rafId: number;
+    const el = glowRef.current;
+    if (!el) return;
+
+    el.style.setProperty("--cursor-x", "-100px");
+    el.style.setProperty("--cursor-y", "-100px");
+    el.style.setProperty("--cursor-scale", "1");
+
     const handleMouseMove = (e: MouseEvent) => {
-      animationFrameId = requestAnimationFrame(() => {
-        setPosition({ x: e.clientX, y: e.clientY });
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        el.style.setProperty("--cursor-x", `${e.clientX}px`);
+        el.style.setProperty("--cursor-y", `${e.clientY}px`);
       });
     };
-  
+
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      setScale(target.closest("a, button") ? 2.5 : 1);
+      el.style.setProperty("--cursor-scale", target.closest("a, button") ? "2.5" : "1");
     };
-  
+
     window.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseover", handleMouseOver);
-  
+
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseover", handleMouseOver);
-      cancelAnimationFrame(animationFrameId);
+      cancelAnimationFrame(rafId);
     };
-  }, []);  
+  }, []);
 
-  return (
-    <div
-      className={styles.cursorGlow}
-      style={{
-        "--cursor-x": `${position.x}px`,
-        "--cursor-y": `${position.y}px`,
-        "--cursor-scale": `${scale}`,
-      } as CSSProperties}
-    />
-  );
+  return <div ref={glowRef} className={styles.cursorGlow} />;
 };
 
 export default CursorGlow;

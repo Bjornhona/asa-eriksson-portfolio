@@ -136,3 +136,21 @@ a:hover {
     animation-delay: 0s !important;
   }
 }
+
+@keyframes mist1 {
+  0%, 100% { transform: translate(0px, 0px); }
+  33%       { transform: translate(250px, -300px); }
+  66%       { transform: translate(-250px, 300px); }
+}
+
+@keyframes mist2 {
+  0%, 100% { transform: translate(-300px, -300px); }
+  33%       { transform: translate(300px, 0px); }
+  66%       { transform: translate(0px, 300px); }
+}
+
+@keyframes mist3 {
+  0%, 100% { transform: translate(200px, 400px); }
+  33%       { transform: translate(-300px, -450px); }
+  66%       { transform: translate(-150px, 250px); }
+}

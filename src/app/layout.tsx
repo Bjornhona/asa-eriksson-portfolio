@@ -7,7 +7,7 @@ import "@/styles/globals.css";
 const prompt = Prompt({
   variable: "--font-prompt",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "700"],
 });
 
 const inter = Inter({
