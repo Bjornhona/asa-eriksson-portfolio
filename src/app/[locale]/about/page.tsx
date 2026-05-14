@@ -47,7 +47,6 @@ const AboutPage = () => {
   return (
     <div className="relative container max-w-full pt-[64px] pb-16">
       <AboutHeroSection />
-
       {timelineItems.map((item, index) => (
         <TimeLineWrapper
           index={index}
@@ -57,7 +56,6 @@ const AboutPage = () => {
           {item.component}
         </TimeLineWrapper>
       ))}
-
       <AboutCtaAndCVSection />
     </div>
   );
