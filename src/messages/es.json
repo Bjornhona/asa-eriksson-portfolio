@@ -773,5 +773,13 @@
         }
       }
     }
+  },
+  "contact": {
+    "content": {
+      "title": "Ponte en contacto.",
+      "subtitle": "Desarrollo frontend freelance • Diseño web • Aplicaciones web modernas",
+      "description": "¿Necesitas un sitio web bonito y bien estructurado que realmente puedas gestionar y mantener tú misma?",
+      "buildTogether": "Construyámoslo juntas."
+    }
   }
 }

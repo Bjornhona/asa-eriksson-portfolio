@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { TimeLineWrapper } from "@/components/TimeLineWrapper/TimeLineWrapper";
 import { PortfolioItem } from "@/app/[locale]/portfolio/portfolioProjects";
 import { TimelineItemType } from "@/app/[locale]/about/page";
@@ -12,7 +11,6 @@ export default function  PortfolioTimeline({
 }: {
   project: PortfolioItem;
 }) {
-  const [activeIndex, setActiveIndex] = useState(0);
   const t = useTranslations("portfolio.work");
 
   const renderTextItems = (key: string): React.ReactNode[] => {
@@ -162,8 +160,6 @@ export default function  PortfolioTimeline({
         <TimeLineWrapper
           key={index}
           index={index}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
           last={item.last}
         >
           {item.component}

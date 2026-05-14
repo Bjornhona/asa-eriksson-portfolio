@@ -774,5 +774,13 @@
         }
       }
     }
+  },
+  "contact": {
+    "content": {
+      "title": "Hör av dig.",
+      "subtitle": "Frilansande frontendutveckling • Webbdesign • Moderna webbappar",
+      "description": "Behöver du en vacker och välstrukturerad webbplats som du verkligen kan äga och underhålla själv?",
+      "buildTogether": "Låt oss bygga den tillsammans."
+    }
   }
 }

@@ -1,3 +1,4 @@
+"use client";
 import { container, fadeInUp } from "@/lib/animations";
 import { Button } from "@/ui";
 import { motion } from "framer-motion";

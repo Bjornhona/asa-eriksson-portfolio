@@ -1,21 +1,23 @@
 "use client";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export interface TimeLineWrapperProps {
   children: React.ReactNode;
   last?: boolean;
   index: number;
-  activeIndex: number;
-  setActiveIndex: (i: number) => void;
+  // activeIndex: number;
+  // setActiveIndex: (i: number) => void;
 }
 
 export const TimeLineWrapper = ({
   children,
   last,
   index,
-  activeIndex,
-  setActiveIndex,
+  // activeIndex,
+  // setActiveIndex,
 }: TimeLineWrapperProps) => {
+  const [activeIndex, setActiveIndex] = useState(0);
   const isActive = index === activeIndex;
 
   const activeDot = {

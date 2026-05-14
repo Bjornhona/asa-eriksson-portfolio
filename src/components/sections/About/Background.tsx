@@ -1,3 +1,4 @@
+"use client";
 import { container, fadeInUp } from "@/lib/animations";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";

@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import { TimeLineWrapper } from "@/components/TimeLineWrapper/TimeLineWrapper";
 import AboutHeroSection from "@/components/sections/About/Hero";
 import AboutBackgroundSection from "@/components/sections/About/Background";
@@ -18,8 +16,6 @@ export interface TimelineItemType {
 }
 
 const AboutPage = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const timelineItems: TimelineItemType[] = [
     {
       component: <AboutBackgroundSection />,
@@ -56,8 +52,6 @@ const AboutPage = () => {
         <TimeLineWrapper
           index={index}
           key={index}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
           last={item.last}
         >
           {item.component}
