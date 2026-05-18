@@ -772,6 +772,106 @@
           "title": "Vill du modernisera din webbplats eller förbättra prestandan?",
           "cta": "Kontakta mig"
         }
+      },
+      "matchKit": {
+        "title": "Match Kit",
+        "description": "En AI-driven CV-analysator som matchar ditt CV mot vilken jobbbeskrivning som helst — och returnerar en matchningspoäng, kompetensluckor, saknade nyckelord och omskrivningsförslag. Byggd med Next.js, TypeScript, Tailwind CSS och Gemini AI API.",
+        "alt": "MatchKit miniatyrbild",
+        "hero": {
+          "subtitle": "Från frustration till produkt — ett AI-verktyg byggt för att lösa ett verkligt problem",
+          "description": "MatchKit började som en personlig frustration. Efter att ha skickat otaliga jobbansökningar utan att höra något tillbaka bestämde jag mig för att bygga ett verktyg som berättar exakt hur väl ditt CV matchar en jobbbeskrivning — och vad du behöver förbättra. Det här projektet visar hur moderna AI-APIer kan integreras i en produktionsklar Next.js-applikation med en genomtänkt användarupplevelse."
+        },
+        "step1": {
+          "label": "Problemet",
+          "title": "Att skicka CV:n ut i tomma intet",
+          "textItems": [
+            "År 2026 är frontendarbetsmarknaden mättad. Rekryterare får hundratals ansökningar per tjänst och de flesta CV:n filtreras bort av ATS-system innan en människa ens läser dem.",
+            "<strong>Kärnproblemet</strong> är att de flesta kandidater inte vet hur väl deras CV faktiskt matchar en specifik jobbbeskrivning. De ansöker brett, hör ingenting och har ingen signal om vad de bör förbättra.",
+            "Jag ville bygga något som ger omedelbar och handlingsbar feedback — en matchningspoäng, identifierade luckor, saknade nyckelord och konkreta omskrivningsförslag — så att kandidater kan sluta gissa och börja förbättra."
+          ],
+          "challenges": {
+            "title": "Problemet hade flera lager som en enkel nyckelordskontroll inte kunde lösa.",
+            "rows": [
+              "CV:n optimeras inte per tjänst — kandidater använder en och samma version för allt",
+              "ATS-system filtrerar på nyckelord innan en människa är inblandad",
+              "Generiska feedbackverktyg ger vaga råd, inte specifika omskrivningar",
+              "Kandidater saknar riktmärke för vad som är 'tillräckligt bra'"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Designkoncept",
+          "title": "Design för tydlighet under press",
+          "textItems": [
+            "Designen behövde kännas skarp, trovärdig och snabb — motsatsen till en generisk SaaS-dashboard. Jag valde en mörkt läge-estetik med en enda högkontrastfärgaccent, en tät typografisk hierarki med DM Sans och DM Mono, och en avsiktligt minimalistisk layout som sätter analysresultaten i centrum.",
+            "Varje designbeslut styrdes av användarens känslomässiga tillstånd: någon som är orolig över sin jobbsökning och behöver tydlig, ärlig information — utan brus. Resultatet är ett gränssnitt som känns kliniskt i bästa bemärkelse — precist, lättläst och lugnt."
+          ],
+          "alt": "MatchKit UI-designkoncept",
+          "caption": "Designkoncept — mörkt läge, typografisk kombination DM Sans + DM Mono"
+        },
+        "step3": {
+          "label": "Arkitektur",
+          "title": "AI-integration med en säker API-proxy på serversidan",
+          "textItems": [
+            "Den centrala tekniska utmaningen var att integrera ett tredjeparts-AI-API på ett rent och säkert sätt. Istället för att exponera en API-nyckel på klientsidan — ett vanligt misstag i AI-demos — byggde jag en serversidig route handler i Next.js som proxar alla förfrågningar till Gemini API:et. Nyckeln lämnar aldrig servern.",
+            "AI-svaret struktureras via en noggrant utformad systemprompt som tvingar modellen att alltid returnera strikt JSON — matchningspoäng, sammanfattning, styrkor, luckor, nyckelord och omskrivningspar före/efter. Det gör svaret tillförlitligt tolkningsbart och direkt renderbart i gränssnittet utan gissningar i efterbehandlingen.",
+            "Resultatet är en ren separation mellan AI-lagret och presentationslagret — ett mönster som skalar till vilken AI-driven produkt som helst."
+          ],
+          "solution": {
+            "title": "Viktiga tekniska beslut som gör detta produktionsklart, inte bara en demo.",
+            "rows": [
+              "Serversidig API-proxy via Next.js route handler — nyckeln exponeras aldrig för klienten",
+              "Strikt JSON-utdata garanterad genom promptteknik",
+              "Gemini 2.5 Flash för hastighet och kostnadseffektivitet på gratistjänsten",
+              "TypeScript i hela projektet — fullt typade API-svar och komponentprops",
+              "Tailwind CSS för ett konsekvent och underhållsvänligt designsystem"
+            ]
+          }
+        },
+        "step4": {
+          "label": "Den Driftsatta Appen",
+          "title": "Analysatorn i aktion — desktop och mobil",
+          "textItems": [
+            "Den färdiga applikationen — från landningssidan till ett fullständigt analysresultat med poäng, luckor, nyckelord och omskrivningsförslag. Fullt responsiv på alla skärmstorlekar."
+          ],
+          "alt": "MatchKit driftsatt applikation — skärm med analysresultat",
+          "caption": "Den driftsatta appen — matchningspoäng, luckanalys, nyckelordschips och omskrivningsförslag."
+        },
+        "step5": {
+          "label": "Promptteknik",
+          "title": "AI:n är bara så bra som de instruktioner du ger den",
+          "textItems": [
+            "En av de mest underskattade delarna av att bygga AI-drivna produkter är promptdesign. En dåligt strukturerad prompt returnerar inkonsekvent, otolkningsbar utdata. En välutformad uppträder som ett tillförlitligt API.",
+            "<strong>För MatchKit</strong> instruerar systempromten modellen att agera som specialistanalytiker för CV:n inom frontend- och teknikroller, returnera enbart giltig JSON utan inledning eller markdown, producera omskrivningar som citerar faktiska fraser från CV:t, och säkerställa att styrkor och luckor är specifika för jobbbeskrivningen — inte generiska råd.",
+            "Den här nivån av promptprecision är vad som skiljer en fungerande prototyp från ett produktionsklart verktyg."
+          ],
+          "alt": "MatchKit systemprompt och JSON-utdatastruktur",
+          "caption": "Promptteknik · Strukturerad JSON-utdata garanterad via systeminstruktion"
+        },
+        "step6": {
+          "label": "Resultatet",
+          "title": "En produktionsklar AI-produkt byggd under ett enda sprint",
+          "textItems": [
+            "MatchKit gick från idé till driftsatt applikation på under en dag. Det visar att AI-integration inte kräver ett komplext backend eller ett stort team — det kräver tydligt produkttänkande, ren arkitektur och disciplinerad promptteknik.",
+            "Det här projektet speglar hur jag ser på produktarbete: identifiera ett verkligt problem, designa en fokuserad lösning och leverera något som faktiskt fungerar."
+          ],
+          "results": {
+            "title": "Vad det här projektet visar för kunder och arbetsgivare:",
+            "rows": [
+              "Förmåga att integrera tredjeparts-AI-APIer säkert och rent",
+              "Full-stack Next.js — klientgränssnitt, serverside route handlers, miljökonfiguration",
+              "Promptteknik som en produktkompetens, inte bara en teknisk sådan",
+              "Designkänsla applicerad på ett funktionellt verktyg, inte bara en marknadsföringssajt",
+              "Snabb, självständig genomförande från koncept till driftsatt produkt"
+            ]
+          },
+          "alt": "MatchKit produktionsdriftsättning på Vercel — serverlös funktion och miljökonfiguration",
+          "caption": "Produktionsdriftsättning · Serverlös funktion på Vercel med säker miljökonfiguration"
+        },
+        "finalCta": {
+          "title": "Letar du efter en utvecklare som kan bygga AI-drivna produkter från grunden?",
+          "cta": "Kontakta mig"
+        }
       }
     }
   },

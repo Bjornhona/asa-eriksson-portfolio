@@ -771,6 +771,106 @@
           "title": "¿Quieres modernizar tu web o mejorar su rendimiento?",
           "cta": "Contáctame"
         }
+      },
+      "matchKit": {
+        "title": "Match Kit",
+        "description": "Un analizador de CV impulsado por IA que compara tu currículum con cualquier oferta de trabajo — devolviendo una puntuación de compatibilidad, brechas de habilidades, palabras clave ausentes y sugerencias de mejora. Desarrollado con Next.js, TypeScript, Tailwind CSS y la API de Gemini.",
+        "alt": "Miniatura de MatchKit",
+        "hero": {
+          "subtitle": "De la frustración al producto — una herramienta de IA construida para resolver un problema real",
+          "description": "MatchKit nació de una frustración personal. Después de enviar innumerables solicitudes de empleo sin recibir respuesta, decidí crear una herramienta que te dice exactamente qué tan bien encaja tu CV con una oferta de trabajo — y qué debes mejorar. Este proyecto demuestra cómo las APIs de IA modernas pueden integrarse en una aplicación Next.js lista para producción, con una experiencia de usuario limpia y cuidada."
+        },
+        "step1": {
+          "label": "El Problema",
+          "title": "Enviando CVs al vacío",
+          "textItems": [
+            "En 2026, el mercado laboral frontend está saturado. Los reclutadores reciben cientos de candidaturas por puesto, y la mayoría de los CVs son filtrados por sistemas ATS antes de que un humano los lea.",
+            "<strong>El problema central</strong> es que la mayoría de los candidatos no saben qué tan bien encaja su CV con una oferta concreta. Aplican de forma masiva, no reciben respuesta y no tienen ninguna señal sobre qué mejorar.",
+            "Quería construir algo que ofreciera retroalimentación inmediata y accionable — una puntuación de compatibilidad, brechas identificadas, palabras clave ausentes y sugerencias concretas de reescritura — para que los candidatos dejen de adivinar y empiecen a mejorar."
+          ],
+          "challenges": {
+            "title": "El problema tenía varias capas que un simple verificador de palabras clave no podía resolver.",
+            "rows": [
+              "Los CVs no se optimizan por oferta — los candidatos usan una única versión para todo",
+              "Los sistemas ATS filtran por palabras clave antes de que intervenga un humano",
+              "Las herramientas de feedback genéricas dan consejos vagos, no reescrituras específicas",
+              "Los candidatos no tienen un punto de referencia sobre qué es 'suficientemente bueno'"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Concepto de Diseño",
+          "title": "Diseñando para la claridad bajo presión",
+          "textItems": [
+            "El diseño debía sentirse preciso, fiable y rápido — lo opuesto a un dashboard SaaS genérico. Elegí una estética en modo oscuro con un único color de acento de alto contraste, una jerarquía tipográfica ajustada con DM Sans y DM Mono, y un layout deliberadamente minimalista que sitúa los resultados del análisis en el centro de la atención.",
+            "Cada decisión de diseño estuvo guiada por el estado emocional del usuario: alguien ansioso por su búsqueda de empleo que necesita información clara y honesta — sin ruido. El resultado es una interfaz que se siente clínica en el mejor sentido — precisa, legible y serena."
+          ],
+          "alt": "Concepto de diseño de la interfaz de MatchKit",
+          "caption": "Concepto de diseño — modo oscuro, combinación tipográfica DM Sans + DM Mono"
+        },
+        "step3": {
+          "label": "Arquitectura",
+          "title": "Integración de IA con un proxy de API seguro en el servidor",
+          "textItems": [
+            "El principal desafío técnico fue integrar una API de IA de terceros de forma limpia y segura. En lugar de exponer una clave de API en el lado del cliente — un error común en las demos de IA — construí un manejador de rutas en el servidor con Next.js que actúa como proxy hacia la API de Gemini. La clave nunca abandona el servidor.",
+            "La respuesta de la IA se estructura mediante un prompt de sistema cuidadosamente diseñado que obliga al modelo a devolver siempre JSON estricto — puntuación, resumen, fortalezas, brechas, palabras clave y pares de reescritura antes/después. Esto hace que la respuesta sea fiablemente parseable y directamente renderizable en la interfaz sin suposiciones en el procesamiento.",
+            "El resultado es una separación limpia entre la capa de IA y la capa de presentación — un patrón que escala a cualquier producto impulsado por IA."
+          ],
+          "solution": {
+            "title": "Decisiones técnicas clave que hacen esto apto para producción, no solo una demo.",
+            "rows": [
+              "Proxy de API en el servidor mediante un route handler de Next.js — la clave nunca se expone al cliente",
+              "Salida JSON estricta garantizada mediante ingeniería de prompts",
+              "Gemini 2.5 Flash por velocidad y eficiencia de coste en el nivel gratuito",
+              "TypeScript en todo el proyecto — respuesta de API y props de componentes completamente tipados",
+              "Tailwind CSS para un sistema de diseño consistente y mantenible"
+            ]
+          }
+        },
+        "step4": {
+          "label": "La App en Producción",
+          "title": "El analizador en acción — escritorio y móvil",
+          "textItems": [
+            "La aplicación terminada — desde la página de inicio hasta un resultado de análisis completo con puntuación, brechas, palabras clave y sugerencias de reescritura. Totalmente responsive en todos los tamaños de pantalla."
+          ],
+          "alt": "Aplicación MatchKit en producción — pantalla de resultados del análisis",
+          "caption": "La app en producción — puntuación de compatibilidad, análisis de brechas, chips de palabras clave y sugerencias de reescritura."
+        },
+        "step5": {
+          "label": "Ingeniería de Prompts",
+          "title": "La IA es tan buena como las instrucciones que le das",
+          "textItems": [
+            "Una de las partes más subestimadas de crear productos impulsados por IA es el diseño del prompt. Un prompt mal estructurado devuelve resultados inconsistentes e imposibles de parsear. Uno bien diseñado se comporta como una API fiable.",
+            "<strong>Para MatchKit</strong>, el prompt de sistema instruye al modelo para que actúe como analista especialista en CVs para roles de frontend y tecnología, devuelva únicamente JSON válido sin preámbulo ni markdown, produzca reescrituras que citen frases reales del CV, y garantice que las fortalezas y brechas sean específicas a la oferta de trabajo — no consejos genéricos.",
+            "Este nivel de precisión en el prompt es lo que separa un prototipo funcional de una herramienta lista para producción."
+          ],
+          "alt": "Prompt de sistema de MatchKit y estructura de salida JSON",
+          "caption": "Ingeniería de prompts · Salida JSON estructurada garantizada mediante instrucción de sistema"
+        },
+        "step6": {
+          "label": "El Resultado",
+          "title": "Un producto de IA listo para producción construido en un solo sprint",
+          "textItems": [
+            "MatchKit pasó de idea a aplicación desplegada en menos de un día. Demuestra que la integración de IA no requiere un backend complejo ni un equipo grande — requiere pensamiento de producto claro, arquitectura limpia e ingeniería de prompts disciplinada.",
+            "Este proyecto refleja cómo afronto el trabajo de producto: identificar un problema real, diseñar una solución enfocada y entregar algo que realmente funciona."
+          ],
+          "results": {
+            "title": "Lo que este proyecto demuestra a clientes y empleadores:",
+            "rows": [
+              "Capacidad para integrar APIs de IA de terceros de forma segura y limpia",
+              "Next.js full-stack — interfaz de cliente, manejadores de rutas en servidor, configuración de entorno",
+              "Ingeniería de prompts como habilidad de producto, no solo técnica",
+              "Sensibilidad de diseño aplicada a una herramienta funcional, no solo a un sitio de marketing",
+              "Ejecución rápida e independiente desde el concepto hasta el producto desplegado"
+            ]
+          },
+          "alt": "Despliegue en producción de MatchKit en Vercel — función serverless y configuración de entorno",
+          "caption": "Despliegue en producción · Función serverless en Vercel con configuración de entorno segura"
+        },
+        "finalCta": {
+          "title": "¿Buscas un desarrollador que pueda construir productos impulsados por IA desde cero?",
+          "cta": "Contáctame"
+        }
       }
     }
   },

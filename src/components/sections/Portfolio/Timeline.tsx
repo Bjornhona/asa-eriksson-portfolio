@@ -100,6 +100,8 @@ export default function  PortfolioTimeline({
                     listIcon: <CheckIcon className="w-4 h-4 text-aqua-400" />,
                   },
                 ]
+              : project.slug === "matchkit"
+              ? undefined
               : [
                   {
                     title: t(project.text + ".step5.beforeVsAfter.before.title"),
@@ -133,9 +135,10 @@ export default function  PortfolioTimeline({
           caption={t(project.text + ".step6.caption")}
         />
       ),
+      last: project.slug === "matchkit" && true,
     },
     {
-      component: (
+      component: project.slug === "matchkit" ? null : (
         <TimeLineStep
           id="the-outcome"
           title={t(project.text + ".step7.title")}

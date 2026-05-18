@@ -6,16 +6,12 @@ export interface TimeLineWrapperProps {
   children: React.ReactNode;
   last?: boolean;
   index: number;
-  // activeIndex: number;
-  // setActiveIndex: (i: number) => void;
 }
 
 export const TimeLineWrapper = ({
   children,
   last,
-  index,
-  // activeIndex,
-  // setActiveIndex,
+  index
 }: TimeLineWrapperProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const isActive = index === activeIndex;
@@ -58,13 +54,13 @@ export const TimeLineWrapper = ({
       />
 
       {/* animated dot */}
-      <motion.div className="absolute left-0 top-2 w-3 h-3 rounded-full bg-aqua-500">
+      {children && <motion.div className="absolute left-0 top-2 w-3 h-3 rounded-full bg-aqua-500">
         <motion.div
           className="absolute inset-0 rounded-full bg-[hsl(var(--glow-char))]"
           animate={isActive ? activeDot : unactiveDot}
           transition={{ duration: 0.35 }}
         />
-      </motion.div>
+      </motion.div>}
       
       {children}
     </motion.div>

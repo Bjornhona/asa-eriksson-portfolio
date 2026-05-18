@@ -772,6 +772,106 @@
           "title": "Looking to modernize your website or improve performance?",
           "cta": "Contact Me"
         }
+      },
+      "matchKit": {
+        "title": "Match Kit",
+        "description": "An AI-powered CV analyser that matches your resume against any job description — returning a match score, skill gaps, missing keywords and rewrite suggestions. Built with Next.js, TypeScript, Tailwind CSS and the Gemini AI API.",
+        "alt": "MatchKit thumbnail",
+        "hero": {
+          "subtitle": "From frustration to product — an AI tool built to solve a real problem",
+          "description": "MatchKit started as a personal frustration. After sending out countless job applications and hearing nothing back, I decided to build a tool that tells you exactly how well your CV matches a job description — and what to fix. This project demonstrates how modern AI APIs can be integrated into a production-ready Next.js application with a clean, considered user experience."
+        },
+        "step1": {
+          "label": "The Problem",
+          "title": "Sending CVs into the void",
+          "textItems": [
+            "In 2026, the frontend job market is saturated. Recruiters receive hundreds of applications per role, and most CVs are filtered by ATS systems before a human ever reads them.",
+            "<strong>The core problem</strong> is that most candidates have no idea how well their CV actually matches a specific job description. They apply broadly, hear nothing back, and have no signal for what to improve.",
+            "I wanted to build something that gives immediate, actionable feedback — a match score, identified gaps, missing keywords, and concrete rewrite suggestions — so candidates can stop guessing and start improving."
+          ],
+          "challenges": {
+            "title": "The problem had several layers that a simple keyword checker couldn't solve.",
+            "rows": [
+              "CVs are not optimised per role — candidates use one version for everything",
+              "ATS systems filter on keywords before humans are involved",
+              "Generic feedback tools give vague advice, not specific rewrites",
+              "Candidates have no benchmark for what 'good enough' looks like"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Design Concept",
+          "title": "Designing for clarity under pressure",
+          "textItems": [
+            "The design needed to feel sharp, trustworthy and fast — the opposite of a generic SaaS dashboard. I chose a dark-mode aesthetic with a single high-contrast accent colour, tight typographic hierarchy using DM Sans and DM Mono, and a deliberately minimal layout that puts the analysis results at the centre of attention.",
+            "Every design decision was driven by the emotional state of the user: someone anxious about their job search who needs clear, honest information — not noise. The result is a UI that feels clinical in the best sense — precise, readable and calm."
+          ],
+          "alt": "MatchKit UI design concept",
+          "caption": "Design concept — dark mode, DM Sans + DM Mono type pairing"
+        },
+        "step3": {
+          "label": "Architecture",
+          "title": "AI integration with a secure, server-side API proxy",
+          "textItems": [
+            "The core technical challenge was integrating a third-party AI API cleanly and securely. Rather than exposing an API key client-side — a common mistake in AI demos — I built a server-side route handler in Next.js that proxies all requests to the Gemini API. The key never leaves the server.",
+            "The AI response is structured via a carefully engineered system prompt that forces the model to return strict JSON every time — match score, summary, strengths, gaps, keywords and before/after rewrite pairs. This makes the response reliably parseable and directly renderable in the UI without post-processing guesswork.",
+            "The result is a clean separation between the AI layer and the presentation layer — a pattern that scales to any AI-powered product."
+          ],
+          "solution": {
+            "title": "Key technical decisions that make this production-ready, not just a demo.",
+            "rows": [
+              "Server-side API proxy via Next.js route handler — API key never exposed to client",
+              "Strict JSON output enforced through prompt engineering",
+              "Gemini 2.5 Flash for speed and cost efficiency on the free tier",
+              "TypeScript throughout — fully typed API response and component props",
+              "Tailwind CSS for a consistent, maintainable design system"
+            ]
+          }
+        },
+        "step4": {
+          "label": "The Live App",
+          "title": "The analyser in action — desktop & mobile",
+          "textItems": [
+            "The finished application — from the landing page through to a full analysis result with score, gaps, keywords and rewrite suggestions. Fully responsive across all screen sizes."
+          ],
+          "alt": "MatchKit live application — analysis results screen",
+          "caption": "The live app — match score, gap analysis, keyword chips and rewrite suggestions."
+        },
+        "step5": {
+          "label": "Prompt Engineering",
+          "title": "The AI is only as good as the instructions you give it",
+          "textItems": [
+            "One of the most underestimated parts of building AI-powered products is prompt design. A poorly structured prompt returns inconsistent, unparseable output. A well-engineered one behaves like a reliable API.",
+            "<strong>For MatchKit</strong>, the system prompt instructs the model to act as a specialist CV analyst for frontend and tech roles, return only valid JSON with no preamble or markdown, produce rewrites that quote actual phrases from the CV, and ensure that strengths and gaps are specific to the job description — not generic advice.",
+            "This level of prompt precision is what separates a working prototype from a production-ready tool."
+          ],
+          "alt": "MatchKit system prompt and JSON output structure",
+          "caption": "Prompt engineering · Structured JSON output enforced via system instruction"
+        },
+        "step6": {
+          "label": "The Outcome",
+          "title": "A production-ready AI product built in a single sprint",
+          "textItems": [
+            "MatchKit went from idea to deployed application in under a day. It demonstrates that AI integration does not require a complex backend or a large team — it requires clear product thinking, clean architecture, and disciplined prompt engineering.",
+            "This project reflects how I approach product work: identify a real problem, design a focused solution, and ship something that actually works."
+          ],
+          "results": {
+            "title": "What this project demonstrates to clients and employers:",
+            "rows": [
+              "Ability to integrate third-party AI APIs securely and cleanly",
+              "Full-stack Next.js — client UI, server route handlers, environment config",
+              "Prompt engineering as a product skill, not just a technical one",
+              "Design sensibility applied to a functional tool, not just a marketing site",
+              "Fast, independent execution from concept to deployed product"
+            ]
+          },
+          "alt": "MatchKit production deployment on Vercel — serverless function and environment configuration",
+          "caption": "Production deployment · Vercel serverless function with secure environment configuration"
+        },
+        "finalCta": {
+          "title": "Looking for a developer who can build AI-powered products from scratch?",
+          "cta": "Contact Me"
+        }
       }
     }
   },

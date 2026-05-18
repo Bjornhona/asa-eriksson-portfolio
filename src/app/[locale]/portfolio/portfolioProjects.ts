@@ -150,6 +150,43 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       "Figma",
     ],
   },
+  {
+    slug: "matchkit",
+    text: "matchKit",
+    date: "2026-05-17",
+    appType: "webApp",
+    myRole: "designerAndDeveloper",
+    images: {
+      "hero": "/portfolio/matchkit/hero.webp",
+      "steps": {
+        step2: {
+          preview: "/portfolio/matchkit/step2.webp",
+          full: "/portfolio/matchkit/step2.webp",
+        },
+        step4: {
+          preview: "/portfolio/matchkit/step4-preview.webp",
+          full: "/portfolio/matchkit/step4-full.webp",
+        },
+        step5: {
+          preview: "/portfolio/matchkit/step5.webp",
+          full: "/portfolio/matchkit/step5.webp",
+        },
+        step6: {
+          preview: "/portfolio/matchkit/step6.webp",
+          full: "/portfolio/matchkit/step6.webp",
+        }
+      }
+    },
+    caseStudyUrl: "/portfolio/matchkit",
+    visitSiteUrl: "https://matchkit-cv-analyzer.vercel.app/",
+    tags: [
+      "Next.js",
+      "HTML",
+      "TypeScript",
+      "Tailwind CSS",
+      "Gemini AI API"
+    ],
+  },
 ];
 
 export const portfolioItems: PortfolioItem[] = unsortedPortfolioItems.sort(
