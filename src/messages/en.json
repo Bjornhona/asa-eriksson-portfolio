@@ -872,6 +872,137 @@
           "title": "Looking for a developer who can build AI-powered products from scratch?",
           "cta": "Contact Me"
         }
+      },
+      "hexadCarClientPlatform": {
+        "title": "Automotive Platform",
+        "description": "Three years in one of the world's most demanding enterprise environments — as a UX/UI designer and frontend developer on a global vehicle connectivity platform used in over 40 countries and adapted for multiple vehicle brands within the same group.",
+        "alt": "Thumbnail for Enterprise Automotive Platform",
+        "hero": {
+          "subtitle": "Global vehicle platform — UX/UI design and frontend development at enterprise scale",
+          "description": "A multi-year engagement with one of the world's leading automotive groups: a digital onboarding platform connecting new vehicle owners with their car, their identity, and their services — across more than 40 countries, in multiple languages, adapted for different brands and local legal frameworks. I contributed in two roles: as a part-time UX/UI designer embedded in a cross-functional team, and later as a full-time developer within an agile product team."
+        },
+        "step1": {
+          "label": "The Project",
+          "title": "An enterprise platform at global scale",
+          "textItems": [
+            "The engagement concerned a mission-critical digital product within one of the world's largest automotive groups — an onboarding platform where new vehicle owners connect their car, accept legal terms, and activate digital services.",
+            "<strong>The complexity was exceptional:</strong> the same product had to work correctly in over 40 countries with different regulations, support multiple brands with their own design systems, and meet strict requirements from the group's design and legal departments.",
+            "The platform had zero tolerance for failure — a broken onboarding flow meant a customer could not access their vehicle's connected services from day one."
+          ],
+          "challenges": {
+            "title": "The core challenges spanned design, technology, and organisation.",
+            "rows": [
+              "Legal variations across 40+ markets",
+              "Strict approval process via design and legal departments",
+              "Multiple brands with distinct design systems in a shared codebase",
+              "High reliability requirements in critical user flows",
+              "Coordination across a large, distributed multi-team environment"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Design Role",
+          "title": "UX/UI design within a complex approval structure",
+          "textItems": [
+            "As a part-time UX/UI designer, my role was as much about communication and negotiation as visual design. Every design decision passed through a structured approval chain involving design, legal, content, and product teams — a process requiring precision, patience, and the ability to defend design decisions in front of multiple parallel stakeholders.",
+            "I collaborated daily with product owners, project managers, writers, developers, and QA — acting as a bridge between business requirements and user experience. Navigating that structure without losing design integrity was as important a skill as the craft itself."
+          ],
+          "alt": "Design process — cross-functional collaboration in an enterprise environment",
+          "caption": "Design process — collaboration, approvals, and iterations"
+        },
+        "step3": {
+          "label": "Global Adaptation",
+          "title": "One experience — across 40+ markets and multiple brands",
+          "textItems": [
+            "One of the most complex design challenges was breadth of scale: the product had to absorb significant variation — legal frameworks, languages, local rules, and brand identities — without fragmenting.",
+            "The work involved adapting layouts, content structures, and legal flows within an existing enterprise design system and component library, with the goal of creating an architecture consistent enough to scale and flexible enough to absorb market variations."
+          ],
+          "solution": {
+            "title": "The design work focused on structural flexibility within fixed constraints.",
+            "rows": [
+              "Adapting flows for local legal requirements",
+              "Consistent UX patterns despite high content variability",
+              "Working within an established enterprise design system",
+              "Coordinating approvals from design and legal departments",
+              "Supporting multiple brands with distinct visual identities"
+            ]
+          }
+        },
+        "step4": {
+          "label": "Development Role",
+          "title": "Frontend architecture for a multi-brand product",
+          "textItems": [
+            "As a full-time developer in React and TypeScript, I participated in architectural decisions from the start. The core technical challenge mirrored the design challenge: one codebase, multiple brand identities, more than 40 market variants.",
+            "<strong>The solution</strong> was built on a robust theming layer mapping brand-specific design tokens to a shared component library — the same component rendered correctly in each brand's visual language without duplicating business logic.",
+            "I contributed to architectural decisions alongside product owners, designers, QA, and stakeholders — a cross-functional collaboration requiring both technical depth and the ability to communicate tradeoffs clearly to non-technical stakeholders."
+          ],
+          "alt": "Frontend architecture — multi-brand theming with React and TypeScript",
+          "caption": "Architecture · Shared codebase with brand-specific design tokens"
+        },
+        "step5": {
+          "label": "Technical Complexity",
+          "title": "High reliability in critical legal flows",
+          "textItems": [
+            "The onboarding flow placed high demands on correctness: users needed to navigate a series of legal declarations — privacy policies, consent forms, service agreements — varying by country and regulatory environment.",
+            "The frontend logic handled conditional rendering of the correct declarations in the correct order, under the correct conditions, while maintaining a brand-appropriate experience. Errors in this flow were not an option — the platform was mission-critical from day one for the user."
+          ],
+          "beforeVsAfter": {
+            "before": {
+              "title": "The Challenges",
+              "rows": [
+                "Legal variation across 40+ markets",
+                "Multiple brands in a shared codebase",
+                "Complex conditional logic in critical flows",
+                "Strict approval process for every design change",
+                "Distributed multi-team environment with high quality standards"
+              ]
+            },
+            "after": {
+              "title": "The Solutions",
+              "rows": [
+                "Flexible theming layer with per-brand design tokens",
+                "Scalable component architecture for market variants",
+                "Reliable flows with high test coverage",
+                "Effective communication through the approval chain",
+                "Long-term code quality in a large, multi-team environment"
+              ]
+            }
+          },
+          "alt": "Technical architecture — multi-brand React application",
+          "caption": "Technical solution · Multi-brand theming and legal flows"
+        },
+        "step6": {
+          "label": "Stack and Collaboration",
+          "title": "React, TypeScript, and cross-functional teamwork at enterprise scale",
+          "textItems": [
+            "The team consisted of full-stack developers in React and TypeScript, working closely with designers, product owners, QA, and the group's internal departments. Code quality, maintainability, and long-term stability were central requirements in an environment where the product was expected to live and be maintained for many years.",
+            "Working in a large, distributed multi-team environment with strict enterprise requirements meant that communication and documentation were as important as technical ability."
+          ],
+          "alt": "Agile team collaboration in an enterprise environment",
+          "caption": "Collaboration · Agile team with React, TypeScript, and cross-functional stakeholders"
+        },
+        "step7": {
+          "label": "The Outcome",
+          "title": "Mission-critical platform in production — globally, across multiple brands",
+          "textItems": [
+            "A digital onboarding platform in production for one of the world's leading automotive groups — used by vehicle buyers in over 40 countries, adapted for multiple brands within the group, and built to last in a complex multi-team environment.",
+            "This engagement represents the kind of enterprise environment where detail, communication, and technical precision are not optional — and that is the experience I bring to every project."
+          ],
+          "results": {
+            "title": "What this engagement demonstrates:",
+            "rows": [
+              "Ability to deliver within a strict enterprise approval process",
+              "Experience with global product scale and legal complexity",
+              "Multi-brand frontend architecture with React and TypeScript",
+              "Cross-functional collaboration at all levels — design, legal, product, QA",
+              "Long-term code quality and maintainability in distributed teams"
+            ]
+          }
+        },
+        "finalCta": {
+          "title": "Do you need a developer with experience in complex enterprise environments?",
+          "cta": "Get in touch"
+        }
       }
     }
   },

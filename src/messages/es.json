@@ -871,6 +871,137 @@
           "title": "¿Buscas un desarrollador que pueda construir productos impulsados por IA desde cero?",
           "cta": "Contáctame"
         }
+      },
+      "hexadCarClientPlatform": {
+        "title": "Plataforma Automoción",
+        "description": "Tres años en uno de los entornos empresariales más exigentes del mundo — como diseñadora UX/UI y desarrolladora frontend en una plataforma global de conectividad de vehículos utilizada en más de 40 países y adaptada para múltiples marcas de automóviles dentro del mismo grupo.",
+        "alt": "Miniatura de la Plataforma Empresarial del Sector Automoción",
+        "hero": {
+          "subtitle": "Plataforma global de vehículos — diseño UX/UI y desarrollo frontend a escala empresarial",
+          "description": "Un proyecto de varios años con uno de los grupos automovilísticos líderes del mundo: una plataforma digital de incorporación que conecta a los nuevos propietarios de vehículos con su coche, su identidad y sus servicios — en más de 40 países, en varios idiomas, adaptada a diferentes marcas y marcos legales locales. Contribuí en dos roles: como diseñadora UX/UI a tiempo parcial integrada en un equipo multifuncional, y posteriormente como desarrolladora a tiempo completo dentro de un equipo de producto ágil."
+        },
+        "step1": {
+          "label": "El Proyecto",
+          "title": "Una plataforma empresarial a escala global",
+          "textItems": [
+            "El proyecto consistía en un producto digital de misión crítica dentro de uno de los grupos automovilísticos más grandes del mundo — una plataforma de incorporación donde los nuevos propietarios conectan su vehículo, aceptan condiciones legales y activan servicios digitales.",
+            "<strong>La complejidad era excepcional:</strong> el mismo producto debía funcionar correctamente en más de 40 países con diferentes regulaciones, soportar múltiples marcas con sus propios sistemas de diseño, y cumplir con los estrictos requisitos de los departamentos de diseño y legal del grupo.",
+            "La plataforma tenía tolerancia cero al fallo — un flujo de incorporación fallido significaba que un cliente no podía acceder a los servicios conectados de su vehículo desde el primer día."
+          ],
+          "challenges": {
+            "title": "Los desafíos principales abarcaban diseño, tecnología y organización.",
+            "rows": [
+              "Variaciones legales en más de 40 mercados",
+              "Proceso de aprobación estricto a través de los departamentos de diseño y legal",
+              "Múltiples marcas con sistemas de diseño distintos en una base de código compartida",
+              "Altos requisitos de fiabilidad en flujos de usuario críticos",
+              "Coordinación en un entorno multi-equipo grande y distribuido"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Rol de Diseño",
+          "title": "Diseño UX/UI dentro de una estructura de aprobación compleja",
+          "textItems": [
+            "Como diseñadora UX/UI a tiempo parcial, mi rol consistía tanto en comunicación y negociación como en diseño visual. Cada decisión de diseño pasaba por una cadena de aprobación estructurada que involucraba a equipos de diseño, legal, contenido y producto — un proceso que requería precisión, paciencia y la capacidad de defender las decisiones de diseño ante múltiples partes interesadas en paralelo.",
+            "Colaboré diariamente con propietarios de producto, gestores de proyecto, redactores, desarrolladores y QA — actuando como puente entre los requisitos empresariales y la experiencia de usuario. Navegar esa estructura sin perder la integridad del diseño era una competencia tan importante como el oficio en sí."
+          ],
+          "alt": "Proceso de diseño — colaboración multifuncional en un entorno empresarial",
+          "caption": "Proceso de diseño — colaboración, aprobaciones e iteraciones"
+        },
+        "step3": {
+          "label": "Adaptación Global",
+          "title": "Una misma experiencia — en más de 40 mercados y múltiples marcas",
+          "textItems": [
+            "Uno de los desafíos de diseño más complejos fue la amplitud de la escala: el producto debía absorber una gran variación — marcos legales, idiomas, normativas locales e identidades de marca — sin fragmentarse.",
+            "El trabajo implicó adaptar diseños, estructuras de contenido y flujos legales dentro de un sistema de diseño empresarial y una biblioteca de componentes ya existentes, con el objetivo de crear una arquitectura lo suficientemente consistente para escalar y lo suficientemente flexible para absorber las variaciones de cada mercado."
+          ],
+          "solution": {
+            "title": "El trabajo de diseño se centró en la flexibilidad estructural dentro de restricciones fijas.",
+            "rows": [
+              "Adaptación de flujos a los requisitos legales locales",
+              "Patrones de UX consistentes pese a la alta variabilidad de contenido",
+              "Trabajo dentro de un sistema de diseño empresarial establecido",
+              "Coordinación de aprobaciones con los departamentos de diseño y legal",
+              "Soporte a múltiples marcas con identidades visuales distintas"
+            ]
+          }
+        },
+        "step4": {
+          "label": "Rol de Desarrollo",
+          "title": "Arquitectura frontend para un producto multi-marca",
+          "textItems": [
+            "Como desarrolladora a tiempo completo en React y TypeScript, participé en las decisiones de arquitectura desde el principio. El desafío técnico central reflejaba el desafío de diseño: una base de código, múltiples identidades de marca, más de 40 variantes de mercado.",
+            "<strong>La solución</strong> se construyó sobre una capa de tematización robusta que mapeaba los tokens de diseño específicos de cada marca a una biblioteca de componentes compartida — el mismo componente se renderizaba correctamente en el lenguaje visual de cada marca sin duplicar la lógica de negocio.",
+            "Contribuí a las decisiones de arquitectura junto con propietarios de producto, diseñadores, QA y partes interesadas — una colaboración multifuncional que requería tanto profundidad técnica como la capacidad de comunicar compromisos claramente a interlocutores no técnicos."
+          ],
+          "alt": "Arquitectura frontend — tematización multi-marca con React y TypeScript",
+          "caption": "Arquitectura · Base de código compartida con tokens de diseño por marca"
+        },
+        "step5": {
+          "label": "Complejidad Técnica",
+          "title": "Alta fiabilidad en flujos legales críticos",
+          "textItems": [
+            "El flujo de incorporación exigía un alto nivel de precisión: los usuarios debían navegar por una serie de declaraciones legales — políticas de privacidad, formularios de consentimiento, acuerdos de servicio — que variaban según el país y el entorno regulatorio.",
+            "La lógica frontend gestionaba el renderizado condicional de las declaraciones correctas en el orden correcto, bajo las condiciones correctas, manteniendo una experiencia acorde a cada marca. Los errores en este flujo no eran una opción — la plataforma era de misión crítica desde el primer día para el usuario."
+          ],
+          "beforeVsAfter": {
+            "before": {
+              "title": "Los Desafíos",
+              "rows": [
+                "Variación legal en más de 40 mercados",
+                "Múltiples marcas en una base de código compartida",
+                "Lógica condicional compleja en flujos críticos",
+                "Proceso de aprobación estricto para cada cambio de diseño",
+                "Entorno multi-equipo distribuido con altos estándares de calidad"
+              ]
+            },
+            "after": {
+              "title": "Las Soluciones",
+              "rows": [
+                "Capa de tematización flexible con tokens de diseño por marca",
+                "Arquitectura de componentes escalable para variantes de mercado",
+                "Flujos fiables con alta cobertura de pruebas",
+                "Comunicación efectiva a través de la cadena de aprobación",
+                "Calidad de código a largo plazo en un entorno multi-equipo grande"
+              ]
+            }
+          },
+          "alt": "Arquitectura técnica — aplicación React multi-marca",
+          "caption": "Solución técnica · Tematización multi-marca y flujos legales"
+        },
+        "step6": {
+          "label": "Stack y Colaboración",
+          "title": "React, TypeScript y trabajo en equipo multifuncional a escala empresarial",
+          "textItems": [
+            "El equipo estaba formado por desarrolladores full-stack en React y TypeScript, trabajando en estrecha colaboración con diseñadores, propietarios de producto, QA y los departamentos internos del grupo. La calidad del código, la mantenibilidad y la estabilidad a largo plazo eran requisitos centrales en un entorno donde se esperaba que el producto viviera y se mantuviera durante muchos años.",
+            "Trabajar en un entorno multi-equipo grande y distribuido con estrictos requisitos empresariales significaba que la comunicación y la documentación eran tan importantes como la capacidad técnica."
+          ],
+          "alt": "Colaboración en equipo ágil en un entorno empresarial",
+          "caption": "Colaboración · Equipo ágil con React, TypeScript e interlocutores multifuncionales"
+        },
+        "step7": {
+          "label": "El Resultado",
+          "title": "Plataforma de misión crítica en producción — globalmente, para múltiples marcas",
+          "textItems": [
+            "Una plataforma digital de incorporación en producción para uno de los grupos automovilísticos líderes del mundo — utilizada por compradores de vehículos en más de 40 países, adaptada para múltiples marcas dentro del grupo, y construida para perdurar en un entorno multi-equipo complejo.",
+            "Este proyecto representa el tipo de entorno empresarial donde el detalle, la comunicación y la precisión técnica no son opcionales — y esa es la experiencia que aporto a cada proyecto."
+          ],
+          "results": {
+            "title": "Lo que este proyecto demuestra:",
+            "rows": [
+              "Capacidad para entregar dentro de un proceso de aprobación empresarial estricto",
+              "Experiencia con escala de producto global y complejidad legal",
+              "Arquitectura frontend multi-marca con React y TypeScript",
+              "Colaboración multifuncional a todos los niveles — diseño, legal, producto, QA",
+              "Calidad de código y mantenibilidad a largo plazo en equipos distribuidos"
+            ]
+          }
+        },
+        "finalCta": {
+          "title": "¿Necesitas una desarrolladora con experiencia en entornos empresariales complejos?",
+          "cta": "Contáctame"
+        }
       }
     }
   },

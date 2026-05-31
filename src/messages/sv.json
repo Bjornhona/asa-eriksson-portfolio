@@ -872,6 +872,137 @@
           "title": "Letar du efter en utvecklare som kan bygga AI-drivna produkter från grunden?",
           "cta": "Kontakta mig"
         }
+      },
+      "hexadCarClientPlatform": {
+        "title": "Automotive Platform",
+        "description": "Tre år i en av världens mest krävande enterprise-miljöer — som UX/UI-designer och frontend-utvecklare på en global plattform för uppkoppling av fordon, använd i över 40 länder och anpassad för flera fordonsvarumärken inom samma koncern.",
+        "alt": "Miniatyrbild för Enterprise Automotive Platform",
+        "hero": {
+          "subtitle": "Global fordonsplattform — UX/UI-design och frontend-utveckling i enterprise-skala",
+          "description": "Ett flerårigt uppdrag för en av världens ledande bilkoncerner: en digital onboarding-plattform som kopplar samman nya fordonsägare med sitt fordon, sin identitet och sina tjänster — i över 40 länder, på flera språk, anpassad för olika varumärken och lokala juridiska regelverk. Jag bidrog i två roller: som deltids-UX/UI-designer inbäddad i ett tvärfunktionellt team, och senare som heltidsutvecklare inom ett agilt produktteam."
+        },
+        "step1": {
+          "label": "Projektet",
+          "title": "En enterprise-plattform i global skala",
+          "textItems": [
+            "Uppdraget gällde en mission-critical digital produkt inom en av världens största bilkoncerner — en onboarding-plattform där nya fordonsägare kopplar upp sitt fordon, accepterar juridiska villkor och aktiverar digitala tjänster.",
+            "<strong>Komplexiteten var exceptionell:</strong> samma produkt behövde fungera korrekt i över 40 länder med olika regelverk, stödja flera varumärken med egna designsystem, och uppfylla strikta krav från koncernens design- och juridikavdelningar.",
+            "Plattformen hade noll tolerans för fel — ett misslyckat onboarding-flöde innebar att en kund inte kunde komma åt sitt fordons uppkopplade tjänster från dag ett."
+          ],
+          "challenges": {
+            "title": "De centrala utmaningarna spände över design, teknik och organisation.",
+            "rows": [
+              "Juridiska variationer i över 40 marknader",
+              "Strikt godkännandeprocess via design- och juridikavdelningar",
+              "Flera varumärken med egna designsystem i en gemensam kodbas",
+              "Hög tillförlitlighet i kritiska användarflöden",
+              "Samordning i en stor, distribuerad multi-teamsmiljö"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Designroll",
+          "title": "UX/UI-design i en komplex godkännandestruktur",
+          "textItems": [
+            "Som deltids-UX/UI-designer var min roll lika mycket kommunikation och förhandling som visuell design. Varje designbeslut passerade en strukturerad godkännandekedja som involverade design-, juridik-, content- och produktteam — en process som krävde precision, tålamod och förmågan att försvara designbeslut inför flera parallella intressenter.",
+            "Jag samarbetade dagligen med produktägare, projektledare, skribenter, utvecklare och QA — och fungerade som länk mellan affärskrav och användarupplevelse. Att navigera den strukturen utan att förlora designens integritet var en lika viktig kompetens som själva hantverket."
+          ],
+          "alt": "Designprocess — tvärfunktionellt samarbete i enterprise-miljö",
+          "caption": "Designprocess — samarbete, godkännanden och iterationer"
+        },
+        "step3": {
+          "label": "Global anpassning",
+          "title": "Samma upplevelse — över 40 marknader och flera varumärken",
+          "textItems": [
+            "En av de mest komplexa designutmaningarna var skalbarhet i bredden: produkten behövde absorbera stor variation — juridiska regelverk, språk, lokala regler och varumärkesidentiteter — utan att fragmenteras.",
+            "Arbetet innebar att anpassa layouter, innehållsstrukturer och juridiska flöden inom ett befintligt enterprise-designsystem och komponentbibliotek, med målet att skapa en arkitektur tillräckligt konsekvent för att skalas och tillräckligt flexibel för att absorbera marknadsvariationer."
+          ],
+          "solution": {
+            "title": "Designarbetet fokuserade på strukturell flexibilitet inom fasta ramar.",
+            "rows": [
+              "Anpassning av flöden för lokala juridiska krav",
+              "Konsekvent UX-mönster trots hög innehållsvariabilitet",
+              "Arbete inom ett etablerat enterprise-designsystem",
+              "Koordinering av godkännanden från design- och juridikavdelningar",
+              "Stöd för flera varumärken med distinkta visuella identiteter"
+            ]
+          }
+        },
+        "step4": {
+          "label": "Utvecklarroll",
+          "title": "Frontend-arkitektur för en multi-brand produkt",
+          "textItems": [
+            "Som heltidsutvecklare i React och TypeScript deltog jag i arkitekturbeslut från start. Den centrala tekniska utmaningen speglades av designutmaningen: en kodbas, flera varumärkesidentiteter, fler än 40 marknadsVarianter.",
+            "<strong>Lösningen</strong> byggde på ett robust theming-lager som mappade varumärkesspecifika designtokens mot ett gemensamt komponentbibliotek — samma komponent renderade korrekt i respektive varumärkes visuella språk utan att affärslogiken duplicerades.",
+            "Jag bidrog till arkitektoniska beslut tillsammans med produktägare, designers, QA och stakeholders — en tvärfunktionell samarbetsprocess som krävde både tekniskt djup och förmågan att kommunicera avvägningar till icke-tekniska intressenter."
+          ],
+          "alt": "Frontend-arkitektur — multi-brand theming med React och TypeScript",
+          "caption": "Arkitektur · Delad kodbas med varumärkesspecifika designtokens"
+        },
+        "step5": {
+          "label": "Teknisk komplexitet",
+          "title": "Hög tillförlitlighet i kritiska juridiska flöden",
+          "textItems": [
+            "Onboarding-flödet ställde höga krav på korrekthet: användare behövde navigera en serie juridiska deklarationer — integritetspolicyer, samtyckesformulär, tjänsteavtal — som varierade per land och regulatorisk miljö.",
+            "Frontend-logiken hanterade villkorsstyrd rendering av rätt deklarationer i rätt ordning, under rätt förutsättningar, med bibehållen varumärkestrogen upplevelse. Fel i detta flöde var inte ett alternativ — plattformen var mission-critical från dag ett för användaren."
+          ],
+          "beforeVsAfter": {
+            "before": {
+              "title": "Utmaningarna",
+              "rows": [
+                "Juridisk variation över 40+ marknader",
+                "Flera varumärken i en gemensam kodbas",
+                "Komplex villkorsstyrd logik i kritiska flöden",
+                "Strikt godkännandeprocess för varje designändring",
+                "Distribuerad multi-teamsmiljö med höga kvalitetskrav"
+              ]
+            },
+            "after": {
+              "title": "Lösningarna",
+              "rows": [
+                "Flexibelt theming-lager med designtokens per varumärke",
+                "Skalbar komponentarkitektur för marknadsvarianter",
+                "Tillförlitliga flöden med hög testtäckning",
+                "Effektiv kommunikation genom godkännandekedjan",
+                "Långsiktig kodkvalitet i en stor, multi-teamsmiljö"
+              ]
+            }
+          },
+          "alt": "Teknisk arkitektur — multi-brand React applikation",
+          "caption": "Teknisk lösning · Multi-brand theming och juridiska flöden"
+        },
+        "step6": {
+          "label": "Stack och samarbete",
+          "title": "React, TypeScript och tvärfunktionellt teamarbete i enterprise-skala",
+          "textItems": [
+            "Teamet bestod av fullstack-utvecklare i React och TypeScript, med ett nära samarbete med designers, produktägare, QA och koncernens interna avdelningar. Kodkvalitet, underhållbarhet och långsiktig stabilitet var centrala krav i en miljö där produkten förväntades leva och underhållas under många år.",
+            "Att arbeta i en stor, distribuerad multi-teamsmiljö med strikta enterprise-krav innebar att kommunikation och dokumentation var lika viktiga som teknisk förmåga."
+          ],
+          "alt": "Agilt teamsamarbete i enterprise-miljö",
+          "caption": "Samarbete · Agilt team med React, TypeScript och tvärfunktionella intressenter"
+        },
+        "step7": {
+          "label": "Resultatet",
+          "title": "Mission-critical plattform i drift — globalt, för flera varumärken",
+          "textItems": [
+            "En digital onboarding-plattform i produktion för en av världens ledande bilkoncerner — använd av fordonsköpare i över 40 länder, anpassad för flera varumärken inom koncernen, och byggd för att hålla under lång tid i en komplex multi-teamsmiljö.",
+            "Detta uppdrag representerar den typ av enterprise-miljö där detaljer, kommunikation och teknisk precision inte är valfria — och det är den erfarenheten jag tar med mig till varje projekt."
+          ],
+          "results": {
+            "title": "Vad uppdraget demonstrerar:",
+            "rows": [
+              "Förmåga att leverera i en strikt enterprise-godkännandeprocess",
+              "Erfarenhet av global produktskala och juridisk komplexitet",
+              "Multi-brand frontend-arkitektur med React och TypeScript",
+              "Tvärfunktionellt samarbete på alla nivåer — design, legal, produkt, QA",
+              "Långsiktig kodkvalitet och underhållbarhet i distribuerade team"
+            ]
+          }
+        },
+        "finalCta": {
+          "title": "Behöver du en utvecklare med erfarenhet av komplex enterprise-miljö?",
+          "cta": "Kontakta mig"
+        }
       }
     }
   },

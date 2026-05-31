@@ -7,8 +7,8 @@ const baseUrl = "https://asaeriksson.com";
 const staticPaths = [
   "",
   "/about",
-  "/portfolio",
   "/services",
+  "/portfolio",
   "/contact",
   "/cookies-policy",
   "/privacy-policy",

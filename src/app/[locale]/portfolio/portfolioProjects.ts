@@ -38,8 +38,8 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     appType: "webApp",
     myRole: "designerAndDeveloper",
     images: {
-      "hero": "/portfolio/tech-beach-mama/hero.webp",
-      "steps": {
+      hero: "/portfolio/tech-beach-mama/hero.webp",
+      steps: {
         step2: {
           preview: "/portfolio/tech-beach-mama/design-system-preview.webp",
           full: "/portfolio/tech-beach-mama/design-system-full.webp",
@@ -55,8 +55,8 @@ const unsortedPortfolioItems: PortfolioItem[] = [
         step6: {
           preview: "/portfolio/tech-beach-mama/performance-preview.webp",
           full: "/portfolio/tech-beach-mama/performance-full.webp",
-        }
-      }
+        },
+      },
     },
     caseStudyUrl: "/portfolio/tech-beach-mama",
     visitSiteUrl: "https://techbeachmama.com",
@@ -95,7 +95,7 @@ const unsortedPortfolioItems: PortfolioItem[] = [
           preview: "/portfolio/sculpted-goddess/design-system-preview.webp",
           full: "/portfolio/sculpted-goddess/design-system-full.webp",
         },
-      }
+      },
     },
     caseStudyUrl: "/portfolio/sculpted-goddess",
     visitSiteUrl: "https://sculpted-goddess.vercel.app",
@@ -134,8 +134,8 @@ const unsortedPortfolioItems: PortfolioItem[] = [
         step6: {
           preview: "/portfolio/cg-consulting/sanity-preview.webp",
           full: "/portfolio/cg-consulting/sanity-full.webp",
-        }
-      }
+        },
+      },
     },
     caseStudyUrl: "/portfolio/cg-consulting",
     visitSiteUrl: "https://cg-consulting.es",
@@ -157,8 +157,8 @@ const unsortedPortfolioItems: PortfolioItem[] = [
     appType: "webApp",
     myRole: "designerAndDeveloper",
     images: {
-      "hero": "/portfolio/matchkit/hero.webp",
-      "steps": {
+      hero: "/portfolio/matchkit/hero.webp",
+      steps: {
         step2: {
           preview: "/portfolio/matchkit/step2.webp",
           full: "/portfolio/matchkit/step2.webp",
@@ -174,17 +174,51 @@ const unsortedPortfolioItems: PortfolioItem[] = [
         step6: {
           preview: "/portfolio/matchkit/step6.webp",
           full: "/portfolio/matchkit/step6.webp",
-        }
-      }
+        },
+      },
     },
     caseStudyUrl: "/portfolio/matchkit",
     visitSiteUrl: "https://matchkit-cv-analyzer.vercel.app/",
+    tags: ["Next.js", "HTML", "TypeScript", "Tailwind CSS", "Gemini AI API"],
+  },
+  {
+    slug: "hexad-car-client-platform",
+    text: "hexadCarClientPlatform",
+    date: "2026-02-01",
+    appType: "webApp",
+    myRole: "designerAndDeveloper",
+    images: {
+      hero: "/portfolio/vw/hero.webp",
+      steps: {
+        step2: {
+          preview: "/portfolio/vw/new-product-development-full.webp",
+          full: "/portfolio/vw/new-product-development-full.webp",
+        },
+        step4: {
+          preview: "/portfolio/vw/world-map-preview.webp",
+          full: "/portfolio/vw/world-map-full.webp",
+        },
+        step5: {
+          preview: "/portfolio/vw/design-system-preview.webp",
+          full: "/portfolio/vw/design-system-full.webp",
+        },
+        step6: {
+          preview: "/portfolio/vw/multi-equipo-preview.webp",
+          full: "/portfolio/vw/multi-equipo-full.webp",
+        },
+      },
+    },
+    caseStudyUrl: "/portfolio/hexad-car-client-platform",
+    visitSiteUrl: "https://cg-consulting.es",
+    // githubRepoName: "cg-consulting",
     tags: [
-      "Next.js",
-      "HTML",
+      "React",
       "TypeScript",
-      "Tailwind CSS",
-      "Gemini AI API"
+      "SCSS",
+      "Sketch",
+      "Vite",
+      "Brand Design System",
+      "Brand Component Library"
     ],
   },
 ];
