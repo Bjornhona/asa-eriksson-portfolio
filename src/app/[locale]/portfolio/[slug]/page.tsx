@@ -103,7 +103,7 @@ const PortfolioDetailPage = async ({
 
   const baseButtons: ButtonsProps[] = [
     {
-      href: project.visitSiteUrl,
+      href: project.visitSiteUrl || "",
       icon: <Globe className="w-4 h-4" />,
       label: t("hero.viewLive"),
     },

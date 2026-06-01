@@ -25,7 +25,7 @@ export interface PortfolioItem {
   images: PortfolioImages;
   designImage?: string;
   caseStudyUrl: string;
-  visitSiteUrl: string;
+  visitSiteUrl?: string;
   githubRepoName?: string;
   tags: string[];
 }
@@ -184,7 +184,7 @@ const unsortedPortfolioItems: PortfolioItem[] = [
   {
     slug: "hexad-car-client-platform",
     text: "hexadCarClientPlatform",
-    date: "2026-02-01",
+    date: "2023-02-01",
     appType: "webApp",
     myRole: "designerAndDeveloper",
     images: {
@@ -209,8 +209,6 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       },
     },
     caseStudyUrl: "/portfolio/hexad-car-client-platform",
-    visitSiteUrl: "https://cg-consulting.es",
-    // githubRepoName: "cg-consulting",
     tags: [
       "React",
       "TypeScript",

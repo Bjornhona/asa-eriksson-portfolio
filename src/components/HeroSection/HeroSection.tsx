@@ -84,7 +84,7 @@ const HeroSection = ({ imageSrc, imageAlt, title, subtitle, texts, buttons, scro
             className="relative flex flex-col sm:flex-row gap-4 pt-4 pointer-events-auto"
           >
             {buttons && buttons.map((button) => (
-              <Button asChild variant="glass" href={button.href} key={button.label}>
+              button.href && <Button asChild variant="glass" href={button.href} key={button.label}>
                 {button.icon}
                 {button.label}
               </Button>

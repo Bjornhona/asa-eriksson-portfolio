@@ -4,6 +4,7 @@ import Link from "next/link";
 export interface ButtonProps extends ButtonComponentProps {
   href?: string;
   children: React.ReactNode;
+  target?: string;
 }
 
 const Button = ({ href = "#", children, ...props }: ButtonProps) => {  

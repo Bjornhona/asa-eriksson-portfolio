@@ -71,14 +71,18 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
               {t("readMore")}
               <ArrowUpRight className="w-4 h-4" />
             </Button>
-            <Button
-              variant="glass"
-              size="sm"
-              className="w-full xs:w-auto"
-              href={item.visitSiteUrl}
-            >
-              {t("visitSite")}
-            </Button>
+            {item.visitSiteUrl && (
+              <Button
+                variant="glass"
+                size="sm"
+                className="w-full xs:w-auto"
+                href={item.visitSiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("visitSite")}
+              </Button>
+            )}
           </div>
         </div>
       </div>
