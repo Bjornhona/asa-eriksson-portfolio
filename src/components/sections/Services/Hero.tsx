@@ -32,7 +32,7 @@ const ServicesHeroSection = () => {
 
   return (
     <HeroSection
-      imageSrc="/me-working1.jpeg"
+      imageSrc="/me-working2.webp"
       imageAlt="My services"
       title={t("title")}
       subtitle={subtitle}
