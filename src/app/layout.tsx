@@ -17,15 +17,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Asa Eriksson | Frontend Developer & Product Designer | React & Next.js",
-  description: "Åsa Eriksson is a frontend engineer specializing in React and Next.js. Building scalable web applications with clean architecture and thoughtful UX. Founder of Tech Beach Mama.",
-  keywords: ["Frontend Developer", "Product Designer", "Web Developer", "Web Designer", "Web Development", "Web Design", "UX/UI Designer", "UX/UI Design", "UX/UI Development", "React Developer", "React Designer", "React Development", "React Design", "Next.js Developer", "Next.js Designer", "Next.js Development", "Next.js Design"],
+  title: "Asa Eriksson | Product Developer & Designer | Frontend + UX/UI | React & Next.js | Cursor & Claude Code Assisted Development | Headless CMS",
+  description: "Åsa Eriksson is a Product Engineer specializing in React and Next.js. Building scalable web applications with clean architecture and thoughtful UX. Founder of Tech Beach Mama.",
+  keywords: ["Product Developer", "Product Designer", "Web Developer", "Web Designer", "Web Development", "Web Design", "UX/UI Designer", "UX/UI Design", "UX/UI Development", "React Developer", "React Designer", "React Development", "React Design", "Next.js Developer", "Next.js Designer", "Next.js Development", "Next.js Design", "Cursor", "Claude", "Code Assisted Development", "Headless CMS"],
   authors: [{ name: "Åsa Eriksson", url: "https://asaeriksson.com" }],
   creator: "Åsa Eriksson",
   publisher: "Åsa Eriksson",
   openGraph: {
-    title: "Asa Eriksson | Frontend Developer & Product Designer | React & Next.js",
-    description: "Åsa Eriksson is a frontend engineer specializing in React and Next.js. Building scalable web applications with clean architecture and thoughtful UX. Founder of Tech Beach Mama.",
+    title: "Asa Eriksson | Product Developer & Designer | Frontend + UX/UI | React & Next.js | Cursor & Claude Code Assisted Development | Headless CMS",
+    description: "Åsa Eriksson is a Product Engineer specializing in React and Next.js. Building scalable web applications with clean architecture and thoughtful UX. Founder of Tech Beach Mama.",
     images: [{ url: "https://asaeriksson.com/portfolio-home.webp", width: 1200, height: 630, alt: "Åsa Eriksson Portfolio" }],
   },
 };

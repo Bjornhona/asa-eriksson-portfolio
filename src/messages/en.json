@@ -25,7 +25,7 @@
 
     "websiteOwner": "Website Owner",
     "operatedBy": "This website is operated by:",
-    "developer": "Independent Frontend Developer & Product Designer",
+    "developer": "Independent Product Developer & Designer",
     "website": "Website",
     "questions": "If you have questions about this policy, you can contact me through the contact form available on this website.",
 
@@ -134,12 +134,12 @@
     "name": "Name",
     "website": "Website",
     "activity": "Activity",
-    "frontendDevelopment": "Freelance Frontend Development and Web Design Services",
+    "frontendDevelopment": "Freelance Product Development and Web Design Services",
     "contact": "Contact",
     "contactDescription": "Through the contact form available on this website or by email to",
 
     "purposeOfTheWebsite": "Purpose of the Website",
-    "purposeOfTheWebsiteDescription": "The purpose of this website is to present the professional portfolio, services, and projects of the website owner related to frontend development, web development, and user interface design.",
+    "purposeOfTheWebsiteDescription": "The purpose of this website is to present the professional portfolio, services, and projects of the website owner related to project engineering, web & frontend development and user interface design.",
     "websiteMayAlsoProvideInformation": "The website may also provide information about professional services and allow visitors to contact the website owner through a contact form.",
 
     "termsOfUse": "Terms of Use",
@@ -169,7 +169,7 @@
   "about": {
     "hero": {
       "title": "About Me",
-      "subtitle": "I’m a <strong>Frontend Developer and Product Designer</strong> who builds modern web applications with a strong focus on usability, performance, and clean architecture.",
+      "subtitle": "I’m a <strong>Product Developer and Designer</strong> who builds modern web applications with a strong focus on usability, performance, and clean architecture.",
       "description": "With a background in both <strong>design and engineering</strong>, I bridge the gap between visual creativity and technical execution. My goal is simple: create digital products that are <strong>beautiful, intuitive, and scalable</strong>.",
       "works": "I work with companies and startups around the world to transform ideas into <strong>high-quality web experiences</strong> — also helping women launch tech careers through <strong>Tech Beach Mama</strong>.",
       "downloadCV": "Download my CV",
@@ -182,21 +182,21 @@
       "description": "My path into tech started from the design side.",
       "description2": "I began my career working with <strong>graphic design and user experience</strong>, helping brands communicate visually and craft better digital products. Over time, I became increasingly interested in the technical side of building those experiences.",
       "description3": "That curiosity led me to transition into <strong>frontend development</strong>, where I could combine design thinking with engineering.",
-      "description4": "Today, I specialize in building <strong>modern web applications with React and Next.js</strong>, focusing on performance, scalability, and exceptional user experience.",
+      "description4": "Today, I specialize in building <strong>web applications with AI-assisted development with Cursor & Claude Code using modern technologies like React and Next.js</strong>, focusing on performance, scalability, and exceptional user experience.",
       "description5": "With experience working in professional development teams and delivering production-ready applications, I understand what it takes to build software that is <strong>not only visually polished but also maintainable and reliable</strong>."
     },
     "whatIDo": {
       "title": "What I Do",
-      "description": "I help companies design and build modern digital products.",
+      "description": "I help companies design and build modern digital products with AI.",
       "workFocus": "My work focuses on three areas:",
-      "fontendDev": "Frontend Development",
+      "fontendDev": "Product Engineering",
       "fastBuilding": "Building fast, scalable, and maintainable web applications using modern technologies.",
       "react": "React",
       "nextjs": "Next.js",
       "typescript": "TypeScript",
       "modernCssArchitectures": "Modern CSS architectures",
       "performanceOptimization": "Performance optimization",
-      "productDesign": "Product & UI Design",
+      "productDesign": "Product & UX/UI Design",
       "intuitiveDesign": "Designing interfaces that are intuitive, elegant, and user-focused.",
       "uiDesignSystems": "UI design systems",
       "uxFlows": "UX flows and product thinking",
@@ -262,16 +262,16 @@
   "services": {
     "hero": {
       "title": "My services",
-      "subtitle": "<strong>Frontend Development & UI Design</strong>. I help businesses build fast, scalable, and beautifully designed web experiences.",
+      "subtitle": "<strong>Website Development & Design</strong>. I help businesses build fast, scalable, and beautifully designed web experiences using the latest AI-assisted tools.",
       "description": "I help you bring your ideas to life with a clean design and reliable frontend development — <strong>creating websites and applications</strong> that are both beautiful and built to perform.",
       "contactMe": "Contact Me",
       "viewMyWork": "View my work"
     },
     "cards": {
       "title": "What I can help you with",
-      "description": "I combine frontend development, UI design, and product thinking to create digital experiences that are both beautiful and built to perform.",
+      "description": "I combine frontend development, UX/UI design, AI and product thinking to create digital experiences that are both beautiful and built to perform.",
       "frontend": {
-        "title": "Frontend Development",
+        "title": "Product Engineering",
         "item1": "React / Next.js apps",
         "item2": "Performance optimization",
         "item3": "Scalable architecture"
@@ -324,7 +324,7 @@
           "name": "Fernando Rueda Oliva",
           "company": "Hexad Barcelona",
           "position": "CTO Quantum engineer and Solutions Architect",
-          "testimonial": "I’ve had the pleasure of working alongside Asa at Hexad for several years, and I can confidently say she is one of the most adaptable, positive, and inspiring colleagues I’ve ever met. Asa’s attitude is truly exceptional—no matter how complex or unfamiliar the challenge, she always greets it with a smile and an open mind. Her journey from a talented UI designer to a skilled frontend developer is a testament to her courage and determination to grow. Not only did she master new technical skills, but she also stepped up to take on the responsibilities of a Project Manager, seamlessly adapting to each new role with enthusiasm and professionalism. What sets Asa apart is her flexibility and her fearless approach to change. She never shies away from stepping outside her comfort zone, and her positive energy uplifts everyone around her. Asa’s ability to wear multiple hats, learn quickly, and maintain a can-do attitude has been invaluable to our team. Thank you, Asa, for your dedication, your positivity, and for all the years you’ve contributed to Hexad. It’s been a privilege to work with you, and I look forward to seeing all the great things you’ll accomplish in the future!"
+          "testimonial": "I’ve had the pleasure of working alongside Asa at Hexad for several years, and I can confidently say she is one of the most adaptable, positive, and inspiring colleagues I’ve ever met. Asa’s attitude is truly exceptional—no matter how complex or unfamiliar the challenge, she always greets it with a smile and an open mind. Her journey from a talented UI designer to a skilled product engineer is a testament to her courage and determination to grow. Not only did she master new technical skills, but she also stepped up to take on the responsibilities of a Project Manager, seamlessly adapting to each new role with enthusiasm and professionalism. What sets Asa apart is her flexibility and her fearless approach to change. She never shies away from stepping outside her comfort zone, and her positive energy uplifts everyone around her. Asa’s ability to wear multiple hats, learn quickly, and maintain a can-do attitude has been invaluable to our team. Thank you, Asa, for your dedication, your positivity, and for all the years you’ve contributed to Hexad. It’s been a privilege to work with you, and I look forward to seeing all the great things you’ll accomplish in the future!"
         },
         {
           "name": "Catalina Golia",
