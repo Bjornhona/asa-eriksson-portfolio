@@ -405,118 +405,119 @@
       },
       "techBeachMama": {
         "title": "Tech Beach Mama",
-        "description": "A high-converting personal brand website and growing digital business — designed and built in Next.js, Tailwind CSS, and Shadcn UI to inspire women to start frontend careers and achieve financial freedom through tech by the beach.",
+        "description": "A personal brand platform and AI product business — designed and built in Next.js with an AI-powered lead magnet that generates personalized product roadmaps. Repositioned in 2026 from career education to helping women with tech skills ship their first paying AI product.",
         "alt": "Tech Beach Mama thumbnail",
         "hero": {
-          "subtitle": "Building a personal brand, a newsletter funnel, and a digital product business from scratch",
-          "description": "Tech Beach Mama is not just a website — it is a growing platform and a personal mission. Launched after leaving employment to go independent, it is designed to inspire women to enter frontend development and build careers that work for their lives. The site serves as the digital home for a brand built on Instagram, a newsletter funnel, and a growing suite of digital products — all built and owned by me, and continuing to evolve."
+          "subtitle": "Building a personal brand, an AI-powered funnel, and a digital product business from scratch",
+          "description": "Tech Beach Mama is not just a website — it is a growing platform, a real business, and a live experiment in building AI products in public. Originally launched to help women start frontend careers, it was strategically repositioned in 2026 when the market shifted: the new mission is helping women who already have tech skills go from idea to their first paying AI product. The centrepiece is the AI Product Blueprint — an interactive AI tool I designed, built, and shipped end to end."
         },
         "step1": {
           "label": "The Vision",
-          "title": "A platform born from a career decision",
+          "title": "A platform that repositioned itself when the market did",
           "textItems": [
-            "Tech Beach Mama started after I left my job to go fully independent. The motivation was straightforward: I had spent years building skills in frontend development and product design, and I wanted to help other women — particularly mothers — do the same, without having to start from zero the way I did.",
-            "<strong>The platform is built around a simple funnel:</strong> attract women through Instagram who are curious about tech careers, bring them to the website to offer real value through free and paid resources, and grow a community of women building financial independence through web development, UI/UX design, and project management.",
-            "This is a long-term project. Unlike client work, which has a defined end point, Tech Beach Mama is designed to grow over years — new content, new products, and an audience that expands as the brand does. That shaped every technical and design decision from the start."
+            "Tech Beach Mama started after I left employment to go fully independent, with a mission to help women — particularly mothers — build tech careers the way I had.",
+            "<strong>In 2026 I made a strategic decision most brands avoid:</strong> I repositioned the entire platform. Watching AI absorb exactly the junior roles beginners were training for, I stopped selling a promise the market was breaking — and rebuilt TBM around a new one: women who already have tech skills can now build and sell what used to take a team. The gap isn't skill; it's a plan.",
+            "That repositioning was executed as a full product cycle: new messaging, complete site rewrite, archived legacy products with 301 redirects, a rebuilt email funnel, and a brand-new AI product as the front door — all shipped in a matter of days using an AI-assisted development workflow."
           ],
           "challenges": {
-            "title": "Building a personal brand platform from scratch comes with its own set of constraints.",
+            "title": "Repositioning a live brand comes with its own set of constraints.",
             "rows": [
               "Designed, built, and maintained entirely solo alongside freelance client work",
-              "Needed to function as a real conversion funnel, not just a portfolio piece",
-              "Architecture must scale as the product offering grows over time",
-              "Visual identity and tone had to feel distinct and personal, not generic"
+              "Repositioning had to preserve SEO, past customers, and brand equity",
+              "The new lead magnet is a real AI product — with real API costs, abuse protection, and GDPR obligations",
+              "Every claim on the site had to be honest — the brand's core promise is 'building in public, real numbers included'"
             ]
           }
         },
         "step2": {
           "label": "Design Concept",
-          "title": "Clean, modern, and built to convert",
+          "title": "Clean, warm, and built to convert",
           "textItems": [
-            "The design was created in Figma with conversion as a first-class concern alongside aesthetics. The visual language needed to feel warm, aspirational, and credible — communicating that this is a serious resource built by someone who has actually done what she is teaching. Clean layout, intentional typography, and a colour palette that feels modern without being cold. Every section is structured to guide the visitor toward the newsletter signup or a digital product."
+            "The design was created in Figma with conversion as a first-class concern alongside aesthetics. The visual language needed to feel warm, aspirational, and credible — communicating that this is a serious resource built by someone who actually ships what she teaches. After the repositioning, every section funnels toward a single action: getting your free AI Product Blueprint. One front door, one promise, no competing calls to action."
           ],
           "alt": "Tech Beach Mama design concept — Figma",
           "caption": "Design concept — Figma"
         },
         "step3": {
           "label": "Stack & Architecture",
-          "title": "Built for performance, flexibility, and long-term growth",
+          "title": "Built for performance, flexibility, and a real AI product",
           "textItems": [
-            "The stack was chosen specifically for what this platform needs to do over the long term: fast performance, easy content updates, and the flexibility to add new product types, pages, and integrations without rebuilding from scratch.",
-            "Next.js handles server-side rendering and routing, Tailwind CSS gives full design control without a bloated stylesheet, and Shadcn UI provides accessible, composable components that keep the codebase clean as the project grows. The repository is private — this is a live commercial project, not just a demonstration piece."
+            "The stack was chosen for what this platform needs to do over the long term: fast performance, easy iteration, and the flexibility to ship real products — not just content.",
+            "Next.js handles server-side rendering and routing, Tailwind CSS and Shadcn UI keep the design system composable, and the Blueprint added a full product backend: the OpenAI API for generation, Neon Postgres for submissions and rate limiting, MailerLite for audience segmentation, and Nodemailer for transactional email delivery. The repository is private — this is a live commercial project."
           ],
           "solution": {
-            "title": "The technical stack was selected to support a growing digital product business.",
+            "title": "The technical stack now supports a live AI product, not just a content site.",
             "rows": [
               "Next.js for performance, SEO, and scalable routing",
-              "Tailwind CSS for design control and rapid iteration",
-              "Shadcn UI for accessible, composable component architecture",
-              "Figma-first design process before implementation",
-              "Newsletter funnel integration for audience building",
-              "Architecture ready for expanding digital product catalogue"
+              "OpenAI API (server-side only) generating personalized product roadmaps",
+              "Neon Postgres storing submissions — doubling as market-research data",
+              "Rate limiting per email and IP protecting a public AI endpoint",
+              "MailerLite segmentation: newsletter and Blueprint-user audiences",
+              "Nodemailer delivering each user's roadmap by email"
             ]
           }
         },
         "step4": {
           "label": "The Funnel",
-          "title": "From Instagram to email list to digital products",
+          "title": "From social to an AI-generated personal plan to email list",
           "textItems": [
-            "The platform is built around a deliberate conversion path. Visitors arrive primarily from Instagram, where the brand publishes content about frontend careers, freelancing, and the lifestyle that goes with them. The website captures that interest with a free resource — an eBook on how to start a frontend career — that feeds into an automated email sequence.",
-            "The current product offering includes the free lead magnet eBook and a paid eBook on freelancing. The roadmap includes further digital products, courses, and resources as the audience grows. Every page on the site is designed with this funnel in mind — not as an afterthought, but as the structural logic the entire site is built around."
+            "The platform is built around a deliberate conversion path. Visitors arrive from Instagram and LinkedIn, where the brand shares the build-in-public journey. The website captures that interest with the AI Product Blueprint — a free, interactive tool that turns a visitor's idea, skills, and available hours into a personalized step-by-step plan to her first paying AI product.",
+            "The Blueprint is a smarter lead magnet than any PDF: it demonstrates the exact skill the brand teaches, it captures qualified emails, and every questionnaire submission is simultaneously market research — the answers reveal exactly which products to build next. The funnel doesn't just convert; it learns."
           ],
-          "alt": "Tech Beach Mama live site — homepage and newsletter funnel",
-          "caption": "The live platform — conversion-focused layout, newsletter funnel, and digital products"
+          "alt": "Tech Beach Mama live site — the AI Product Blueprint funnel",
+          "caption": "The live funnel — one front door: the AI Product Blueprint"
         },
         "step5": {
-          "label": "Content & Products",
-          "title": "Real resources for women entering tech",
+          "label": "The AI Product",
+          "title": "The Blueprint — a shipped AI product, not a demo",
           "textItems": [
-            "The content on Tech Beach Mama is drawn directly from my own experience: learning design before code, rebuilding professionally, going independent, and growing income over time. That personal narrative runs through everything — the Instagram content, the eBooks, and the site copy.",
-            "<strong>Current offerings:</strong> a free eBook on starting a frontend career as part of the lead magnet funnel, and a paid eBook on freelancing. The platform is intentionally built to expand — new digital products, resources, and eventually community features are part of the long-term roadmap."
+            "The AI Product Blueprint is a complete production AI application: a nine-question interactive flow feeds a carefully engineered generation prompt that produces a personalized roadmap — her idea sharpened, her unfair advantages, a four-phase path sized to her real weekly hours, her biggest blocker addressed, and one concrete action for this week.",
+            "<strong>The engineering behind it reflects real product discipline:</strong> the prompt was voice-tuned through systematic side-by-side model comparisons, guarded against prompt injection and off-topic input, and hard-ruled to never promise income or invent specifics the user didn't provide. Results render on screen and arrive by email; every submission is stored with hashed IPs for GDPR-conscious rate limiting."
           ],
           "offerings": {
-            "title": "What the platform currently offers:",
+            "title": "What shipping the Blueprint involved:",
             "rows": [
-              "Free eBook — Remote, Respected & Rich: A Strategic Frontend Roadmap for Modern Mothers",
-              "Paid eBook on freelancing and building an independent career in tech",
-              "Automated email sequence via MailerLite for nurturing new subscribers",
-              "Active Instagram channel driving organic traffic to the funnel",
-              "Roadmap includes courses, templates, and community features"
+              "Nine-question interactive questionnaire with per-type validation",
+              "Voice-tuned generation prompt, tested across models with real personas",
+              "Prompt-injection detection returning safe, typed errors",
+              "Rate limiting (per email and IP) and API spending caps",
+              "Dual delivery: styled on-screen results plus transactional email",
+              "Privacy policy and consent flow updated for AI data processing"
             ]
           },
-          "alt": "Tech Beach Mama digital product section featuring frontend career eBook and freelancing guide for women transitioning into tech",
-          "caption": "Digital product ecosystem — free and paid resources designed to help women transition into tech and build independent careers"
+          "alt": "The AI Product Blueprint — interactive questionnaire and generated roadmap",
+          "caption": "The Blueprint — from nine answers to a personalized product roadmap"
         },
         "step6": {
           "label": "Performance & SEO",
           "title": "Built to be found and fast to load",
           "textItems": [
-            "Performance and SEO were built in from the start, not added afterwards. Next.js server-side rendering ensures pages are indexable and fast, Tailwind keeps the CSS footprint minimal, and the component architecture avoids the kind of bloat that slows down content-heavy sites over time.",
-            "For a platform that depends on organic discovery and social traffic converting into newsletter subscribers, load speed and Core Web Vitals directly affect conversion rates — not just search rankings. That connection between technical quality and business outcome shaped every implementation decision."
+            "Performance and SEO were built in from the start, not added afterwards. Next.js server-side rendering ensures pages are indexable and fast, Tailwind keeps the CSS footprint minimal, and the component architecture avoids the bloat that slows content-heavy sites over time. The repositioning preserved SEO equity with 301 redirects for every archived route, a corrected sitemap, and an llms.txt file making the site legible to AI assistants.",
+            "For a platform that depends on organic discovery and social traffic converting into an email list, load speed and Core Web Vitals directly affect conversion rates — not just search rankings."
           ],
           "alt": "Tech Beach Mama Lighthouse performance scores",
           "caption": "Performance · Lighthouse scores"
         },
         "step7": {
           "label": "The Outcome",
-          "title": "A live platform, a growing audience, and a long-term project",
+          "title": "A live AI product, a growing audience, and a business that learns",
           "textItems": [
-            "Tech Beach Mama is the project I am most personally invested in. It is simultaneously a demonstration of what I can build technically, a real business with real products and a growing audience, and a creative outlet that sits outside client work.",
-            "It is also the project that prompted an interviewer to call it a great personal project — which, for something built solo alongside everything else, felt like the right kind of validation."
+            "Tech Beach Mama is the project I am most personally invested in. It is simultaneously a demonstration of what I can build technically — including a complete AI product shipped solo — a real business with a live funnel, and the public proof behind my positioning as an AI Product Engineer.",
+            "It is also a live experiment in honest marketing: the brand's promise is building in public with real numbers, and the platform itself is case study number one."
           ],
           "results": {
             "title": "What the project demonstrates:",
             "rows": [
-              "End-to-end ownership — design, development, content, and business strategy",
-              "Conversion-focused design applied to a real funnel with real products",
-              "Production-grade Next.js architecture built for long-term scalability",
-              "Active audience building via Instagram and an automated email funnel",
+              "End-to-end AI product delivery — design, prompts, backend, delivery, compliance",
+              "Strategic repositioning of a live brand, executed as a full product cycle",
+              "Conversion-focused design applied to a real, learning funnel",
+              "Production-grade Next.js + OpenAI + Postgres architecture built solo",
               "A platform that continues to grow — this case study will keep evolving"
             ]
           }
         },
         "finalCta": {
-          "title": "Want a website that works as hard as you do?",
+          "title": "Want an AI product built from idea to launch?",
           "cta": "Contact Me"
         }
       },
@@ -1002,6 +1003,111 @@
         "finalCta": {
           "title": "Do you need a developer with experience in complex enterprise environments?",
           "cta": "Get in touch"
+        }
+      },
+      "casaMadre": {
+        "title": "Casa Madre",
+        "description": "A bilingual boutique real-estate platform for a Barcelona agency — designed and built in Next.js with Sanity CMS, an AI writing assistant that drafts elegant property listings from structured facts, and a fully self-service editorial workflow for the client.",
+        "alt": "Casa Madre thumbnail",
+        "hero": {
+          "subtitle": "A boutique real-estate brand online — with AI woven into the client's daily workflow",
+          "description": "Casa Madre is a boutique real-estate agency in Barcelona run by two founding agents. They needed more than a brochure website: a bilingual platform that presents properties with editorial elegance, a content system they can manage entirely themselves, and — the differentiator — an AI writing assistant inside their CMS that drafts polished Spanish and English property listings from the facts they enter. Designed, built, and delivered end to end as a solo engagement."
+        },
+        "step1": {
+          "label": "The Client",
+          "title": "A boutique agency that needed independence, not just a website",
+          "textItems": [
+            "Casa Madre helps clients buy, sell, and rent distinctive homes in Barcelona's most characterful neighbourhoods. As a two-person boutique, their brand depends on a personal, editorial feel — the opposite of the portal-listing aesthetic that dominates real estate.",
+            "<strong>The brief had a clear underlying requirement:</strong> the founders needed to run their digital presence themselves — publishing properties, writing journal articles, updating their own team cards — without a developer on call for every change. In both Spanish and English, for an international clientele.",
+            "The answer was a structured content platform with AI assistance built into the editorial workflow itself: the agents enter the facts, and the system helps write the words."
+          ],
+          "challenges": {
+            "title": "A boutique brand with enterprise-grade content requirements.",
+            "rows": [
+              "Fully bilingual content (ES/EN) across properties, journal, and legal pages",
+              "Client self-service for every content type — zero developer dependency",
+              "AI-generated listing copy that must never invent facts about a property",
+              "GDPR and Spanish LSSI compliance: consent-aware analytics, privacy-friendly maps, complete legal pages"
+            ]
+          }
+        },
+        "step2": {
+          "label": "Design System",
+          "title": "Quiet luxury — an editorial design language for real estate",
+          "textItems": [
+            "The design language was built around restraint: a warm palette of cream, clay, and deep brown, serif display typography, generous white space, and subtle motion that respects reduced-motion preferences. A cinematic video hero and Ken Burns imagery give the property presentation an editorial, magazine-like quality — deliberately unlike the crowded aesthetic of property portals. Every component follows the same tokens, spacing, and motion vocabulary, so the site feels like one considered object rather than assembled sections."
+          ],
+          "alt": "Casa Madre design system — palette, typography, and components",
+          "caption": "Design system — quiet luxury tokens, serif typography, editorial motion"
+        },
+        "step3": {
+          "label": "Stack & Architecture",
+          "title": "Next.js and Sanity — structured content the client owns",
+          "textItems": [
+            "The platform is built on Next.js with TypeScript and Sanity CMS as the structured content backbone. Properties, neighbourhoods, journal articles, and the agent team all live as typed Sanity documents, edited in a Studio customised in Spanish for the client, with English slugs for international SEO.",
+            "Bilingual content runs through internationalized fields with locale-aware queries, next-intl handles the frontend routing, and the contact funnel delivers enquiries to both agents simultaneously via a validated, rate-limited, honeypot-protected API route with SMTP delivery. Privacy decisions were architectural: a static, consent-free map card instead of an embedded tracker, and analytics gated behind cookie consent."
+          ],
+          "solution": {
+            "title": "An architecture designed for client independence and compliance.",
+            "rows": [
+              "Sanity CMS with typed schemas: properties, neighbourhoods, journal, team",
+              "Full ES/EN internationalization with SEO-friendly English slugs and 301s",
+              "Contact API with server-side validation, rate limiting, and honeypot protection",
+              "Enquiries delivered to both agents with reply-to routing",
+              "GDPR-first choices: consent-gated analytics, privacy-friendly static map",
+              "Complete Spanish legal framework: LSSI legal notice, privacy, cookies"
+            ]
+          }
+        },
+        "step4": {
+          "label": "Bilingual Content",
+          "title": "One Studio, two languages, zero developer dependency",
+          "textItems": [
+            "Every content type on the platform — property listings with galleries and filters, neighbourhood guides, journal articles, the founders' own contact cards with photos — is fully editable by the client in Sanity Studio, in both languages. The Studio is configured in Spanish with helper text guiding correct data entry, and the client began managing their own content (including uploading their team photos) before the project was even handed over — the clearest possible validation of a self-service architecture."
+          ],
+          "alt": "Casa Madre in Sanity Studio — bilingual property editing",
+          "caption": "Sanity Studio — bilingual editing, configured for the client in Spanish"
+        },
+        "step5": {
+          "label": "AI Writing Assistant",
+          "title": "AI that drafts elegant listings — and never invents a square metre",
+          "textItems": [
+            "The platform's differentiator is an AI writing assistant built directly into the client's editorial workflow. For journal articles, it drafts editorial content from a topic. For property listings, it goes further: the agent fills in the structured facts — operation, type, neighbourhood, price, size, rooms — adds optional notes, and the assistant generates an evocative title, a two-to-three paragraph description written natively in both Spanish and English, and suggested highlight tags.",
+            "<strong>The prompt engineering is where the real product thinking lives:</strong> the assistant writes in the brand's editorial voice with a hard ban on portal clichés — and a stricter rule for real estate: it may only use facts the agent provided. No invented terraces, no imagined renovations. The agent reviews everything in a preview and inserts per field; a human approves every word before it publishes. The API key stays server-side, on the client's own AI account."
+          ],
+          "alt": "Casa Madre AI writing assistant — generating a bilingual property listing in Sanity Studio",
+          "caption": "The AI composer — structured facts in, bilingual editorial copy out, human approval always"
+        },
+        "step6": {
+          "label": "Performance",
+          "title": "Editorial imagery without the editorial load times",
+          "textItems": [
+            "An image-heavy real-estate site lives or dies on performance. Sanity's image pipeline delivers hotspot-cropped, responsive assets; Next.js server rendering keeps every page indexable; and the deliberate absence of third-party embeds — no map SDK, no pre-consent scripts — keeps the loading waterfall clean. The result is a visually rich site that still scores where it matters for both SEO and the impatient property browser."
+          ],
+          "alt": "Casa Madre Lighthouse performance scores",
+          "caption": "Performance · Lighthouse scores"
+        },
+        "step7": {
+          "label": "The Outcome",
+          "title": "A live platform the client runs herself — with AI as a daily tool",
+          "textItems": [
+            "Casa Madre launched on its own domain with the full platform live: bilingual property listings, journal, personal agent cards, a working enquiry funnel to both founders, and an AI assistant the agents use as part of their normal publishing workflow — not as a gimmick, but as the tool that turns their property facts into publication-ready copy in two languages.",
+            "This project reflects the kind of work I focus on as an AI Product Engineer: not adding AI for its own sake, but embedding it precisely where it saves a real client real hours — inside the workflow they already use, with guardrails that protect their brand and their compliance."
+          ],
+          "results": {
+            "title": "What the engagement delivered:",
+            "rows": [
+              "A complete bilingual platform the two-person client team manages alone",
+              "An AI listing composer producing native ES/EN editorial copy from structured facts",
+              "Strict AI guardrails: brand voice enforced, invented details impossible, human approval always",
+              "A compliant foundation: LSSI legal pages, consent-gated analytics, privacy-first choices",
+              "A working enquiry funnel delivering to both agents with reply-to routing"
+            ]
+          }
+        },
+        "finalCta": {
+          "title": "Want AI built into your business where it actually saves time?",
+          "cta": "Contact Me"
         }
       }
     }

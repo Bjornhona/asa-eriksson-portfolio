@@ -45,12 +45,12 @@ const unsortedPortfolioItems: PortfolioItem[] = [
           full: "/portfolio/tech-beach-mama/design-system-full.webp",
         },
         step4: {
-          preview: "/portfolio/tech-beach-mama/freebie-preview.webp",
+          preview: "/portfolio/tech-beach-mama/freebie-full.webp",
           full: "/portfolio/tech-beach-mama/freebie-full.webp",
         },
         step5: {
-          preview: "/portfolio/tech-beach-mama/digital-products-preview.webp",
-          full: "/portfolio/tech-beach-mama/digital-products-full.webp",
+          preview: "/portfolio/tech-beach-mama/ai-blueprint-full.webp",
+          full: "/portfolio/tech-beach-mama/ai-blueprint-full.webp",
         },
         step6: {
           preview: "/portfolio/tech-beach-mama/performance-preview.webp",
@@ -219,6 +219,50 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       "Brand Component Library"
     ],
   },
+  // {
+  //   slug: "casa-madre",
+  //   text: "casaMadre",
+  //   date: "2026-07-22",
+  //   appType: "webApp",
+  //   myRole: "designerAndDeveloper",
+  //   images: {
+  //     hero: "/portfolio/tech-beach-mama/hero.webp",
+  //     steps: {
+  //       step2: {
+  //         preview: "/portfolio/tech-beach-mama/design-system-preview.webp",
+  //         full: "/portfolio/tech-beach-mama/design-system-full.webp",
+  //       },
+  //       step4: {
+  //         preview: "/portfolio/tech-beach-mama/freebie-full.webp",
+  //         full: "/portfolio/tech-beach-mama/freebie-full.webp",
+  //       },
+  //       step5: {
+  //         preview: "/portfolio/tech-beach-mama/ai-blueprint-full.webp",
+  //         full: "/portfolio/tech-beach-mama/ai-blueprint-full.webp",
+  //       },
+  //       step6: {
+  //         preview: "/portfolio/tech-beach-mama/performance-preview.webp",
+  //         full: "/portfolio/tech-beach-mama/performance-full.webp",
+  //       },
+  //     },
+  //   },
+  //   caseStudyUrl: "/portfolio/tech-beach-mama",
+  //   visitSiteUrl: "https://casamadreliving.com",
+  //   tags: [
+  //     "Next.js",
+  //     "HTML",
+  //     "Tailwind CSS",
+  //     "Sanity CMS",
+  //     "AI listing composer",
+  //     "AI Journal writer",
+  //     "Bilingual",
+  //     "Property Listings",
+  //     "Journal",
+  //     "Personal Agent Cards",
+  //     "Enquiry Funnel",
+  //     "AI assistant",
+  //   ],
+  // },
 ];
 
 export const portfolioItems: PortfolioItem[] = unsortedPortfolioItems.sort(
