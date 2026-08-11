@@ -250,17 +250,14 @@ const unsortedPortfolioItems: PortfolioItem[] = [
   //   visitSiteUrl: "https://casamadreliving.com",
   //   tags: [
   //     "Next.js",
-  //     "HTML",
+  //     "TypeScript",
   //     "Tailwind CSS",
+  //     "Framer Motion",
   //     "Sanity CMS",
-  //     "AI listing composer",
-  //     "AI Journal writer",
-  //     "Bilingual",
-  //     "Property Listings",
-  //     "Journal",
-  //     "Personal Agent Cards",
-  //     "Enquiry Funnel",
-  //     "AI assistant",
+  //     "Claude API",
+  //     "AI writing assistant",
+  //     "i18n",
+  //     "GDPR / LSSI compliance"
   //   ],
   // },
 ];

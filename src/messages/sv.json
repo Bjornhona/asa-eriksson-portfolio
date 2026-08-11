@@ -1006,6 +1006,111 @@
       }
     }
   },
+  "casaMadre": {
+    "title": "Casa Madre",
+    "description": "En tvåspråkig plattform för en boutiquemäklare i Barcelona — designad och byggd i Next.js med Sanity CMS, med en AI-assistent som skriver eleganta bostadsannonser utifrån strukturerade fakta och ett helt självgående redaktionellt arbetsflöde för kunden.",
+    "alt": "Casa Madre miniatyrbild",
+    "hero": {
+      "subtitle": "Ett boutiquevarumärke inom fastigheter på nätet — med AI invävt i kundens dagliga arbete",
+      "description": "Casa Madre är en boutiquemäklare i Barcelona som drivs av två grundande mäklare. De behövde mer än en broschyrsajt: en tvåspråkig plattform som presenterar bostäder med redaktionell elegans, ett innehållssystem de kan sköta helt på egen hand och — det som skiljer projektet från mängden — en AI-skrivassistent inuti deras CMS som skriver polerade bostadsannonser på spanska och engelska utifrån de fakta de matar in. Designat, byggt och levererat från början till slut som ett solouppdrag."
+    },
+    "step1": {
+      "label": "Kunden",
+      "title": "En boutiquemäklare som behövde självständighet, inte bara en webbplats",
+      "textItems": [
+        "Casa Madre hjälper kunder att köpa, sälja och hyra särpräglade bostäder i Barcelonas mest karaktärsfulla kvarter. Som tvåpersonsbyrå vilar varumärket på en personlig, redaktionell känsla — motsatsen till den portalestetik som dominerar fastighetsbranschen.",
+        "<strong>Uppdraget hade ett tydligt underliggande krav:</strong> grundarna behövde kunna sköta sin digitala närvaro själva — publicera bostäder, skriva artiklar till Journal, uppdatera sina egna teamkort — utan att ha en utvecklare i beredskap för varje ändring. På både spanska och engelska, för en internationell kundkrets.",
+        "Svaret blev en strukturerad innehållsplattform med AI-stöd inbyggt i själva det redaktionella arbetsflödet: mäklarna matar in fakta, och systemet hjälper till med orden."
+      ],
+      "challenges": {
+        "title": "Ett boutiquevarumärke med innehållskrav på företagsnivå.",
+        "rows": [
+          "Fullt tvåspråkigt innehåll (ES/EN) för bostäder, Journal och juridiska sidor",
+          "Kunden sköter allt innehåll själv — noll beroende av utvecklare",
+          "AI-genererad annonstext som aldrig får hitta på fakta om en bostad",
+          "GDPR och spanska LSSI: samtyckesstyrd analys, integritetsvänliga kartor, kompletta juridiska sidor"
+        ]
+      }
+    },
+    "step2": {
+      "label": "Designsystem",
+      "title": "Quiet luxury — ett redaktionellt formspråk för fastigheter",
+      "textItems": [
+        "Formspråket byggdes kring återhållsamhet: en varm palett i gräddvitt, lera och mörkbrunt, display-typografi med seriffer, generöst med luft och subtil rörelse som respekterar inställningen för reducerad rörelse. En filmisk videohero och Ken Burns-bilder ger bostadspresentationen en redaktionell, magasinlik kvalitet — medvetet olik bostadsportalernas rörigare estetik. Varje komponent följer samma tokens, spacing och rörelsevokabulär, så att sajten känns som ett genomtänkt objekt snarare än ihopsatta sektioner."
+      ],
+      "alt": "Casa Madres designsystem — palett, typografi och komponenter",
+      "caption": "Designsystem — quiet luxury-tokens, seriftypografi, redaktionell rörelse"
+    },
+    "step3": {
+      "label": "Stack och arkitektur",
+      "title": "Next.js och Sanity — strukturerat innehåll som kunden äger",
+      "textItems": [
+        "Plattformen är byggd på Next.js med TypeScript och Sanity CMS som strukturerad innehållsryggrad. Bostäder, kvartersguider, artiklar i Journal och hela mäklarteamet ligger som typade Sanity-dokument, redigerade i en Studio anpassad på spanska för kunden, med engelska slugs för internationell SEO.",
+        "Det tvåspråkiga innehållet hanteras genom internationaliserade fält med språkmedvetna queries, next-intl sköter routingen i frontend och kontaktflödet levererar förfrågningar till båda mäklarna samtidigt via en validerad, hastighetsbegränsad och honeypot-skyddad API-route med SMTP-leverans. Integritetsbesluten var arkitektoniska: ett statiskt kartkort utan samtyckeskrav i stället för en inbäddad spårare, och analys som är spärrad bakom cookie-samtycke."
+      ],
+      "solution": {
+        "title": "En arkitektur byggd för kundens självständighet och regelefterlevnad.",
+        "rows": [
+          "Sanity CMS med typade scheman: bostäder, kvarter, Journal, team",
+          "Fullständig ES/EN-internationalisering med SEO-vänliga engelska slugs och 301-omdirigeringar",
+          "Kontakt-API med validering på servern, hastighetsbegränsning och honeypot-skydd",
+          "Förfrågningar levereras till båda mäklarna med reply-to-routing",
+          "GDPR först: samtyckesstyrd analys, integritetsvänlig statisk karta",
+          "Komplett spanskt juridiskt ramverk: LSSI-information, integritetspolicy, cookies"
+        ]
+      }
+    },
+    "step4": {
+      "label": "Tvåspråkigt innehåll",
+      "title": "En Studio, två språk, noll beroende av utvecklare",
+      "textItems": [
+        "Varje innehållstyp på plattformen — bostadsannonser med gallerier och filter, kvartersguider, artiklar i Journal, grundarnas egna kontaktkort med foton — går att redigera fullt ut av kunden i Sanity Studio, på båda språken. Studion är konfigurerad på spanska med hjälptexter som vägleder rätt inmatning, och kunden började sköta sitt eget innehåll (inklusive att ladda upp sina teamfoton) redan innan projektet var överlämnat — den tydligaste möjliga bekräftelsen på att självbetjäningsarkitekturen fungerar."
+      ],
+      "alt": "Casa Madre i Sanity Studio — tvåspråkig redigering av bostäder",
+      "caption": "Sanity Studio — tvåspråkig redigering, konfigurerad på spanska för kunden"
+    },
+    "step5": {
+      "label": "AI-skrivassistent",
+      "title": "AI som skriver eleganta annonser — och aldrig hittar på en kvadratmeter",
+      "textItems": [
+        "Plattformens särskiljande drag är en AI-skrivassistent inbyggd direkt i kundens redaktionella arbetsflöde. För artiklar i Journal skriver den redaktionellt innehåll utifrån ett ämne. För bostadsannonser går den längre: mäklaren fyller i de strukturerade fakta — affärstyp, bostadstyp, kvarter, pris, storlek, antal rum — lägger till valfria noteringar, och assistenten genererar en stämningsfull rubrik, en beskrivning på två till tre stycken skriven direkt på både spanska och engelska, samt förslag på highlight-taggar.",
+        "<strong>Det är i prompt-utvecklingen som det verkliga produkttänket ligger:</strong> assistenten skriver i varumärkets redaktionella ton med ett hårt förbud mot portalklyschor — och en ännu strängare regel för fastigheter: den får bara använda fakta som mäklaren har angett. Inga påhittade terrasser, inga inbillade renoveringar. Mäklaren granskar allt i en förhandsvisning och infogar fält för fält; en människa godkänner varje ord innan det publiceras. API-nyckeln stannar på servern, på kundens eget AI-konto."
+      ],
+      "alt": "Casa Madres AI-skrivassistent — genererar en tvåspråkig bostadsannons i Sanity Studio",
+      "caption": "AI-kompositören — strukturerade fakta in, tvåspråkig redaktionell text ut, alltid mänskligt godkännande"
+    },
+    "step6": {
+      "label": "Prestanda",
+      "title": "Redaktionella bilder utan redaktionella laddningstider",
+      "textItems": [
+        "En bildtung fastighetssajt står och faller med prestanda. Sanitys bildpipeline levererar hotspot-beskurna, responsiva bilder, Next.js serverrendering håller varje sida indexerbar, och den medvetna frånvaron av tredjepartsinbäddningar — ingen kart-SDK, inga skript före samtycke — håller laddningskedjan ren. Resultatet är en visuellt rik sajt som ändå levererar där det räknas, både för SEO och för den otåliga bostadsspekulanten."
+      ],
+      "alt": "Casa Madres Lighthouse-resultat",
+      "caption": "Prestanda · Lighthouse-resultat"
+    },
+    "step7": {
+      "label": "Resultatet",
+      "title": "En live-plattform som kunden sköter själv — med AI som dagligt verktyg",
+      "textItems": [
+        "Casa Madre lanserades på sin egen domän med hela plattformen live: tvåspråkiga bostadsannonser, Journal, personliga mäklarkort, ett fungerande förfrågningsflöde till båda grundarna och en AI-assistent som mäklarna använder som en del av sitt normala publiceringsflöde — inte som en gimmick, utan som verktyget som förvandlar deras bostadsfakta till publiceringsfärdig text på två språk.",
+        "Det här projektet speglar den typ av arbete jag fokuserar på som AI Product Engineer: att inte lägga till AI för sakens skull, utan att bädda in den precis där den sparar verklig tid åt en verklig kund — inuti det arbetsflöde de redan använder, med skyddsräcken som värnar deras varumärke och deras regelefterlevnad."
+      ],
+      "results": {
+        "title": "Vad uppdraget levererade:",
+        "rows": [
+          "En komplett tvåspråkig plattform som kundens tvåpersonsteam sköter på egen hand",
+          "En AI-annonskompositör som producerar redaktionell text på idiomatisk spanska och engelska utifrån strukturerade fakta",
+          "Strikta AI-skyddsräcken: varumärkets ton upprätthålls, påhittade detaljer omöjliga, alltid mänskligt godkännande",
+          "En regelefterlevande grund: LSSI-sidor, samtyckesstyrd analys, integritet först",
+          "Ett fungerande förfrågningsflöde som levererar till båda mäklarna med reply-to-routing"
+        ]
+      }
+    },
+    "finalCta": {
+      "title": "Vill du ha AI inbyggd i din verksamhet där den faktiskt sparar tid?",
+      "cta": "Kontakta mig"
+    }
+  },
   "contact": {
     "content": {
       "title": "Hör av dig.",

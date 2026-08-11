@@ -1005,6 +1005,111 @@
       }
     }
   },
+  "casaMadre": {
+    "title": "Casa Madre",
+    "description": "Una plataforma inmobiliaria bilingüe para una agencia boutique de Barcelona: diseñada y desarrollada en Next.js con Sanity CMS, con un asistente de escritura con IA que redacta fichas de propiedad elegantes a partir de datos estructurados y un flujo de trabajo editorial totalmente autónomo para la agencia.",
+    "alt": "Miniatura de Casa Madre",
+    "hero": {
+      "subtitle": "Una marca inmobiliaria boutique en digital, con la IA integrada en el trabajo diario de la agencia",
+      "description": "Casa Madre es una agencia inmobiliaria boutique de Barcelona dirigida por dos agentes fundadoras. Necesitaban algo más que una web de escaparate: una plataforma bilingüe que presentara las propiedades con elegancia editorial, un sistema de contenidos que pudieran gestionar íntegramente ellas mismas y —el elemento diferenciador— un asistente de escritura con IA dentro de su CMS que redacta fichas de propiedad cuidadas en español e inglés a partir de los datos que introducen. Diseñado, desarrollado y entregado de principio a fin en solitario."
+    },
+    "step1": {
+      "label": "El cliente",
+      "title": "Una agencia boutique que necesitaba independencia, no solo una web",
+      "textItems": [
+        "Casa Madre ayuda a comprar, vender y alquilar viviendas singulares en los barrios con más carácter de Barcelona. Como boutique de dos personas, su marca depende de un tono personal y editorial: justo lo contrario de la estética de portal que domina el sector inmobiliario.",
+        "<strong>El encargo tenía un requisito de fondo muy claro:</strong> las fundadoras necesitaban gestionar ellas mismas su presencia digital —publicar propiedades, escribir artículos del Journal, actualizar sus propias fichas de equipo— sin depender de un desarrollador para cada cambio. En español e inglés, para una clientela internacional.",
+        "La respuesta fue una plataforma de contenido estructurado con asistencia de IA integrada en el propio flujo editorial: las agentes introducen los datos y el sistema ayuda con las palabras."
+      ],
+      "challenges": {
+        "title": "Una marca boutique con requisitos de contenido de nivel corporativo.",
+        "rows": [
+          "Contenido totalmente bilingüe (ES/EN) en propiedades, Journal y páginas legales",
+          "Autogestión total del contenido por parte de la agencia: cero dependencia del desarrollador",
+          "Textos de propiedad generados con IA que nunca deben inventar datos de una vivienda",
+          "Cumplimiento del RGPD y de la LSSI: analítica sujeta a consentimiento, mapas respetuosos con la privacidad y páginas legales completas"
+        ]
+      }
+    },
+    "step2": {
+      "label": "Sistema de diseño",
+      "title": "Quiet luxury: un lenguaje editorial para el sector inmobiliario",
+      "textItems": [
+        "El lenguaje visual se construyó sobre la contención: una paleta cálida de crema, arcilla y marrón profundo, tipografía display con serifa, espacio en blanco generoso y una animación sutil que respeta la preferencia de movimiento reducido. Un hero de vídeo cinematográfico y el efecto Ken Burns en las imágenes dan a la presentación de las propiedades una calidad editorial, casi de revista, deliberadamente alejada de la estética recargada de los portales inmobiliarios. Todos los componentes siguen los mismos tokens, espaciados y vocabulario de movimiento, de modo que la web se percibe como una pieza pensada y no como secciones ensambladas."
+      ],
+      "alt": "Sistema de diseño de Casa Madre: paleta, tipografía y componentes",
+      "caption": "Sistema de diseño: tokens quiet luxury, tipografía con serifa, movimiento editorial"
+    },
+    "step3": {
+      "label": "Stack y arquitectura",
+      "title": "Next.js y Sanity: contenido estructurado que la agencia posee",
+      "textItems": [
+        "La plataforma está construida sobre Next.js con TypeScript y Sanity CMS como columna vertebral de contenido estructurado. Propiedades, barrios, artículos del Journal y el equipo de agentes viven como documentos tipados de Sanity, editados en un Studio personalizado en español para la agencia, con slugs en inglés para el SEO internacional.",
+        "El contenido bilingüe se gestiona con campos internacionalizados y consultas conscientes del idioma, next-intl se encarga del enrutado en el frontend y el embudo de contacto entrega las solicitudes a ambas agentes de forma simultánea mediante una API route validada, con limitación de peticiones y protección honeypot, y envío por SMTP. Las decisiones sobre privacidad fueron arquitectónicas: una tarjeta de mapa estática y sin consentimiento en lugar de un embebido con rastreo, y analítica bloqueada tras el consentimiento de cookies."
+      ],
+      "solution": {
+        "title": "Una arquitectura pensada para la independencia de la agencia y el cumplimiento normativo.",
+        "rows": [
+          "Sanity CMS con esquemas tipados: propiedades, barrios, Journal, equipo",
+          "Internacionalización ES/EN completa, con slugs en inglés optimizados para SEO y redirecciones 301",
+          "API de contacto con validación en servidor, limitación de peticiones y protección honeypot",
+          "Solicitudes entregadas a ambas agentes con enrutado de reply-to",
+          "Privacidad por diseño: analítica sujeta a consentimiento y mapa estático respetuoso con la privacidad",
+          "Marco legal español completo: aviso legal LSSI, política de privacidad y política de cookies"
+        ]
+      }
+    },
+    "step4": {
+      "label": "Contenido bilingüe",
+      "title": "Un Studio, dos idiomas, cero dependencia del desarrollador",
+      "textItems": [
+        "Todos los tipos de contenido de la plataforma —fichas de propiedad con galerías y filtros, guías de barrio, artículos del Journal, las tarjetas de contacto de las propias fundadoras con sus fotos— son totalmente editables por la agencia en Sanity Studio, en ambos idiomas. El Studio está configurado en español, con textos de ayuda que guían la introducción correcta de los datos, y las fundadoras empezaron a gestionar su propio contenido (incluida la subida de las fotos del equipo) antes incluso de la entrega del proyecto: la validación más clara posible de una arquitectura de autoservicio."
+      ],
+      "alt": "Casa Madre en Sanity Studio: edición bilingüe de propiedades",
+      "caption": "Sanity Studio: edición bilingüe, configurado en español para la agencia"
+    },
+    "step5": {
+      "label": "Asistente de escritura con IA",
+      "title": "Una IA que redacta fichas elegantes y nunca se inventa un metro cuadrado",
+      "textItems": [
+        "El elemento diferenciador de la plataforma es un asistente de escritura con IA integrado directamente en el flujo editorial de la agencia. Para los artículos del Journal, redacta contenido editorial a partir de un tema. Para las fichas de propiedad va más lejos: la agente rellena los datos estructurados —operación, tipo, barrio, precio, superficie, habitaciones—, añade notas opcionales y el asistente genera un título evocador, una descripción de dos o tres párrafos redactada de forma nativa en español y en inglés, y etiquetas destacadas sugeridas.",
+        "<strong>El verdadero pensamiento de producto está en la ingeniería de prompts:</strong> el asistente escribe con la voz editorial de la marca y con una prohibición tajante de los clichés de portal inmobiliario, además de una regla más estricta propia del sector: solo puede usar los datos que la agente ha facilitado. Sin terrazas inventadas ni reformas imaginarias. La agente lo revisa todo en una previsualización e inserta campo por campo; una persona aprueba cada palabra antes de que se publique. La clave de API permanece en el servidor, en la cuenta de IA de la propia agencia."
+      ],
+      "alt": "Asistente de escritura con IA de Casa Madre: generando una ficha de propiedad bilingüe en Sanity Studio",
+      "caption": "El compositor con IA: datos estructurados dentro, texto editorial bilingüe fuera, aprobación humana siempre"
+    },
+    "step6": {
+      "label": "Rendimiento",
+      "title": "Imágenes editoriales sin tiempos de carga editoriales",
+      "textItems": [
+        "Una web inmobiliaria con tanto peso visual se juega todo en el rendimiento. El pipeline de imagen de Sanity entrega recursos responsive recortados por hotspot, el renderizado en servidor de Next.js mantiene todas las páginas indexables y la ausencia deliberada de embebidos de terceros —sin SDK de mapas, sin scripts antes del consentimiento— mantiene limpia la cascada de carga. El resultado es una web visualmente rica que aun así puntúa donde importa, tanto para el SEO como para quien busca piso con prisa."
+      ],
+      "alt": "Puntuaciones de rendimiento de Casa Madre en Lighthouse",
+      "caption": "Rendimiento · Puntuaciones de Lighthouse"
+    },
+    "step7": {
+      "label": "El resultado",
+      "title": "Una plataforma en producción que la agencia gestiona sola, con la IA como herramienta diaria",
+      "textItems": [
+        "Casa Madre se lanzó en su propio dominio con la plataforma completa en producción: fichas de propiedad bilingües, Journal, tarjetas personales de cada agente, un embudo de contacto operativo hacia ambas fundadoras y un asistente de IA que las agentes usan como parte de su flujo de publicación habitual: no como un adorno, sino como la herramienta que convierte los datos de sus propiedades en textos listos para publicar en dos idiomas.",
+        "Este proyecto refleja el tipo de trabajo en el que me centro como AI Product Engineer: no añadir IA por añadirla, sino integrarla exactamente donde ahorra horas reales a un cliente real, dentro del flujo de trabajo que ya utiliza y con salvaguardas que protegen su marca y su cumplimiento normativo."
+      ],
+      "results": {
+        "title": "Lo que entregó el proyecto:",
+        "rows": [
+          "Una plataforma bilingüe completa que el equipo de dos personas gestiona por su cuenta",
+          "Un compositor de fichas con IA que produce textos editoriales nativos en ES/EN a partir de datos estructurados",
+          "Salvaguardas estrictas de IA: voz de marca garantizada, detalles inventados imposibles, aprobación humana siempre",
+          "Una base conforme a la normativa: páginas legales LSSI, analítica sujeta a consentimiento, privacidad por defecto",
+          "Un embudo de contacto operativo que entrega a ambas agentes con enrutado de reply-to"
+        ]
+      }
+    },
+    "finalCta": {
+      "title": "¿Quieres la IA integrada en tu negocio justo donde de verdad ahorra tiempo?",
+      "cta": "Contacta conmigo"
+    }
+  },
   "contact": {
     "content": {
       "title": "Ponte en contacto.",
