@@ -61,6 +61,11 @@ export default function Home() {
                 })}
               </motion.h6>
               <motion.p variants={fadeInUp}>
+                {t.rich("home.director", {
+                  strong: (chunks) => <strong>{chunks}</strong>,
+                })}
+              </motion.p>
+              <motion.p variants={fadeInUp}>
                 {t.rich("home.techbeachmama", {
                   a: (chunks) => (
                     <a

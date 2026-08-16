@@ -100,7 +100,7 @@ export default function  PortfolioTimeline({
                     listIcon: <CheckIcon className="w-4 h-4 text-aqua-400" />,
                   },
                 ]
-              : project.slug === "matchkit"
+              : (project.slug === "matchkit" || project.slug === "casa-madre")
               ? undefined
               : [
                   {

@@ -219,47 +219,47 @@ const unsortedPortfolioItems: PortfolioItem[] = [
       "Brand Component Library"
     ],
   },
-  // {
-  //   slug: "casa-madre",
-  //   text: "casaMadre",
-  //   date: "2026-07-22",
-  //   appType: "webApp",
-  //   myRole: "designerAndDeveloper",
-  //   images: {
-  //     hero: "/portfolio/tech-beach-mama/hero.webp",
-  //     steps: {
-  //       step2: {
-  //         preview: "/portfolio/tech-beach-mama/design-system-preview.webp",
-  //         full: "/portfolio/tech-beach-mama/design-system-full.webp",
-  //       },
-  //       step4: {
-  //         preview: "/portfolio/tech-beach-mama/freebie-full.webp",
-  //         full: "/portfolio/tech-beach-mama/freebie-full.webp",
-  //       },
-  //       step5: {
-  //         preview: "/portfolio/tech-beach-mama/ai-blueprint-full.webp",
-  //         full: "/portfolio/tech-beach-mama/ai-blueprint-full.webp",
-  //       },
-  //       step6: {
-  //         preview: "/portfolio/tech-beach-mama/performance-preview.webp",
-  //         full: "/portfolio/tech-beach-mama/performance-full.webp",
-  //       },
-  //     },
-  //   },
-  //   caseStudyUrl: "/portfolio/tech-beach-mama",
-  //   visitSiteUrl: "https://casamadreliving.com",
-  //   tags: [
-  //     "Next.js",
-  //     "TypeScript",
-  //     "Tailwind CSS",
-  //     "Framer Motion",
-  //     "Sanity CMS",
-  //     "Claude API",
-  //     "AI writing assistant",
-  //     "i18n",
-  //     "GDPR / LSSI compliance"
-  //   ],
-  // },
+  {
+    slug: "casa-madre",
+    text: "casaMadre",
+    date: "2026-07-22",
+    appType: "webApp",
+    myRole: "designerAndDeveloper",
+    images: {
+      hero: "/portfolio/casa-madre/hero.webp",
+      steps: {
+        // step2: {
+        //   preview: "/portfolio/casa-madre/design-system-preview.webp",
+        //   full: "/portfolio/casa-madre/design-system-full.webp",
+        // },
+        // step4: {
+        //   preview: "/portfolio/casa-madre/freebie-full.webp",
+        //   full: "/portfolio/casa-madre/freebie-full.webp",
+        // },
+        // step5: {
+        //   preview: "/portfolio/casa-madre/ai-blueprint-full.webp",
+        //   full: "/portfolio/casa-madre/ai-blueprint-full.webp",
+        // },
+        // step6: {
+        //   preview: "/portfolio/casa-madre/performance-preview.webp",
+        //   full: "/portfolio/casa-madre/performance-full.webp",
+        // },
+      },
+    },
+    caseStudyUrl: "/portfolio/casa-madre",
+    visitSiteUrl: "https://casamadreliving.com",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Sanity CMS",
+      "Claude API",
+      "AI writing assistant",
+      "i18n",
+      "GDPR / LSSI compliance"
+    ],
+  },
 ];
 
 export const portfolioItems: PortfolioItem[] = unsortedPortfolioItems.sort(
