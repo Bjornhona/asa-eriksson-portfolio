@@ -1092,6 +1092,48 @@
       "subtitle": "Freelance frontend development • Web design • Modern web apps",
       "description": "Need a beautiful, well-structured website you can truly own and maintain yourself?",
       "buildTogether": "Let's build it together."
+    },
+    "meta": {
+      "title": "Contact | Asa Eriksson",
+      "description": "Get in touch about frontend development, product design, or Spanish digital compliance. I read every message myself and reply personally."
+    },
+    "form": {
+      "heading": "Send me a message",
+      "intro": "Fields marked required must be filled in. I read every message myself and reply personally.",
+      "required": "required",
+      "optional": "optional",
+      "fields": {
+        "name": {
+          "label": "Your name"
+        },
+        "email": {
+          "label": "Email"
+        },
+        "company": {
+          "label": "Company"
+        },
+        "url": {
+          "label": "Website address",
+          "hint": "If there is a site you would like me to look at. For example: https://example.es"
+        },
+        "message": {
+          "label": "Message"
+        }
+      },
+      "submit": "Send message",
+      "sending": "Sending your message…",
+      "errorSummaryTitle": "There is a problem",
+      "errors": {
+        "nameRequired": "Enter your name.",
+        "emailRequired": "Enter your email address.",
+        "emailInvalid": "Enter a valid email address.",
+        "urlInvalid": "Enter a valid web address, for example https://example.es",
+        "messageRequired": "Enter a message.",
+        "tooLong": "This is longer than the form accepts. Please shorten it.",
+        "send": "Your message could not be sent. Please try again, or email info@asaeriksson.com directly."
+      },
+      "successTitle": "Message received",
+      "successBody": "Thank you — your message has arrived. I will reply personally, usually within two working days."
     }
   },
   "nordicSpain": {
@@ -1100,7 +1142,6 @@
       "description": "Most Nordic companies entering Spain launch a translated site that is not legally compliant. I build Spanish digital presence that is legally sound, accessible and reads as local — accessibility (Ley 11/2023, WCAG 2.2 AA), LSSI-CE, LOPDGDD and cookie consent.",
       "ogAlt": "Asa Eriksson — Spanish digital compliance for Nordic companies"
     },
-    "skipToForm": "Skip to the compliance check request form",
     "hero": {
       "title": "Your Spanish website is probably breaking Spanish law.",
       "lead": "Most Nordic companies entering Spain launch a translated version of their home site. It looks fine. It is usually not compliant — and since June 2025, that carries real financial risk.",
@@ -1132,14 +1173,14 @@
         "scan": {
           "price": "Free",
           "name": "Compliance Scan",
-          "body": "Automated check of your Spanish site against ten criteria: legal identification under LSSI-CE, cookie consent, privacy policy, data residency, and five WCAG 2.2 AA checks. You get a report in plain language, in Swedish, English or Spanish.",
-          "note": "Works on any website — WordPress, Wix, Angular, custom. No access to your systems required."
+          "body": "I review your Spanish site against ten criteria: legal identification under LSSI-CE, cookie consent, privacy policy, data residency, and five WCAG 2.2 AA checks. You get a report in plain language, in Swedish, English or Spanish. Works on any website — WordPress, Wix, Angular, custom. No access to your systems required.",
+          "note": ""
         },
         "report": {
           "price": "€249",
           "name": "Compliance Report",
-          "body": "The automated scan plus manual review. Prioritised findings, an assessment of where the real exposure sits, and a fix roadmap you can hand to any developer — including your own.",
-          "note": "Fully credited against a remediation project if you go ahead with me."
+          "body": "A full manual audit: prioritised findings, an assessment of where your real exposure sits, and a fix roadmap you can hand to any developer — including your own. Fully credited against a remediation project if you go ahead with me.",
+          "note": ""
         },
         "remediation": {
           "price": "From €2,500",
@@ -1210,55 +1251,12 @@
       }
     },
     "closing": {
-      "title": "Find out where you stand — in two minutes",
-      "p1": "Enter your URL. Get an honest report on what's compliant, what isn't, and what it would cost to fix.",
+      "title": "Find out where you stand",
+      "p1": "Send me your URL. I'll review your Spanish site and send you an honest report on what's compliant, what isn't, and what it would cost to fix.",
       "p2": "No sales call required. If the report is all you need, take it and go.",
       "emailIntro": "Or email me directly:",
-      "email": "info@asaeriksson.com"
-    },
-    "form": {
-      "heading": "Request a free compliance check",
-      "intro": "Fields marked required must be filled in. I read every one of these myself and reply personally.",
-      "required": "required",
-      "optional": "optional",
-      "fields": {
-        "url": {
-          "label": "Your Spanish website address",
-          "hint": "For example: https://example.es"
-        },
-        "name": {
-          "label": "Your name"
-        },
-        "email": {
-          "label": "Email"
-        },
-        "company": {
-          "label": "Company"
-        },
-        "language": {
-          "label": "Preferred report language",
-          "sv": "Swedish",
-          "en": "English",
-          "es": "Spanish"
-        },
-        "message": {
-          "label": "Anything else I should know?"
-        }
-      },
-      "submit": "Request a free compliance check",
-      "sending": "Sending your request…",
-      "errorSummaryTitle": "There is a problem",
-      "errors": {
-        "urlRequired": "Enter the address of the site you want checked.",
-        "urlInvalid": "Enter a valid web address, for example https://example.es",
-        "nameRequired": "Enter your name.",
-        "emailRequired": "Enter your email address.",
-        "emailInvalid": "Enter a valid email address.",
-        "tooLong": "This is longer than the form accepts. Please shorten it.",
-        "send": "Your request could not be sent. Please try again, or email info@asaeriksson.com directly."
-      },
-      "successTitle": "Request received",
-      "successBody": "Thank you — your request has arrived. I will reply personally, usually within two working days."
+      "email": "info@asaeriksson.com",
+      "cta": "Get in touch"
     }
   }
 }

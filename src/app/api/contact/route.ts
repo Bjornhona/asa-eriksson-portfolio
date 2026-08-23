@@ -1,21 +1,20 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import {
-  isReportLanguage,
   normaliseUrl,
   validate,
   type SubmissionValues,
-} from "@/components/sections/NordicSpain/validation";
+} from "@/lib/contactForm";
 
 /** nodemailer opens a TCP socket, so this cannot run on the edge runtime. */
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const REQUIRED_ENV = [
-  "SMTP_HOST",
-  "SMTP_PORT",
-  "SMTP_USER",
-  "SMTP_PASS",
+  "ZOHO_SMTP_HOST",
+  "ZOHO_SMTP_PORT",
+  "ZOHO_SMTP_USER",
+  "ZOHO_SMTP_PASS",
   "CONTACT_TO",
 ] as const;
 
@@ -32,7 +31,7 @@ const logFailure = (stage: string, error: unknown) => {
     responseCode?: number;
   };
   console.error(
-    `nordic-spain-contact: ${stage} failed`,
+    `contact: ${stage} failed`,
     `code=${code ?? "UNKNOWN"}`,
     `responseCode=${responseCode ?? "none"}`,
   );
@@ -56,12 +55,11 @@ export async function POST(request: Request) {
   }
 
   const values: SubmissionValues = {
-    url: asString(body.url),
     name: asString(body.name),
     email: asString(body.email),
     company: asString(body.company),
+    url: asString(body.url),
     message: asString(body.message),
-    language: asString(body.language),
   };
 
   const errors = validate(values);
@@ -72,50 +70,52 @@ export async function POST(request: Request) {
   const missingEnv = REQUIRED_ENV.filter((key) => !process.env[key]);
   if (missingEnv.length > 0) {
     console.error(
-      "nordic-spain-contact: missing SMTP configuration:",
+      "contact: missing SMTP configuration:",
       missingEnv.join(", "),
     );
     return NextResponse.json({ ok: false }, { status: 500 });
   }
 
-  const port = Number(process.env.SMTP_PORT);
+  const port = Number(process.env.ZOHO_SMTP_PORT);
   if (!Number.isInteger(port) || port <= 0) {
-    console.error("nordic-spain-contact: SMTP_PORT is not a valid port number");
+    console.error("contact: ZOHO_SMTP_PORT is not a valid port number");
     return NextResponse.json({ ok: false }, { status: 500 });
   }
 
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
+    host: process.env.ZOHO_SMTP_HOST,
     port,
     // Zoho: 465 is implicit TLS, 587 upgrades via STARTTLS.
     secure: port === 465,
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
+      user: process.env.ZOHO_SMTP_USER,
+      pass: process.env.ZOHO_SMTP_PASS,
     },
   });
 
-  const siteUrl = normaliseUrl(values.url) ?? values.url.trim();
-  const language = isReportLanguage(values.language) ? values.language : "en";
+  const site = values.url.trim()
+    ? (normaliseUrl(values.url) ?? values.url.trim())
+    : "";
 
   const lines = [
-    `Site: ${siteUrl}`,
     `Name: ${values.name.trim()}`,
     `Email: ${values.email.trim()}`,
     values.company.trim() ? `Company: ${values.company.trim()}` : null,
-    `Preferred report language: ${language}`,
+    site ? `Website: ${site}` : null,
     "",
-    values.message.trim() || "(no message)",
-  ].filter(Boolean);
+    values.message.trim(),
+  ].filter((line) => line !== null);
 
   try {
     await transporter.sendMail({
-      // Zoho rejects a From that is not the authenticated mailbox, so the
-      // sender is always us and the visitor goes in Reply-To.
-      from: `"Nordic Spain form" <${process.env.SMTP_USER}>`,
+      // From is CONTACT_TO as specified. Zoho only accepts this if
+      // CONTACT_TO is a mailbox on the authenticated account.
+      from: `"Website contact form" <${process.env.CONTACT_TO}>`,
       to: process.env.CONTACT_TO,
       replyTo: `"${values.name.trim()}" <${values.email.trim()}>`,
-      subject: `Compliance check request — ${siteUrl}`,
+      subject: site
+        ? `Contact form — ${values.name.trim()} — ${site}`
+        : `Contact form — ${values.name.trim()}`,
       text: lines.join("\n"),
     });
   } catch (error) {

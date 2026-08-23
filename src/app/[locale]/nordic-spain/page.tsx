@@ -40,7 +40,8 @@ export async function generateMetadata({
     namespace: "nordicSpain.meta",
   });
 
-  const canonical = `${baseUrl}/${activeLocale}/${path}`;
+  // `path` already starts with "/", so no separator between it and the locale.
+  const canonical = `${baseUrl}/${activeLocale}${path}`;
   const ogImage = `${baseUrl}/me-working2.webp`;
 
   // Only locales that actually have copy are advertised, so search engines are
@@ -101,8 +102,6 @@ const NordicSpainPage = async ({
 
   setRequestLocale(locale);
 
-  const t = await getTranslations("nordicSpain");
-
   return (
     <PageMotion>
       {/* The locale layout has no <main>, so this page provides its own. */}
@@ -110,13 +109,6 @@ const NordicSpainPage = async ({
         id="main-content"
         className="relative container max-w-full pb-16 pt-[64px]"
       >
-        <a
-          href="#request-check"
-          className="sr-only rounded-md bg-background px-4 py-2 text-base text-link underline focus-visible:not-sr-only focus-visible:absolute focus-visible:left-4 focus-visible:top-4 focus-visible:z-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-400"
-        >
-          {t("skipToForm")}
-        </a>
-
         <NordicSpainHeroSection />
         <NordicSpainProblemSection />
         <NordicSpainServicesSection />

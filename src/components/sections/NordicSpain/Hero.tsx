@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { container, fadeInUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/ui/components/button";
 import AnchorCta from "./AnchorCta";
 import { bodyText, focusRing } from "./styles";
 
@@ -42,10 +44,19 @@ const NordicSpainHeroSection = () => {
           variants={fadeInUp}
           className="flex flex-col items-start gap-4 pt-2 sm:flex-row sm:items-center"
         >
-          <AnchorCta targetId="request-check">{t("cta")}</AnchorCta>
+          <Link
+            href="/contact"
+            className={cn(
+              buttonVariants({ variant: "glass" }),
+              "h-11 px-6 text-base text-foreground",
+              focusRing,
+            )}
+          >
+            {t("cta")}
+          </Link>
 
-          <a
-            href="#services"
+          <AnchorCta
+            targetId="services"
             className={cn(
               "inline-flex items-center gap-2 rounded-md px-2 py-2 text-base text-link underline underline-offset-4 hover:text-linkHover",
               focusRing,
@@ -53,7 +64,7 @@ const NordicSpainHeroSection = () => {
           >
             {t("secondaryCta")}
             <span aria-hidden="true">&rarr;</span>
-          </a>
+          </AnchorCta>
         </motion.div>
       </motion.div>
     </section>

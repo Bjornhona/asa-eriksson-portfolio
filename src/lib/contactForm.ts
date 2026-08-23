@@ -1,10 +1,14 @@
 /**
- * Validation rules for the compliance-check request form.
+ * Validation rules for the /contact form.
  *
  * Shared by the client component and the route handler so the two cannot
  * drift. The client runs it to render accessible inline errors; the server
  * runs it again because client-side validation is a convenience, not a
  * control.
+ *
+ * The form serves both general enquiries and Spanish-compliance enquiries
+ * arriving from /nordic-spain, so the website field is optional — a recruiter
+ * has no URL to give, and a compliance enquiry does.
  */
 
 export const MAX_LENGTHS = {
@@ -15,38 +19,42 @@ export const MAX_LENGTHS = {
   message: 5000,
 } as const;
 
-export const REPORT_LANGUAGES = ["sv", "en", "es"] as const;
-export type ReportLanguage = (typeof REPORT_LANGUAGES)[number];
-
 export type FieldName = keyof typeof MAX_LENGTHS;
 
 export type ErrorCode =
-  | "urlRequired"
-  | "urlInvalid"
   | "nameRequired"
   | "emailRequired"
   | "emailInvalid"
+  | "urlInvalid"
+  | "messageRequired"
   | "tooLong";
 
 export interface SubmissionValues {
-  url: string;
   name: string;
   email: string;
   company: string;
+  url: string;
   message: string;
-  language: string;
 }
 
 export type FieldErrors = Partial<Record<FieldName, ErrorCode>>;
 
-/** Field order, used to render the error summary in visual order. */
+/** Visual order, so the error summary lists problems the way they appear. */
 export const FIELD_ORDER: FieldName[] = [
-  "url",
   "name",
   "email",
   "company",
+  "url",
   "message",
 ];
+
+export const EMPTY_SUBMISSION: SubmissionValues = {
+  name: "",
+  email: "",
+  company: "",
+  url: "",
+  message: "",
+};
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -76,15 +84,6 @@ export const normaliseUrl = (raw: string): string | null => {
 export const validate = (values: SubmissionValues): FieldErrors => {
   const errors: FieldErrors = {};
 
-  const url = values.url.trim();
-  if (!url) {
-    errors.url = "urlRequired";
-  } else if (url.length > MAX_LENGTHS.url) {
-    errors.url = "tooLong";
-  } else if (!normaliseUrl(url)) {
-    errors.url = "urlInvalid";
-  }
-
   const name = values.name.trim();
   if (!name) {
     errors.name = "nameRequired";
@@ -105,12 +104,22 @@ export const validate = (values: SubmissionValues): FieldErrors => {
     errors.company = "tooLong";
   }
 
-  if (values.message.trim().length > MAX_LENGTHS.message) {
+  // Optional, but must be readable as a web address if given.
+  const url = values.url.trim();
+  if (url) {
+    if (url.length > MAX_LENGTHS.url) {
+      errors.url = "tooLong";
+    } else if (!normaliseUrl(url)) {
+      errors.url = "urlInvalid";
+    }
+  }
+
+  const message = values.message.trim();
+  if (!message) {
+    errors.message = "messageRequired";
+  } else if (message.length > MAX_LENGTHS.message) {
     errors.message = "tooLong";
   }
 
   return errors;
 };
-
-export const isReportLanguage = (value: string): value is ReportLanguage =>
-  (REPORT_LANGUAGES as readonly string[]).includes(value);

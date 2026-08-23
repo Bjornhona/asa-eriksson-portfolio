@@ -24,7 +24,14 @@ const NordicSpainServicesSection = () => {
     <section
       id="services"
       aria-labelledby="services-heading"
-      className={sectionSpacing}
+      /* The hero's "See what I check" link moves focus here, so this needs to
+         be programmatically focusable. scroll-mt (in sectionSpacing) keeps the
+         heading clear of the header — WCAG 2.4.11 Focus Not Obscured. */
+      tabIndex={-1}
+      className={cn(
+        sectionSpacing,
+        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-aqua-400",
+      )}
     >
       <motion.div
         variants={container}

@@ -4,46 +4,44 @@ import { useTranslations } from "next-intl";
 import { CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/ui/components/button";
-import { focusRing, subHeading } from "./styles";
 import {
+  EMPTY_SUBMISSION,
   FIELD_ORDER,
   MAX_LENGTHS,
-  REPORT_LANGUAGES,
   validate,
   type FieldErrors,
-  type FieldName,
   type SubmissionValues,
-} from "./validation";
+} from "@/lib/contactForm";
 
 type Status = "idle" | "sending" | "success" | "error";
 
-const EMPTY: SubmissionValues = {
-  url: "",
-  name: "",
-  email: "",
-  company: "",
-  message: "",
-  language: "en",
-};
-
-const REQUIRED_FIELDS: FieldName[] = ["url", "name", "email"];
+/**
+ * The shared Button applies `focus-visible:outline-none` alongside a
+ * `focus-visible:ring-ring` that never compiles (no `ring` colour exists in
+ * tailwind.config.ts), leaving no visible focus indicator. Everything
+ * interactive here opts back in with a real outline — aqua-400 measures
+ * 14.95:1 on the dark background.
+ */
+const focusRing =
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-400";
 
 const fieldClasses = (invalid: boolean) =>
   cn(
     "w-full rounded-md border bg-white/5 px-3 py-2 text-base text-foreground",
     "placeholder:text-foreground/60 dark:bg-white/[0.07]",
-    // white/50 measures 5.20:1 against the page and 4.81:1 against a card.
-    // white/30 was only 2.68:1, under the 3:1 WCAG 1.4.11 requires for the
-    // boundary of a form control.
+    // white/50 is 5.20:1 against the page background. white/30 measured only
+    // 2.68:1, under the 3:1 WCAG 1.4.11 requires for a control boundary.
     invalid ? "border-danger" : "border-white/50",
-    "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-400",
+    focusRing,
   );
 
-const NordicSpainRequestForm = () => {
-  const t = useTranslations("nordicSpain.form");
+const labelClasses = "block text-base font-medium text-title";
+
+const ContactForm = () => {
+  const t = useTranslations("contact.form");
   const uid = useId().replace(/:/g, "");
 
-  const [values, setValues] = useState<SubmissionValues>(EMPTY);
+  const [values, setValues] = useState<SubmissionValues>(EMPTY_SUBMISSION);
   const [errors, setErrors] = useState<FieldErrors>({});
   const [status, setStatus] = useState<Status>("idle");
   /** Anti-spam: a field no human sees. Bots fill it in. */
@@ -68,8 +66,8 @@ const NordicSpainRequestForm = () => {
 
     if (Object.keys(nextErrors).length > 0) {
       setStatus("idle");
-      // Move focus to the summary so the failure is announced and the user
-      // lands at the top of the list of problems (WCAG 3.3.1).
+      // Focus the summary so the failure is announced and the user lands at
+      // the top of the list of problems (WCAG 3.3.1).
       requestAnimationFrame(() => summaryRef.current?.focus());
       return;
     }
@@ -77,7 +75,7 @@ const NordicSpainRequestForm = () => {
     setStatus("sending");
 
     try {
-      const response = await fetch("/api/nordic-spain-contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...values, website: honeypot }),
@@ -86,7 +84,7 @@ const NordicSpainRequestForm = () => {
       if (!response.ok) throw new Error("request failed");
 
       setStatus("success");
-      setValues(EMPTY);
+      setValues(EMPTY_SUBMISSION);
       requestAnimationFrame(() => successRef.current?.focus());
     } catch {
       setStatus("error");
@@ -102,10 +100,10 @@ const NordicSpainRequestForm = () => {
         role="status"
         className={cn(
           "rounded-xl border border-aqua-400/40 bg-white/5 p-6 dark:bg-white/[0.07]",
-          "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-400",
+          focusRing,
         )}
       >
-        <h3 className={cn(subHeading, "mb-2 flex items-center gap-2")}>
+        <h3 className="mb-2 flex items-center gap-2 font-prompt text-lg font-semibold text-title md:text-xl">
           <CheckCircle2 className="h-5 w-5 text-aqua-400" aria-hidden="true" />
           {t("successTitle")}
         </h3>
@@ -119,11 +117,8 @@ const NordicSpainRequestForm = () => {
 
   return (
     <form noValidate onSubmit={handleSubmit} className="space-y-6">
-      {/*
-        Error summary. `tabIndex={-1}` makes it programmatically focusable
-        without adding it to the tab order; role="alert" announces it when it
-        appears for users who do not receive focus.
-      */}
+      {/* role="alert" announces the summary on appearance; tabIndex={-1}
+          makes it focusable without adding it to the tab order. */}
       {showSummary ? (
         <div
           ref={summaryRef}
@@ -131,7 +126,7 @@ const NordicSpainRequestForm = () => {
           role="alert"
           className={cn(
             "rounded-md border border-danger bg-danger/10 p-4",
-            "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-400",
+            focusRing,
           )}
         >
           <h3 className="mb-2 font-prompt text-lg font-semibold text-title">
@@ -164,45 +159,15 @@ const NordicSpainRequestForm = () => {
         </div>
       ) : null}
 
-      {REQUIRED_FIELDS.length > 0 ? (
-        <p className="text-base text-foreground/90">{t("intro")}</p>
-      ) : null}
-
-      {/* Website address */}
-      <div className="space-y-2">
-        <label htmlFor={fieldId("url")} className="block text-base font-medium text-title">
-          {t("fields.url.label")}{" "}
-          <span className="font-normal text-foreground/90">({t("required")})</span>
-        </label>
-        <p id={hintId("url")} className="text-base text-foreground/90">
-          {t("fields.url.hint")}
-        </p>
-        <input
-          id={fieldId("url")}
-          name="url"
-          type="text"
-          inputMode="url"
-          autoComplete="url"
-          maxLength={MAX_LENGTHS.url}
-          value={values.url}
-          onChange={(event) => setValue("url", event.target.value)}
-          aria-required="true"
-          aria-invalid={errors.url ? true : undefined}
-          aria-describedby={cn(hintId("url"), errors.url && errorId("url"))}
-          className={fieldClasses(!!errors.url)}
-        />
-        {errors.url ? (
-          <p id={errorId("url")} className="text-base text-danger">
-            {t(`errors.${errors.url}`)}
-          </p>
-        ) : null}
-      </div>
+      <p className="text-base text-foreground/90">{t("intro")}</p>
 
       {/* Name */}
       <div className="space-y-2">
-        <label htmlFor={fieldId("name")} className="block text-base font-medium text-title">
+        <label htmlFor={fieldId("name")} className={labelClasses}>
           {t("fields.name.label")}{" "}
-          <span className="font-normal text-foreground/90">({t("required")})</span>
+          <span className="font-normal text-foreground/90">
+            ({t("required")})
+          </span>
         </label>
         <input
           id={fieldId("name")}
@@ -226,9 +191,11 @@ const NordicSpainRequestForm = () => {
 
       {/* Email */}
       <div className="space-y-2">
-        <label htmlFor={fieldId("email")} className="block text-base font-medium text-title">
+        <label htmlFor={fieldId("email")} className={labelClasses}>
           {t("fields.email.label")}{" "}
-          <span className="font-normal text-foreground/90">({t("required")})</span>
+          <span className="font-normal text-foreground/90">
+            ({t("required")})
+          </span>
         </label>
         <input
           id={fieldId("email")}
@@ -252,9 +219,11 @@ const NordicSpainRequestForm = () => {
 
       {/* Company */}
       <div className="space-y-2">
-        <label htmlFor={fieldId("company")} className="block text-base font-medium text-title">
+        <label htmlFor={fieldId("company")} className={labelClasses}>
           {t("fields.company.label")}{" "}
-          <span className="font-normal text-foreground/90">({t("optional")})</span>
+          <span className="font-normal text-foreground/90">
+            ({t("optional")})
+          </span>
         </label>
         <input
           id={fieldId("company")}
@@ -275,39 +244,53 @@ const NordicSpainRequestForm = () => {
         ) : null}
       </div>
 
-      {/* Report language */}
+      {/* Website — optional, used by Spanish-compliance enquiries */}
       <div className="space-y-2">
-        <label htmlFor={fieldId("language")} className="block text-base font-medium text-title">
-          {t("fields.language.label")}
+        <label htmlFor={fieldId("url")} className={labelClasses}>
+          {t("fields.url.label")}{" "}
+          <span className="font-normal text-foreground/90">
+            ({t("optional")})
+          </span>
         </label>
-        <select
-          id={fieldId("language")}
-          name="language"
-          value={values.language}
-          onChange={(event) => setValue("language", event.target.value)}
-          className={fieldClasses(false)}
-        >
-          {REPORT_LANGUAGES.map((code) => (
-            <option key={code} value={code}>
-              {t(`fields.language.${code}`)}
-            </option>
-          ))}
-        </select>
+        <p id={hintId("url")} className="text-base text-foreground/90">
+          {t("fields.url.hint")}
+        </p>
+        <input
+          id={fieldId("url")}
+          name="url"
+          type="text"
+          inputMode="url"
+          autoComplete="url"
+          maxLength={MAX_LENGTHS.url}
+          value={values.url}
+          onChange={(event) => setValue("url", event.target.value)}
+          aria-invalid={errors.url ? true : undefined}
+          aria-describedby={cn(hintId("url"), errors.url && errorId("url"))}
+          className={fieldClasses(!!errors.url)}
+        />
+        {errors.url ? (
+          <p id={errorId("url")} className="text-base text-danger">
+            {t(`errors.${errors.url}`)}
+          </p>
+        ) : null}
       </div>
 
       {/* Message */}
       <div className="space-y-2">
-        <label htmlFor={fieldId("message")} className="block text-base font-medium text-title">
+        <label htmlFor={fieldId("message")} className={labelClasses}>
           {t("fields.message.label")}{" "}
-          <span className="font-normal text-foreground/90">({t("optional")})</span>
+          <span className="font-normal text-foreground/90">
+            ({t("required")})
+          </span>
         </label>
         <textarea
           id={fieldId("message")}
           name="message"
-          rows={4}
+          rows={6}
           maxLength={MAX_LENGTHS.message}
           value={values.message}
           onChange={(event) => setValue("message", event.target.value)}
+          aria-required="true"
           aria-invalid={errors.message ? true : undefined}
           aria-describedby={errors.message ? errorId("message") : undefined}
           className={fieldClasses(!!errors.message)}
@@ -338,11 +321,9 @@ const NordicSpainRequestForm = () => {
       </div>
 
       <div className="flex flex-col items-start gap-3">
-        {/*
-          `aria-disabled` rather than `disabled`: a disabled button drops out
-          of the tab order mid-interaction, which throws keyboard users to the
-          top of the page. The submit handler guards instead.
-        */}
+        {/* aria-disabled rather than disabled: a disabled button drops out of
+            the tab order mid-interaction, throwing keyboard users to the top
+            of the page. The submit handler guards instead. */}
         <button
           type="submit"
           aria-disabled={status === "sending"}
@@ -356,7 +337,7 @@ const NordicSpainRequestForm = () => {
           {status === "sending" ? t("sending") : t("submit")}
         </button>
 
-        {/* Always present so the change is announced, not just the arrival. */}
+        {/* Always present, so the change is announced rather than the arrival. */}
         <p role="status" className="text-base text-foreground/90">
           {status === "sending" ? t("sending") : ""}
         </p>
@@ -365,4 +346,4 @@ const NordicSpainRequestForm = () => {
   );
 };
 
-export default NordicSpainRequestForm;
+export default ContactForm;
