@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 import { portfolioItems } from "./[locale]/portfolio/portfolioProjects";
+import { nordicSpainLocales } from "./[locale]/nordic-spain/locales";
 
 const baseUrl = "https://asaeriksson.com";
 
@@ -50,6 +51,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       });
     }
+  }
+
+  // /nordic-spain is listed separately because it only exists in the locales
+  // that have copy for it — listing it per-locale would advertise redirects.
+  const nordicSpainPath = "/nordic-spain";
+  const nordicSpainAlternates = Object.fromEntries(
+    nordicSpainLocales.map((locale) => [
+      locale,
+      getLocalizedUrl(locale, nordicSpainPath),
+    ]),
+  );
+
+  for (const locale of nordicSpainLocales) {
+    entries.push({
+      url: getLocalizedUrl(locale, nordicSpainPath),
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: nordicSpainAlternates,
+      },
+    });
   }
 
   return entries;

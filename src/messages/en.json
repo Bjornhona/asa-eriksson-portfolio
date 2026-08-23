@@ -23,16 +23,13 @@
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: March 5, 2026",
     "description": "This Privacy Policy explains how information is collected, used, and protected when you visit this website.",
-
     "websiteOwner": "Website Owner",
     "operatedBy": "This website is operated by:",
     "developer": "Independent Product Developer & Designer",
     "website": "Website",
     "questions": "If you have questions about this policy, you can contact me through the contact form available on this website.",
-
     "informationCollected": "Information Collected",
     "collected": "This website collects limited information in the following ways.",
-
     "contactForm": "Contact Form",
     "contactFormDescription": "If you contact me through the website's contact form, you may be asked to provide:",
     "name": "Your name",
@@ -40,7 +37,6 @@
     "message": "Your message",
     "used": "This information is used <strong>only to respond to your inquiry</strong> and discuss potential collaboration or services.",
     "notUsed": "The information is <strong>not used for marketing purposes</strong>, newsletters, or shared with third parties.",
-
     "analyticsData": "Analytics Data",
     "analyticsDataDescription": "This website uses <strong>Google Analytics</strong> to understand how visitors interact with the website.",
     "analyticsDataCollected": "Google Analytics may collect information such as:",
@@ -52,23 +48,19 @@
     "referringWebsites": "Referring websites",
     "googleStore": "Google may store this data on servers located outside the European Union.",
     "googlePrivacyPolicy": "For more information, see Google's Privacy Policy",
-
     "cookies": "Cookies",
     "cookiesDescription": "Google Analytics may use <strong>cookies</strong> to analyze website traffic.",
     "cookiesStored": "Cookies are small text files stored on your device.",
     "cookiesDisabled": "You can disable cookies through your browser settings if you prefer not to allow them.",
-
     "purposeOfDataProcessing": "Purpose of Data Processing",
     "purposeOfDataProcessingDescription": "The limited data collected is used only for:",
     "respondingToContactInquiries": "Responding to contact inquiries",
     "understandingWebsiteTraffic": "Understanding website traffic and usage",
     "improvingTheWebsite": "Improving the website",
     "noPersonalData": "No personal data is sold, rented, or used for advertising purposes.",
-
     "dataRetention": "Data Retention",
     "messagesStored": "Messages sent through the contact form may be stored for a reasonable period in order to maintain communication related to services or collaboration.",
     "analyticsRetention": "Analytics data retention is determined by Google Analytics settings.",
-
     "yourRights": "Your Rights",
     "europeanUnion": "If you are located in the European Union, you have the right to:",
     "requestAccess": "Request access to your personal data",
@@ -76,20 +68,16 @@
     "requestDeletion": "Request deletion of your data",
     "objectToProcessing": "Object to the processing of your data",
     "ifYouWishToExerciseAnyOfTheseRights": "If you wish to exercise any of these rights, please contact me through the website.",
-
     "thirdPartyServices": "Third-Party Services",
     "thirdPartyServicesDescription": "This website may use third-party services including:",
     "googleAnalytics": "Google Analytics (website analytics)",
     "googleAnalyticsDescription": "These services may collect and process data according to their own privacy policies.",
-
     "dataSecurity": "Data Security",
     "dataSecurityDescription": "Reasonable technical and organizational measures are taken to protect personal information from unauthorized access, disclosure, or misuse.",
     "noMethodOfTransmission": "However, no method of transmission over the internet is completely secure.",
-
     "changesToThisPolicy": "Changes to This Policy",
     "changesToThisPolicyDescription": "This Privacy Policy may be updated from time to time.",
     "anyUpdatesRevisionDate": "Any updates will be posted on this page with an updated revision date.",
-
     "contact": "Contact",
     "contactDescription": "If you have questions about this policy, you can contact me through the contact form available on this website or by email to"
   },
@@ -97,13 +85,10 @@
     "title": "Cookies Policy",
     "lastUpdated": "Last updated: March 5, 2026",
     "description": "This Cookies Policy explains how cookies are used on this website and how you can control them.",
-
     "whatAreCookies": "What Are Cookies",
     "whatAreCookiesDescription": "Cookies are small text files stored on your device when you visit a website. They help websites function properly and provide information about how visitors interact with the site.",
-
     "howThisWebsiteUsesCookies": "How This Website Uses Cookies",
     "howThisWebsiteUsesCookiesDescription": "This website uses cookies only for basic functionality and website analytics.",
-
     "analyticsCookies": "Analytics Cookies",
     "analyticsCookiesDescription": "This website uses Google Analytics to understand how visitors use the website. These cookies collect information such as",
     "pagesVisited": "Pages visited",
@@ -111,25 +96,20 @@
     "deviceType": "Device and browser type",
     "approximateGeographicLocation": "Approximate geographic location",
     "dataCollected": "This data is collected in an aggregated and anonymous form and is used only to improve the website and user experience.",
-
     "thirdPartyCookies": "Third-Party Cookies",
     "thirdPartyCookiesDescription": "Google Analytics may set cookies on your device. These cookies are managed by Google and are subject to Google's privacy policies.",
     "thirdPartyCookiesLearnMore": "You can learn more about how Google uses data here",
-
     "managingCookies": "Managing Cookies",
     "managingCookiesDescription": "You can control or disable cookies through your browser settings. Most browsers allow you to refuse cookies or delete cookies that have already been stored.",
     "disablingCookiesMayAffect": "Please note that disabling cookies may affect how some websites function.",
-
     "changesToThisCookiesPolicy": "Changes to This Cookies Policy",
     "changesToThisCookiesPolicyDescription": "This Cookies Policy may be updated from time to time. Any updates will be posted on this page with a revised date.",
-
     "contact": "Contact",
     "contactDescription": "If you have any questions about this Cookies Policy, you can contact the website owner through the contact form available on this website."
   },
   "legalNotice": {
     "title": "Legal Notice",
     "lastUpdated": "Last updated: March 5, 2026",
-
     "websiteOwner": "Website Owner",
     "operatedByDescription": "In accordance with the provisions of the applicable regulations, users of this website are informed that the owner of this website is:",
     "name": "Name",
@@ -138,31 +118,24 @@
     "frontendDevelopment": "Freelance Product Development and Web Design Services",
     "contact": "Contact",
     "contactDescription": "Through the contact form available on this website or by email to",
-
     "purposeOfTheWebsite": "Purpose of the Website",
     "purposeOfTheWebsiteDescription": "The purpose of this website is to present the professional portfolio, services, and projects of the website owner related to project engineering, web & frontend development and user interface design.",
     "websiteMayAlsoProvideInformation": "The website may also provide information about professional services and allow visitors to contact the website owner through a contact form.",
-
     "termsOfUse": "Terms of Use",
     "termsOfUseDescription": "By accessing and using this website, the user agrees to use the website in accordance with applicable laws and this Legal Notice.",
     "userAgreesNotToUseWebsite": "The user agrees not to use the website for unlawful purposes or in any way that may damage, disable, or impair the website or interfere with other users' access to the website.",
-
     "intellectualProperty": "Intellectual Property",
     "intellectualPropertyDescription": "All content on this website, including but not limited to text, code, graphics, design, logos, and images, is the property of the website owner unless otherwise stated.",
     "unauthorizedReproduction": "Unauthorized reproduction, distribution, modification, or use of any content from this website without prior written permission is prohibited.",
-
     "externalLinks": "External Links",
     "externalLinksDescription": "This website may contain links to external websites operated by third parties. The website owner has no control over the content of these external websites and assumes no responsibility for their content, policies, or practices.",
-
     "limitationOfLiability": "Limitation of Liability",
     "limitationOfLiabilityDescription": "The website owner makes reasonable efforts to ensure that the information on this website is accurate and up to date. However, no guarantee is given regarding the completeness, accuracy, or reliability of the information.",
     "websiteOwnerShallNotBeHeldLiable": "The website owner shall not be held liable for any damages arising from the use of this website or from reliance on the information provided.",
-
     "dataProtection": "Data Protection",
     "dataProtectionDescription": "Personal data submitted through the contact form will only be used to respond to inquiries and will not be used for marketing purposes.",
     "moreInformation": "For more information on how personal data is handled, please refer to the",
     "privacyPolicy": "Privacy Policy",
-
     "applicableLaw": "Applicable Law",
     "applicableLawDescription": "This Legal Notice shall be governed by and interpreted in accordance with the laws of Spain.",
     "jurisdiction": "Any disputes arising from the use of this website shall be subject to the jurisdiction of the competent courts in Spain."
@@ -1119,6 +1092,173 @@
       "subtitle": "Freelance frontend development • Web design • Modern web apps",
       "description": "Need a beautiful, well-structured website you can truly own and maintain yourself?",
       "buildTogether": "Let's build it together."
+    }
+  },
+  "nordicSpain": {
+    "meta": {
+      "title": "Spanish Digital Compliance for Nordic Companies | Asa Eriksson",
+      "description": "Most Nordic companies entering Spain launch a translated site that is not legally compliant. I build Spanish digital presence that is legally sound, accessible and reads as local — accessibility (Ley 11/2023, WCAG 2.2 AA), LSSI-CE, LOPDGDD and cookie consent.",
+      "ogAlt": "Asa Eriksson — Spanish digital compliance for Nordic companies"
+    },
+    "skipToForm": "Skip to the compliance check request form",
+    "hero": {
+      "title": "Your Spanish website is probably breaking Spanish law.",
+      "lead": "Most Nordic companies entering Spain launch a translated version of their home site. It looks fine. It is usually not compliant — and since June 2025, that carries real financial risk.",
+      "body": "I help Nordic companies build a Spanish digital presence that is legally sound, accessible, and reads as local rather than translated.",
+      "cta": "Request a free compliance check",
+      "secondaryCta": "See what I check"
+    },
+    "problem": {
+      "title": "Three things Nordic companies get wrong in Spain",
+      "items": {
+        "eu": {
+          "title": "They assume EU-wide compliance is enough.",
+          "body": "GDPR is European. LSSI-CE, LOPDGDD and the AEPD's cookie criteria are Spanish, and they are stricter and more specifically enforced than most Nordic companies expect. A cookie banner that passes in Stockholm frequently fails in Madrid."
+        },
+        "accessibility": {
+          "title": "They don't know accessibility became mandatory.",
+          "body": "Ley 11/2023 transposed the European Accessibility Act into Spanish law, effective 28 June 2025. Obligations now extend to private companies — e-commerce, banking, booking platforms, passenger transport. The standard is WCAG 2.2 AA. Sanctions run from €301 to €1,000,000. Very few private Spanish websites currently meet it."
+        },
+        "localise": {
+          "title": "They translate instead of localise.",
+          "body": "Spanish B2B buyers read a translated site as a foreign company testing the market. Missing NIF and physical address, no Bizum, formal register wrong for the audience, a contact form nobody answers in August — each one costs conversions in ways analytics won't show you."
+        }
+      }
+    },
+    "services": {
+      "title": "Start where you are",
+      "priceLabel": "Price",
+      "tiers": {
+        "scan": {
+          "price": "Free",
+          "name": "Compliance Scan",
+          "body": "Automated check of your Spanish site against ten criteria: legal identification under LSSI-CE, cookie consent, privacy policy, data residency, and five WCAG 2.2 AA checks. You get a report in plain language, in Swedish, English or Spanish.",
+          "note": "Works on any website — WordPress, Wix, Angular, custom. No access to your systems required."
+        },
+        "report": {
+          "price": "€249",
+          "name": "Compliance Report",
+          "body": "The automated scan plus manual review. Prioritised findings, an assessment of where the real exposure sits, and a fix roadmap you can hand to any developer — including your own.",
+          "note": "Fully credited against a remediation project if you go ahead with me."
+        },
+        "remediation": {
+          "price": "From €2,500",
+          "name": "Remediation",
+          "body": "Implementing the fixes on your existing site. Accessibility, cookie consent, the legal layer, data handling. Your stack, not mine.",
+          "note": ""
+        },
+        "launch": {
+          "price": "From €6,000",
+          "name": "Spanish Market Launch",
+          "body": "A new Spanish presence, built properly: bilingual, compliant, accessible, with a CMS your Spanish team can actually use. Commercial layer included — IVA handling, Verifactu-ready invoicing, Bizum.",
+          "note": ""
+        },
+        "ai": {
+          "price": "From €3,000",
+          "name": "AI Implementation",
+          "body": "Spanish-language content at volume without hiring a Spanish content team. AI writing assistants inside your CMS, automated document generation, customer-facing assistants. I build these in production, not as demos.",
+          "note": ""
+        },
+        "ongoing": {
+          "price": "From €300/month",
+          "name": "Ongoing Compliance",
+          "body": "Spanish digital law keeps moving. Quarterly re-scan, changes flagged, small fixes included.",
+          "note": ""
+        }
+      }
+    },
+    "legal": {
+      "title": "How the legal side works",
+      "p1": "I'm an engineer, not a lawyer, and I don't pretend otherwise.",
+      "p2": "Your legal texts — aviso legal, privacy policy, cookie policy — are drafted and certified by a Spanish lawyer specialised in digital compliance, working as part of my delivery team. Her fee appears as a transparent line item in your quote.",
+      "p3": "I implement. She certifies. You get both, and neither of us is working outside our competence."
+    },
+    "whyMe": {
+      "title": "Why me",
+      "p1": "I'm Swedish, I've lived and worked in Barcelona for over twenty years, and I've spent most of that time on both sides of this bridge.",
+      "p2": "I ran the Swedish-Spanish Chamber of Commerce in Barcelona from 2014 to 2017, where my job was to make a Spanish organisation work for Nordic companies. Before that, aerospace R&D at Rolls-Royce and twelve years in aviation. Since 2018 I've been building software — most recently as a senior frontend engineer on enterprise projects, and now independently, focused on AI product work.",
+      "p3": "Which means I can sit in a Swedish board call in the morning and a Spanish supplier meeting in the afternoon, and I know why those two conversations need to be run differently.",
+      "p4": "Most people who understand Spanish digital compliance can't build. Most people who can build don't understand the Spanish market. That gap is where I work.",
+      "portraitAlt": "Åsa Eriksson"
+    },
+    "proof": {
+      "title": "Proof",
+      "name": "Casa Madre",
+      "role": "Boutique real estate agency, Barcelona",
+      "body": "Bilingual Next.js and Sanity platform. Spanish-language CMS so a non-technical Spanish team can run it. AI writing assistant for property descriptions. Automated PDF property brochures with bilingual legal requirements built in. RGPD-compliant throughout.",
+      "cta": "Read the Casa Madre case study"
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": {
+        "existingSite": {
+          "question": "We already have a website. Do we need a new one?",
+          "answer": "Usually not. Most problems are fixable on your existing site, whatever it's built with. That's what the remediation tier is for — I'd rather fix what you have than sell you a rebuild you don't need."
+        },
+        "small": {
+          "question": "Does this apply to us? We're small.",
+          "answer": "The accessibility obligations under Ley 11/2023 generally exempt companies under 10 employees. RGPD, LOPDGDD and the Spanish cookie rules do not exempt anyone. Small companies still need the legal layer."
+        },
+        "outsideBarcelona": {
+          "question": "Do you work outside Barcelona?",
+          "answer": "Yes — anywhere in Spain, and the work is largely remote regardless."
+        },
+        "notNordic": {
+          "question": "We're not Nordic. Can you still help?",
+          "answer": "Yes. The compliance work is the same for any foreign company entering Spain. The Nordic part is just where I'm most useful on the cultural side."
+        }
+      }
+    },
+    "closing": {
+      "title": "Find out where you stand — in two minutes",
+      "p1": "Enter your URL. Get an honest report on what's compliant, what isn't, and what it would cost to fix.",
+      "p2": "No sales call required. If the report is all you need, take it and go.",
+      "emailIntro": "Or email me directly:",
+      "email": "info@asaeriksson.com"
+    },
+    "form": {
+      "heading": "Request a free compliance check",
+      "intro": "Fields marked required must be filled in. I read every one of these myself and reply personally.",
+      "required": "required",
+      "optional": "optional",
+      "fields": {
+        "url": {
+          "label": "Your Spanish website address",
+          "hint": "For example: https://example.es"
+        },
+        "name": {
+          "label": "Your name"
+        },
+        "email": {
+          "label": "Email"
+        },
+        "company": {
+          "label": "Company"
+        },
+        "language": {
+          "label": "Preferred report language",
+          "sv": "Swedish",
+          "en": "English",
+          "es": "Spanish"
+        },
+        "message": {
+          "label": "Anything else I should know?"
+        }
+      },
+      "submit": "Request a free compliance check",
+      "sending": "Sending your request…",
+      "errorSummaryTitle": "There is a problem",
+      "errors": {
+        "urlRequired": "Enter the address of the site you want checked.",
+        "urlInvalid": "Enter a valid web address, for example https://example.es",
+        "nameRequired": "Enter your name.",
+        "emailRequired": "Enter your email address.",
+        "emailInvalid": "Enter a valid email address.",
+        "tooLong": "This is longer than the form accepts. Please shorten it.",
+        "send": "Your request could not be sent. Please try again, or email info@asaeriksson.com directly."
+      },
+      "successTitle": "Request received",
+      "successBody": "Thank you — your request has arrived. I will reply personally, usually within two working days."
     }
   }
 }
