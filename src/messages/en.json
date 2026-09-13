@@ -1091,7 +1091,8 @@
       "title": "Get in touch.",
       "subtitle": "Freelance frontend development • Web design • Modern web apps",
       "description": "Need a beautiful, well-structured website you can truly own and maintain yourself?",
-      "buildTogether": "Let's build it together."
+      "buildTogether": "Let's build it together.",
+      "imageAlt": "Åsa Eriksson, frontend developer based in Barcelona"
     },
     "meta": {
       "title": "Contact | Asa Eriksson",
