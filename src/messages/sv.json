@@ -1098,8 +1098,8 @@
     },
     "form": {
       "heading": "Skicka ett meddelande",
-      "intro": "Fält märkta obligatoriskt måste fyllas i. Jag läser varje meddelande själv och svarar personligen.",
-      "required": "obligatoriskt",
+      "intro": "Fält märkta med * måste fyllas i. Jag läser varje meddelande själv och svarar personligen.",
+      "required": "*",
       "optional": "valfritt",
       "fields": {
         "name": {

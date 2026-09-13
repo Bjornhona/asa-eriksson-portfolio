@@ -3,7 +3,8 @@ import { useId, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/ui/components/button";
+// import { Button } from "@/ui";
+import { Button } from "@/ui/components/button";
 import {
   EMPTY_SUBMISSION,
   FIELD_ORDER,
@@ -324,18 +325,20 @@ const ContactForm = () => {
         {/* aria-disabled rather than disabled: a disabled button drops out of
             the tab order mid-interaction, throwing keyboard users to the top
             of the page. The submit handler guards instead. */}
-        <button
+        {/* <Button type="submit" variant="glass" aria-disabled={status === "sending"}> */}
+        <Button
           type="submit"
+          variant="glass"
           aria-disabled={status === "sending"}
-          className={cn(
-            buttonVariants({ variant: "glass" }),
-            "h-11 px-6 text-base text-foreground",
-            focusRing,
-            status === "sending" && "cursor-wait opacity-70",
-          )}
+          // className={cn(
+          //   buttonVariants({ variant: "glass" }),
+          //   "h-11 px-6 text-base text-foreground",
+          //   focusRing,
+          //   status === "sending" && "cursor-wait opacity-70",
+          // )}
         >
           {status === "sending" ? t("sending") : t("submit")}
-        </button>
+        </Button>
 
         {/* Always present, so the change is announced rather than the arrival. */}
         <p role="status" className="text-base text-foreground/90">

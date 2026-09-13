@@ -1098,8 +1098,8 @@
     },
     "form": {
       "heading": "Envíame un mensaje",
-      "intro": "Los campos marcados como obligatorio deben rellenarse. Leo todos los mensajes personalmente y respondo yo misma.",
-      "required": "obligatorio",
+      "intro": "Los campos marcados con * deben rellenarse. Leo todos los mensajes personalmente y respondo yo misma.",
+      "required": "*",
       "optional": "opcional",
       "fields": {
         "name": {

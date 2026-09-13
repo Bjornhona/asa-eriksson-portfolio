@@ -1099,8 +1099,8 @@
     },
     "form": {
       "heading": "Send me a message",
-      "intro": "Fields marked required must be filled in. I read every message myself and reply personally.",
-      "required": "required",
+      "intro": "Fields marked with * must be filled in. I read every message myself and reply personally.",
+      "required": "*",
       "optional": "optional",
       "fields": {
         "name": {

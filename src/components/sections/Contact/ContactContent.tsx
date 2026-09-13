@@ -66,18 +66,18 @@ const ContactContent = () => {
           measure for form fields. The intro above keeps its original width. */}
       <motion.section
         aria-labelledby="contact-form-heading"
-        className="mt-12 w-full max-w-md md:mt-16"
+        className="mt-12 w-full max-w-md md:mt-16 mb-12"
         variants={container}
         initial="initial"
         animate="animate"
       >
-        <motion.h2
+        <motion.h4
           id="contact-form-heading"
           variants={fadeInUp}
-          className="mb-6 font-prompt text-2xl font-semibold leading-normal text-title sm:text-3xl"
+          className="mb-6"
         >
           {tForm("heading")}
-        </motion.h2>
+        </motion.h4>
 
         <motion.div variants={fadeInUp}>
           <ContactForm />
